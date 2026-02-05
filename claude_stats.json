@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "lastComputedDate": "2026-02-04",
-  "totalUserPrompts": 4285,
-  "totalSessions": 127,
-  "totalMessages": 121522,
+  "lastComputedDate": "2026-02-05",
+  "totalUserPrompts": 4115,
+  "totalSessions": 129,
+  "totalMessages": 124199,
   "firstSessionDate": "2025-12-30T02:38:23.155Z",
   "modelUsage": {
     "claude-opus-4-5-20251101": {
-      "inputTokens": 1056658,
-      "outputTokens": 2759651,
-      "cacheReadInputTokens": 4664725551,
-      "cacheCreationInputTokens": 202560011,
+      "inputTokens": 1074194,
+      "outputTokens": 2762373,
+      "cacheReadInputTokens": 4762651703,
+      "cacheCreationInputTokens": 204543436,
       "webSearchRequests": 0,
       "costUSD": 0,
       "contextWindow": 0,
@@ -29,15 +29,8 @@
   },
   "dailyActivity": [
     {
-      "date": "2026-01-04",
-      "userPrompts": 101,
-      "sessionCount": 8,
-      "toolCallCount": 2333,
-      "messageCount": 6358
-    },
-    {
       "date": "2026-01-05",
-      "userPrompts": 335,
+      "userPrompts": 115,
       "sessionCount": 4,
       "toolCallCount": 1171,
       "messageCount": 3529
@@ -223,29 +216,36 @@
       "sessionCount": 1,
       "toolCallCount": 189,
       "messageCount": 998
+    },
+    {
+      "date": "2026-02-04",
+      "userPrompts": 151,
+      "sessionCount": 2,
+      "toolCallCount": 418,
+      "messageCount": 2677
     }
   ],
   "hourCounts": {
-    "13": 177,
-    "14": 227,
-    "15": 149,
-    "16": 240,
-    "17": 288,
-    "18": 284,
-    "6": 321,
-    "7": 409,
-    "8": 337,
-    "9": 260,
-    "10": 238,
-    "11": 322,
-    "12": 272,
-    "19": 219,
-    "20": 93,
+    "13": 184,
+    "14": 253,
+    "15": 145,
+    "16": 234,
+    "17": 298,
+    "18": 252,
+    "6": 280,
+    "7": 390,
+    "8": 304,
+    "9": 259,
+    "10": 244,
+    "11": 341,
+    "12": 267,
+    "19": 178,
+    "21": 88,
+    "20": 85,
     "4": 69,
-    "5": 188,
+    "5": 125,
     "22": 87,
-    "23": 32,
-    "21": 73
+    "23": 32
   },
   "longestSession": {
     "sessionId": "0d69771c-a005-40c6-8b90-c8d8408025c7",
