@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "lastComputedDate": "2026-02-10",
-  "totalUserPrompts": 4205,
-  "totalSessions": 138,
-  "totalMessages": 133881,
+  "lastComputedDate": "2026-02-11",
+  "totalUserPrompts": 4041,
+  "totalSessions": 139,
+  "totalMessages": 134158,
   "firstSessionDate": "2025-12-30T02:38:23.155Z",
   "modelUsage": {
     "claude-opus-4-5-20251101": {
@@ -27,10 +27,10 @@
       "maxOutputTokens": 0
     },
     "claude-opus-4-6": {
-      "inputTokens": 42456,
-      "outputTokens": 25773,
-      "cacheReadInputTokens": 293290562,
-      "cacheCreationInputTokens": 11601936,
+      "inputTokens": 42588,
+      "outputTokens": 26603,
+      "cacheReadInputTokens": 298747848,
+      "cacheCreationInputTokens": 11811191,
       "webSearchRequests": 0,
       "costUSD": 0,
       "contextWindow": 0,
@@ -47,14 +47,14 @@
     },
     {
       "date": "2026-01-10",
-      "userPrompts": 236,
+      "userPrompts": 111,
       "sessionCount": 1,
       "toolCallCount": 442,
       "messageCount": 1200
     },
     {
       "date": "2026-01-11",
-      "userPrompts": 186,
+      "userPrompts": 122,
       "sessionCount": 9,
       "toolCallCount": 1726,
       "messageCount": 4917
@@ -254,29 +254,36 @@
       "sessionCount": 2,
       "toolCallCount": 726,
       "messageCount": 3655
+    },
+    {
+      "date": "2026-02-10",
+      "userPrompts": 25,
+      "sessionCount": 1,
+      "toolCallCount": 57,
+      "messageCount": 277
     }
   ],
   "hourCounts": {
     "13": 233,
-    "14": 261,
-    "15": 165,
-    "16": 246,
-    "17": 261,
-    "18": 239,
-    "6": 264,
-    "7": 384,
-    "8": 331,
-    "9": 315,
+    "14": 257,
+    "15": 143,
+    "16": 225,
+    "17": 258,
+    "18": 206,
+    "6": 256,
+    "7": 361,
+    "8": 319,
+    "9": 306,
     "10": 330,
-    "11": 365,
-    "12": 297,
-    "19": 140,
+    "11": 367,
+    "12": 298,
+    "19": 138,
     "21": 54,
-    "20": 86,
+    "20": 79,
     "4": 47,
     "5": 93,
-    "22": 62,
-    "23": 32
+    "22": 61,
+    "23": 10
   },
   "longestSession": {
     "sessionId": "0d69771c-a005-40c6-8b90-c8d8408025c7",
