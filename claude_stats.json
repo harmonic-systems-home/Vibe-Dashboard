@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "lastComputedDate": "2026-02-11",
-  "totalUserPrompts": 4041,
-  "totalSessions": 139,
-  "totalMessages": 134158,
+  "lastComputedDate": "2026-02-12",
+  "totalUserPrompts": 3885,
+  "totalSessions": 140,
+  "totalMessages": 134244,
   "firstSessionDate": "2025-12-30T02:38:23.155Z",
   "modelUsage": {
     "claude-opus-4-5-20251101": {
@@ -27,10 +27,10 @@
       "maxOutputTokens": 0
     },
     "claude-opus-4-6": {
-      "inputTokens": 42588,
-      "outputTokens": 26603,
-      "cacheReadInputTokens": 298747848,
-      "cacheCreationInputTokens": 11811191,
+      "inputTokens": 42645,
+      "outputTokens": 27129,
+      "cacheReadInputTokens": 300059151,
+      "cacheCreationInputTokens": 11881690,
       "webSearchRequests": 0,
       "costUSD": 0,
       "contextWindow": 0,
@@ -39,29 +39,22 @@
   },
   "dailyActivity": [
     {
-      "date": "2026-01-07",
-      "userPrompts": 9,
-      "sessionCount": 13,
-      "toolCallCount": 1918,
-      "messageCount": 5355
-    },
-    {
       "date": "2026-01-10",
-      "userPrompts": 111,
+      "userPrompts": 83,
       "sessionCount": 1,
       "toolCallCount": 442,
       "messageCount": 1200
     },
     {
       "date": "2026-01-11",
-      "userPrompts": 122,
+      "userPrompts": 9,
       "sessionCount": 9,
       "toolCallCount": 1726,
       "messageCount": 4917
     },
     {
       "date": "2026-01-12",
-      "userPrompts": 136,
+      "userPrompts": 34,
       "sessionCount": 11,
       "toolCallCount": 801,
       "messageCount": 2358
@@ -261,28 +254,35 @@
       "sessionCount": 1,
       "toolCallCount": 57,
       "messageCount": 277
+    },
+    {
+      "date": "2026-02-11",
+      "userPrompts": 96,
+      "sessionCount": 1,
+      "toolCallCount": 27,
+      "messageCount": 86
     }
   ],
   "hourCounts": {
-    "13": 233,
-    "14": 257,
-    "15": 143,
-    "16": 225,
-    "17": 258,
-    "18": 206,
-    "6": 256,
-    "7": 361,
-    "8": 319,
+    "13": 232,
+    "14": 239,
+    "15": 133,
+    "16": 193,
+    "17": 215,
+    "18": 191,
+    "6": 221,
+    "7": 345,
+    "8": 329,
     "9": 306,
-    "10": 330,
-    "11": 367,
-    "12": 298,
-    "19": 138,
+    "10": 317,
+    "11": 376,
+    "12": 300,
+    "19": 140,
+    "22": 72,
+    "20": 78,
     "21": 54,
-    "20": 79,
     "4": 47,
-    "5": 93,
-    "22": 61,
+    "5": 87,
     "23": 10
   },
   "longestSession": {
