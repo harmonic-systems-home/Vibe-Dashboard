@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "lastComputedDate": "2026-02-12",
-  "totalUserPrompts": 3885,
-  "totalSessions": 140,
-  "totalMessages": 134244,
+  "lastComputedDate": "2026-02-13",
+  "totalUserPrompts": 3874,
+  "totalSessions": 144,
+  "totalMessages": 143277,
   "firstSessionDate": "2025-12-30T02:38:23.155Z",
   "modelUsage": {
     "claude-opus-4-5-20251101": {
@@ -27,10 +27,10 @@
       "maxOutputTokens": 0
     },
     "claude-opus-4-6": {
-      "inputTokens": 42645,
-      "outputTokens": 27129,
-      "cacheReadInputTokens": 300059151,
-      "cacheCreationInputTokens": 11881690,
+      "inputTokens": 65984,
+      "outputTokens": 54332,
+      "cacheReadInputTokens": 596914334,
+      "cacheCreationInputTokens": 20054363,
       "webSearchRequests": 0,
       "costUSD": 0,
       "contextWindow": 0,
@@ -54,14 +54,14 @@
     },
     {
       "date": "2026-01-12",
-      "userPrompts": 34,
+      "userPrompts": 2,
       "sessionCount": 11,
       "toolCallCount": 801,
       "messageCount": 2358
     },
     {
       "date": "2026-01-13",
-      "userPrompts": 80,
+      "userPrompts": 7,
       "sessionCount": 1,
       "toolCallCount": 222,
       "messageCount": 697
@@ -261,28 +261,35 @@
       "sessionCount": 1,
       "toolCallCount": 27,
       "messageCount": 86
+    },
+    {
+      "date": "2026-02-12",
+      "userPrompts": 94,
+      "sessionCount": 4,
+      "toolCallCount": 1547,
+      "messageCount": 9033
     }
   ],
   "hourCounts": {
-    "13": 232,
-    "14": 239,
-    "15": 133,
-    "16": 193,
-    "17": 215,
-    "18": 191,
-    "6": 221,
+    "13": 234,
+    "14": 265,
+    "15": 136,
+    "16": 183,
+    "17": 208,
+    "18": 199,
+    "6": 202,
     "7": 345,
     "8": 329,
     "9": 306,
-    "10": 317,
-    "11": 376,
-    "12": 300,
-    "19": 140,
-    "22": 72,
-    "20": 78,
+    "10": 325,
+    "11": 390,
+    "12": 304,
+    "19": 150,
+    "22": 74,
+    "20": 74,
     "21": 54,
-    "4": 47,
-    "5": 87,
+    "4": 19,
+    "5": 67,
     "23": 10
   },
   "longestSession": {
