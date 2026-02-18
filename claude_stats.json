@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "lastComputedDate": "2026-02-17",
-  "totalUserPrompts": 4130,
-  "totalSessions": 146,
-  "totalMessages": 144146,
+  "lastComputedDate": "2026-02-18",
+  "totalUserPrompts": 4013,
+  "totalSessions": 147,
+  "totalMessages": 147332,
   "firstSessionDate": "2025-12-30T02:38:23.155Z",
   "modelUsage": {
     "claude-opus-4-5-20251101": {
@@ -27,10 +27,10 @@
       "maxOutputTokens": 0
     },
     "claude-opus-4-6": {
-      "inputTokens": 66347,
-      "outputTokens": 56952,
-      "cacheReadInputTokens": 624815234,
-      "cacheCreationInputTokens": 21899307,
+      "inputTokens": 78017,
+      "outputTokens": 63504,
+      "cacheReadInputTokens": 691729557,
+      "cacheCreationInputTokens": 23545600,
       "webSearchRequests": 0,
       "costUSD": 0,
       "contextWindow": 0,
@@ -51,27 +51,6 @@
       "sessionCount": 9,
       "toolCallCount": 1726,
       "messageCount": 4917
-    },
-    {
-      "date": "2026-01-14",
-      "userPrompts": 51,
-      "sessionCount": 3,
-      "toolCallCount": 459,
-      "messageCount": 1290
-    },
-    {
-      "date": "2026-01-15",
-      "userPrompts": 3,
-      "sessionCount": 0,
-      "toolCallCount": 0,
-      "messageCount": 0
-    },
-    {
-      "date": "2026-01-16",
-      "userPrompts": 132,
-      "sessionCount": 1,
-      "toolCallCount": 611,
-      "messageCount": 3775
     },
     {
       "date": "2026-01-18",
@@ -272,9 +251,9 @@
     {
       "date": "2026-02-15",
       "userPrompts": 72,
-      "sessionCount": 0,
-      "toolCallCount": 0,
-      "messageCount": 0
+      "sessionCount": 1,
+      "toolCallCount": 364,
+      "messageCount": 3186
     },
     {
       "date": "2026-02-16",
@@ -282,29 +261,36 @@
       "sessionCount": 0,
       "toolCallCount": 0,
       "messageCount": 0
+    },
+    {
+      "date": "2026-02-17",
+      "userPrompts": 69,
+      "sessionCount": 0,
+      "toolCallCount": 0,
+      "messageCount": 0
     }
   ],
   "hourCounts": {
-    "13": 246,
-    "14": 265,
-    "15": 139,
-    "16": 219,
-    "17": 227,
-    "18": 217,
-    "6": 212,
-    "7": 357,
-    "8": 362,
-    "9": 325,
-    "10": 336,
-    "11": 394,
-    "12": 316,
+    "13": 230,
+    "14": 247,
+    "15": 136,
+    "16": 221,
+    "17": 220,
+    "18": 229,
+    "6": 221,
+    "7": 329,
+    "8": 331,
+    "9": 310,
+    "10": 318,
+    "11": 395,
+    "12": 301,
     "19": 179,
     "22": 94,
-    "21": 66,
+    "21": 63,
+    "5": 84,
     "20": 79,
-    "4": 19,
-    "5": 68,
-    "23": 10
+    "4": 18,
+    "23": 8
   },
   "longestSession": {
     "sessionId": "0d69771c-a005-40c6-8b90-c8d8408025c7",
