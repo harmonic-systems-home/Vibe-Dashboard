@@ -34,7 +34,7 @@ jobs:
 
       - name: Clone repositories
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           mkdir -p repos
           cd repos
@@ -52,7 +52,7 @@ jobs:
 
       - name: Identify fork repos
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           # Get list of fork repo names
           FORKS=$(gh repo list Rick-Wilson --limit 100 --no-archived --json name,isFork \
