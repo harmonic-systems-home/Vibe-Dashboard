@@ -973,7 +973,11 @@
 
         function renderActivity() {
             const projects = dashboardData.projects || [];
-            document.getElementById('recent-activity').innerHTML = projects.map(p => {
+            document.getElementById('recent-activity').innerHTML = [...projects].sort((a, b) => {
+                const dateA = a.last_commit ? new Date(a.last_commit) : new Date(0);
+                const dateB = b.last_commit ? new Date(b.last_commit) : new Date(0);
+                return dateB - dateA;
+            }).map(p => {
                 const lastCommit = p.last_commit ? new Date(p.last_commit) : null;
                 const timeAgo = lastCommit ? formatTimeAgo(lastCommit) : 'Unknown';
                 return `
