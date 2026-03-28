@@ -885,6 +885,7 @@ def main():
     parser.add_argument("--owner", help="Only include repos owned by this GitHub user (used with --local)")
     parser.add_argument("--exclude", help="Comma-separated list of repo names to exclude (used with --local)")
     parser.add_argument("--fork-repos", help="Comma-separated list of repo names that are forks (LOC excluded but included in other metrics)")
+    parser.add_argument("--exclude-lang", nargs="+", help="Exclude languages from specific repos (format: repo:language, e.g. my-repo:C#)")
     parser.add_argument("--clone", action="store_true", help="Clone repos for accurate LOC counting")
     parser.add_argument("--output", default=CONFIG["output_file"], help="Output JSON file")
     parser.add_argument("--token", help="GitHub token (or set GITHUB_TOKEN env var)")
@@ -906,6 +907,14 @@ def main():
             print(f"📝 Filtering commits by author: {args.author}")
         if args.owner:
             print(f"📁 Filtering repos by owner: {args.owner}")
+        exclude_lang = {}
+        if args.exclude_lang:
+            for entry in args.exclude_lang:
+                repo, lang = entry.split(":", 1)
+                exclude_lang.setdefault(repo.strip().lower(), set()).add(lang.strip())
+            for repo, langs in exclude_lang.items():
+                print(f"🚫 Excluding languages from {repo}: {', '.join(langs)}")
+
         fork_repos = set()
         if args.fork_repos:
             fork_repos = {x.strip().lower() for x in args.fork_repos.split(",") if x.strip()}
@@ -939,6 +948,15 @@ def main():
                 is_fork = repo_path.name.lower() in fork_repos
                 project = fetch_local_project_data(scanner, repo_path, skip_loc=is_fork)
                 project["is_fork"] = is_fork
+
+                # Exclude specific languages from LOC
+                repo_excluded_langs = exclude_lang.get(repo_path.name.lower(), set())
+                if repo_excluded_langs and project.get("loc"):
+                    for lang in list(project["loc"].keys()):
+                        if lang in repo_excluded_langs:
+                            del project["loc"][lang]
+                    if project["loc"]:
+                        project["language"] = max(project["loc"].keys(), key=lambda k: project["loc"][k])
 
                 # Apply manual configuration
                 if project["full_name"] in project_config:
