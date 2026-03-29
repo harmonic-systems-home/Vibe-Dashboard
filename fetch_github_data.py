@@ -386,7 +386,7 @@ class LocalRepoScanner:
         return ""
 
 
-def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_loc: bool = False) -> dict:
+def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_loc: bool = False, exclude_dirs: list = None) -> dict:
     """Fetch all data for a single local project."""
     fork_indicator = " (fork)" if skip_loc else ""
     print(f"\n📊 Processing {repo_path.name}{fork_indicator}...")
@@ -399,7 +399,7 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_lo
         loc = {}
         print(f"   ⏭️  Skipping LOC count (fork)")
     else:
-        loc = count_lines_of_code(str(repo_path), CONFIG["loc_tool"])
+        loc = count_lines_of_code(str(repo_path), CONFIG["loc_tool"], exclude_dirs=exclude_dirs)
 
     # Commits (last 90 days)
     since = datetime.now() - timedelta(days=90)
@@ -452,28 +452,36 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_lo
     return project
 
 
-def count_lines_of_code(repo_path: str, tool: str = "scc") -> dict:
+def count_lines_of_code(repo_path: str, tool: str = "scc", exclude_dirs: list = None) -> dict:
     """
     Count lines of code using scc, tokei, or cloc.
     Returns a dict of {language: lines}.
     """
     if not tool:
         return {}
-    
+
     try:
         if tool == "scc":
+            cmd = ["scc", "--format", "json"]
+            if exclude_dirs:
+                for d in exclude_dirs:
+                    cmd.extend(["--exclude-dir", d])
+            cmd.append(repo_path)
             result = subprocess.run(
-                ["scc", "--format", "json", repo_path],
-                capture_output=True, text=True, timeout=120
+                cmd, capture_output=True, text=True, timeout=120
             )
             if result.returncode == 0:
                 data = json.loads(result.stdout)
                 return {item["Name"]: item["Code"] for item in data if item.get("Code", 0) > 0}
-        
+
         elif tool == "tokei":
+            cmd = ["tokei", "--output", "json"]
+            if exclude_dirs:
+                for d in exclude_dirs:
+                    cmd.extend(["--exclude", d])
+            cmd.append(repo_path)
             result = subprocess.run(
-                ["tokei", "--output", "json", repo_path],
-                capture_output=True, text=True, timeout=120
+                cmd, capture_output=True, text=True, timeout=120
             )
             if result.returncode == 0:
                 data = json.loads(result.stdout)
@@ -886,6 +894,7 @@ def main():
     parser.add_argument("--exclude", help="Comma-separated list of repo names to exclude (used with --local)")
     parser.add_argument("--fork-repos", help="Comma-separated list of repo names that are forks (LOC excluded but included in other metrics)")
     parser.add_argument("--exclude-lang", nargs="+", help="Exclude languages from specific repos (format: repo:language, e.g. my-repo:C#)")
+    parser.add_argument("--exclude-dir", nargs="+", help="Exclude directories from LOC counting for specific repos (format: repo:path, e.g. my-repo:vendor/)")
     parser.add_argument("--clone", action="store_true", help="Clone repos for accurate LOC counting")
     parser.add_argument("--output", default=CONFIG["output_file"], help="Output JSON file")
     parser.add_argument("--token", help="GitHub token (or set GITHUB_TOKEN env var)")
@@ -914,6 +923,14 @@ def main():
                 exclude_lang.setdefault(repo.strip().lower(), set()).add(lang.strip())
             for repo, langs in exclude_lang.items():
                 print(f"🚫 Excluding languages from {repo}: {', '.join(langs)}")
+
+        exclude_dirs = {}
+        if args.exclude_dir:
+            for entry in args.exclude_dir:
+                repo, path = entry.split(":", 1)
+                exclude_dirs.setdefault(repo.strip().lower(), []).append(path.strip())
+            for repo, dirs in exclude_dirs.items():
+                print(f"📁 Excluding dirs from {repo}: {', '.join(dirs)}")
 
         fork_repos = set()
         if args.fork_repos:
@@ -946,7 +963,8 @@ def main():
         for repo_path in repos:
             try:
                 is_fork = repo_path.name.lower() in fork_repos
-                project = fetch_local_project_data(scanner, repo_path, skip_loc=is_fork)
+                repo_exclude_dirs = exclude_dirs.get(repo_path.name.lower(), None)
+                project = fetch_local_project_data(scanner, repo_path, skip_loc=is_fork, exclude_dirs=repo_exclude_dirs)
                 project["is_fork"] = is_fork
 
                 # Exclude specific languages from LOC
