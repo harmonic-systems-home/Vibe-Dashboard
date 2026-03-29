@@ -478,7 +478,9 @@ def count_lines_of_code(repo_path: str, tool: str = "scc", exclude_dirs: list = 
             cmd = ["tokei", "--output", "json"]
             if exclude_dirs:
                 for d in exclude_dirs:
-                    cmd.extend(["--exclude", d])
+                    # tokei --exclude expects glob patterns
+                    d = d.strip("/")
+                    cmd.extend(["--exclude", f"**/{d}/**"])
             cmd.append(repo_path)
             result = subprocess.run(
                 cmd, capture_output=True, text=True, timeout=120
