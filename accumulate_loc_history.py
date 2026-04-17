@@ -42,12 +42,17 @@ def run_git(repo_path: Path, args: list) -> str:
     return result.stdout.strip()
 
 
-def run_tokei(repo_path: Path) -> dict:
+def run_tokei(repo_path: Path, exclude_dirs: list = None) -> dict:
     """Run tokei and return {language: lines} dict."""
     try:
+        cmd = ["tokei", "--output", "json"]
+        if exclude_dirs:
+            for d in exclude_dirs:
+                d = d.strip("/")
+                cmd.extend(["--exclude", f"**/{d}/**"])
+        cmd.append(str(repo_path))
         result = subprocess.run(
-            ["tokei", "--output", "json", str(repo_path)],
-            capture_output=True, text=True, timeout=120
+            cmd, capture_output=True, text=True, timeout=120
         )
         if result.returncode == 0:
             data = json.loads(result.stdout)
@@ -106,7 +111,7 @@ def get_or_create_temp_clone(repo_path: Path, temp_base: Path) -> Path:
     return temp_clone
 
 
-def measure_loc_at_commit(repo_path: Path, commit: str, temp_base: Path) -> dict:
+def measure_loc_at_commit(repo_path: Path, commit: str, temp_base: Path, exclude_dirs: list = None) -> dict:
     """Checkout a commit in a temp clone and measure LOC. Original repo is untouched."""
     if not commit:
         return {}
@@ -122,7 +127,7 @@ def measure_loc_at_commit(repo_path: Path, commit: str, temp_base: Path) -> dict
         )
 
         # Measure LOC
-        loc = run_tokei(temp_clone)
+        loc = run_tokei(temp_clone, exclude_dirs=exclude_dirs)
         return loc
     except subprocess.CalledProcessError:
         return {}
@@ -152,8 +157,12 @@ def discover_repos(base_path: Path) -> list:
     return sorted(repos, key=lambda x: x.name.lower())
 
 
-def accumulate_loc_history(base_path: Path, start_date: datetime, end_date: datetime, history_file: Path):
-    """Accumulate LOC history for all repos in base_path."""
+def accumulate_loc_history(base_path: Path, start_date: datetime, end_date: datetime, history_file: Path, exclude_dirs: dict = None):
+    """Accumulate LOC history for all repos in base_path.
+
+    exclude_dirs: {repo_name_lower: [dir_path, ...]} to pass per-repo exclude patterns to tokei.
+    """
+    exclude_dirs = exclude_dirs or {}
     history = load_history(history_file)
     repos = discover_repos(base_path)
 
@@ -207,7 +216,8 @@ def accumulate_loc_history(base_path: Path, start_date: datetime, end_date: date
                     continue
 
                 # Measure LOC at this commit (using temp clone)
-                loc = measure_loc_at_commit(repo_path, commit, temp_base)
+                repo_excludes = exclude_dirs.get(repo_name.lower())
+                loc = measure_loc_at_commit(repo_path, commit, temp_base, exclude_dirs=repo_excludes)
                 total = sum(loc.values())
 
                 repo_history["measurements"][date_str] = {
@@ -237,8 +247,15 @@ def main():
     parser.add_argument("--start", help="Start date (YYYY-MM-DD)")
     parser.add_argument("--end", help="End date (YYYY-MM-DD)")
     parser.add_argument("--output", default=LOC_HISTORY_FILE, help="Output file for LOC history")
+    parser.add_argument("--exclude-dir", nargs="+", help="Exclude directories from LOC for specific repos (format: repo:path)")
 
     args = parser.parse_args()
+
+    exclude_dirs = {}
+    if args.exclude_dir:
+        for entry in args.exclude_dir:
+            repo, path = entry.split(":", 1)
+            exclude_dirs.setdefault(repo.strip().lower(), []).append(path.strip())
 
     base_path = Path(args.path).expanduser().resolve()
     if not base_path.exists():
@@ -257,7 +274,7 @@ def main():
 
     history_file = Path(args.output)
 
-    accumulate_loc_history(base_path, start_date, end_date, history_file)
+    accumulate_loc_history(base_path, start_date, end_date, history_file, exclude_dirs=exclude_dirs)
     return 0
 
 

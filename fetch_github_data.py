@@ -729,13 +729,24 @@ def aggregate_commit_history(projects: list) -> list:
     return sorted(combined.values(), key=lambda x: x["date"])
 
 
-def generate_loc_history(projects: list, loc_history_file: str = "loc_history.json") -> dict:
+def generate_loc_history(projects: list, loc_history_file: str = "loc_history.json", exclude_lang: dict = None) -> dict:
     """
     Generate LOC growth history from accumulated measurements in loc_history.json.
     Falls back to current LOC if no history file exists.
     Returns both aggregated history and per-repo breakdown.
     Excludes forks from LOC calculations.
+    Applies exclude_lang filters retroactively to historical measurements.
     """
+    exclude_lang = exclude_lang or {}
+
+    def filtered_total(measurement: dict, repo_name: str) -> int:
+        """Recompute a measurement's total after applying language excludes for this repo."""
+        excluded = exclude_lang.get(repo_name.lower(), set())
+        langs = measurement.get("languages") or {}
+        if excluded and langs:
+            return sum(v for lang, v in langs.items() if lang not in excluded)
+        return measurement.get("total", 0)
+
     non_fork_projects = [p for p in projects if not p.get("is_fork", False)]
     total_loc = sum(sum(p.get("loc", {}).values()) for p in non_fork_projects)
     today = datetime.now()
@@ -787,11 +798,11 @@ def generate_loc_history(projects: list, loc_history_file: str = "loc_history.js
                         if measurement_date <= month_start + timedelta(days=31):
                             if measurement_date.year == month_start.year and measurement_date.month == month_start.month:
                                 # Exact month match - use this
-                                best_value = data.get("total", 0)
+                                best_value = filtered_total(data, repo_name)
                                 best_date = measurement_date
                             elif best_date is None or measurement_date > best_date:
                                 if measurement_date <= month_start:
-                                    best_value = data.get("total", 0)
+                                    best_value = filtered_total(data, repo_name)
                                     best_date = measurement_date
                     except ValueError:
                         continue
@@ -906,6 +917,12 @@ def main():
     project_config = load_project_config()
     projects = []
 
+    exclude_lang = {}
+    if args.exclude_lang:
+        for entry in args.exclude_lang:
+            repo, lang = entry.split(":", 1)
+            exclude_lang.setdefault(repo.strip().lower(), set()).add(lang.strip())
+
     if args.local:
         # Local mode - scan local repositories
         local_path = args.path or os.path.dirname(os.getcwd())
@@ -918,13 +935,8 @@ def main():
             print(f"📝 Filtering commits by author: {args.author}")
         if args.owner:
             print(f"📁 Filtering repos by owner: {args.owner}")
-        exclude_lang = {}
-        if args.exclude_lang:
-            for entry in args.exclude_lang:
-                repo, lang = entry.split(":", 1)
-                exclude_lang.setdefault(repo.strip().lower(), set()).add(lang.strip())
-            for repo, langs in exclude_lang.items():
-                print(f"🚫 Excluding languages from {repo}: {', '.join(langs)}")
+        for repo, langs in exclude_lang.items():
+            print(f"🚫 Excluding languages from {repo}: {', '.join(langs)}")
 
         exclude_dirs = {}
         if args.exclude_dir:
@@ -1075,7 +1087,7 @@ def main():
     week_trend = this_week - last_week
     
     # Generate LOC history
-    loc_history = generate_loc_history(projects)
+    loc_history = generate_loc_history(projects, exclude_lang=exclude_lang)
     
     # Language breakdown (exclude forks)
     language_totals = {}

@@ -66,6 +66,7 @@ jobs:
           python accumulate_loc_history.py \
             --path ./repos \
             --days 1 \
+            --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" \
             --output loc_history.json
 
       - name: Generate dashboard data
