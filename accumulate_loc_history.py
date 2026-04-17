@@ -97,10 +97,15 @@ def get_or_create_temp_clone(repo_path: Path, temp_base: Path) -> Path:
 
     if not temp_clone.exists():
         # Clone with --shared to save disk space (uses original repo's objects)
-        subprocess.run(
+        result = subprocess.run(
             ["git", "clone", "--shared", "--quiet", str(repo_path), str(temp_clone)],
-            capture_output=True, check=True
+            capture_output=True, text=True
         )
+        if result.returncode != 0:
+            print(f"   ❌ git clone failed for {repo_path.name} (exit {result.returncode}):")
+            print(f"      stderr: {result.stderr.strip()}")
+            print(f"      stdout: {result.stdout.strip()}")
+            result.check_returncode()
     else:
         # Fetch latest from original repo
         subprocess.run(
