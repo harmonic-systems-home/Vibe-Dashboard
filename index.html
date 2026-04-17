@@ -113,6 +113,10 @@
                     </div>
                     <canvas id="growthChart" height="80"></canvas>
                 </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Monthly SLOC Additions by Repo</h3>
+                    <canvas id="additionsChart" height="80"></canvas>
+                </div>
                 <div>
                     <h3 class="text-sm font-medium text-slate-400 mb-4">Project Progress</h3>
                     <div class="grid grid-cols-2 gap-4" id="project-cards"></div>
@@ -818,6 +822,47 @@
                         datasets: [{ label: 'LOC', data: filteredLocHist.map(d => d.loc), borderColor: '#8b5cf6', backgroundColor: 'rgba(139, 92, 246, 0.1)', fill: true, tension: 0.4 }]
                     },
                     options: { responsive: true, plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#475569' } }, y: { ticks: { color: '#475569', callback: v => (v/1000).toFixed(0) + 'k' } } } }
+                });
+            }
+
+            // Monthly SLOC Additions - Stacked bar, additions only (decreases clamped to 0)
+            if (locByRepo && locByRepo.repos && locByRepo.repos.length > 0) {
+                const additionsDatasets = locByRepo.repos.map((repo, idx) => ({
+                    label: repo.name,
+                    data: repo.data.map((v, i) => i === 0 ? 0 : Math.max(0, v - repo.data[i - 1])),
+                    backgroundColor: REPO_COLORS[idx % REPO_COLORS.length] + 'c0',
+                    borderColor: REPO_COLORS[idx % REPO_COLORS.length],
+                    borderWidth: 1
+                })).filter(ds => ds.data.some(v => v > 0));
+
+                charts.additions = new Chart(document.getElementById('additionsChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: locByRepo.months,
+                        datasets: additionsDatasets
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: currentFilters.repo === 'all',
+                                position: 'bottom',
+                                labels: { color: '#94a3b8', font: { size: 9 }, boxWidth: 12 }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: (item) => `${item.dataset.label}: +${item.parsed.y.toLocaleString()}`
+                                }
+                            }
+                        },
+                        scales: {
+                            x: { stacked: true, ticks: { color: '#475569' } },
+                            y: {
+                                stacked: true,
+                                ticks: { color: '#475569', callback: v => (v/1000).toFixed(1) + 'k' }
+                            }
+                        }
+                    }
                 });
             }
         }
