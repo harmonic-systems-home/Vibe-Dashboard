@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-06-13T13:32:16.133629+00:00",
+  "generated_at": "2026-06-14T13:34:25.924707+00:00",
   "stats": {
-    "total_loc": 121513,
-    "total_commits": 1602,
+    "total_loc": 123822,
+    "total_commits": 1617,
     "avg_progress": 56,
-    "this_week_commits": 54,
+    "this_week_commits": 69,
     "last_week_commits": 9,
-    "week_trend": 45,
+    "week_trend": 60,
     "project_count": 41,
     "fork_count": 9
   },
   "languages": {
     "Shell": 3400,
     "CSS": 1249,
-    "JavaScript": 29810,
+    "JavaScript": 29850,
     "Swift": 2875,
     "INI": 78,
     "PowerShell": 650,
-    "Python": 11909,
+    "Python": 13945,
     "C": 119,
     "MSBuild": 144,
     "Visual Studio Solution": 31,
     "C Header": 89,
     "C#": 881,
     "YAML": 255,
-    "Rust": 65351,
+    "Rust": 65584,
     "SQL": 124,
     "TOML": 427,
     "TypeScript": 1336,
@@ -35,12 +35,6 @@
     "Pest": 132
   },
   "commit_history": [
-    {
-      "date": "2026-03-15",
-      "commits": 1,
-      "additions": 0,
-      "deletions": 0
-    },
     {
       "date": "2026-03-16",
       "commits": 1,
@@ -574,6 +568,12 @@
       "commits": 10,
       "additions": 0,
       "deletions": 0
+    },
+    {
+      "date": "2026-06-13",
+      "commits": 15,
+      "additions": 0,
+      "deletions": 0
     }
   ],
   "loc_history": [
@@ -623,7 +623,7 @@
     },
     {
       "month": "Jun",
-      "loc": 121513
+      "loc": 123822
     }
   ],
   "loc_history_by_repo": {
@@ -895,24 +895,6 @@
         "created_at": "2026-03-20T11:35:41-07:00"
       },
       {
-        "name": "Bridge-Attendance",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          2597,
-          2597,
-          2589,
-          2589,
-          2589
-        ],
-        "created_at": "2026-04-06T13:21:43-07:00"
-      },
-      {
         "name": "bridge-types",
         "data": [
           0,
@@ -1057,24 +1039,6 @@
         "created_at": "2026-05-18T10:16:21-07:00"
       },
       {
-        "name": "Baker-Bridge",
-        "data": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          8851,
-          8949,
-          9051,
-          9154,
-          9154
-        ],
-        "created_at": "2026-05-26T16:03:51-07:00"
-      },
-      {
         "name": "Better-BBO-Convention-Card",
         "data": [
           0,
@@ -1165,7 +1129,7 @@
         "created_at": "2026-06-12T12:19:44-07:00"
       },
       {
-        "name": "Vibe-Dashboard",
+        "name": "Baker-Bridge",
         "data": [
           0,
           0,
@@ -1173,14 +1137,14 @@
           0,
           0,
           0,
-          972,
-          1168,
-          1201,
-          1262,
-          1262,
-          1262
+          0,
+          8851,
+          8949,
+          9051,
+          9154,
+          9154
         ],
-        "created_at": "2026-06-12T14:40:59Z"
+        "created_at": "2026-06-13T06:52:16-07:00"
       },
       {
         "name": "bridge-wrangler",
@@ -1198,7 +1162,43 @@
           1814,
           1814
         ],
-        "created_at": "2026-06-12T14:45:13Z"
+        "created_at": "2026-06-13T07:01:07-07:00"
+      },
+      {
+        "name": "Vibe-Dashboard",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          972,
+          1168,
+          1201,
+          1262,
+          1262,
+          1262
+        ],
+        "created_at": "2026-06-13T13:32:16Z"
+      },
+      {
+        "name": "Bridge-Attendance",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2597,
+          2597,
+          2589,
+          2589,
+          4415
+        ],
+        "created_at": "2026-06-13T16:57:44-07:00"
       },
       {
         "name": "Bridge-Classroom",
@@ -1214,15 +1214,15 @@
           16144,
           16266,
           23723,
-          23725
+          24208
         ],
-        "created_at": "2026-06-12T16:22:45-07:00"
+        "created_at": "2026-06-13T20:15:28-07:00"
       }
     ]
   },
   "projects": [
     {
-      "id": 2812779715,
+      "id": 3589372695,
       "name": "ABS-Lessons",
       "full_name": "Rick-Wilson/ABS-Lessons",
       "description": "ABS-Lessons",
@@ -1240,12 +1240,6 @@
       "updated_at": "2026-05-07T11:16:14-07:00",
       "url": "https://github.com/Rick-Wilson/ABS-Lessons",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -1779,66 +1773,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 1,
           "deletions": 1
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 6,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -1936,7 +1936,7 @@
       "is_fork": false
     },
     {
-      "id": 384532949,
+      "id": 1378670217,
       "name": "acbl-live-fetch",
       "full_name": "Rick-Wilson/acbl-live-fetch",
       "description": "ACBL Live Fetch",
@@ -1956,12 +1956,6 @@
       "updated_at": "2026-06-01T16:50:12-07:00",
       "url": "https://github.com/Rick-Wilson/acbl-live-fetch",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -2495,66 +2489,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 17783,
           "deletions": 1292
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 2699,
           "deletions": 103
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 215,
           "deletions": 55
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 838,
           "deletions": 15
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -2652,7 +2652,7 @@
       "is_fork": false
     },
     {
-      "id": 1094858727,
+      "id": 3260389736,
       "name": "acbl-proxy",
       "full_name": "Rick-Wilson/acbl-proxy",
       "description": "acbl-proxy",
@@ -2670,12 +2670,6 @@
       "updated_at": "2026-03-11T13:24:57-07:00",
       "url": "https://github.com/Rick-Wilson/acbl-proxy",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -3209,66 +3203,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -3366,7 +3366,7 @@
       "is_fork": false
     },
     {
-      "id": 814437826,
+      "id": 734569308,
       "name": "Baker-Bridge",
       "full_name": "Rick-Wilson/Baker-Bridge",
       "description": "Baker Bridge",
@@ -3381,19 +3381,13 @@
         "Python": 6670,
         "Shell": 1172
       },
-      "commits": 53,
-      "recent_commits": 4,
-      "last_commit": "2026-05-26T16:03:51-07:00",
-      "created_at": "2026-05-26T16:03:51-07:00",
-      "updated_at": "2026-05-26T16:03:51-07:00",
+      "commits": 54,
+      "recent_commits": 5,
+      "last_commit": "2026-06-13T06:52:16-07:00",
+      "created_at": "2026-06-13T06:52:16-07:00",
+      "updated_at": "2026-06-13T06:52:16-07:00",
       "url": "https://github.com/Rick-Wilson/Baker-Bridge",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -3927,68 +3921,74 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 1,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 1599,
           "deletions": 1553
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 410,
           "deletions": 271
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
-          "additions": 0,
-          "deletions": 0
+          "date": "2026-06-07",
+          "additions": 106,
+          "deletions": 106
         }
       ],
       "monthly_loc_changes": [
@@ -4072,8 +4072,8 @@
         {
           "month": "Jun 2026",
           "month_short": "Jun",
-          "additions": 0,
-          "deletions": 0,
+          "additions": 106,
+          "deletions": 106,
           "net": 0
         }
       ],
@@ -4084,7 +4084,7 @@
       "is_fork": false
     },
     {
-      "id": 24227896,
+      "id": 2953244678,
       "name": "bba-mac-private",
       "full_name": "Rick-Wilson/bba-mac-private",
       "description": "EPBotWrapper \u2014 Native macOS Bridge Bidding Engine",
@@ -4106,12 +4106,6 @@
       "updated_at": "2026-02-13T12:16:08-08:00",
       "url": "https://github.com/Rick-Wilson/bba-mac-private",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -4645,66 +4639,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -4802,7 +4802,7 @@
       "is_fork": false
     },
     {
-      "id": 1334484562,
+      "id": 2849579543,
       "name": "bba-native-libraries",
       "full_name": "Rick-Wilson/bba-native-libraries",
       "description": "BBA Native Libraries",
@@ -4823,12 +4823,6 @@
       "updated_at": "2026-03-08T12:23:01-07:00",
       "url": "https://github.com/Rick-Wilson/bba-native-libraries",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -5362,66 +5356,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -5526,7 +5526,7 @@
       "is_fork": false
     },
     {
-      "id": 3808825559,
+      "id": 261476905,
       "name": "BBA-Tools",
       "full_name": "Rick-Wilson/BBA-Tools",
       "description": "BBA-Tools",
@@ -5542,12 +5542,6 @@
       "updated_at": "2026-05-04T15:57:54-07:00",
       "url": "https://github.com/Rick-Wilson/BBA-Tools",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -6081,66 +6075,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 1973,
           "deletions": 1149
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 27,
           "deletions": 7
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 16,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 16,
           "deletions": 5
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
-          "additions": 6,
-          "deletions": 1
+          "date": "2026-04-26",
+          "additions": 180,
+          "deletions": 35
         },
         {
-          "date": "2026-05-02",
-          "additions": 51697,
-          "deletions": 37882
+          "date": "2026-05-03",
+          "additions": 51523,
+          "deletions": 37848
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -6299,7 +6299,7 @@
       "is_fork": true
     },
     {
-      "id": 2475833610,
+      "id": 3670080475,
       "name": "bbo-pbs",
       "full_name": "Rick-Wilson/bbo-pbs",
       "description": "BBOalert",
@@ -6315,12 +6315,6 @@
       "updated_at": "2026-05-13T08:20:56-07:00",
       "url": "https://github.com/Rick-Wilson/bbo-pbs",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -6854,66 +6848,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 59,
           "deletions": 39
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 57,
           "deletions": 1
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -7018,7 +7018,7 @@
       "is_fork": true
     },
     {
-      "id": 3843759168,
+      "id": 132462800,
       "name": "ben",
       "full_name": "Rick-Wilson/ben",
       "description": "Bridge Engine",
@@ -7034,12 +7034,6 @@
       "updated_at": "2026-04-06T11:37:18+02:00",
       "url": "https://github.com/Rick-Wilson/ben",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -7573,66 +7567,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -7791,7 +7791,7 @@
       "is_fork": true
     },
     {
-      "id": 4007545851,
+      "id": 430828123,
       "name": "ben-service",
       "full_name": "Rick-Wilson/ben-service",
       "description": "Repository: ben-service",
@@ -7809,12 +7809,6 @@
       "updated_at": "2026-05-18T10:16:21-07:00",
       "url": "https://github.com/Rick-Wilson/ben-service",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -8348,66 +8342,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
-          "additions": 0,
+          "date": "2026-04-26",
+          "additions": 254,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
-          "additions": 644,
+          "date": "2026-05-03",
+          "additions": 390,
           "deletions": 29
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 143,
           "deletions": 39
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 101,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -8505,7 +8505,7 @@
       "is_fork": false
     },
     {
-      "id": 3757227179,
+      "id": 125038773,
       "name": "Better-BBO-Convention-Card",
       "full_name": "Rick-Wilson/Better-BBO-Convention-Card",
       "description": "Repository: Better-BBO-Convention-Card",
@@ -8521,12 +8521,6 @@
       "updated_at": "2026-05-28T10:37:48-07:00",
       "url": "https://github.com/Rick-Wilson/Better-BBO-Convention-Card",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -9060,66 +9054,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 24,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -9217,34 +9217,29 @@
       "is_fork": false
     },
     {
-      "id": 415581784,
+      "id": 3166767036,
       "name": "Bridge-Attendance",
       "full_name": "Rick-Wilson/Bridge-Attendance",
       "description": "Bridge Class Attendance System",
-      "language": "TypeScript",
+      "language": "Python",
       "stars": 0,
       "forks": 0,
       "open_issues": 0,
       "loc": {
+        "Python": 1826,
         "Rust": 927,
         "SQL": 68,
         "Shell": 224,
         "TOML": 34,
         "TypeScript": 1336
       },
-      "commits": 11,
-      "recent_commits": 1,
-      "last_commit": "2026-04-06T13:21:43-07:00",
-      "created_at": "2026-04-06T13:21:43-07:00",
-      "updated_at": "2026-04-06T13:21:43-07:00",
+      "commits": 13,
+      "recent_commits": 3,
+      "last_commit": "2026-06-13T16:57:44-07:00",
+      "created_at": "2026-06-13T16:57:44-07:00",
+      "updated_at": "2026-06-13T16:57:44-07:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Attendance",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -9778,68 +9773,74 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 2,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 223,
           "deletions": 61
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
-          "additions": 0,
-          "deletions": 0
+          "date": "2026-06-07",
+          "additions": 2754,
+          "deletions": 83
         }
       ],
       "monthly_loc_changes": [
@@ -9923,9 +9924,9 @@
         {
           "month": "Jun 2026",
           "month_short": "Jun",
-          "additions": 0,
-          "deletions": 0,
-          "net": 0
+          "additions": 2754,
+          "deletions": 83,
+          "net": 2671
         }
       ],
       "releases": [],
@@ -9935,7 +9936,7 @@
       "is_fork": false
     },
     {
-      "id": 2516382684,
+      "id": 2118464063,
       "name": "bridge-bots",
       "full_name": "Rick-Wilson/bridge-bots",
       "description": "bridge-bots",
@@ -9951,12 +9952,6 @@
       "updated_at": "2026-01-31T11:30:14-08:00",
       "url": "https://github.com/Rick-Wilson/bridge-bots",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -10490,66 +10485,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -10708,7 +10709,7 @@
       "is_fork": true
     },
     {
-      "id": 3312009532,
+      "id": 3371438416,
       "name": "Bridge-Classroom",
       "full_name": "Rick-Wilson/Bridge-Classroom",
       "description": "Repository: Bridge-Classroom",
@@ -10718,27 +10719,22 @@
       "open_issues": 0,
       "loc": {
         "CSS": 95,
-        "JavaScript": 14065,
-        "Rust": 7752,
+        "JavaScript": 14105,
+        "Python": 210,
+        "Rust": 7985,
         "SQL": 56,
         "Shell": 52,
         "TOML": 28,
         "Vue": 1661,
         "XML": 16
       },
-      "commits": 333,
-      "recent_commits": 110,
-      "last_commit": "2026-06-12T16:22:45-07:00",
-      "created_at": "2026-06-12T16:22:45-07:00",
-      "updated_at": "2026-06-12T16:22:45-07:00",
+      "commits": 344,
+      "recent_commits": 121,
+      "last_commit": "2026-06-13T20:15:28-07:00",
+      "created_at": "2026-06-13T20:15:28-07:00",
+      "updated_at": "2026-06-13T20:15:28-07:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Classroom",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -11272,68 +11268,74 @@
           "commits": 5,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 11,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 54,
           "deletions": 4
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 35,
           "deletions": 5
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 5538,
           "deletions": 972
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 20,
           "deletions": 1
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
-          "additions": 1746,
-          "deletions": 609
+          "date": "2026-04-26",
+          "additions": 3560,
+          "deletions": 1962
         },
         {
-          "date": "2026-05-02",
-          "additions": 2469,
-          "deletions": 1760
+          "date": "2026-05-03",
+          "additions": 655,
+          "deletions": 407
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 2939,
           "deletions": 886
         },
         {
-          "date": "2026-05-16",
-          "additions": 52525,
-          "deletions": 945
+          "date": "2026-05-17",
+          "additions": 53740,
+          "deletions": 1274
         },
         {
-          "date": "2026-05-23",
-          "additions": 1584,
-          "deletions": 486
+          "date": "2026-05-24",
+          "additions": 369,
+          "deletions": 157
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 12,
           "deletions": 2
         },
         {
-          "date": "2026-06-06",
-          "additions": 163,
-          "deletions": 6
+          "date": "2026-06-07",
+          "additions": 1207,
+          "deletions": 289
         }
       ],
       "monthly_loc_changes": [
@@ -11417,9 +11419,9 @@
         {
           "month": "Jun 2026",
           "month_short": "Jun",
-          "additions": 175,
-          "deletions": 8,
-          "net": 167
+          "additions": 1219,
+          "deletions": 291,
+          "net": 928
         }
       ],
       "releases": [],
@@ -11429,7 +11431,7 @@
       "is_fork": false
     },
     {
-      "id": 2312243629,
+      "id": 3488036451,
       "name": "bridge-craftwork-platform",
       "full_name": "Rick-Wilson/bridge-craftwork-platform",
       "description": "bridge-craftwork-platform",
@@ -11452,12 +11454,6 @@
       "updated_at": "2026-05-18T10:16:08-07:00",
       "url": "https://github.com/Rick-Wilson/bridge-craftwork-platform",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -11991,66 +11987,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
-          "additions": 5019,
+          "date": "2026-04-26",
+          "additions": 5074,
           "deletions": 360
         },
         {
-          "date": "2026-05-02",
-          "additions": 312,
+          "date": "2026-05-03",
+          "additions": 257,
           "deletions": 84
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 13,
           "deletions": 23
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 161,
           "deletions": 7
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -12148,7 +12150,7 @@
       "is_fork": false
     },
     {
-      "id": 3512916372,
+      "id": 2520717513,
       "name": "Bridge-Dealer-Scripts",
       "full_name": "Rick-Wilson/Bridge-Dealer-Scripts",
       "description": "Bridge-Dealer-Scripts",
@@ -12166,12 +12168,6 @@
       "updated_at": "2024-03-04T08:36:15-08:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Dealer-Scripts",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -12705,66 +12701,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -12862,7 +12864,7 @@
       "is_fork": false
     },
     {
-      "id": 1520607277,
+      "id": 226010447,
       "name": "Bridge-Dealer-Service",
       "full_name": "Rick-Wilson/Bridge-Dealer-Service",
       "description": "bridge-dealer-service",
@@ -12882,12 +12884,6 @@
       "updated_at": "2026-04-30T10:56:57-07:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Dealer-Service",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -13421,66 +13417,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 1861,
           "deletions": 10
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -13578,7 +13580,7 @@
       "is_fork": false
     },
     {
-      "id": 1503706167,
+      "id": 3639281055,
       "name": "bridge-encodings",
       "full_name": "Rick-Wilson/bridge-encodings",
       "description": "bridge-encodings",
@@ -13597,12 +13599,6 @@
       "updated_at": "2026-02-15T08:46:25-08:00",
       "url": "https://github.com/Rick-Wilson/bridge-encodings",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -14136,66 +14132,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -14293,7 +14295,7 @@
       "is_fork": false
     },
     {
-      "id": 1374195629,
+      "id": 3539528821,
       "name": "Bridge-Event-Parser-Service",
       "full_name": "Rick-Wilson/Bridge-Event-Parser-Service",
       "description": "Repository: Bridge-Event-Parser-Service",
@@ -14313,12 +14315,6 @@
       "updated_at": "2026-05-01T14:24:42-07:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Event-Parser-Service",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -14852,66 +14848,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 44392,
           "deletions": 39124
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -15009,7 +15011,7 @@
       "is_fork": false
     },
     {
-      "id": 3050086733,
+      "id": 389640082,
       "name": "Bridge-Game-Analysis",
       "full_name": "Rick-Wilson/Bridge-Game-Analysis",
       "description": "Repository: Bridge-Game-Analysis",
@@ -15027,12 +15029,6 @@
       "updated_at": "2026-06-04T18:11:50-07:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Game-Analysis",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -15566,66 +15562,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 240,
           "deletions": 156
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 3798,
           "deletions": 775
         },
         {
-          "date": "2026-04-11",
-          "additions": 528,
-          "deletions": 148
+          "date": "2026-04-12",
+          "additions": 791,
+          "deletions": 183
         },
         {
-          "date": "2026-04-18",
-          "additions": 285,
-          "deletions": 42
+          "date": "2026-04-19",
+          "additions": 22,
+          "deletions": 7
         },
         {
-          "date": "2026-04-25",
-          "additions": 7247,
-          "deletions": 13940
+          "date": "2026-04-26",
+          "additions": 7401,
+          "deletions": 13988
         },
         {
-          "date": "2026-05-02",
-          "additions": 415,
-          "deletions": 96
+          "date": "2026-05-03",
+          "additions": 261,
+          "deletions": 48
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 302,
           "deletions": 9
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 179,
           "deletions": 76
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -15723,7 +15725,7 @@
       "is_fork": false
     },
     {
-      "id": 2078165703,
+      "id": 2101871385,
       "name": "Bridge-Lessons-Advanced",
       "full_name": "Rick-Wilson/Bridge-Lessons-Advanced",
       "description": "Repository: Bridge-Lessons-Advanced",
@@ -15739,12 +15741,6 @@
       "updated_at": "2026-02-23T07:13:02-08:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Lessons-Advanced",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -16278,66 +16274,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -16435,7 +16437,7 @@
       "is_fork": false
     },
     {
-      "id": 1003231272,
+      "id": 3967249827,
       "name": "Bridge-Lessons-by-Andrew-Rowberg",
       "full_name": "Rick-Wilson/Bridge-Lessons-by-Andrew-Rowberg",
       "description": "Repository: Bridge-Lessons-by-Andrew-Rowberg",
@@ -16453,12 +16455,6 @@
       "updated_at": "2026-02-13T20:08:22-08:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Lessons-by-Andrew-Rowberg",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -16992,66 +16988,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -17149,7 +17151,7 @@
       "is_fork": false
     },
     {
-      "id": 3084427431,
+      "id": 1680407802,
       "name": "Bridge-Lessons-by-Grant-Robinson",
       "full_name": "Rick-Wilson/Bridge-Lessons-by-Grant-Robinson",
       "description": "Repository: Bridge-Lessons-by-Grant-Robinson",
@@ -17169,12 +17171,6 @@
       "updated_at": "2026-03-02T15:51:24-08:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Lessons-by-Grant-Robinson",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -17708,66 +17704,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -17865,7 +17867,7 @@
       "is_fork": false
     },
     {
-      "id": 589810153,
+      "id": 2084993663,
       "name": "Bridge-OCR",
       "full_name": "Rick-Wilson/Bridge-OCR",
       "description": "Repository: Bridge-OCR",
@@ -17881,12 +17883,6 @@
       "updated_at": "2026-01-31T11:37:39-08:00",
       "url": "https://github.com/Rick-Wilson/Bridge-OCR",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -18420,66 +18416,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -18577,7 +18579,7 @@
       "is_fork": false
     },
     {
-      "id": 1250139668,
+      "id": 3447692946,
       "name": "Bridge-Offline-Practice",
       "full_name": "Rick-Wilson/Bridge-Offline-Practice",
       "description": "Bridge Bidding Practice",
@@ -18596,12 +18598,6 @@
       "updated_at": "2026-01-31T11:30:14-08:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Offline-Practice",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -19135,66 +19131,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -19292,7 +19294,7 @@
       "is_fork": false
     },
     {
-      "id": 959771302,
+      "id": 4090665949,
       "name": "Bridge-Parsers",
       "full_name": "Rick-Wilson/Bridge-Parsers",
       "description": "Bridge-Parsers",
@@ -19311,12 +19313,6 @@
       "updated_at": "2026-04-13T17:32:24-07:00",
       "url": "https://github.com/Rick-Wilson/Bridge-Parsers",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -19850,66 +19846,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 720,
           "deletions": 419
         },
         {
-          "date": "2026-04-04",
-          "additions": 20,
-          "deletions": 0
+          "date": "2026-04-05",
+          "additions": 213,
+          "deletions": 12
         },
         {
-          "date": "2026-04-11",
-          "additions": 208,
-          "deletions": 24
+          "date": "2026-04-12",
+          "additions": 15,
+          "deletions": 12
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -20007,7 +20009,7 @@
       "is_fork": false
     },
     {
-      "id": 208265811,
+      "id": 2656033254,
       "name": "bridge-solver",
       "full_name": "Rick-Wilson/bridge-solver",
       "description": "Repository: bridge-solver",
@@ -20026,12 +20028,6 @@
       "updated_at": "2026-01-31T16:42:20-08:00",
       "url": "https://github.com/Rick-Wilson/bridge-solver",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -20565,66 +20561,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -20729,7 +20731,7 @@
       "is_fork": false
     },
     {
-      "id": 1482357799,
+      "id": 4258589879,
       "name": "bridge-solver-xray",
       "full_name": "Rick-Wilson/bridge-solver-xray",
       "description": "Bridge Solver X-ray",
@@ -20745,12 +20747,6 @@
       "updated_at": "2026-01-31T11:30:15-08:00",
       "url": "https://github.com/Rick-Wilson/bridge-solver-xray",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -21284,66 +21280,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -21441,7 +21443,7 @@
       "is_fork": true
     },
     {
-      "id": 4250089113,
+      "id": 963734549,
       "name": "bridge-types",
       "full_name": "Rick-Wilson/bridge-types",
       "description": "bridge-types",
@@ -21460,12 +21462,6 @@
       "updated_at": "2026-04-11T12:40:18-07:00",
       "url": "https://github.com/Rick-Wilson/bridge-types",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -21999,66 +21995,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
-          "additions": 0,
-          "deletions": 0
-        },
-        {
-          "date": "2026-04-11",
+          "date": "2026-04-05",
           "additions": 49,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-05-31",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -22156,7 +22158,7 @@
       "is_fork": false
     },
     {
-      "id": 1735592067,
+      "id": 748676949,
       "name": "bridge-wrangler",
       "full_name": "Rick-Wilson/bridge-wrangler",
       "description": "bridge-wrangler",
@@ -22169,19 +22171,13 @@
         "Shell": 37,
         "TOML": 14
       },
-      "commits": 32,
-      "recent_commits": 3,
-      "last_commit": "2026-06-12T14:45:13Z",
-      "created_at": "2026-06-12T14:45:13Z",
-      "updated_at": "2026-06-12T14:45:13Z",
+      "commits": 33,
+      "recent_commits": 4,
+      "last_commit": "2026-06-13T07:01:07-07:00",
+      "created_at": "2026-06-13T07:01:07-07:00",
+      "updated_at": "2026-06-13T07:01:07-07:00",
       "url": "https://github.com/Rick-Wilson/bridge-wrangler",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -22715,67 +22711,73 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 1,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 11,
           "deletions": 8
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 26,
           "deletions": 13
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 5,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
-          "additions": 0,
+          "date": "2026-06-07",
+          "additions": 1,
           "deletions": 0
         }
       ],
@@ -22860,12 +22862,18 @@
         {
           "month": "Jun 2026",
           "month_short": "Jun",
-          "additions": 0,
+          "additions": 1,
           "deletions": 0,
-          "net": 0
+          "net": 1
         }
       ],
       "releases": [
+        {
+          "tag": "v0.9.20",
+          "date": "2026-06-13T13:47:58Z",
+          "message": "Release v0.9.20 (dependency update)",
+          "repo": "bridge-wrangler"
+        },
         {
           "tag": "v0.9.19",
           "date": "2026-06-12T14:45:13Z",
@@ -22919,12 +22927,6 @@
           "date": "2026-06-04T14:45:44Z",
           "message": "Release v0.9.11 (dependency update)",
           "repo": "bridge-wrangler"
-        },
-        {
-          "tag": "v0.9.10",
-          "date": "2026-06-03T16:26:46Z",
-          "message": "Release v0.9.10 (dependency update)",
-          "repo": "bridge-wrangler"
         }
       ],
       "progress": 55,
@@ -22933,7 +22935,7 @@
       "is_fork": false
     },
     {
-      "id": 799189221,
+      "id": 984145003,
       "name": "BT-Label-Printing-App",
       "full_name": "Rick-Wilson/BT-Label-Printing-App",
       "description": "BT Label Printing App",
@@ -22951,12 +22953,6 @@
       "updated_at": "2026-06-12T12:19:44-07:00",
       "url": "https://github.com/Rick-Wilson/BT-Label-Printing-App",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -23490,66 +23486,72 @@
           "commits": 5,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 6046,
           "deletions": 1174
         }
@@ -23647,7 +23649,7 @@
       "is_fork": false
     },
     {
-      "id": 2103849712,
+      "id": 1253560938,
       "name": "Dealer-cleanup",
       "full_name": "Rick-Wilson/Dealer-cleanup",
       "description": "Dealer by Hans van Staveren",
@@ -23663,12 +23665,6 @@
       "updated_at": "2026-01-31T11:30:14-08:00",
       "url": "https://github.com/Rick-Wilson/Dealer-cleanup",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -24202,66 +24198,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -24359,7 +24361,7 @@
       "is_fork": true
     },
     {
-      "id": 3404544888,
+      "id": 3274996956,
       "name": "Dealer3",
       "full_name": "Rick-Wilson/Dealer3",
       "description": "dealer3",
@@ -24383,12 +24385,6 @@
       "updated_at": "2026-02-17T07:16:33-08:00",
       "url": "https://github.com/Rick-Wilson/Dealer3",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -24922,66 +24918,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -25110,7 +25112,7 @@
       "is_fork": false
     },
     {
-      "id": 4289293805,
+      "id": 2438467714,
       "name": "EDGAR-Defense-Toolkit",
       "full_name": "Rick-Wilson/EDGAR-Defense-Toolkit",
       "description": "EDGAR Defense Toolkit",
@@ -25130,12 +25132,6 @@
       "updated_at": "2026-04-11T12:44:11-07:00",
       "url": "https://github.com/Rick-Wilson/EDGAR-Defense-Toolkit",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -25669,66 +25665,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 925,
           "deletions": 365
         },
         {
-          "date": "2026-04-04",
-          "additions": 175,
-          "deletions": 95
+          "date": "2026-04-05",
+          "additions": 1081,
+          "deletions": 96
         },
         {
-          "date": "2026-04-11",
-          "additions": 906,
-          "deletions": 1
-        },
-        {
-          "date": "2026-04-18",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-05-31",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -25839,7 +25841,7 @@
       "is_fork": false
     },
     {
-      "id": 2260365814,
+      "id": 1992432032,
       "name": "pbn-to-pdf",
       "full_name": "Rick-Wilson/pbn-to-pdf",
       "description": "pbn-to-pdf",
@@ -25858,12 +25860,6 @@
       "updated_at": "2026-05-29T17:34:17-07:00",
       "url": "https://github.com/Rick-Wilson/pbn-to-pdf",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -26397,66 +26393,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 544,
           "deletions": 218
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 193,
           "deletions": 13
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 590,
           "deletions": 27
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -26615,7 +26617,7 @@
       "is_fork": false
     },
     {
-      "id": 992651714,
+      "id": 4032978064,
       "name": "pbs-bbo-extension",
       "full_name": "Rick-Wilson/pbs-bbo-extension",
       "description": "PBS for BBO - Browser Extension",
@@ -26635,12 +26637,6 @@
       "updated_at": "2026-03-20T11:35:41-07:00",
       "url": "https://github.com/Rick-Wilson/pbs-bbo-extension",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -27174,66 +27170,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -27331,7 +27333,7 @@
       "is_fork": false
     },
     {
-      "id": 2892464038,
+      "id": 222407709,
       "name": "pdf-handouts",
       "full_name": "Rick-Wilson/pdf-handouts",
       "description": "PDF Handouts",
@@ -27350,12 +27352,6 @@
       "updated_at": "2026-01-31T11:41:28-08:00",
       "url": "https://github.com/Rick-Wilson/pdf-handouts",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -27889,66 +27885,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -28065,7 +28067,7 @@
       "is_fork": false
     },
     {
-      "id": 4193085855,
+      "id": 1893820176,
       "name": "Practice-Bidding-Scenarios",
       "full_name": "Rick-Wilson/Practice-Bidding-Scenarios",
       "description": "Practice Bidding Scenarios",
@@ -28081,12 +28083,6 @@
       "updated_at": "2025-10-11T13:36:23-05:00",
       "url": "https://github.com/Rick-Wilson/Practice-Bidding-Scenarios",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -28620,66 +28616,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -28777,7 +28779,7 @@
       "is_fork": true
     },
     {
-      "id": 1802111782,
+      "id": 692498523,
       "name": "printpdf",
       "full_name": "Rick-Wilson/printpdf",
       "description": "\ufeff# printpdf",
@@ -28793,12 +28795,6 @@
       "updated_at": "2026-01-31T11:37:45-08:00",
       "url": "https://github.com/Rick-Wilson/printpdf",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -29332,66 +29328,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -29526,7 +29528,7 @@
       "is_fork": true
     },
     {
-      "id": 1687323805,
+      "id": 3287397523,
       "name": "PT-P300BT",
       "full_name": "Rick-Wilson/PT-P300BT",
       "description": "Printing to a Brother P-Touch Cube PT-P300BT label printer from a computer",
@@ -29542,12 +29544,6 @@
       "updated_at": "2026-02-22T07:27:26+01:00",
       "url": "https://github.com/Rick-Wilson/PT-P300BT",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 0,
@@ -30081,66 +30077,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -30245,7 +30247,7 @@
       "is_fork": true
     },
     {
-      "id": 3631700958,
+      "id": 246941672,
       "name": "Vibe-Dashboard",
       "full_name": "Rick-Wilson/Vibe-Dashboard",
       "description": "Vibe Dashboard",
@@ -30258,18 +30260,12 @@
         "Shell": 13
       },
       "commits": 125,
-      "recent_commits": 44,
-      "last_commit": "2026-06-12T14:40:59Z",
-      "created_at": "2026-06-12T14:40:59Z",
-      "updated_at": "2026-06-12T14:40:59Z",
+      "recent_commits": 43,
+      "last_commit": "2026-06-13T13:32:16Z",
+      "created_at": "2026-06-13T13:32:16Z",
+      "updated_at": "2026-06-13T13:32:16Z",
       "url": "https://github.com/Rick-Wilson/Vibe-Dashboard",
       "commit_history": [
-        {
-          "date": "2026-03-15",
-          "commits": 1,
-          "additions": 0,
-          "deletions": 0
-        },
         {
           "date": "2026-03-16",
           "commits": 1,
@@ -30803,66 +30799,72 @@
           "commits": 0,
           "additions": 0,
           "deletions": 0
+        },
+        {
+          "date": "2026-06-13",
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0
         }
       ],
       "code_changes": [
         {
-          "date": "2026-03-21",
+          "date": "2026-03-22",
           "additions": 1181,
           "deletions": 956
         },
         {
-          "date": "2026-03-28",
+          "date": "2026-03-29",
           "additions": 70,
           "deletions": 35
         },
         {
-          "date": "2026-04-04",
+          "date": "2026-04-05",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-11",
+          "date": "2026-04-12",
           "additions": 843,
           "deletions": 615
         },
         {
-          "date": "2026-04-18",
+          "date": "2026-04-19",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-04-25",
+          "date": "2026-04-26",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-02",
+          "date": "2026-05-03",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-09",
+          "date": "2026-05-10",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-17",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-23",
+          "date": "2026-05-24",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-05-30",
+          "date": "2026-05-31",
           "additions": 0,
           "deletions": 0
         },
         {
-          "date": "2026-06-06",
+          "date": "2026-06-07",
           "additions": 0,
           "deletions": 0
         }
@@ -30962,6 +30964,12 @@
   ],
   "releases": [
     {
+      "tag": "v0.9.20",
+      "date": "2026-06-13T13:47:58Z",
+      "message": "Release v0.9.20 (dependency update)",
+      "repo": "bridge-wrangler"
+    },
+    {
       "tag": "v0.9.19",
       "date": "2026-06-12T14:45:13Z",
       "message": "Release v0.9.19 (dependency update)",
@@ -31031,12 +31039,6 @@
       "tag": "v0.9.11",
       "date": "2026-06-04T14:45:44Z",
       "message": "Release v0.9.11 (dependency update)",
-      "repo": "bridge-wrangler"
-    },
-    {
-      "tag": "v0.9.10",
-      "date": "2026-06-03T16:26:46Z",
-      "message": "Release v0.9.10 (dependency update)",
       "repo": "bridge-wrangler"
     },
     {
