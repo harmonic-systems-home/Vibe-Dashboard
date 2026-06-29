@@ -70,6 +70,22 @@ def main():
     else:
         stats = {}
 
+    # Load our own previously published output as a baseline floor. Older session
+    # .jsonl files get pruned by Claude Code and the stats-cache stopped carrying
+    # some fields (e.g. userPrompts), so without this the published history would
+    # silently regress to zero for old dates. Treating the last output as a floor
+    # makes history sticky.
+    output_path = Path(__file__).parent / 'claude_stats.json'
+    if output_path.exists():
+        try:
+            with open(output_path) as f:
+                prev = json.load(f)
+        except (json.JSONDecodeError, IOError):
+            prev = {}
+    else:
+        prev = {}
+    prev_by_date = {d.get('date'): d for d in prev.get('dailyActivity', []) if d.get('date')}
+
     all_prompts = []
     all_tool_calls = []
     session_starts = []
@@ -120,33 +136,57 @@ def main():
         if d.get('date')
     }
 
-    all_dates = set(prompts_by_date) | set(tool_calls_by_date) | set(sessions_by_date) | set(cache_by_date)
+    all_dates = (set(prompts_by_date) | set(tool_calls_by_date) | set(sessions_by_date)
+                 | set(cache_by_date) | set(prev_by_date))
     daily_activity = []
     for date_str in sorted(all_dates):
         cache = cache_by_date.get(date_str, {})
-        # Prefer the higher value per-field: cache may retain deleted sessions,
-        # jsonls capture dates the cache stopped updating.
+        prior = prev_by_date.get(date_str, {})
+        # Prefer the higher value per-field across all sources: live jsonls, the
+        # legacy stats-cache, and our own last published output. The prior-output
+        # floor keeps history from regressing once old sessions are pruned.
         daily_activity.append({
             'date': date_str,
-            'userPrompts': max(prompts_by_date.get(date_str, 0), cache.get('userPrompts', 0) or 0),
-            'sessionCount': max(sessions_by_date.get(date_str, 0), cache.get('sessionCount', 0) or 0),
-            'toolCallCount': max(tool_calls_by_date.get(date_str, 0), cache.get('toolCallCount', 0) or 0),
+            'userPrompts': max(prompts_by_date.get(date_str, 0), cache.get('userPrompts', 0) or 0, prior.get('userPrompts', 0) or 0),
+            'sessionCount': max(sessions_by_date.get(date_str, 0), cache.get('sessionCount', 0) or 0, prior.get('sessionCount', 0) or 0),
+            'toolCallCount': max(tool_calls_by_date.get(date_str, 0), cache.get('toolCallCount', 0) or 0, prior.get('toolCallCount', 0) or 0),
         })
 
-    first_session = min(session_starts)[:10] if session_starts else stats.get('firstSessionDate')
+    # Earliest known session date across computed sessions, stats-cache and prior output.
+    candidate_firsts = [d[:10] for d in (
+        min(session_starts)[:10] if session_starts else None,
+        stats.get('firstSessionDate'),
+        prev.get('firstSessionDate'),
+    ) if d]
+    first_session = min(candidate_firsts) if candidate_firsts else None
+
+    # Totals derived from the merged daily series so they reflect full history,
+    # not just whatever sessions are currently on disk.
+    total_user_prompts = sum(d['userPrompts'] for d in daily_activity)
+    total_tool_calls = sum(d['toolCallCount'] for d in daily_activity)
+    total_sessions = max(len(session_starts), sum(d['sessionCount'] for d in daily_activity), prev.get('totalSessions', 0) or 0)
+
+    # hourCounts: max per hour across recent jsonls and prior output.
+    hour_counts = {str(h): c for h, c in prompts_by_hour.items()}
+    for h, c in (prev.get('hourCounts') or {}).items():
+        hour_counts[str(h)] = max(hour_counts.get(str(h), 0), c or 0)
+
+    prev_models = prev.get('modelUsage') or {}
+    cache_models = stats.get('modelUsage') or {}
+    model_usage = prev_models if len(prev_models) > len(cache_models) else cache_models
 
     output = {
         'version': 1,
         'lastComputedDate': datetime.now().strftime('%Y-%m-%d'),
-        'totalUserPrompts': len(all_prompts),
-        'totalSessions': len(session_starts),
-        'totalToolCalls': len(all_tool_calls),
-        'totalMessages': stats.get('totalMessages', 0),
+        'totalUserPrompts': total_user_prompts,
+        'totalSessions': total_sessions,
+        'totalToolCalls': total_tool_calls,
+        'totalMessages': max(stats.get('totalMessages', 0) or 0, prev.get('totalMessages', 0) or 0),
         'firstSessionDate': first_session,
-        'modelUsage': stats.get('modelUsage', {}),
+        'modelUsage': model_usage,
         'dailyActivity': daily_activity,
-        'hourCounts': dict(prompts_by_hour),
-        'longestSession': stats.get('longestSession')
+        'hourCounts': hour_counts,
+        'longestSession': prev.get('longestSession') or stats.get('longestSession')
     }
 
     # Write output
