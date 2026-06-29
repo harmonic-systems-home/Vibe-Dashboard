@@ -21,6 +21,13 @@ fi
 # Commit and push
 git add claude_stats.json
 git commit -m "Update Claude stats [skip ci]"
+
+# Integrate the Actions bot's dashboard_data commits before pushing, otherwise
+# the push is rejected as non-fast-forward and stats silently stop reaching
+# origin. Local commits only touch claude_stats.json and the bot's only touch
+# dashboard_data.json / loc_history.json, so this rebase never conflicts.
+git pull --rebase --autostash origin main
+
 git push
 
 echo "$(date): Claude stats updated and pushed"
