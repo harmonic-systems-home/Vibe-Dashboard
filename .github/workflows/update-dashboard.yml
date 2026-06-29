@@ -35,17 +35,27 @@ jobs:
       - name: Clone repositories
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+          OWNERS: Rick-Wilson bridge-craftwork harmonic-systems-home
         run: |
           mkdir -p repos
           cd repos
 
-          # Clone all repos owned by Rick-Wilson (including forks, excluding archived)
-          gh repo list Rick-Wilson --limit 100 --no-archived --json name,isFork \
-            --jq '.[] | "\(.name)|\(.isFork)"' | while read line; do
-              repo_name="${line%|*}"
-              is_fork="${line#*|}"
-              echo "Cloning $repo_name (fork: $is_fork)..."
-              gh repo clone "Rick-Wilson/$repo_name" "$repo_name" 2>/dev/null || echo "  Failed to clone $repo_name"
+          # Clone all repos across the personal account and the two orgs
+          # (including forks, excluding archived)
+          for owner in $OWNERS; do
+            echo "== Listing repos for $owner =="
+            gh repo list "$owner" --limit 200 --no-archived --json name,isFork \
+              --jq '.[] | "\(.name)|\(.isFork)"' | while read line; do
+                repo_name="${line%|*}"
+                is_fork="${line#*|}"
+                # Flat repos/ dir: skip a name already cloned from an earlier owner
+                if [ -d "$repo_name" ]; then
+                  echo "  Skipping $owner/$repo_name (name already cloned)"
+                  continue
+                fi
+                echo "Cloning $owner/$repo_name (fork: $is_fork)..."
+                gh repo clone "$owner/$repo_name" "$repo_name" 2>/dev/null || echo "  Failed to clone $owner/$repo_name"
+            done
           done
 
           echo "Cloned $(ls -1 | wc -l) repositories"
@@ -53,10 +63,17 @@ jobs:
       - name: Identify fork repos
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+          OWNERS: Rick-Wilson bridge-craftwork harmonic-systems-home
         run: |
-          # Get list of fork repo names
-          FORKS=$(gh repo list Rick-Wilson --limit 100 --no-archived --json name,isFork \
-            --jq '[.[] | select(.isFork) | .name] | join(",")')
+          # Get fork repo names across all owners (matched by name in fetch step)
+          FORKS=""
+          for owner in $OWNERS; do
+            owner_forks=$(gh repo list "$owner" --limit 200 --no-archived --json name,isFork \
+              --jq '[.[] | select(.isFork) | .name] | join(",")')
+            if [ -n "$owner_forks" ]; then
+              FORKS="${FORKS:+$FORKS,}$owner_forks"
+            fi
+          done
           echo "FORK_REPOS=$FORKS" >> $GITHUB_ENV
           echo "Identified forks: $FORKS"
 
@@ -71,10 +88,12 @@ jobs:
 
       - name: Generate dashboard data
         run: |
+          # No --owner filter: the clone step already controls which repos are
+          # present (Rick-Wilson + bridge-craftwork + harmonic-systems-home),
+          # and repos now have org owners that wouldn't match a single --owner.
           python fetch_github_data.py \
             --local \
             --path ./repos \
-            --owner Rick-Wilson \
             --author "Rick Wilson" \
             --fork-repos "$FORK_REPOS" \
             --exclude-lang "bba-mac-private:C#" \

@@ -14,7 +14,7 @@ The workflow (`.github/workflows/update-dashboard.yml`) runs:
 - **Manually via workflow_dispatch**
 
 The workflow:
-1. Clones all non-fork, non-archived repos owned by Rick-Wilson
+1. Clones all non-archived repos across the personal account and the two orgs (Rick-Wilson, bridge-craftwork, harmonic-systems-home); forks are cloned but flagged so their LOC is excluded
 2. Installs tokei for lines of code counting
 3. Runs `fetch_github_data.py` to generate `dashboard_data.json`
 4. Commits and pushes the updated JSON file
