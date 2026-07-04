@@ -95,6 +95,7 @@ jobs:
             --local \
             --path ./repos \
             --author "Rick Wilson" \
+            --exclude "practice-bidding-scenarios,pbs-deal-archive-uploader" \
             --fork-repos "$FORK_REPOS" \
             --exclude-lang "bba-mac-private:C#" \
             --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" \
