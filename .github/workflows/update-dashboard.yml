@@ -91,10 +91,16 @@ jobs:
           # No --owner filter: the clone step already controls which repos are
           # present (Rick-Wilson + bridge-craftwork + harmonic-systems-home),
           # and repos now have org owners that wouldn't match a single --owner.
+          # --owner-author auto-excludes repos whose ROOT commit was authored by
+          # someone else (co-workers' repos in the shared orgs, forks whose
+          # origin is upstream). --include forces-keep your repos whose first
+          # commit was a template/bot. --exclude stays as a manual safety net.
           python fetch_github_data.py \
             --local \
             --path ./repos \
             --author "Rick Wilson" \
+            --owner-author "Rick Wilson,113149377+Rick-Wilson@users.noreply.github.com,popperbiz@gmail.com" \
+            --include "" \
             --exclude "practice-bidding-scenarios,pbs-deal-archive-uploader" \
             --fork-repos "$FORK_REPOS" \
             --exclude-lang "bba-mac-private:C#" \

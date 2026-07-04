@@ -171,6 +171,25 @@ class LocalRepoScanner:
             "html_url": remote_url.strip().replace(".git", "") if remote_url else "",
         }
 
+    def get_first_commit_author(self, repo_path: Path) -> tuple:
+        """Return (name, email) of the repo's earliest root commit.
+
+        Uses the root commit (--max-parents=0) rather than "first commit I made",
+        so a fork reports its upstream origin author, not the forker. If a repo
+        has multiple root commits (merged histories) the oldest is used.
+        """
+        result = self._run_git(repo_path, ["log", "--max-parents=0", "--format=%aI|%an|%ae"])
+        if not result:
+            return ("", "")
+        best = None
+        for line in result.strip().split("\n"):
+            parts = line.split("|", 2)
+            if len(parts) == 3:
+                date, name, email = parts
+                if best is None or date < best[0]:
+                    best = (date, name, email)
+        return (best[1], best[2]) if best else ("", "")
+
     def get_commit_count(self, repo_path: Path) -> int:
         """Get total number of commits."""
         cmd = ["rev-list", "--count", "HEAD"]
@@ -905,6 +924,8 @@ def main():
     parser.add_argument("--author", help="Filter commits by author name or email (used with --local)")
     parser.add_argument("--owner", help="Only include repos owned by this GitHub user (used with --local)")
     parser.add_argument("--exclude", help="Comma-separated list of repo names to exclude (used with --local)")
+    parser.add_argument("--owner-author", help="Comma-separated names/emails that mark a repo as yours when they authored its root commit. Repos whose first commit is by someone else (e.g. co-workers' repos, forks) are auto-excluded. Omit to disable this filter. (used with --local)")
+    parser.add_argument("--include", help="Comma-separated repo names to force-include even if their root commit is not by --owner-author (used with --local)")
     parser.add_argument("--fork-repos", help="Comma-separated list of repo names that are forks (LOC excluded but included in other metrics)")
     parser.add_argument("--exclude-lang", nargs="+", help="Exclude languages from specific repos (format: repo:language, e.g. my-repo:C#)")
     parser.add_argument("--exclude-dir", nargs="+", help="Exclude directories from LOC counting for specific repos (format: repo:path, e.g. my-repo:vendor/)")
@@ -967,6 +988,29 @@ def main():
             excluded = [x.strip().lower() for x in args.exclude.split(",")]
             print(f"🚫 Excluding repos: {', '.join(excluded)}")
             repos = [r for r in repos if r.name.lower() not in excluded]
+
+        # Auto-exclude repos whose root commit was authored by someone else
+        # (co-workers' repos moved into shared orgs, forks whose origin is
+        # upstream). --include overrides for edge cases (template/bot initial
+        # commit under your ownership). Fork LOC is still excluded separately
+        # via --fork-repos, so an --included fork never contributes upstream LOC.
+        if args.owner_author:
+            owner_ids = {x.strip().lower() for x in args.owner_author.split(",") if x.strip()}
+            force_include = {x.strip().lower() for x in (args.include or "").split(",") if x.strip()}
+            print(f"👤 Owner identities (root-commit author): {', '.join(sorted(owner_ids))}")
+            if force_include:
+                print(f"➕ Force-included: {', '.join(sorted(force_include))}")
+            kept = []
+            for repo_path in repos:
+                if repo_path.name.lower() in force_include:
+                    kept.append(repo_path)
+                    continue
+                name, email = scanner.get_first_commit_author(repo_path)
+                if name.strip().lower() in owner_ids or email.strip().lower() in owner_ids:
+                    kept.append(repo_path)
+                else:
+                    print(f"🚫 Excluding {repo_path.name} (root commit by {name or '?'} <{email or '?'}>, not owner)")
+            repos = kept
 
         if not repos:
             print("❌ No git repositories found in the specified path")
