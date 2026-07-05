@@ -94,14 +94,14 @@ jobs:
           # --owner-author auto-excludes repos whose ROOT commit was authored by
           # someone else (co-workers' repos in the shared orgs, forks whose
           # origin is upstream). --include forces-keep your repos whose first
-          # commit was a template/bot. --exclude stays as a manual safety net.
+          # commit was a template/bot; --exclude (unused now) can force-drop a
+          # repo the root-author filter would otherwise keep.
           python fetch_github_data.py \
             --local \
             --path ./repos \
             --author "Rick Wilson" \
             --owner-author "Rick Wilson,113149377+Rick-Wilson@users.noreply.github.com,popperbiz@gmail.com" \
             --include "" \
-            --exclude "practice-bidding-scenarios,pbs-deal-archive-uploader" \
             --fork-repos "$FORK_REPOS" \
             --exclude-lang "bba-mac-private:C#" \
             --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" \
