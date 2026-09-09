@@ -79,11 +79,12 @@ class IssueFetcher:
         return [i for i in raw if "pull_request" not in i]
 
 
-def normalize_issue(issue, repo_full_name):
+def normalize_issue(issue, repo_full_name, external=False):
     """Trim a GitHub issue payload down to what the dashboard renders."""
     return {
         "repo": repo_full_name.split("/", 1)[-1],
         "full_name": repo_full_name,
+        "external": external,
         "number": issue["number"],
         "title": issue.get("title") or "",
         "state": issue.get("state") or "open",
@@ -201,7 +202,10 @@ def main():
         print(f"🔎 Restricting to {len(allowed)} repos from {args.dashboard_data}")
 
     # Resolve the repo list -------------------------------------------------
-    targets = []  # (owner, name, full_name, has_issues_enabled)
+    # (owner, name, full_name, has_issues_enabled, external)
+    # external = outside the --dashboard-data scope, i.e. someone else's repo
+    # that was named explicitly with --repos. The dashboard can toggle these.
+    targets = []
     seen = set()
 
     for owner in args.owners or []:
@@ -223,7 +227,7 @@ def main():
             if full in seen:
                 continue
             seen.add(full)
-            targets.append((r["owner"]["login"], r["name"], full, r.get("has_issues", True)))
+            targets.append((r["owner"]["login"], r["name"], full, r.get("has_issues", True), False))
             kept += 1
         print(f"   {len(repos)} repos, {kept} to scan")
 
@@ -245,7 +249,10 @@ def main():
         if info.get("private") and not args.include_private:
             print(f"   ⏭️  {full} is private, skipping")
             continue
-        targets.append((owner, name, info["full_name"], info.get("has_issues", True)))
+        external = bool(allowed) and full not in allowed
+        if external:
+            print(f"   ➕ {full} (outside {args.dashboard_data}, flagged as external)")
+        targets.append((owner, name, info["full_name"], info.get("has_issues", True), external))
 
     if not targets:
         print("❌ No repos to scan")
@@ -255,7 +262,7 @@ def main():
     print(f"\n🚀 Fetching issues from {len(targets)} repos...")
     issues = []
     repos_meta = []
-    for owner, name, full, has_issues in sorted(targets, key=lambda t: t[2].lower()):
+    for owner, name, full, has_issues, external in sorted(targets, key=lambda t: t[2].lower()):
         if not has_issues:
             continue
         try:
@@ -265,13 +272,14 @@ def main():
             continue
         if raw:
             print(f"   ✅ {full}: {len(raw)} issues")
-        repo_issues = [normalize_issue(i, full) for i in raw]
+        repo_issues = [normalize_issue(i, full, external) for i in raw]
         issues.extend(repo_issues)
         if repo_issues:
             repos_meta.append({
                 "repo": name,
                 "full_name": full,
                 "url": f"https://github.com/{full}",
+                "external": external,
                 "open": sum(1 for i in repo_issues if i["state"] == "open"),
                 "closed": sum(1 for i in repo_issues if i["state"] != "open"),
             })
@@ -292,6 +300,10 @@ def main():
     print(f"\n✅ Issue data saved to {args.output}")
     print(f"\n📈 Summary:")
     print(f"   Issues: {stats['total']} ({stats['open']} open, {stats['closed']} closed)")
+    ext = [i for i in issues if i.get("external")]
+    if ext:
+        print(f"   Of those, {len(ext)} are in external repos: "
+              f"{', '.join(sorted({i['repo'] for i in ext}))}")
     print(f"   Repos with issues: {stats['repo_count']}")
     print(f"   Last 30 days: +{stats['opened_last_30']} opened, -{stats['closed_last_30']} closed")
     if stats["median_days_to_close"] is not None:

@@ -1,19 +1,24 @@
 {
-  "generated_at": "2026-09-09T17:55:09.004625+00:00",
+  "generated_at": "2026-09-09T18:04:29.667093+00:00",
   "stats": {
-    "total": 465,
-    "open": 100,
+    "total": 466,
+    "open": 101,
     "closed": 365,
     "close_rate": 78,
-    "opened_last_30": 104,
+    "opened_last_30": 105,
     "closed_last_30": 57,
-    "opened_last_90": 388,
+    "opened_last_90": 389,
     "closed_last_90": 299,
     "median_days_to_close": 0.1,
-    "median_open_age_days": 43.0,
-    "oldest_open_days": 177.1,
+    "median_open_age_days": 41.0,
+    "oldest_open_days": 177.2,
     "repo_count": 18,
     "by_repo": {
+      "Dealer3": {
+        "open": 19,
+        "closed": 29,
+        "total": 48
+      },
       "pbs-bbo-extension": {
         "open": 3,
         "closed": 0,
@@ -23,11 +28,6 @@
         "open": 4,
         "closed": 0,
         "total": 4
-      },
-      "Dealer3": {
-        "open": 18,
-        "closed": 29,
-        "total": 47
       },
       "rpdd-reader": {
         "open": 0,
@@ -111,6 +111,7 @@
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "open": 6,
       "closed": 270
     },
@@ -118,6 +119,7 @@
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "open": 37,
       "closed": 32
     },
@@ -125,13 +127,15 @@
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
       "url": "https://github.com/bridge-craftwork/Dealer3",
-      "open": 18,
+      "external": false,
+      "open": 19,
       "closed": 29
     },
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge",
+      "external": false,
       "open": 14,
       "closed": 8
     },
@@ -139,6 +143,7 @@
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
       "url": "https://github.com/bridge-craftwork/bridge-encodings",
+      "external": false,
       "open": 2,
       "closed": 8
     },
@@ -146,6 +151,7 @@
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
       "url": "https://github.com/bridge-craftwork/bridge-solver",
+      "external": false,
       "open": 2,
       "closed": 8
     },
@@ -153,6 +159,7 @@
       "repo": "BBA-Tools",
       "full_name": "bridge-craftwork/BBA-Tools",
       "url": "https://github.com/bridge-craftwork/BBA-Tools",
+      "external": true,
       "open": 3,
       "closed": 2
     },
@@ -160,6 +167,7 @@
       "repo": "rpdd-library",
       "full_name": "bridge-craftwork/rpdd-library",
       "url": "https://github.com/bridge-craftwork/rpdd-library",
+      "external": false,
       "open": 1,
       "closed": 4
     },
@@ -167,6 +175,7 @@
       "repo": "bridge-craftwork-site",
       "full_name": "bridge-craftwork/bridge-craftwork-site",
       "url": "https://github.com/bridge-craftwork/bridge-craftwork-site",
+      "external": false,
       "open": 4,
       "closed": 0
     },
@@ -174,6 +183,7 @@
       "repo": "bridge-wrangler",
       "full_name": "bridge-craftwork/bridge-wrangler",
       "url": "https://github.com/bridge-craftwork/bridge-wrangler",
+      "external": false,
       "open": 3,
       "closed": 1
     },
@@ -181,6 +191,7 @@
       "repo": "pbn-to-pdf",
       "full_name": "bridge-craftwork/pbn-to-pdf",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf",
+      "external": false,
       "open": 2,
       "closed": 1
     },
@@ -188,6 +199,7 @@
       "repo": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
+      "external": false,
       "open": 3,
       "closed": 0
     },
@@ -195,6 +207,7 @@
       "repo": "bbo-pbs",
       "full_name": "bridge-craftwork/bbo-pbs",
       "url": "https://github.com/bridge-craftwork/bbo-pbs",
+      "external": true,
       "open": 2,
       "closed": 0
     },
@@ -202,6 +215,7 @@
       "repo": "bridge-lesson-packaging",
       "full_name": "bridge-craftwork/bridge-lesson-packaging",
       "url": "https://github.com/bridge-craftwork/bridge-lesson-packaging",
+      "external": false,
       "open": 1,
       "closed": 0
     },
@@ -209,6 +223,7 @@
       "repo": "Bridge-Lessons-Advanced",
       "full_name": "bridge-craftwork/Bridge-Lessons-Advanced",
       "url": "https://github.com/bridge-craftwork/Bridge-Lessons-Advanced",
+      "external": false,
       "open": 1,
       "closed": 0
     },
@@ -216,6 +231,7 @@
       "repo": "Bridge-Lessons-by-Andrew-Rowberg",
       "full_name": "bridge-craftwork/Bridge-Lessons-by-Andrew-Rowberg",
       "url": "https://github.com/bridge-craftwork/Bridge-Lessons-by-Andrew-Rowberg",
+      "external": false,
       "open": 1,
       "closed": 0
     },
@@ -223,6 +239,7 @@
       "repo": "bridge-types",
       "full_name": "bridge-craftwork/bridge-types",
       "url": "https://github.com/bridge-craftwork/bridge-types",
+      "external": false,
       "open": 0,
       "closed": 1
     },
@@ -230,14 +247,32 @@
       "repo": "rpdd-reader",
       "full_name": "bridge-craftwork/rpdd-reader",
       "url": "https://github.com/bridge-craftwork/rpdd-reader",
+      "external": false,
       "open": 0,
       "closed": 1
     }
   ],
   "issues": [
     {
+      "repo": "Dealer3",
+      "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
+      "number": 111,
+      "title": "Record a script's match rate as a characteristic of the script, not a footnote of one run",
+      "state": "open",
+      "created_at": "2026-09-09T18:00:54Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Dealer3/issues/111",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
       "repo": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "external": false,
       "number": 3,
       "title": "Investigate auto-upload to the user's BBO deal library as an alternative to dealer scripts",
       "state": "open",
@@ -254,6 +289,7 @@
     {
       "repo": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "external": false,
       "number": 2,
       "title": "Starting a bidding table now requires a manual \"Start\" click in the BBO UI",
       "state": "open",
@@ -269,6 +305,7 @@
     {
       "repo": "bridge-craftwork-site",
       "full_name": "bridge-craftwork/bridge-craftwork-site",
+      "external": false,
       "number": 5,
       "title": "Serve an llms.txt at the domain root, pointing at the tools it hosts",
       "state": "open",
@@ -284,6 +321,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 107,
       "title": "Let an AI run a script and read the results back \u2014 in the user's own browser",
       "state": "open",
@@ -299,6 +337,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 106,
       "title": "One wasm entry point taking the script envelope, instead of ten positional arguments",
       "state": "closed",
@@ -314,6 +353,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 105,
       "title": "Make the plain-text reference discoverable to AI \u2014 no UI, and access is already fine",
       "state": "closed",
@@ -329,6 +369,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 104,
       "title": "Ship a set of demo scripts, tabbed beside PBS",
       "state": "open",
@@ -344,6 +385,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 103,
       "title": "A short link for SMS: Worker plus KV",
       "state": "open",
@@ -359,6 +401,7 @@
     {
       "repo": "rpdd-reader",
       "full_name": "bridge-craftwork/rpdd-reader",
+      "external": false,
       "number": 4,
       "title": "Cut the README down to what this repository provides",
       "state": "closed",
@@ -374,6 +417,7 @@
     {
       "repo": "rpdd-library",
       "full_name": "bridge-craftwork/rpdd-library",
+      "external": false,
       "number": 6,
       "title": "Cut the README down to what this repository provides",
       "state": "closed",
@@ -389,6 +433,7 @@
     {
       "repo": "bridge-craftwork-site",
       "full_name": "bridge-craftwork/bridge-craftwork-site",
+      "external": false,
       "number": 4,
       "title": "Write a succession plan for the org's accounts and infrastructure",
       "state": "open",
@@ -404,6 +449,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 102,
       "title": "Try colour gradients in the generated PDFs",
       "state": "open",
@@ -419,6 +465,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 101,
       "title": "A run-cost attribute, so a script can estimate its own runtime on this machine",
       "state": "open",
@@ -434,6 +481,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 100,
       "title": "Export a script, its settings and its last runtime as JSON \u2014 and export them all",
       "state": "open",
@@ -449,6 +497,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 99,
       "title": "Load a script from the URL fragment without running it",
       "state": "open",
@@ -464,6 +513,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 98,
       "title": "Share a script by link: encode the payload in the URL fragment",
       "state": "open",
@@ -479,6 +529,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 97,
       "title": "Keep a history of scripts, with named saves and PBS favourites",
       "state": "open",
@@ -494,6 +545,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 96,
       "title": "Put the settings behind a button, leaving Run, Produce and Auto-level on the row",
       "state": "open",
@@ -509,6 +561,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 95,
       "title": "Fit the layout to the device: too wide on iPhone, and no side-by-side on iPad landscape",
       "state": "open",
@@ -524,6 +577,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 90,
       "title": "Nothing checks that the deployed page actually uses the thread pool",
       "state": "open",
@@ -537,6 +591,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 86,
       "title": "Per-deal allocation blocks useful threading: hoist the variable cache",
       "state": "closed",
@@ -550,6 +605,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 83,
       "title": "A double-dummy run on random deals looks hung: no progress for a whole batch, and no warning",
       "state": "closed",
@@ -563,6 +619,7 @@
     {
       "repo": "rpdd-library",
       "full_name": "bridge-craftwork/rpdd-library",
+      "external": false,
       "number": 4,
       "title": "Make the manifest self-sufficient: relative chunk paths and a schema version",
       "state": "closed",
@@ -576,6 +633,7 @@
     {
       "repo": "rpdd-library",
       "full_name": "bridge-craftwork/rpdd-library",
+      "external": false,
       "number": 3,
       "title": "Split the crate out: data here, Rust elsewhere",
       "state": "closed",
@@ -589,6 +647,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 77,
       "title": "The browser needs to pair a .zdd chunk with its generated deals",
       "state": "closed",
@@ -602,6 +661,7 @@
     {
       "repo": "rpdd-library",
       "full_name": "bridge-craftwork/rpdd-library",
+      "external": false,
       "number": 2,
       "title": "Halve the unranking cost: 32-bit limbs plus a u64 tail",
       "state": "closed",
@@ -615,6 +675,7 @@
     {
       "repo": "rpdd-library",
       "full_name": "bridge-craftwork/rpdd-library",
+      "external": false,
       "number": 1,
       "title": "Ask Richard Pavlicek's permission to mirror the tables",
       "state": "open",
@@ -628,6 +689,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 71,
       "title": "Port Pavlicek's deal generator, so a .zdd is enough to rebuild the deals",
       "state": "closed",
@@ -641,6 +703,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 70,
       "title": "Solved-deal libraries as a first-class deal source (roadmap)",
       "state": "closed",
@@ -654,6 +717,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 69,
       "title": "Read a solved-deal library from a pipe, so curl can supply it",
       "state": "closed",
@@ -667,6 +731,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 68,
       "title": "Web: choose between random deals and a pre-solved library",
       "state": "closed",
@@ -680,6 +745,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 67,
       "title": "Host the solved-deal tables where the browser can fetch them",
       "state": "closed",
@@ -693,6 +759,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 66,
       "title": "wasm: accept supplied deals, so the browser can run from a library",
       "state": "closed",
@@ -706,6 +773,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 65,
       "title": "Read a solved-deal library from an offset, and stream it",
       "state": "closed",
@@ -719,6 +787,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 24,
       "title": "Generate the ZRD deals rather than storing them: port xxdd.exe's generator",
       "state": "closed",
@@ -732,6 +801,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 64,
       "title": "Choose which double-dummy encoding a PBN export writes",
       "state": "open",
@@ -745,6 +815,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 22,
       "title": "Read [OptimumResultTable] into a board's double-dummy table, and prefer it over [DoubleDummyTricks]",
       "state": "closed",
@@ -758,6 +829,7 @@
     {
       "repo": "bridge-types",
       "full_name": "bridge-craftwork/bridge-types",
+      "external": false,
       "number": 7,
       "title": "DdTable: add is_solved(), and correct the all-zero paragraph in DdTable::new",
       "state": "closed",
@@ -771,6 +843,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 62,
       "title": "Nothing checks what we claim the reference programs' switches are",
       "state": "open",
@@ -784,6 +857,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 61,
       "title": "Input deals may arrive already solved: carry double-dummy tables with the deal",
       "state": "open",
@@ -797,6 +871,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 20,
       "title": "Add the ZRD format: Pavlicek's solved-deal library, read and write",
       "state": "closed",
@@ -810,6 +885,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 19,
       "title": "Removing a tag written inside a section silently deletes that section's data",
       "state": "open",
@@ -823,6 +899,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 32,
       "title": "Web app: single-deal solving, deal sets, and PBN in and out",
       "state": "open",
@@ -836,6 +913,7 @@
     {
       "repo": "bridge-wrangler",
       "full_name": "bridge-craftwork/bridge-wrangler",
+      "external": false,
       "number": 8,
       "title": "How the wasm tools should reach each other: link late, hand off rarely",
       "state": "open",
@@ -849,6 +927,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 30,
       "title": "par still has its own DdTricks, so every caller converts to and from DdTable by hand",
       "state": "closed",
@@ -862,6 +941,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 301,
       "title": "OptimumResultTable parsing needs updating for the conforming PBN table format",
       "state": "open",
@@ -875,6 +955,7 @@
     {
       "repo": "bridge-wrangler",
       "full_name": "bridge-craftwork/bridge-wrangler",
+      "external": false,
       "number": 7,
       "title": "Add a scripting command, and a wasm playground for it",
       "state": "open",
@@ -888,6 +969,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 17,
       "title": "optimum_result_table_rows still writes two-wide results under a Result\\1R header",
       "state": "closed",
@@ -901,6 +983,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 27,
       "title": "Tag placement: the one-line tags and the table belong in different groups",
       "state": "closed",
@@ -914,6 +997,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 26,
       "title": "ParContract is wrong in two ways: it cannot hold a tie, and it names a side where Bridge Composer names a seat",
       "state": "closed",
@@ -927,6 +1011,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 24,
       "title": "The annotator rewrites CRLF files to LF, so \"a re-run touches nothing\" is false for every Bridge Composer file",
       "state": "closed",
@@ -940,6 +1025,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 22,
       "title": "DD tags are inserted between [Auction] and its call rows",
       "state": "closed",
@@ -953,6 +1039,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 13,
       "title": "PbnDocument cannot place a group of tags, so a caller with an established tag order cannot adopt it",
       "state": "closed",
@@ -966,6 +1053,7 @@
     {
       "repo": "bridge-wrangler",
       "full_name": "bridge-craftwork/bridge-wrangler",
+      "external": false,
       "number": 3,
       "title": "OptimumResultTable is written in a non-conforming format, and duplicates the shared codec",
       "state": "closed",
@@ -979,6 +1067,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 10,
       "title": "A tag line with a trailing `;` or `{` comment loses the tag as well as the comment",
       "state": "closed",
@@ -992,6 +1081,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 9,
       "title": "A [Play] section holding only `*` is lost on a read/write cycle",
       "state": "closed",
@@ -1005,6 +1095,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 6,
       "title": "Preserve directives and comments, and add an edit-in-place API for touching up PBN files",
       "state": "closed",
@@ -1018,6 +1109,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 20,
       "title": "Too much domain logic lives in the CLI: consolidate PBN and format handling",
       "state": "closed",
@@ -1031,6 +1123,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 19,
       "title": "Implement the AI-readability contract for the web app",
       "state": "open",
@@ -1044,6 +1137,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 14,
       "title": "Solver::solve() returns a wrong trick count when its caches start empty",
       "state": "closed",
@@ -1057,6 +1151,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 57,
       "title": "Double-dummy results depend on evaluation order, and one path is wrong",
       "state": "closed",
@@ -1070,6 +1165,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 54,
       "title": "par() ignores vulnerability entirely",
       "state": "closed",
@@ -1083,6 +1179,7 @@
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
       "number": 13,
       "title": "Investigate parallelism in the solver: it is single-threaded everywhere",
       "state": "closed",
@@ -1096,6 +1193,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 300,
       "title": "No LICENSE file \u2014 the corpus is all-rights-reserved by default",
       "state": "open",
@@ -1109,6 +1207,7 @@
     {
       "repo": "bridge-craftwork-site",
       "full_name": "bridge-craftwork/bridge-craftwork-site",
+      "external": false,
       "number": 3,
       "title": "A cross-tool AI-readability contract (companion to #2)",
       "state": "open",
@@ -1122,6 +1221,7 @@
     {
       "repo": "bridge-craftwork-site",
       "full_name": "bridge-craftwork/bridge-craftwork-site",
+      "external": false,
       "number": 2,
       "title": "Make dealer3 AI-friendly, and design the dealer3 \u2192 BBA \u2192 wrangler chain",
       "state": "open",
@@ -1135,6 +1235,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 49,
       "title": "An action list with no print action: dealer3 prints deals and measures 25x fewer",
       "state": "closed",
@@ -1148,6 +1249,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 43,
       "title": "Unary minus does nothing: -2 evaluates to 2",
       "state": "closed",
@@ -1161,6 +1263,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 42,
       "title": "vulnerable() in scripts, and where a deal's vulnerability comes from",
       "state": "open",
@@ -1174,6 +1277,7 @@
     {
       "repo": "BBA-Tools",
       "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
       "number": 16,
       "title": "epbot-core: enforce single-threaded EPBot access in the library, not in each caller",
       "state": "open",
@@ -1187,6 +1291,7 @@
     {
       "repo": "BBA-Tools",
       "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
       "number": 15,
       "title": "bba-server: MAX_CONCURRENCY=4 corrupts auctions \u2014 set to 1 until EPBot is thread-safe",
       "state": "open",
@@ -1200,6 +1305,7 @@
     {
       "repo": "BBA-Tools",
       "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
       "number": 14,
       "title": "EPBotFFI instance table is not thread-safe (blocks multithreaded callers)",
       "state": "open",
@@ -1213,6 +1319,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 43,
       "title": "Classroom report: Baker Bridge - Suit Establishment \u00b7 Deal 1 (from Rick)",
       "state": "open",
@@ -1228,6 +1335,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 42,
       "title": "Play sections are written on the tag line, so every opening lead is invisible to PBN readers",
       "state": "open",
@@ -1241,6 +1349,7 @@
     {
       "repo": "pbn-to-pdf",
       "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
       "number": 11,
       "title": "Declarer's-plan layouts are not reproducible: card XObjects emitted in HashSet iteration order",
       "state": "closed",
@@ -1254,6 +1363,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 36,
       "title": "A wrong-arity call produces no deals, no error and exit 0",
       "state": "closed",
@@ -1267,6 +1377,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 34,
       "title": "score() should take dealer.exe's contract and vulnerability tokens",
       "state": "closed",
@@ -1280,6 +1391,7 @@
     {
       "repo": "pbn-to-pdf",
       "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
       "number": 6,
       "title": "Add a web page: render PBN to PDF in the browser",
       "state": "open",
@@ -1293,6 +1405,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 41,
       "title": "Classroom report: Baker Bridge - 2-Over-1 Game Force \u00b7 Deal 25 (from Linnea)",
       "state": "open",
@@ -1308,6 +1421,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 40,
       "title": "Classroom report: Baker Bridge - 2-Over-1 Game Force \u00b7 Deal 22 (from Linnea)",
       "state": "open",
@@ -1323,6 +1437,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 24,
       "title": "A Deal is four heap allocations, and that is what blocks threads",
       "state": "closed",
@@ -1336,6 +1451,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 21,
       "title": "--input-deals should stream again, not be held whole",
       "state": "open",
@@ -1349,6 +1465,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 20,
       "title": "Characterizing: budget by time, and ship the threaded browser build",
       "state": "closed",
@@ -1362,6 +1479,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 19,
       "title": "Editor: colour the names the engine treats as magic, and the metadata headers",
       "state": "closed",
@@ -1375,6 +1493,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 18,
       "title": "Characterizing progress bar: check the denominator matches where the pass actually stops",
       "state": "closed",
@@ -1388,6 +1507,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 17,
       "title": "Defaults for script parameters, and a way to enter them",
       "state": "closed",
@@ -1403,6 +1523,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 295,
       "title": "Practice tables in BBOalert stopped working",
       "state": "closed",
@@ -1416,6 +1537,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 16,
       "title": "Fill hand-type quotas exactly, for a finite PBN",
       "state": "closed",
@@ -1431,6 +1553,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 294,
       "title": "Convert levelling from the spot-card ladder to rnd(), and generate it",
       "state": "open",
@@ -1446,6 +1569,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 15,
       "title": "Missing singular/plural function spellings, and notrump, are accepted silently and give wrong answers",
       "state": "closed",
@@ -1461,6 +1585,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 293,
       "title": "Prototype Brill bidding engine for scenarios",
       "state": "open",
@@ -1474,6 +1599,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 292,
       "title": "Add more hand types to Lebensohl after 1NT interference (Lebensohl.btn)",
       "state": "open",
@@ -1487,6 +1613,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 14,
       "title": "tricks() is unusably slow \u2014 a single solve takes minutes; bridge-solver is a dependency but never called",
       "state": "closed",
@@ -1500,6 +1627,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 13,
       "title": "Add --bbo-strict: warn when a script won't behave the same on BBO",
       "state": "open",
@@ -1513,6 +1641,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 12,
       "title": "Variables whose name begins with a statement keyword are rejected",
       "state": "closed",
@@ -1526,6 +1655,7 @@
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
       "number": 4,
       "title": "DealReader silently drops unparseable deal content",
       "state": "open",
@@ -1539,6 +1669,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 3,
       "title": "Remove Legacy Mode, and add PBN input file option",
       "state": "closed",
@@ -1552,6 +1683,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 39,
       "title": "Document that Bridge Classroom now compensates for the [ROTATE] frame \u2014 CLAUDE.md note beside rotate_seat_180_degrees()",
       "state": "open",
@@ -1565,6 +1697,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 38,
       "title": "100Deals board 8: both [BID] tags say \"pass\" where the lesson asks for 1D and 3NT",
       "state": "open",
@@ -1578,6 +1711,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 400,
       "title": "Honour [ROTATE]: move the student to partner's seat for the play phase (76 boards)",
       "state": "closed",
@@ -1591,6 +1725,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 399,
       "title": "Baker Bridge: repoint props at bridge-classroom/ \u2014 Package/ is a frozen orphan and 47% of served deals are stale",
       "state": "closed",
@@ -1604,6 +1739,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 37,
       "title": "Classroom report: Baker Bridge - 100 Miscellaneous Deals \u00b7 Deal 52 (from Rick)",
       "state": "open",
@@ -1619,6 +1755,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 36,
       "title": "Classroom report: Baker Bridge - 100 Miscellaneous Deals \u00b7 Deal 51 (from Rick)",
       "state": "open",
@@ -1634,6 +1771,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 35,
       "title": "Classroom report: Baker Bridge - Notrump Openings \u00b7 Deal 3 (from Rick)",
       "state": "closed",
@@ -1649,6 +1787,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 395,
       "title": "club_games: unenforced upsert key, and event_key fallbacks that overwrite real data",
       "state": "open",
@@ -1662,6 +1801,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 368,
       "title": "Cross-TLD links register the recipient as a guest (.com user follows a .org link)",
       "state": "open",
@@ -1675,6 +1815,7 @@
     {
       "repo": "BBA-Tools",
       "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
       "number": 4,
       "title": "bba-server: expose EPBot bid descriptions for all bids, not just alerted ones",
       "state": "closed",
@@ -1688,6 +1829,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 334,
       "title": "Expand the anonymous concept in A1 to cover all teacher displays which show the user name",
       "state": "closed",
@@ -1701,6 +1843,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 291,
       "title": "Classroom report: Spiral_Raises_Weinstein \u00b7 Deal 1",
       "state": "open",
@@ -1716,6 +1859,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 290,
       "title": "Classroom report: Third_Hand_Unblocks \u00b7 Deal 1 (from David)",
       "state": "closed",
@@ -1731,6 +1875,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 289,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 30",
       "state": "closed",
@@ -1746,6 +1891,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 288,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 29",
       "state": "closed",
@@ -1761,6 +1907,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 287,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 28",
       "state": "closed",
@@ -1776,6 +1923,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 286,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 26",
       "state": "closed",
@@ -1791,6 +1939,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 285,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 25",
       "state": "closed",
@@ -1806,6 +1955,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 284,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 24",
       "state": "closed",
@@ -1821,6 +1971,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 283,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 23",
       "state": "closed",
@@ -1836,6 +1987,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 282,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 22",
       "state": "closed",
@@ -1851,6 +2003,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 281,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 21",
       "state": "closed",
@@ -1866,6 +2019,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 280,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 20",
       "state": "closed",
@@ -1881,6 +2035,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 279,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 19",
       "state": "closed",
@@ -1896,6 +2051,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 278,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 18",
       "state": "closed",
@@ -1911,6 +2067,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 277,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 17",
       "state": "closed",
@@ -1926,6 +2083,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 276,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 16",
       "state": "closed",
@@ -1941,6 +2099,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 275,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 15",
       "state": "closed",
@@ -1956,6 +2115,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 274,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 14",
       "state": "closed",
@@ -1971,6 +2131,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 273,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 13",
       "state": "closed",
@@ -1986,6 +2147,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 272,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 12",
       "state": "closed",
@@ -2001,6 +2163,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 271,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 11",
       "state": "closed",
@@ -2016,6 +2179,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 270,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 10",
       "state": "closed",
@@ -2031,6 +2195,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 269,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 9",
       "state": "closed",
@@ -2046,6 +2211,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 268,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 8",
       "state": "closed",
@@ -2061,6 +2227,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 267,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 7",
       "state": "closed",
@@ -2076,6 +2243,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 266,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 6",
       "state": "closed",
@@ -2091,6 +2259,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 265,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 6",
       "state": "closed",
@@ -2106,6 +2275,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 264,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 5",
       "state": "closed",
@@ -2121,6 +2291,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 263,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 4",
       "state": "closed",
@@ -2136,6 +2307,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 262,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 3",
       "state": "closed",
@@ -2151,6 +2323,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 261,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 3",
       "state": "closed",
@@ -2166,6 +2339,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 260,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 3",
       "state": "closed",
@@ -2181,6 +2355,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 259,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 3",
       "state": "closed",
@@ -2196,6 +2371,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 258,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 2",
       "state": "closed",
@@ -2211,6 +2387,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 257,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 1",
       "state": "closed",
@@ -2226,6 +2403,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 256,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 1",
       "state": "closed",
@@ -2241,6 +2419,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 255,
       "title": "Classroom report: Drury \u00b7 Deal 10 (from David)",
       "state": "closed",
@@ -2256,6 +2435,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 254,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 6 (from David)",
       "state": "closed",
@@ -2271,6 +2451,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 253,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 3",
       "state": "closed",
@@ -2286,6 +2467,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 252,
       "title": "Classroom report: New_Minor_Forcing \u00b7 Deal 5",
       "state": "closed",
@@ -2301,6 +2483,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 251,
       "title": "Classroom report: New_Minor_Forcing \u00b7 Deal 3",
       "state": "closed",
@@ -2316,6 +2499,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 250,
       "title": "Classroom report: New_Minor_Forcing \u00b7 Deal 1",
       "state": "closed",
@@ -2331,6 +2515,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 249,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 3",
       "state": "closed",
@@ -2346,6 +2531,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 248,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 1",
       "state": "closed",
@@ -2361,6 +2547,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 247,
       "title": "Classroom report: New_Minor_Forcing \u00b7 Deal 2",
       "state": "closed",
@@ -2376,6 +2563,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 246,
       "title": "Classroom report: New_Minor_Forcing \u00b7 Deal 2",
       "state": "closed",
@@ -2391,6 +2579,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 245,
       "title": "Classroom report: New_Minor_Forcing \u00b7 Deal 1",
       "state": "closed",
@@ -2406,6 +2595,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 302,
       "title": "Play lessons: the opening-lead tip is shown to the student, who is always declarer",
       "state": "open",
@@ -2419,6 +2609,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 244,
       "title": "Classroom report: New_Minor_Forcing \u00b7 Deal 1 (from Alan)",
       "state": "closed",
@@ -2434,6 +2625,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 243,
       "title": "Classroom report: Michaels_Cuebid \u00b7 Deal 30",
       "state": "closed",
@@ -2449,6 +2641,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 242,
       "title": "Classroom report: Finesse_Simple \u00b7 Deal 2",
       "state": "closed",
@@ -2465,6 +2658,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 291,
       "title": "Accomplishments Taxons tab: move off raw observations to a taxon-level rollup",
       "state": "open",
@@ -2478,6 +2672,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 241,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 9",
       "state": "closed",
@@ -2493,6 +2688,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 240,
       "title": "Classroom report: Basic_Overcall \u00b7 Deal 21",
       "state": "closed",
@@ -2508,6 +2704,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 239,
       "title": "Classroom report: Basic_Overcall \u00b7 Deal 18",
       "state": "closed",
@@ -2523,6 +2720,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 238,
       "title": "Classroom report: Basic_Minor \u00b7 Deal 26",
       "state": "closed",
@@ -2538,6 +2736,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 237,
       "title": "Classroom report: Basic_Minor \u00b7 Deal 25",
       "state": "closed",
@@ -2553,6 +2752,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 236,
       "title": "Classroom report: Basic_Minor \u00b7 Deal 24",
       "state": "closed",
@@ -2568,6 +2768,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 235,
       "title": "Classroom report: Open_and_Rebid \u00b7 Deal 25",
       "state": "closed",
@@ -2583,6 +2784,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 234,
       "title": "Classroom report: Open_and_Rebid \u00b7 Deal 25",
       "state": "closed",
@@ -2598,6 +2800,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 233,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 18",
       "state": "closed",
@@ -2613,6 +2816,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 232,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 15",
       "state": "closed",
@@ -2628,6 +2832,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 231,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 7",
       "state": "closed",
@@ -2643,6 +2848,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 230,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 7",
       "state": "closed",
@@ -2658,6 +2864,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 229,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 5",
       "state": "closed",
@@ -2673,6 +2880,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 228,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 4",
       "state": "closed",
@@ -2688,6 +2896,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 227,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 3",
       "state": "closed",
@@ -2703,6 +2912,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 226,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 20",
       "state": "closed",
@@ -2718,6 +2928,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 225,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 19",
       "state": "closed",
@@ -2733,6 +2944,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 224,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 26",
       "state": "closed",
@@ -2748,6 +2960,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 223,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 27",
       "state": "closed",
@@ -2763,6 +2976,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 222,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 13",
       "state": "closed",
@@ -2778,6 +2992,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 221,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 13",
       "state": "closed",
@@ -2793,6 +3008,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 220,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 12",
       "state": "closed",
@@ -2808,6 +3024,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 219,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 11",
       "state": "closed",
@@ -2823,6 +3040,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 218,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 7",
       "state": "closed",
@@ -2838,6 +3056,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 217,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 6",
       "state": "closed",
@@ -2853,6 +3072,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 216,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 5",
       "state": "closed",
@@ -2868,6 +3088,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 215,
       "title": "Classroom report: Gerber \u00b7 Deal 1",
       "state": "closed",
@@ -2883,6 +3104,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 280,
       "title": "Bidding lessons: auction display may not distinguish the student's own calls from partner's",
       "state": "open",
@@ -2896,6 +3118,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 278,
       "title": "Coaching play \u2014 'Play as: Declarer' can seat the student in partner's hand on responder-seat bidding lessons",
       "state": "open",
@@ -2909,6 +3132,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 214,
       "title": "Classroom report: Basic_NT \u00b7 Deal 30 (from David)",
       "state": "closed",
@@ -2924,6 +3148,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 213,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 12 (from David)",
       "state": "closed",
@@ -2939,6 +3164,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 212,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 5",
       "state": "closed",
@@ -2954,6 +3180,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 211,
       "title": "Classroom report: Basic_Responses \u00b7 Deal 3",
       "state": "closed",
@@ -2969,6 +3196,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 210,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 13",
       "state": "closed",
@@ -2984,6 +3212,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 257,
       "title": "Cardplay: slow restart \u2014 BEN opening-lead recompute / caching (solo)",
       "state": "open",
@@ -2999,6 +3228,7 @@
     {
       "repo": "pbn-to-pdf",
       "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
       "number": 1,
       "title": "Unify PBN parsing on bridge-encodings (retire the parallel model)",
       "state": "open",
@@ -3012,6 +3242,7 @@
     {
       "repo": "bridge-lesson-packaging",
       "full_name": "bridge-craftwork/bridge-lesson-packaging",
+      "external": false,
       "number": 1,
       "title": "Implement deal-survey: lesson-collection characterization CLI (Rust)",
       "state": "open",
@@ -3025,6 +3256,7 @@
     {
       "repo": "bridge-wrangler",
       "full_name": "bridge-craftwork/bridge-wrangler",
+      "external": false,
       "number": 1,
       "title": "Manage PDF output sizes \u2014 declarer's plan renders cards as raster images (~3.8 MB/page)",
       "state": "open",
@@ -3038,6 +3270,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 21,
       "title": "Redesign passer-hand fill: BBA-validated \"quiet opponents\" (+ fix mac/windows fill divergence)",
       "state": "open",
@@ -3051,6 +3284,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 239,
       "title": "Teacher lobby renders partial/empty state on cold start or reconnect (two-identity resolution race)",
       "state": "open",
@@ -3066,6 +3300,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 20,
       "title": "Classroom report: Baker Bridge - Major Suit Openings \u00b7 Deal 15 (from Eugene Heiman)",
       "state": "open",
@@ -3081,6 +3316,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 19,
       "title": "Classroom report: Baker Bridge - Second Hand Play \u00b7 Deal 1 (from Rick)",
       "state": "open",
@@ -3096,6 +3332,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 15,
       "title": "Redesign multi-trick defense lessons as trick-by-trick (NEXT between tricks)",
       "state": "open",
@@ -3109,6 +3346,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 13,
       "title": "Defense lessons: under-specified [showcards] where the decision is many tricks after the shown cards (5 boards)",
       "state": "open",
@@ -3122,6 +3360,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 12,
       "title": "SecondHand.pbn: dummy-led decision tricks show stale opening lead instead of the card played from dummy (boards 1, 5, 13)",
       "state": "closed",
@@ -3135,6 +3374,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 218,
       "title": "Backfill board_status.collection_id for rows with null/missing collection",
       "state": "closed",
@@ -3148,6 +3388,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 209,
       "title": "Classroom report: New_Minor_Forcing \u00b7 Deal 17",
       "state": "closed",
@@ -3163,6 +3404,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 208,
       "title": "Classroom report: New_Minor_Forcing \u00b7 Deal 4",
       "state": "closed",
@@ -3178,6 +3420,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 11,
       "title": "Defense lessons: dummy's played card missing from [showcards] mid-trick positions (Signals board 1 + likely others)",
       "state": "closed",
@@ -3191,6 +3434,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 207,
       "title": "Resequence lesson: Basic_What_To_Open \u2014 difficulty is front-loaded (should rise easy\u2192hard)",
       "state": "closed",
@@ -3207,6 +3451,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 206,
       "title": "Resequence lesson: Basic_NT_Defense_RHO \u2014 difficulty is front-loaded (should rise easy\u2192hard)",
       "state": "closed",
@@ -3223,6 +3468,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 205,
       "title": "Resequence lesson: Basic_Major \u2014 difficulty is front-loaded (should rise easy\u2192hard)",
       "state": "closed",
@@ -3239,6 +3485,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 204,
       "title": "Difficulty outlier: Ruffing_Finesse \u00b7 Deal 4 \u2014 slam in a beginner lesson",
       "state": "closed",
@@ -3255,6 +3502,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 203,
       "title": "Difficulty outlier: Finesse_Simple \u00b7 Deal 20 \u2014 slam in a beginner lesson",
       "state": "closed",
@@ -3271,6 +3519,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 202,
       "title": "Difficulty outlier: Basic_What_To_Open \u00b7 Deal 2 \u2014 slam in a beginner lesson",
       "state": "closed",
@@ -3287,6 +3536,7 @@
     {
       "repo": "BBA-Tools",
       "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
       "number": 3,
       "title": "bba-cli: [BidSystemNS/EW] tags are hardcoded 2/1GF defaults, not derived from the .bbsa",
       "state": "closed",
@@ -3300,6 +3550,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 201,
       "title": "Classroom report: Finesse_Simple \u00b7 Deal 9 (from Rick \u2014 ACCEPT audit)",
       "state": "closed",
@@ -3316,6 +3567,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 200,
       "title": "Classroom report: Open_and_Rebid \u00b7 Deal 30 (from Rick \u2014 ACCEPT audit)",
       "state": "closed",
@@ -3332,6 +3584,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 199,
       "title": "Classroom report: Open_and_Rebid \u00b7 Deal 29 (from Rick \u2014 ACCEPT audit)",
       "state": "closed",
@@ -3348,6 +3601,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 198,
       "title": "Classroom report: Basic_Weak_2 \u00b7 Deal 30 (from Rick \u2014 ACCEPT audit)",
       "state": "closed",
@@ -3364,6 +3618,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 197,
       "title": "Classroom report: Basic_Weak_2 \u00b7 Deal 16 (from Rick \u2014 ACCEPT audit)",
       "state": "closed",
@@ -3380,6 +3635,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 196,
       "title": "Classroom report: Basic_Major \u00b7 Deal 14 (from Rick \u2014 ACCEPT audit)",
       "state": "closed",
@@ -3396,6 +3652,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 195,
       "title": "Classroom report: Basic_Major \u00b7 Deal 7 (from Rick \u2014 ACCEPT audit)",
       "state": "closed",
@@ -3412,6 +3669,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 194,
       "title": "Classroom report: Basic_Major \u00b7 Deal 6 (from Rick \u2014 ACCEPT audit)",
       "state": "closed",
@@ -3428,6 +3686,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 193,
       "title": "Classroom report: Basic_Major \u00b7 Deal 3 (from Rick \u2014 ACCEPT audit)",
       "state": "closed",
@@ -3444,6 +3703,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 192,
       "title": "Classroom report: Open_and_Rebid \u00b7 Deal 2 (from Rick)",
       "state": "closed",
@@ -3459,6 +3719,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 191,
       "title": "Classroom report: Open_and_Rebid \u00b7 Deal 2 (from Rick)",
       "state": "closed",
@@ -3474,6 +3735,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 190,
       "title": "Classroom report: Open_and_Rebid \u00b7 Deal 1 (from Rick)",
       "state": "closed",
@@ -3489,6 +3751,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 189,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1 (from Rick)",
       "state": "closed",
@@ -3504,6 +3767,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 188,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1 (from Rick)",
       "state": "closed",
@@ -3519,6 +3783,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 187,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1 (from Rick)",
       "state": "closed",
@@ -3534,6 +3799,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 186,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1 (from Rick)",
       "state": "closed",
@@ -3549,6 +3815,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 10,
       "title": "Classroom report: Baker Bridge - Negative Doubles \u00b7 Deal 4 (from Rick)",
       "state": "open",
@@ -3564,6 +3831,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 185,
       "title": "Classroom report: Negative_Double \u00b7 Deal 3 (from Rick)",
       "state": "closed",
@@ -3579,6 +3847,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 184,
       "title": "Classroom report: Negative_Double \u00b7 Deal 2 (from Rick)",
       "state": "closed",
@@ -3594,6 +3863,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 183,
       "title": "Classroom report: Negative_Double \u00b7 Deal 1 (from Rick)",
       "state": "closed",
@@ -3609,6 +3879,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 120,
       "title": "Surface the 'wild' mastery milestone across the GUI (paws are nearly invisible)",
       "state": "closed",
@@ -3622,6 +3893,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 114,
       "title": "Assignment duration is wildly inflated by idle time; add first-pass vs total, capped, from rollup",
       "state": "closed",
@@ -3635,6 +3907,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 112,
       "title": "Observations sync for never-created user_ids \u2192 permanent FK-reject retry loop (invisible learners)",
       "state": "open",
@@ -3648,6 +3921,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 110,
       "title": "Assignment results panel: wrong completed count, inflated accuracy, and misleading drill-in",
       "state": "closed",
@@ -3661,6 +3935,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 182,
       "title": "Classroom report: Basic_NT \u00b7 Deal 2 (from Rick)",
       "state": "closed",
@@ -3676,6 +3951,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 181,
       "title": "Classroom report: Negative_Double \u00b7 Deal 4",
       "state": "closed",
@@ -3691,6 +3967,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 94,
       "title": "Frontend manifest-join: source board_version_token from the manifest roster, not the PBN tag",
       "state": "open",
@@ -3706,6 +3983,7 @@
     {
       "repo": "Bridge-Lessons-by-Andrew-Rowberg",
       "full_name": "bridge-craftwork/Bridge-Lessons-by-Andrew-Rowberg",
+      "external": false,
       "number": 1,
       "title": "Adopt the Non-Persisting Deal Source Contract (ship a menu manifest)",
       "state": "open",
@@ -3719,6 +3997,7 @@
     {
       "repo": "Bridge-Lessons-Advanced",
       "full_name": "bridge-craftwork/Bridge-Lessons-Advanced",
+      "external": false,
       "number": 1,
       "title": "Adopt the Non-Persisting Deal Source Contract (ship a menu manifest)",
       "state": "open",
@@ -3732,6 +4011,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 8,
       "title": "Emit a build-generated manifest matching PBS schema v2 (producer contract R5)",
       "state": "closed",
@@ -3745,6 +4025,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 179,
       "title": "Manifest v2: add authoritative board roster (producer contract R5)",
       "state": "closed",
@@ -3758,6 +4039,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 90,
       "title": "Ratify ADR-0002 & amend producer contract (collection manifest)",
       "state": "closed",
@@ -3773,6 +4055,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 89,
       "title": "Build-generated collection manifest + pluggable LibrarySource (authoritative sizing & prerelease)",
       "state": "open",
@@ -3789,6 +4072,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 178,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 24",
       "state": "closed",
@@ -3804,6 +4088,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 85,
       "title": "Decision: durable iPad/Safari sessions \u2014 server-set cookie (near-term) vs native iOS app (longer-term)",
       "state": "open",
@@ -3817,6 +4102,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 83,
       "title": "iPad session persistence: proactive PWA-install guidance + PWA-aware recovery email",
       "state": "open",
@@ -3830,6 +4116,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 80,
       "title": "Coaching suit symbols render monochrome \u2014 color them red/black by suit",
       "state": "open",
@@ -3843,6 +4130,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 177,
       "title": "Classroom report: Finesse_Simple \u00b7 Deal 2",
       "state": "closed",
@@ -3858,6 +4146,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 176,
       "title": "Classroom report: Finesse_Simple \u00b7 Deal 1",
       "state": "closed",
@@ -3873,6 +4162,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 74,
       "title": "Fix assignment success rates calculation",
       "state": "open",
@@ -3886,6 +4176,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 73,
       "title": "Add assignment analysis report",
       "state": "open",
@@ -3899,6 +4190,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 5,
       "title": "Classroom report: Baker Bridge - 2-Over-1 Game Force \u00b7 Deal 10 (from Rick)",
       "state": "closed",
@@ -3914,6 +4206,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 175,
       "title": "Build step: stamp [BoardVersionToken] + wire stable/SkillPath through the BC-served pipeline",
       "state": "closed",
@@ -3927,6 +4220,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 4,
       "title": "Adopt the Bridge Classroom collection-producer contract (review + add a folder-scoped CLAUDE.md)",
       "state": "closed",
@@ -3940,6 +4234,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 174,
       "title": "Classroom report: Open_and_Rebid \u00b7 Deal 6",
       "state": "closed",
@@ -3955,6 +4250,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 173,
       "title": "Adopt the Bridge Classroom collection-producer contract (review + add a folder-scoped CLAUDE.md)",
       "state": "closed",
@@ -3968,6 +4264,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 3,
       "title": "Classroom report: Baker Bridge - Major Suit Openings \u00b7 Deal 1 (from Rick)",
       "state": "closed",
@@ -3983,6 +4280,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 67,
       "title": "Accepted-alternative commentary misattributes the recorded call to the student (reframe)",
       "state": "closed",
@@ -3996,6 +4294,7 @@
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
       "number": 1,
       "title": "Label PBN files for Bridge Classroom board identity (stability, collection, BoardVersionToken)",
       "state": "closed",
@@ -4009,6 +4308,7 @@
     {
       "repo": "bbo-pbs",
       "full_name": "bridge-craftwork/bbo-pbs",
+      "external": true,
       "number": 2,
       "title": "Migrate BBAcompare double-dummy from bridgewebs BSOL to self-hosted bridge-solver-service",
       "state": "open",
@@ -4024,6 +4324,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 172,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 12",
       "state": "closed",
@@ -4039,6 +4340,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 171,
       "title": "Classroom report: Squeeze_Endplay_Exam \u00b7 Deal 1",
       "state": "closed",
@@ -4054,6 +4356,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 170,
       "title": "Classroom report: Side_Suit_Ruff_Before_Trump \u00b7 Deal 2",
       "state": "closed",
@@ -4069,6 +4372,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 169,
       "title": "Classroom report: SMOKE-TEST \u00b7 Deal 0",
       "state": "closed",
@@ -4084,6 +4388,7 @@
     {
       "repo": "bbo-pbs",
       "full_name": "bridge-craftwork/bbo-pbs",
+      "external": true,
       "number": 1,
       "title": "Update PBS fetch URL after repo moved to bridge-craftwork org",
       "state": "open",
@@ -4097,6 +4402,7 @@
     {
       "repo": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "external": false,
       "number": 1,
       "title": "Update PBS import URL after repo moved to bridge-craftwork org",
       "state": "open",
@@ -4110,6 +4416,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 50,
       "title": "Update PBS URLs after repo moved to bridge-craftwork org",
       "state": "open",
@@ -4123,6 +4430,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 167,
       "title": "Add github action to create manifest.json file",
       "state": "closed",
@@ -4136,6 +4444,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 166,
       "title": "Move this repo to the bridge-craftwork organization",
       "state": "closed",
@@ -4149,6 +4458,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 165,
       "title": "Classroom report: Finesse_Simple \u00b7 Deal 1",
       "state": "closed",
@@ -4164,6 +4474,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 164,
       "title": "Classroom report: Squeeze_Endplay_Exam \u00b7 Deal 1",
       "state": "closed",
@@ -4179,6 +4490,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 163,
       "title": "Classroom report: Double_Squeeze \u00b7 Deal 1",
       "state": "closed",
@@ -4195,6 +4507,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 162,
       "title": "Classroom report: Rabbis_Rule \u00b7 Deal 1",
       "state": "closed",
@@ -4210,6 +4523,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 161,
       "title": "Classroom report: Finesse_Exam \u00b7 Deal 2",
       "state": "closed",
@@ -4226,6 +4540,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 160,
       "title": "Classroom report: Finesse_Simple \u00b7 Deal 2",
       "state": "closed",
@@ -4241,6 +4556,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 159,
       "title": "Classroom report: Responsive_Double \u00b7 Deal 7",
       "state": "closed",
@@ -4256,6 +4572,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 44,
       "title": "Namespace localStorage sub-stores to prevent multi-tab clobber",
       "state": "open",
@@ -4271,6 +4588,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 43,
       "title": "Split oversized views (MainLayout, BiddingPracticeView) and add useDataSync tests",
       "state": "open",
@@ -4286,6 +4604,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 42,
       "title": "Extract the curator tool to its own repo",
       "state": "open",
@@ -4301,6 +4620,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 41,
       "title": "Decide and implement a PWA/offline layer (standalone-app goal)",
       "state": "open",
@@ -4316,6 +4636,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 40,
       "title": "Proxy, cache, and SHA-pin GitHub-raw lesson content",
       "state": "open",
@@ -4331,6 +4652,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 39,
       "title": "Derive classroom invite URL from window.location.origin (hardcoded .com defeats .org fallback)",
       "state": "open",
@@ -4346,6 +4668,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 38,
       "title": "SQLite: enable WAL, wrap board recompute in a transaction, index observations(assignment_id)",
       "state": "open",
@@ -4361,6 +4684,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 37,
       "title": "loadDeal must reset altStepIndices (accept-alternative state leaks across boards)",
       "state": "open",
@@ -4376,6 +4700,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 36,
       "title": "Guard deal-switch races in card-play and bidding-practice bot drivers",
       "state": "closed",
@@ -4391,6 +4716,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 35,
       "title": "Sync layer: install triggers once, sync as real user, flush before Switch User, remove by id",
       "state": "open",
@@ -4406,6 +4732,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 34,
       "title": "Scope data-exposing read & admin endpoints to the caller",
       "state": "open",
@@ -4421,6 +4748,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 33,
       "title": "Require authentication on all write/mutation API endpoints",
       "state": "open",
@@ -4436,6 +4764,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 158,
       "title": "Classroom report: Reverse_By_Opener \u00b7 Deal 1",
       "state": "closed",
@@ -4451,6 +4780,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 157,
       "title": "Classroom report: Finesse_Simple \u00b7 Deal 1",
       "state": "closed",
@@ -4466,6 +4796,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 156,
       "title": "Classroom report: Finesse_Simple \u00b7 Deal 1",
       "state": "closed",
@@ -4481,6 +4812,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 155,
       "title": "Classroom report: Hold_Up_3N \u00b7 Deal 1",
       "state": "closed",
@@ -4496,6 +4828,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 154,
       "title": "Classroom report: Hold_Up_3N \u00b7 Deal 1",
       "state": "closed",
@@ -4511,6 +4844,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 153,
       "title": "Classroom report: Play_Top_Tricks_NT \u00b7 Deal 1",
       "state": "closed",
@@ -4526,6 +4860,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 152,
       "title": "Classroom report: Side_Suit_Ruff_Before_Trump \u00b7 Deal 2",
       "state": "closed",
@@ -4541,6 +4876,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 151,
       "title": "Classroom report: Two_Way_Finesse \u00b7 Deal 5",
       "state": "closed",
@@ -4556,6 +4892,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 150,
       "title": "Classroom report: Basic_Major_Defense_RHO \u00b7 Deal 4",
       "state": "closed",
@@ -4571,6 +4908,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 149,
       "title": "Classroom report: Negative_Double \u00b7 Deal 3",
       "state": "closed",
@@ -4586,6 +4924,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 148,
       "title": "Classroom report: Negative_Double \u00b7 Deal 2",
       "state": "closed",
@@ -4601,6 +4940,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 147,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 3",
       "state": "closed",
@@ -4616,6 +4956,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 146,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 2",
       "state": "closed",
@@ -4631,6 +4972,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 32,
       "title": "Add separate test and prod instances of the bridge-classroom app",
       "state": "open",
@@ -4644,6 +4986,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 145,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1",
       "state": "closed",
@@ -4659,6 +5002,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 144,
       "title": "Classroom report: deploy-verification \u00b7 Deal 1",
       "state": "closed",
@@ -4674,6 +5018,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 31,
       "title": "Part M: collapse coaching folders into one (coaching-non-rotated \u2192 coaching)",
       "state": "closed",
@@ -4687,6 +5032,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 30,
       "title": "Deploy the Report-a-Problem backend /report route (Rust, droplet) \u2014 Rick",
       "state": "closed",
@@ -4700,6 +5046,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 143,
       "title": "Classroom report: Basic_Weak_2 \u00b7 Deal 6",
       "state": "closed",
@@ -4715,6 +5062,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 142,
       "title": "Classroom report: Basic_Takeout_Double \u00b7 Deal 5",
       "state": "closed",
@@ -4730,6 +5078,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 141,
       "title": "Classroom report: Play_Top_Tricks \u00b7 Deal 3",
       "state": "closed",
@@ -4745,6 +5094,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 140,
       "title": "Classroom report: Basic_Weak_2 \u00b7 Deal 6",
       "state": "closed",
@@ -4760,6 +5110,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 139,
       "title": "Classroom report: Basic_Minor \u00b7 Deal 4",
       "state": "closed",
@@ -4775,6 +5126,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 138,
       "title": "Classroom report: Basic_Overcall \u00b7 Deal 8",
       "state": "closed",
@@ -4790,6 +5142,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 137,
       "title": "Classroom report: Basic_Overcall \u00b7 Deal 4",
       "state": "closed",
@@ -4805,6 +5158,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 136,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 14",
       "state": "closed",
@@ -4820,6 +5174,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 135,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 13",
       "state": "closed",
@@ -4835,6 +5190,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 134,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 13",
       "state": "closed",
@@ -4850,6 +5206,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 133,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 12",
       "state": "closed",
@@ -4865,6 +5222,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 29,
       "title": "Coaching play boards: show the double-dummy (or single-dummy) result",
       "state": "closed",
@@ -4878,6 +5236,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 28,
       "title": "Coaching play boards: opening lead not played when student is the declarer",
       "state": "closed",
@@ -4891,6 +5250,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 132,
       "title": "Classroom report: Texas_Transfer \u00b7 Deal 13",
       "state": "closed",
@@ -4906,6 +5266,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 131,
       "title": "Classroom report: Texas_Transfer \u00b7 Deal 12",
       "state": "closed",
@@ -4921,6 +5282,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 130,
       "title": "Classroom report: Texas_Transfer \u00b7 Deal 6",
       "state": "closed",
@@ -4936,6 +5298,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 27,
       "title": "Coaching: student's own Pass calls are auto-played, not offered (passed-hand & multi-pass auctions)",
       "state": "closed",
@@ -4949,6 +5312,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 26,
       "title": "Negative Double \u2014 judgment call: 1NT\u21923NT teaching board (board 73)",
       "state": "closed",
@@ -4962,6 +5326,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 25,
       "title": "Negative Double \u2014 judgment call: 3-card-major raise after a negative double (board 54)",
       "state": "closed",
@@ -4975,6 +5340,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 129,
       "title": "Classroom report: Basic_NT_Defense_RHO \u00b7 Deal 29",
       "state": "closed",
@@ -4990,6 +5356,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 128,
       "title": "Classroom report: Basic_NT_Defense_RHO \u00b7 Deal 1",
       "state": "closed",
@@ -5005,6 +5372,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 127,
       "title": "Classroom report: Basic_NT_Defense_RHO \u00b7 Deal 3",
       "state": "closed",
@@ -5020,6 +5388,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 126,
       "title": "Classroom report: Basic_Minor_Defense_LHO \u00b7 Deal 15",
       "state": "closed",
@@ -5035,6 +5404,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 125,
       "title": "Classroom report: Basic_Minor_Defense_LHO \u00b7 Deal 6",
       "state": "closed",
@@ -5050,6 +5420,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 124,
       "title": "Classroom report: Two_Way_Finesse \u00b7 Deal 1",
       "state": "closed",
@@ -5065,6 +5436,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 123,
       "title": "Classroom report: Drury \u00b7 Deal 2",
       "state": "closed",
@@ -5081,6 +5453,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 122,
       "title": "Classroom report: Drury \u00b7 Deal 1",
       "state": "closed",
@@ -5097,6 +5470,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 121,
       "title": "Classroom report: Texas_Transfer \u00b7 Deal 5",
       "state": "closed",
@@ -5112,6 +5486,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 120,
       "title": "Classroom report: Negative_Double \u00b7 Deal 6",
       "state": "closed",
@@ -5127,6 +5502,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 119,
       "title": "Classroom report: Negative_Double \u00b7 Deal 5",
       "state": "closed",
@@ -5142,6 +5518,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 118,
       "title": "Classroom report: Negative_Double \u00b7 Deal 2",
       "state": "closed",
@@ -5157,6 +5534,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 117,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 12",
       "state": "closed",
@@ -5173,6 +5551,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 24,
       "title": "Coaching: reveal all four hands when the auction ends",
       "state": "closed",
@@ -5186,6 +5565,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 23,
       "title": "Coaching: new deal should open on the first step, not step 3",
       "state": "closed",
@@ -5199,6 +5579,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 116,
       "title": "Classroom report: Splinters \u00b7 Deal 15",
       "state": "closed",
@@ -5214,6 +5595,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 115,
       "title": "Classroom report: Splinters \u00b7 Deal 14",
       "state": "closed",
@@ -5229,6 +5611,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 114,
       "title": "Classroom report: Splinters \u00b7 Deal 2",
       "state": "closed",
@@ -5244,6 +5627,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 113,
       "title": "Classroom report: Reverse_By_Opener \u00b7 Deal 22",
       "state": "closed",
@@ -5259,6 +5643,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 112,
       "title": "Classroom report: Reverse_By_Opener \u00b7 Deal 3",
       "state": "closed",
@@ -5274,6 +5659,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 111,
       "title": "Classroom report: Reverse_By_Opener \u00b7 Deal 2",
       "state": "closed",
@@ -5289,6 +5675,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 110,
       "title": "Classroom report: Reverse_By_Opener \u00b7 Deal 1",
       "state": "closed",
@@ -5304,6 +5691,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 109,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 11",
       "state": "closed",
@@ -5319,6 +5707,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 108,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 10",
       "state": "closed",
@@ -5334,6 +5723,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 107,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 9",
       "state": "closed",
@@ -5349,6 +5739,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 106,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 8",
       "state": "closed",
@@ -5364,6 +5755,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 105,
       "title": "Classroom report: Fourth_Suit_Forcing \u00b7 Deal 7",
       "state": "closed",
@@ -5379,6 +5771,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 22,
       "title": "Classroom feedback triage \u2014 June batch (FYI)",
       "state": "closed",
@@ -5392,6 +5785,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 21,
       "title": "Coaching layout: keep coaching/bidding near the hands; surface scenario chat after 2 wrong openings",
       "state": "closed",
@@ -5405,6 +5799,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 20,
       "title": "Report a Problem: auto-close the popup shortly after submit",
       "state": "closed",
@@ -5418,6 +5813,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 19,
       "title": "Coaching display: \u2663 and \u2660 symbols hard to tell apart at current size",
       "state": "closed",
@@ -5431,6 +5827,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 104,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 2",
       "state": "closed",
@@ -5446,6 +5843,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 103,
       "title": "Classroom report: Spiral_Raises_Wolpert \u00b7 Deal 1",
       "state": "closed",
@@ -5461,6 +5859,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 102,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1",
       "state": "closed",
@@ -5476,6 +5875,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 101,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1",
       "state": "closed",
@@ -5491,6 +5891,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 100,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1",
       "state": "closed",
@@ -5506,6 +5907,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 99,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1",
       "state": "closed",
@@ -5521,6 +5923,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 98,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 23",
       "state": "closed",
@@ -5536,6 +5939,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 97,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 23",
       "state": "closed",
@@ -5551,6 +5955,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 96,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 23",
       "state": "closed",
@@ -5566,6 +5971,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 95,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 22",
       "state": "closed",
@@ -5581,6 +5987,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 94,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 21",
       "state": "closed",
@@ -5596,6 +6003,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 93,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 21",
       "state": "closed",
@@ -5611,6 +6019,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 92,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 21",
       "state": "closed",
@@ -5626,6 +6035,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 91,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 21",
       "state": "closed",
@@ -5641,6 +6051,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 90,
       "title": "Classroom report: Basic_Minor \u00b7 Deal 3",
       "state": "closed",
@@ -5656,6 +6067,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 89,
       "title": "Classroom report: Basic_Minor \u00b7 Deal 1",
       "state": "closed",
@@ -5671,6 +6083,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 88,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1",
       "state": "closed",
@@ -5686,6 +6099,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 87,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1",
       "state": "closed",
@@ -5701,6 +6115,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 86,
       "title": "Classroom report: Basic_What_To_Open \u00b7 Deal 1",
       "state": "closed",
@@ -5716,6 +6131,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 85,
       "title": "Classroom report: 3N_Rebid_by_Opener \u00b7 Deal 1",
       "state": "closed",
@@ -5731,6 +6147,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 84,
       "title": "Classroom report: Basic_Weak_2 \u00b7 Deal 9",
       "state": "closed",
@@ -5746,6 +6163,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 83,
       "title": "Classroom report: Basic_Weak_2 \u00b7 Deal 7",
       "state": "closed",
@@ -5761,6 +6179,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 82,
       "title": "Classroom report: Basic_Weak_2 \u00b7 Deal 6",
       "state": "closed",
@@ -5776,6 +6195,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 18,
       "title": "Fading Coaching Tips",
       "state": "closed",
@@ -5789,6 +6209,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 17,
       "title": "useDataSync.initialize() called twice \u2192 duplicate listeners + extra 5-min interval",
       "state": "open",
@@ -5802,6 +6223,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 16,
       "title": "Student-facing 'Revoke data sharing' \u2014 wire DELETE /api/grants/:grant_id into Settings",
       "state": "open",
@@ -5815,6 +6237,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 15,
       "title": "Add an Exercises Editor for Teacher Role",
       "state": "closed",
@@ -5828,6 +6251,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 14,
       "title": "Add cardplay option to bidding-practice app",
       "state": "open",
@@ -5841,6 +6265,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 13,
       "title": "Add Tab structure to UI",
       "state": "closed",
@@ -5854,6 +6279,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 12,
       "title": "Add authentication of some web end points",
       "state": "closed",
@@ -5867,6 +6293,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 11,
       "title": "Add Scramble option",
       "state": "open",
@@ -5880,6 +6307,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 9,
       "title": "Add a Test Student View to test the view for a specific student",
       "state": "closed",
@@ -5893,6 +6321,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 8,
       "title": "Add Convention Card coverage display for student",
       "state": "open",
@@ -5906,6 +6335,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 7,
       "title": "Finish design of Assignments system",
       "state": "closed",
@@ -5919,6 +6349,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 6,
       "title": "Add Bridge Context to board metadata, and display at UI",
       "state": "closed",
@@ -5932,6 +6363,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 5,
       "title": "Migrate back-end to DigitalOcean server",
       "state": "open",
@@ -5945,6 +6377,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 4,
       "title": "Improve the User Experience so it is better at showing improvement, and is more positive",
       "state": "open",
@@ -5958,6 +6391,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 3,
       "title": "Add Achievements System",
       "state": "open",
@@ -5971,6 +6405,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 2,
       "title": "Finalize state and color scheme",
       "state": "closed",
@@ -5984,6 +6419,7 @@
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
       "number": 1,
       "title": "Improve DB structure so we don't need to pull full history to show summary views",
       "state": "closed",
@@ -5997,6 +6433,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 81,
       "title": "Cappelletti in balancing seat",
       "state": "closed",
@@ -6010,6 +6447,7 @@
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
       "number": 1,
       "title": "Implement gnurandom - Exact dealer.exe RNG compatibility",
       "state": "closed",
@@ -6023,6 +6461,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 78,
       "title": "The mini missfit monsters",
       "state": "closed",
@@ -6036,6 +6475,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 77,
       "title": "Do we have a set with 1Ma-(P)-4Ma",
       "state": "closed",
@@ -6049,6 +6489,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 76,
       "title": "A difficult one",
       "state": "closed",
@@ -6062,6 +6503,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 75,
       "title": "Balancing 2N",
       "state": "closed",
@@ -6075,6 +6517,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 74,
       "title": "Adding deals for Reverse Flannery",
       "state": "closed",
@@ -6088,6 +6531,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 73,
       "title": "A strange request",
       "state": "closed",
@@ -6101,6 +6545,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 72,
       "title": "Wrong filename on windows",
       "state": "closed",
@@ -6114,6 +6559,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 71,
       "title": "We are slammish after our own preempt",
       "state": "closed",
@@ -6127,6 +6573,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 70,
       "title": "Lebensohl in balancing situation",
       "state": "closed",
@@ -6140,6 +6587,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 69,
       "title": "Interesting task :-)",
       "state": "closed",
@@ -6153,6 +6601,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 68,
       "title": "Anything goes",
       "state": "closed",
@@ -6166,6 +6615,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 67,
       "title": "Benjamin 2D",
       "state": "closed",
@@ -6179,6 +6629,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 66,
       "title": "Error Generating Deal",
       "state": "closed",
@@ -6192,6 +6643,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 65,
       "title": "Add spaces to make code readable.",
       "state": "closed",
@@ -6205,6 +6657,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 64,
       "title": "Missing space around = ",
       "state": "closed",
@@ -6218,6 +6671,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 63,
       "title": "Overcalling their Strong opening",
       "state": "closed",
@@ -6231,6 +6685,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 62,
       "title": "Minor slams",
       "state": "closed",
@@ -6244,6 +6699,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 61,
       "title": "In fourth seat 2N is strong, but no agreements",
       "state": "closed",
@@ -6257,6 +6713,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 60,
       "title": "Opening 1N vs overcalling 1N",
       "state": "closed",
@@ -6270,6 +6727,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 56,
       "title": "BridgeComposer does not allow pipes | in the filter ",
       "state": "closed",
@@ -6283,6 +6741,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 55,
       "title": "Spaces in Filter string",
       "state": "closed",
@@ -6296,6 +6755,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 54,
       "title": "Running one * *",
       "state": "closed",
@@ -6309,6 +6769,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 53,
       "title": "Filter",
       "state": "closed",
@@ -6322,6 +6783,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 52,
       "title": "oneScriptToRuleThemAll",
       "state": "closed",
@@ -6335,6 +6797,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 45,
       "title": "5N as grandslam invitation",
       "state": "closed",
@@ -6348,6 +6811,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 43,
       "title": "Responder has an invitational hand",
       "state": "closed",
@@ -6361,6 +6825,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 38,
       "title": "Overcalling 4Ma",
       "state": "closed",
@@ -6374,6 +6839,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 37,
       "title": "Reponders reverse",
       "state": "closed",
@@ -6387,6 +6853,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 36,
       "title": "Lebensohl_Over_Weak_2",
       "state": "closed",
@@ -6400,6 +6867,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 35,
       "title": "They disturb over our 2C opening",
       "state": "closed",
@@ -6413,6 +6881,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 33,
       "title": "Lebensohl and defense over their preempt",
       "state": "closed",
@@ -6426,6 +6895,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 32,
       "title": "General Discussion",
       "state": "closed",
@@ -6439,6 +6909,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 31,
       "title": "minor2 definition is missing the spaces",
       "state": "closed",
@@ -6452,6 +6923,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 30,
       "title": "Mixed raise",
       "state": "closed",
@@ -6465,6 +6937,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 29,
       "title": "minor2",
       "state": "closed",
@@ -6478,6 +6951,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 28,
       "title": "Video no longer exist",
       "state": "closed",
@@ -6491,6 +6965,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 27,
       "title": "Minor suit Stayman after 2N-opening",
       "state": "closed",
@@ -6504,6 +6979,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 26,
       "title": "Error in Dealer-VicsMajRespStr",
       "state": "closed",
@@ -6517,6 +6993,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 25,
       "title": "Error in Dealer SCS-Two-Clubs",
       "state": "closed",
@@ -6530,6 +7007,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 24,
       "title": "Error in Dealer-McCabe-after-WJO",
       "state": "closed",
@@ -6543,6 +7021,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 23,
       "title": "New session",
       "state": "closed",
@@ -6556,6 +7035,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 22,
       "title": "Pesky Opponents",
       "state": "closed",
@@ -6569,6 +7049,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 21,
       "title": "Another interesting situation",
       "state": "closed",
@@ -6582,6 +7063,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 20,
       "title": "Reopening double (penalty Pass)",
       "state": "closed",
@@ -6595,6 +7077,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 19,
       "title": "non-leaping Michaels",
       "state": "closed",
@@ -6608,6 +7091,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 18,
       "title": "Jacoby 2N (Leveled)",
       "state": "closed",
@@ -6621,6 +7105,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 17,
       "title": "Preempt and we bid 3N",
       "state": "closed",
@@ -6634,6 +7119,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 16,
       "title": "3N-system",
       "state": "closed",
@@ -6647,6 +7133,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 15,
       "title": "Gerber",
       "state": "closed",
@@ -6660,6 +7147,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 14,
       "title": "Practicing 2N-system",
       "state": "closed",
@@ -6673,6 +7161,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 13,
       "title": "Import scripts",
       "state": "closed",
@@ -6686,6 +7175,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 12,
       "title": "Standard for filenames",
       "state": "closed",
@@ -6699,6 +7189,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 11,
       "title": "Practice hands after 1X-(D)-RD",
       "state": "closed",
@@ -6712,6 +7203,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 10,
       "title": "2C-opening",
       "state": "closed",
@@ -6725,6 +7217,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 9,
       "title": "Weak 2 bids",
       "state": "closed",
@@ -6738,6 +7231,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 8,
       "title": "Overcall 1N by opps",
       "state": "closed",
@@ -6751,6 +7245,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 7,
       "title": "Weak two bids with Lebensohl",
       "state": "closed",
@@ -6764,6 +7259,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 6,
       "title": "Automatic generation of boards in PBN-files",
       "state": "closed",
@@ -6777,6 +7273,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 5,
       "title": "Opponents overcall 1N",
       "state": "closed",
@@ -6790,6 +7287,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 4,
       "title": "A new training script",
       "state": "closed",
@@ -6803,6 +7301,7 @@
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
       "number": 3,
       "title": "I found errors in some of the scripts",
       "state": "closed",

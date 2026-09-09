@@ -156,6 +156,7 @@
 
             <!-- Issues Tab -->
             <div id="tab-issues" class="tab-content hidden space-y-6">
+                <div id="issues-scope" class="hidden justify-end -mb-2"></div>
                 <div id="issues-summary" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
                 <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
                     <div class="flex items-center justify-between mb-4">
@@ -1386,13 +1387,52 @@
         // ---------------------------------------------------------------
         // Grid state is local to the tab; the global repo filter still applies.
         let issueGridState = { grain: 'week', months: 6 };
+        // Repos flagged external in issues_data.json are other people's work
+        // (named with --repos, outside dashboard_data.json). Counting them
+        // skews "am I keeping up?", so they are toggleable and the choice
+        // sticks per browser.
+        const ISSUE_SCOPE_KEY = 'vibe_dashboard_include_external_issues';
+        let includeExternalIssues = localStorage.getItem(ISSUE_SCOPE_KEY) !== 'false';
         // Issues currently drawn in the grid, indexed by data-issue-idx
         let issueGridIssues = [];
 
         function getFilteredIssues() {
-            const all = (issuesData && issuesData.issues) || [];
+            let all = (issuesData && issuesData.issues) || [];
+            if (!includeExternalIssues) all = all.filter(i => !i.external);
             if (currentFilters.repo === 'all') return all;
             return all.filter(i => i.repo === currentFilters.repo);
+        }
+
+        function externalIssueRepos() {
+            const repos = (issuesData && issuesData.repos) || [];
+            return repos.filter(r => r.external);
+        }
+
+        function toggleExternalIssues(checked) {
+            includeExternalIssues = checked;
+            localStorage.setItem(ISSUE_SCOPE_KEY, checked ? 'true' : 'false');
+            renderIssuesTab();
+            renderStats(); // the Overview issue card counts the same set
+        }
+
+        function renderIssueScopeToggle() {
+            const el = document.getElementById('issues-scope');
+            if (!el) return;
+            const external = externalIssueRepos();
+            if (!external.length) { el.classList.add('hidden'); return; }
+            el.classList.remove('hidden');
+            el.classList.add('flex');
+            const count = external.reduce((n, r) => n + r.open + r.closed, 0);
+            const names = external.map(r => r.repo).join(', ');
+            el.innerHTML = `
+                <label class="flex items-center gap-2 text-xs text-slate-400 cursor-pointer select-none"
+                       title="Repos outside your own projects: ${esc(names)}">
+                    <input type="checkbox" ${includeExternalIssues ? 'checked' : ''}
+                           onchange="toggleExternalIssues(this.checked)"
+                           class="accent-emerald-500 w-3.5 h-3.5 cursor-pointer">
+                    Include others' repos
+                    <span class="text-slate-600">(${external.length} repo${external.length !== 1 ? 's' : ''}, ${count} issues)</span>
+                </label>`;
         }
 
         function issueIsOpen(i) { return i.state === 'open'; }
@@ -1516,6 +1556,8 @@
             const summary = document.getElementById('issues-summary');
             const grid = document.getElementById('issues-grid');
             if (!summary || !grid) return;
+
+            renderIssueScopeToggle();
 
             const issues = getFilteredIssues();
             if (!issues.length) {

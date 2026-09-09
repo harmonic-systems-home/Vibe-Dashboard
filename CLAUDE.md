@@ -82,6 +82,12 @@ repos already in `dashboard_data.json` so the tab matches the rest of the
 dashboard; pass `--dashboard-data ''` to scan every public repo instead, or
 `--include-private` / `--include-archived` to widen the net.
 
+Repos named with `--repos` are always scanned, even outside that scope. When a
+repo comes in that way it is marked `"external": true` in `issues_data.json` —
+it is someone else's work, so the Issues tab shows an "Include others' repos"
+checkbox that filters those out of every count, chart and row. The choice is
+remembered in `localStorage`, defaulting to included.
+
 ## Data Sources
 
 - **Issues**: GitHub REST API, public repos only, scoped to the repos in `dashboard_data.json`
