@@ -51,31 +51,32 @@
         <header class="border-b border-slate-800/50 backdrop-blur-sm bg-slate-950/80 sticky top-0 z-20">
             <div class="max-w-7xl mx-auto px-6 py-4">
                 <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-4">
-                        <div class="p-2 bg-emerald-500/10 rounded-lg border border-emerald-500/20">
+                    <div class="flex items-center gap-4 min-w-0">
+                        <div class="p-2 bg-emerald-500/10 rounded-lg border border-emerald-500/20 shrink-0">
                             <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
                             </svg>
                         </div>
-                        <div>
-                            <h1 class="text-xl font-bold tracking-tight">
+                        <div class="min-w-0">
+                            <h1 class="text-xl font-bold tracking-tight truncate">
                                 <span class="text-emerald-400">Bridge</span><span class="text-slate-400">Dev</span><span class="text-slate-600">.dashboard</span>
                             </h1>
-                            <p class="text-xs text-slate-500 mt-0.5">Project Analytics & Progress Tracker</p>
+                            <p class="text-xs text-slate-500 mt-0.5 truncate">Project Analytics & Progress Tracker</p>
                         </div>
                     </div>
                     
-                    <div class="flex items-center gap-4">
-                        <span class="text-xs text-slate-500" id="last-updated"></span>
-                        <select id="repo-filter" onchange="applyFilters()" class="bg-slate-900/50 border border-slate-800/50 rounded-lg px-3 py-2 text-sm text-slate-300 focus:outline-none focus:border-emerald-500/50">
+                    <div class="flex items-center gap-4 shrink-0 ml-4">
+                        <span class="text-[11px] text-slate-500 whitespace-nowrap hidden 2xl:inline" id="last-updated"></span>
+                        <select id="repo-filter" onchange="applyFilters()" class="bg-slate-900/50 border border-slate-800/50 rounded-lg px-3 py-2 text-sm text-slate-300 focus:outline-none focus:border-emerald-500/50 max-w-[180px]">
                             <option value="all">All Repos</option>
                         </select>
                         <nav class="flex gap-1 bg-slate-900/50 p-1 rounded-lg border border-slate-800/50">
-                            <button onclick="showTab('overview')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all active" data-tab="overview">Overview</button>
-                            <button onclick="showTab('projects')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="projects">Projects</button>
-                            <button onclick="showTab('activity')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="activity">Activity</button>
-                            <button onclick="showTab('claude')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="claude">Claude</button>
-                            <button onclick="showTab('apps')" class="tab-btn px-4 py-2 rounded-md text-sm transition-all" data-tab="apps">Apps</button>
+                            <button onclick="showTab('overview')" class="tab-btn px-3 py-2 rounded-md text-sm transition-all active" data-tab="overview">Overview</button>
+                            <button onclick="showTab('projects')" class="tab-btn px-3 py-2 rounded-md text-sm transition-all" data-tab="projects">Projects</button>
+                            <button onclick="showTab('activity')" class="tab-btn px-3 py-2 rounded-md text-sm transition-all" data-tab="activity">Activity</button>
+                            <button onclick="showTab('issues')" class="tab-btn px-3 py-2 rounded-md text-sm transition-all" data-tab="issues">Issues</button>
+                            <button onclick="showTab('claude')" class="tab-btn px-3 py-2 rounded-md text-sm transition-all" data-tab="claude">Claude</button>
+                            <button onclick="showTab('apps')" class="tab-btn px-3 py-2 rounded-md text-sm transition-all" data-tab="apps">Apps</button>
                         </nav>
                     </div>
                 </div>
@@ -85,7 +86,7 @@
         <main class="max-w-7xl mx-auto px-6 py-8">
             <!-- Overview Tab -->
             <div id="tab-overview" class="tab-content space-y-8">
-                <div class="grid grid-cols-4 gap-4" id="stats-grid"></div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4" id="stats-grid"></div>
                 <div class="grid grid-cols-3 gap-6">
                     <div class="col-span-2 bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
                         <div class="flex items-center justify-between mb-4">
@@ -153,6 +154,47 @@
                 </div>
             </div>
 
+            <!-- Issues Tab -->
+            <div id="tab-issues" class="tab-content hidden space-y-6">
+                <div id="issues-summary" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"></div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-sm font-medium text-slate-400">Issue Flow &mdash; opened vs resolved</h3>
+                        <p class="text-xs text-slate-600">Bars: per period &nbsp;·&nbsp; Line: open backlog</p>
+                    </div>
+                    <canvas id="issueFlowChart" height="80"></canvas>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <div class="flex items-center justify-between mb-4 gap-4 flex-wrap">
+                        <div>
+                            <h3 class="text-sm font-medium text-slate-400">Issues by Repo Over Time</h3>
+                            <p class="text-xs text-slate-600 mt-0.5">One box per issue, placed when it was opened. Hover for the title, click to open on GitHub.</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-3 text-xs mr-2">
+                                <span class="flex items-center gap-1.5 text-slate-400"><span class="w-2.5 h-2.5 rounded-sm bg-amber-400/80"></span>Open</span>
+                                <span class="flex items-center gap-1.5 text-slate-400"><span class="w-2.5 h-2.5 rounded-sm bg-emerald-500/70"></span>Closed</span>
+                            </div>
+                            <select id="issue-grain" onchange="applyIssueControls()" class="bg-slate-800/50 border border-slate-700/50 rounded-lg px-2 py-1 text-xs text-slate-400 focus:outline-none focus:border-emerald-500/50">
+                                <option value="week" selected>By week</option>
+                                <option value="month">By month</option>
+                            </select>
+                            <select id="issue-range" onchange="applyIssueControls()" class="bg-slate-800/50 border border-slate-700/50 rounded-lg px-2 py-1 text-xs text-slate-400 focus:outline-none focus:border-emerald-500/50">
+                                <option value="3">3 months</option>
+                                <option value="6" selected>6 months</option>
+                                <option value="12">12 months</option>
+                                <option value="all">All time</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="issues-grid" class="overflow-x-auto"></div>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-6">
+                    <h3 class="text-sm font-medium text-slate-400 mb-4">Oldest Open Issues</h3>
+                    <div id="issues-oldest" class="space-y-2"></div>
+                </div>
+            </div>
+
             <!-- Claude Tab -->
             <div id="tab-claude" class="tab-content hidden space-y-6">
                 <!-- Claude Stats Grid -->
@@ -195,11 +237,15 @@
         </main>
     </div>
 
+    <!-- Hover card for the issue grid -->
+    <div id="issue-tooltip" class="hidden fixed z-50 pointer-events-none max-w-sm bg-slate-950/95 border border-slate-700/60 rounded-lg px-3 py-2 shadow-xl backdrop-blur-sm"></div>
+
     <script>
         // Global state
         let dashboardData = null;
         let claudeData = null;
         let appsData = null;
+        let issuesData = null;
         let charts = {};
         let currentFilters = {
             repo: 'all',
@@ -250,7 +296,7 @@
             document.getElementById('growth-timeframe').value = currentFilters.growthMonths;
 
             // Set tab from URL (will be applied after data loads)
-            if (urlParams.tab && ['overview', 'projects', 'activity', 'claude', 'apps'].includes(urlParams.tab)) {
+            if (urlParams.tab && ['overview', 'projects', 'activity', 'issues', 'claude', 'apps'].includes(urlParams.tab)) {
                 setTimeout(() => showTab(urlParams.tab), 0);
             }
         }
@@ -283,6 +329,9 @@
                 // Also try to load Apps data (optional)
                 await loadAppsData();
 
+                // Also try to load Issues data (optional)
+                await loadIssuesData();
+
                 showApp();
 
                 // Fetch live releases in background (won't block initial render)
@@ -314,6 +363,18 @@
             } catch (error) {
                 console.log('Apps data not available:', error);
                 appsData = null;
+            }
+        }
+
+        async function loadIssuesData() {
+            try {
+                const response = await fetch('issues_data.json');
+                if (response.ok) {
+                    issuesData = await response.json();
+                }
+            } catch (error) {
+                console.log('Issues data not available:', error);
+                issuesData = null;
             }
         }
 
@@ -537,6 +598,7 @@
             renderActivity();
             renderClaudeTab();
             renderAppsTab();
+            renderIssuesTab();
         }
 
         function populateRepoFilter() {
@@ -578,6 +640,7 @@
             renderCharts();
             renderProjectCards();
             renderCalendar();
+            renderIssuesTab();
         }
 
         function getFilteredProjects() {
@@ -662,6 +725,8 @@
             const week_trend = this_week_commits - last_week_commits;
             const project_count = projects.length;
 
+            const issueStats = computeIssueStats(getFilteredIssues());
+
             // Get releases for display
             const releases = getFilteredReleases();
             const releasesHtml = releases.length > 0
@@ -688,6 +753,14 @@
                     <p class="text-xs text-slate-500 uppercase tracking-wider">Week Trend</p>
                     <p class="text-3xl font-bold mt-1 text-${week_trend >= 0 ? 'emerald' : 'rose'}-400">${week_trend >= 0 ? '+' : ''}${week_trend}</p>
                     <p class="text-xs text-slate-600 mt-1">vs last week</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-violet-500/30 transition-all cursor-pointer" onclick="showTab('issues')">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">Issues</p>
+                    <p class="text-3xl font-bold mt-1 text-violet-400">${issueStats.total.toLocaleString()}</p>
+                    <p class="text-xs text-slate-600 mt-1">
+                        <span class="text-amber-400">${issueStats.open}</span> open ·
+                        <span class="text-emerald-400">${issueStats.closed}</span> closed
+                    </p>
                 </div>
                 <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-amber-500/30 transition-all">
                     <p class="text-xs text-slate-500 uppercase tracking-wider">Recent Releases</p>
@@ -1308,6 +1381,413 @@
             }).join('');
         }
 
+        // ---------------------------------------------------------------
+        // Issues Tab
+        // ---------------------------------------------------------------
+        // Grid state is local to the tab; the global repo filter still applies.
+        let issueGridState = { grain: 'week', months: 6 };
+        // Issues currently drawn in the grid, indexed by data-issue-idx
+        let issueGridIssues = [];
+
+        function getFilteredIssues() {
+            const all = (issuesData && issuesData.issues) || [];
+            if (currentFilters.repo === 'all') return all;
+            return all.filter(i => i.repo === currentFilters.repo);
+        }
+
+        function issueIsOpen(i) { return i.state === 'open'; }
+
+        function daysBetween(a, b) {
+            if (!a || !b) return null;
+            return (new Date(b).getTime() - new Date(a).getTime()) / 86400000;
+        }
+
+        function medianOf(values) {
+            if (!values.length) return null;
+            const v = [...values].sort((a, b) => a - b);
+            const mid = Math.floor(v.length / 2);
+            return v.length % 2 ? v[mid] : (v[mid - 1] + v[mid]) / 2;
+        }
+
+        function fmtDays(d) {
+            if (d === null || d === undefined) return '—';
+            if (d < 1) return `${Math.max(1, Math.round(d * 24))}h`;
+            if (d < 60) return `${Math.round(d)}d`;
+            return `${(d / 30.44).toFixed(1)}mo`;
+        }
+
+        // Mirrors build_stats() in fetch_issues.py so the numbers stay correct
+        // when the global repo filter narrows the set client-side.
+        function computeIssueStats(issues) {
+            const now = Date.now();
+            const cut30 = now - 30 * 86400000;
+            const open = issues.filter(issueIsOpen);
+            const closed = issues.filter(i => !issueIsOpen(i));
+            const resolution = closed.map(i => daysBetween(i.created_at, i.closed_at)).filter(d => d !== null);
+            const ages = open.map(i => daysBetween(i.created_at, new Date(now).toISOString())).filter(d => d !== null);
+            return {
+                total: issues.length,
+                open: open.length,
+                closed: closed.length,
+                closeRate: issues.length ? Math.round(100 * closed.length / issues.length) : 0,
+                opened30: issues.filter(i => new Date(i.created_at).getTime() >= cut30).length,
+                closed30: closed.filter(i => i.closed_at && new Date(i.closed_at).getTime() >= cut30).length,
+                medianClose: medianOf(resolution),
+                oldestOpen: ages.length ? Math.max(...ages) : null,
+            };
+        }
+
+        // --- time bucketing -------------------------------------------------
+        function weekStart(date) {
+            const d = new Date(date);
+            const t = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+            t.setDate(t.getDate() - ((t.getDay() + 6) % 7)); // Monday-based
+            return t;
+        }
+
+        function bucketKey(date, grain) {
+            const d = new Date(date);
+            if (grain === 'month') return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+            const w = weekStart(d);
+            return `${w.getFullYear()}-${String(w.getMonth() + 1).padStart(2, '0')}-${String(w.getDate()).padStart(2, '0')}`;
+        }
+
+        function buildBuckets(grain, start, end) {
+            const keys = [];
+            if (grain === 'month') {
+                const cur = new Date(start.getFullYear(), start.getMonth(), 1);
+                while (cur <= end) {
+                    keys.push(bucketKey(cur, 'month'));
+                    cur.setMonth(cur.getMonth() + 1);
+                }
+            } else {
+                const cur = weekStart(start);
+                while (cur <= end) {
+                    keys.push(bucketKey(cur, 'week'));
+                    cur.setDate(cur.getDate() + 7);
+                }
+            }
+            return keys;
+        }
+
+        const MONTH_ABBR = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+        function bucketLabel(key, grain) {
+            if (grain === 'month') {
+                const [y, m] = key.split('-').map(Number);
+                // Lead each year with the year itself so long ranges stay readable
+                return m === 1 ? `${MONTH_ABBR[m - 1]} '${String(y).slice(2)}` : MONTH_ABBR[m - 1];
+            }
+            const [y, m, d] = key.split('-').map(Number);
+            // A week that starts a month is labelled with the month name
+            return d <= 7 ? MONTH_ABBR[m - 1] : String(d);
+        }
+
+        function bucketRangeLabel(key, grain) {
+            if (grain === 'month') {
+                const [y, m] = key.split('-').map(Number);
+                return `${MONTH_ABBR[m - 1]} ${y}`;
+            }
+            const start = new Date(key + 'T00:00:00');
+            const end = new Date(start); end.setDate(end.getDate() + 6);
+            return `week of ${MONTH_ABBR[start.getMonth()]} ${start.getDate()}`;
+        }
+
+        function issueWindowStart(issues) {
+            const months = issueGridState.months;
+            if (months === 'all') {
+                const earliest = issues.reduce((min, i) =>
+                    (!min || i.created_at < min) ? i.created_at : min, null);
+                return earliest ? new Date(earliest) : new Date();
+            }
+            const d = new Date();
+            d.setMonth(d.getMonth() - Number(months));
+            return d;
+        }
+
+        function applyIssueControls() {
+            issueGridState.grain = document.getElementById('issue-grain').value;
+            const range = document.getElementById('issue-range').value;
+            issueGridState.months = range === 'all' ? 'all' : Number(range);
+            renderIssuesTab();
+        }
+
+        function renderIssuesTab() {
+            const summary = document.getElementById('issues-summary');
+            const grid = document.getElementById('issues-grid');
+            if (!summary || !grid) return;
+
+            const issues = getFilteredIssues();
+            if (!issues.length) {
+                summary.innerHTML = '';
+                document.getElementById('issues-oldest').innerHTML = '';
+                if (charts.issueFlow) { charts.issueFlow.destroy(); delete charts.issueFlow; }
+                grid.innerHTML = `<div class="text-center text-slate-500 py-8">
+                    <p>${issuesData ? 'No issues for this filter.' : 'No issue data yet.'}</p>
+                    <p class="text-xs text-slate-600 mt-2">issues_data.json is generated by <span class="text-emerald-400">fetch_issues.py</span>.</p>
+                </div>`;
+                return;
+            }
+
+            renderIssueSummary(issues);
+            renderIssueGrid(issues);
+            renderIssueFlowChart(issues);
+            renderOldestOpenIssues(issues);
+        }
+
+        function renderIssueSummary(issues) {
+            const s = computeIssueStats(issues);
+            const net = s.closed30 - s.opened30;
+            const keepingUp = net >= 0;
+            const tiles = [
+                { label: 'Total Issues', value: s.total.toLocaleString(), sub: `across ${new Set(issues.map(i => i.repo)).size} repos`, color: 'text-slate-100' },
+                { label: 'Open', value: s.open.toLocaleString(), sub: `${100 - s.closeRate}% of all issues`, color: 'text-amber-400' },
+                { label: 'Closed', value: s.closed.toLocaleString(), sub: `${s.closeRate}% resolved`, color: 'text-emerald-400' },
+                { label: 'Last 30 Days', value: `${net >= 0 ? '+' : ''}${net}`, color: keepingUp ? 'text-emerald-400' : 'text-rose-400',
+                  sub: `${s.opened30} in · ${s.closed30} out` },
+                { label: 'Median Time to Close', value: fmtDays(s.medianClose), color: 'text-cyan-400',
+                  sub: s.oldestOpen !== null ? `oldest open ${fmtDays(s.oldestOpen)}` : '' },
+            ];
+            document.getElementById('issues-summary').innerHTML = tiles.map(t => `
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider">${t.label}</p>
+                    <p class="text-3xl font-bold mt-1 ${t.color}">${t.value}</p>
+                    <p class="text-xs text-slate-600 mt-1">${t.sub || '&nbsp;'}</p>
+                </div>`).join('');
+        }
+
+        // Repo rows x time columns. Each issue is a box in the bucket it was
+        // opened, coloured by whether it is still open today.
+        function renderIssueGrid(issues) {
+            const grain = issueGridState.grain;
+            const start = issueWindowStart(issues);
+            const end = new Date();
+            const buckets = buildBuckets(grain, start, end);
+            const bucketIdx = new Map(buckets.map((k, n) => [k, n]));
+
+            // repo -> bucket -> [issue index]
+            issueGridIssues = issues;
+            const rows = new Map();
+            issues.forEach((issue, idx) => {
+                const key = bucketKey(issue.created_at, grain);
+                if (!bucketIdx.has(key)) return; // outside the visible window
+                let row = rows.get(issue.repo);
+                if (!row) { row = { cells: new Map(), open: 0, closed: 0, fullName: issue.full_name }; rows.set(issue.repo, row); }
+                if (!row.cells.has(key)) row.cells.set(key, []);
+                row.cells.get(key).push(idx);
+                if (issueIsOpen(issue)) row.open++; else row.closed++;
+            });
+
+            if (!rows.size) {
+                document.getElementById('issues-grid').innerHTML =
+                    `<p class="text-center text-slate-500 py-8">No issues opened in this window.</p>`;
+                return;
+            }
+
+            const sorted = [...rows.entries()].sort((a, b) =>
+                (b[1].open + b[1].closed) - (a[1].open + a[1].closed) || a[0].localeCompare(b[0]));
+            // Oldest first inside a cell so boxes read left-to-right in time
+            sorted.forEach(([, row]) => row.cells.forEach(list =>
+                list.sort((x, y) => (issues[x].created_at || '').localeCompare(issues[y].created_at || ''))));
+
+            const colWidth = grain === 'month' ? 76 : 38;
+            // A repo with hundreds of issues would otherwise make its row tower
+            // over the rest, so boxes shrink as the busiest cell gets busier.
+            let maxCell = 0;
+            rows.forEach(r => r.cells.forEach(l => { if (l.length > maxCell) maxCell = l.length; }));
+            const boxPx = maxCell <= 12 ? 10 : maxCell <= 28 ? 8 : 7;
+            const CELL_CAP = 60;
+            const header = buckets.map(k => {
+                const label = bucketLabel(k, grain);
+                const isMonthStart = grain === 'week' && Number(k.slice(8)) <= 7;
+                return `<th class="align-bottom pb-2 font-normal text-[10px] ${isMonthStart || grain === 'month' ? 'text-slate-400' : 'text-slate-600'}"
+                            style="min-width:${colWidth}px;width:${colWidth}px" title="${esc(bucketRangeLabel(k, grain))}">${label}</th>`;
+            }).join('');
+
+            const body = sorted.map(([repo, row]) => {
+                const cells = buckets.map(k => {
+                    const list = row.cells.get(k) || [];
+                    if (!list.length) return `<td class="border-l border-slate-800/40 h-full"></td>`;
+                    const shown = list.slice(0, CELL_CAP);
+                    const boxes = shown.map(idx => {
+                        const issue = issues[idx];
+                        const cls = issueIsOpen(issue)
+                            ? 'bg-amber-400/80 hover:bg-amber-300'
+                            : 'bg-emerald-500/70 hover:bg-emerald-400';
+                        return `<a href="${esc(issue.url)}" target="_blank" rel="noopener"
+                                   data-issue-idx="${idx}"
+                                   style="width:${boxPx}px;height:${boxPx}px"
+                                   class="block rounded-[2px] ${cls} transition-colors"></a>`;
+                    }).join('');
+                    const overflow = list.length - shown.length;
+                    const more = overflow
+                        ? `<span class="text-[9px] text-slate-500 leading-none" title="${overflow} more in this period">+${overflow}</span>`
+                        : '';
+                    return `<td class="border-l border-slate-800/40 align-top py-1 px-0.5">
+                                <div class="flex flex-wrap items-center gap-[2px]">${boxes}${more}</div>
+                            </td>`;
+                }).join('');
+                return `<tr class="hover:bg-slate-800/20">
+                    <td class="sticky left-0 z-10 bg-slate-900 pr-3 py-1 align-top" style="min-width:180px">
+                        <a href="https://github.com/${esc(row.fullName || repo)}/issues" target="_blank" rel="noopener"
+                           class="text-xs text-slate-300 hover:text-emerald-400 truncate block" title="${esc(repo)}">${esc(repo)}</a>
+                        <span class="text-[10px] text-slate-600">
+                            <span class="text-amber-400/80">${row.open}</span> open ·
+                            <span class="text-emerald-400/80">${row.closed}</span> closed
+                        </span>
+                    </td>
+                    ${cells}
+                    <td class="border-l border-slate-800/40"></td>
+                </tr>`;
+            }).join('');
+
+            const container = document.getElementById('issues-grid');
+            container.innerHTML = `
+                <table class="border-collapse" style="min-width:100%">
+                    <thead><tr><th class="sticky left-0 z-10 bg-slate-900" style="min-width:180px;width:180px"></th>${header}<th class="w-full"></th></tr></thead>
+                    <tbody class="divide-y divide-slate-800/40">${body}</tbody>
+                </table>`;
+            // Open on the most recent periods when the range overflows
+            container.scrollLeft = container.scrollWidth;
+        }
+
+        // --- hover card -----------------------------------------------------
+        function issueTooltipHtml(issue) {
+            const open = issueIsOpen(issue);
+            const opened = new Date(issue.created_at);
+            const openedStr = `${MONTH_ABBR[opened.getMonth()]} ${opened.getDate()}, ${opened.getFullYear()}`;
+            const life = open
+                ? `open for ${fmtDays(daysBetween(issue.created_at, new Date().toISOString()))}`
+                : `closed in ${fmtDays(daysBetween(issue.created_at, issue.closed_at))}`;
+            const labels = (issue.labels || []).slice(0, 4).map(l =>
+                `<span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800/80 text-slate-400">${esc(l)}</span>`).join(' ');
+            return `
+                <div class="flex items-center gap-2 mb-1">
+                    <span class="w-2 h-2 rounded-sm ${open ? 'bg-amber-400' : 'bg-emerald-500'}"></span>
+                    <span class="text-[11px] text-slate-500">${esc(issue.repo)} #${issue.number}</span>
+                    <span class="text-[11px] ${open ? 'text-amber-400' : 'text-emerald-400'}">${open ? 'Open' : 'Closed'}</span>
+                </div>
+                <p class="text-xs text-slate-200 leading-snug">${esc(issue.title)}</p>
+                <p class="text-[11px] text-slate-500 mt-1">Opened ${openedStr} · ${life}</p>
+                ${labels ? `<div class="flex flex-wrap gap-1 mt-1.5">${labels}</div>` : ''}`;
+        }
+
+        function initIssueTooltip() {
+            const grid = document.getElementById('issues-grid');
+            const tip = document.getElementById('issue-tooltip');
+            if (!grid || !tip) return;
+
+            const place = (e) => {
+                const pad = 14;
+                const rect = tip.getBoundingClientRect();
+                let x = e.clientX + pad;
+                let y = e.clientY + pad;
+                if (x + rect.width > window.innerWidth - 8) x = e.clientX - rect.width - pad;
+                if (y + rect.height > window.innerHeight - 8) y = e.clientY - rect.height - pad;
+                tip.style.left = `${Math.max(8, x)}px`;
+                tip.style.top = `${Math.max(8, y)}px`;
+            };
+
+            grid.addEventListener('mouseover', (e) => {
+                const box = e.target.closest('[data-issue-idx]');
+                if (!box) return;
+                const issue = issueGridIssues[Number(box.dataset.issueIdx)];
+                if (!issue) return;
+                tip.innerHTML = issueTooltipHtml(issue);
+                tip.classList.remove('hidden');
+                place(e);
+            });
+            grid.addEventListener('mousemove', (e) => {
+                if (!tip.classList.contains('hidden')) place(e);
+            });
+            grid.addEventListener('mouseout', (e) => {
+                if (e.target.closest('[data-issue-idx]')) tip.classList.add('hidden');
+            });
+            grid.addEventListener('scroll', () => tip.classList.add('hidden'));
+        }
+
+        // --- flow chart -----------------------------------------------------
+        function renderIssueFlowChart(issues) {
+            const canvas = document.getElementById('issueFlowChart');
+            if (!canvas) return;
+            const grain = issueGridState.grain;
+            const buckets = buildBuckets(grain, issueWindowStart(issues), new Date());
+
+            const opened = buckets.map(() => 0);
+            const closed = buckets.map(() => 0);
+            const idx = new Map(buckets.map((k, n) => [k, n]));
+            issues.forEach(i => {
+                const o = idx.get(bucketKey(i.created_at, grain));
+                if (o !== undefined) opened[o]++;
+                if (i.closed_at) {
+                    const c = idx.get(bucketKey(i.closed_at, grain));
+                    if (c !== undefined) closed[c]++;
+                }
+            });
+
+            // Backlog is measured against every issue ever, not just this
+            // window, so a truncated range still shows the true open count.
+            const backlog = buckets.map(k => {
+                const end = grain === 'month'
+                    ? new Date(Number(k.slice(0, 4)), Number(k.slice(5, 7)), 1)
+                    : (() => { const d = new Date(k + 'T00:00:00'); d.setDate(d.getDate() + 7); return d; })();
+                const t = Math.min(end.getTime(), Date.now());
+                return issues.filter(i =>
+                    new Date(i.created_at).getTime() <= t &&
+                    (!i.closed_at || new Date(i.closed_at).getTime() > t)).length;
+            });
+
+            if (charts.issueFlow) charts.issueFlow.destroy();
+            charts.issueFlow = new Chart(canvas, {
+                data: {
+                    labels: buckets.map(k => bucketRangeLabel(k, grain)),
+                    datasets: [
+                        { type: 'bar', label: 'Opened', data: opened, backgroundColor: 'rgba(251, 191, 36, 0.65)', borderRadius: 2, order: 2 },
+                        { type: 'bar', label: 'Closed', data: closed, backgroundColor: 'rgba(16, 185, 129, 0.65)', borderRadius: 2, order: 2 },
+                        { type: 'line', label: 'Open backlog', data: backlog, borderColor: '#f43f5e',
+                          backgroundColor: 'rgba(244, 63, 94, 0.1)', borderWidth: 2, pointRadius: 0, tension: 0.3, yAxisID: 'y1', order: 1 },
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    interaction: { mode: 'index', intersect: false },
+                    plugins: {
+                        legend: { labels: { color: '#94a3b8', boxWidth: 12, font: { size: 11 } } },
+                        tooltip: { backgroundColor: '#020617', borderColor: '#334155', borderWidth: 1 }
+                    },
+                    scales: {
+                        x: { grid: { display: false }, ticks: { color: '#475569', font: { size: 9 }, maxRotation: 60, autoSkip: true, maxTicksLimit: 16 } },
+                        y: { beginAtZero: true, grid: { color: 'rgba(148,163,184,0.08)' }, ticks: { color: '#475569', font: { size: 10 }, precision: 0 } },
+                        y1: { beginAtZero: true, position: 'right', grid: { display: false }, ticks: { color: '#f43f5e', font: { size: 10 }, precision: 0 } }
+                    }
+                }
+            });
+        }
+
+        function renderOldestOpenIssues(issues) {
+            const el = document.getElementById('issues-oldest');
+            if (!el) return;
+            const open = issues.filter(issueIsOpen)
+                .sort((a, b) => (a.created_at || '').localeCompare(b.created_at || ''))
+                .slice(0, 10);
+            if (!open.length) {
+                el.innerHTML = `<p class="text-xs text-emerald-400">Nothing open — the backlog is clear.</p>`;
+                return;
+            }
+            el.innerHTML = open.map(i => {
+                const age = daysBetween(i.created_at, new Date().toISOString());
+                const ageCls = age >= 90 ? 'text-rose-400' : age >= 30 ? 'text-amber-400' : 'text-slate-500';
+                return `<a href="${esc(i.url)}" target="_blank" rel="noopener"
+                           class="flex items-center gap-3 text-xs hover:bg-slate-800/30 rounded px-2 py-1.5 -mx-2 transition-colors">
+                    <span class="text-slate-500 shrink-0" style="width:150px" title="${esc(i.repo)}">
+                        <span class="truncate block">${esc(i.repo)}</span></span>
+                    <span class="text-slate-600 shrink-0">#${i.number}</span>
+                    <span class="text-slate-300 truncate flex-1">${esc(i.title)}</span>
+                    <span class="${ageCls} shrink-0">${fmtDays(age)}</span>
+                </a>`;
+            }).join('');
+        }
+
         function showTab(tab) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
             document.querySelectorAll('.tab-btn').forEach(el => {
@@ -1318,6 +1798,8 @@
             const btn = document.querySelector(`[data-tab="${tab}"]`);
             btn.classList.add('bg-emerald-500/20', 'text-emerald-400', 'border', 'border-emerald-500/30');
             btn.classList.remove('text-slate-400', 'hover:text-slate-200', 'hover:bg-slate-800/50');
+            // Chart.js sizes to the container, which is 0-wide while hidden
+            if (tab === 'issues' && issuesData) renderIssuesTab();
             updateUrlParams(tab);
         }
 
@@ -1579,6 +2061,7 @@
 
         // Initialize
         initFiltersFromUrl();
+        initIssueTooltip();
         loadData();
     </script>
 </body>

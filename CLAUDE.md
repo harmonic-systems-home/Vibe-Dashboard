@@ -17,7 +17,8 @@ The workflow:
 1. Clones all non-archived repos across the personal account and the two orgs (Rick-Wilson, bridge-craftwork, harmonic-systems-home); forks are cloned but flagged so their LOC is excluded
 2. Installs tokei for lines of code counting
 3. Runs `fetch_github_data.py` to generate `dashboard_data.json`
-4. Commits and pushes the updated JSON file
+4. Runs `fetch_issues.py` to generate `issues_data.json` (open/closed issues from public repos)
+5. Commits and pushes the updated JSON files
 
 ### Live URL
 
@@ -66,8 +67,24 @@ python fetch_github_data.py --repos owner/repo1 owner/repo2   # Specific repos
 --output file.json  # Output file (default: dashboard_data.json)
 ```
 
+### Issues Data
+
+The Issues tab needs `issues_data.json`, which comes from the GitHub API (git
+clones carry no issue data):
+
+```bash
+export GITHUB_TOKEN=$(gh auth token)
+python fetch_issues.py --owners Rick-Wilson bridge-craftwork harmonic-systems-home
+```
+
+Public, non-archived repos only. By default it is further restricted to the
+repos already in `dashboard_data.json` so the tab matches the rest of the
+dashboard; pass `--dashboard-data ''` to scan every public repo instead, or
+`--include-private` / `--include-archived` to widen the net.
+
 ## Data Sources
 
+- **Issues**: GitHub REST API, public repos only, scoped to the repos in `dashboard_data.json`
 - **Commits**: Extracted from git log
 - **Lines of Code**: Counted by tokei (excludes HTML)
 - **Releases**: Git tags with dates
@@ -78,6 +95,8 @@ python fetch_github_data.py --repos owner/repo1 owner/repo2   # Specific repos
 - `index.html` - Dashboard UI (single-page app)
 - `fetch_github_data.py` - Data collection script
 - `dashboard_data.json` - Generated data file
+- `fetch_issues.py` - Issues tab: pulls open/closed issues from the public repos of each owner (needs `GITHUB_TOKEN`)
+- `issues_data.json` - Generated Issues tab data
 - `fetch_app_status.py` - Apps tab: scans repos for Xcode projects + pulls live App Store Connect status (needs `ASC_*` secrets)
 - `apps_data.json` - Generated Apps tab data
 - `APP_MANIFEST.md` - `.dashboard-app.json` schema for per-app-repo planning breadcrumbs

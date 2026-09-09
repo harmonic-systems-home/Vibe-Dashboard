@@ -121,11 +121,26 @@ jobs:
             --dashboard-data dashboard_data.json \
             --output apps_data.json
 
+      - name: Generate issue data
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          # Open + closed issues from the public repos of each owner, scoped to
+          # the repos already in dashboard_data.json so the Issues tab covers
+          # the same projects as the rest of the dashboard.
+          # --repos adds public repos the root-commit-author filter keeps out of
+          # dashboard_data.json but whose issues still matter here.
+          python fetch_issues.py \
+            --owners Rick-Wilson bridge-craftwork harmonic-systems-home \
+            --repos bridge-craftwork/Practice-Bidding-Scenarios bridge-craftwork/BBA-Tools bridge-craftwork/bbo-pbs \
+            --dashboard-data dashboard_data.json \
+            --output issues_data.json
+
       - name: Commit and push if changed
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add dashboard_data.json loc_history.json apps_data.json
+          git add dashboard_data.json loc_history.json apps_data.json issues_data.json
           git add app_icons 2>/dev/null || true
 
           if git diff --staged --quiet; then
