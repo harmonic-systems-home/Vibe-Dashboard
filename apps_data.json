@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T18:12:28.670583+00:00",
+  "generated_at": "2026-09-10T15:36:00.854120+00:00",
   "count": 6,
   "apps": [
     {
@@ -138,42 +138,6 @@
       }
     },
     {
-      "name": "PBS with BBA Compare",
-      "repo": "pbs-bbo-extension",
-      "full_name": "bridge-craftwork/pbs-bbo-extension",
-      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
-      "last_commit": "2026-03-20T11:35:41-07:00",
-      "manifest": {},
-      "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
-      "version": "1.0.0",
-      "build": "3",
-      "platforms": [
-        "macOS"
-      ],
-      "icon": "app_icons/pbs-bbo-extension.png",
-      "xcodeproj": "safari/PBS with BBA Compare/PBS with BBA Compare.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": true,
-        "testflight": true,
-        "screenshots": true,
-        "metadata": true
-      },
-      "store": {
-        "state": "READY_FOR_SALE",
-        "version": "1.0",
-        "url": "https://apps.apple.com/app/id6760272056"
-      },
-      "testflight": {
-        "external": "EXPIRED",
-        "internal": "EXPIRED"
-      },
-      "status": {
-        "label": "Released",
-        "category": "released"
-      }
-    },
-    {
       "name": "BTLabel",
       "repo": "BT-Label-Printing-App",
       "full_name": "harmonic-systems-home/BT-Label-Printing-App",
@@ -205,6 +169,42 @@
       "testflight": {
         "external": "READY_FOR_BETA_SUBMISSION",
         "internal": "IN_BETA_TESTING"
+      },
+      "status": {
+        "label": "Released",
+        "category": "released"
+      }
+    },
+    {
+      "name": "PBS with BBA Compare",
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
+      "last_commit": "2026-09-10T07:29:12-07:00",
+      "manifest": {},
+      "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
+      "version": "1.0.0",
+      "build": "3",
+      "platforms": [
+        "macOS"
+      ],
+      "icon": "app_icons/pbs-bbo-extension.png",
+      "xcodeproj": "safari/PBS with BBA Compare/PBS with BBA Compare.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": true,
+        "metadata": true
+      },
+      "store": {
+        "state": "READY_FOR_SALE",
+        "version": "1.0",
+        "url": "https://apps.apple.com/app/id6760272056"
+      },
+      "testflight": {
+        "external": "EXPIRED",
+        "internal": "EXPIRED"
       },
       "status": {
         "label": "Released",

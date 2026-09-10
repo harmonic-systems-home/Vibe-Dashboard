@@ -1,28 +1,38 @@
 {
-  "generated_at": "2026-09-09T18:12:45.825117+00:00",
+  "generated_at": "2026-09-10T15:36:24.770258+00:00",
   "stats": {
-    "total": 466,
-    "open": 101,
-    "closed": 365,
-    "close_rate": 78,
-    "opened_last_30": 105,
-    "closed_last_30": 57,
-    "opened_last_90": 389,
-    "closed_last_90": 299,
+    "total": 471,
+    "open": 97,
+    "closed": 374,
+    "close_rate": 79,
+    "opened_last_30": 110,
+    "closed_last_30": 66,
+    "opened_last_90": 394,
+    "closed_last_90": 308,
     "median_days_to_close": 0.1,
-    "median_open_age_days": 41.0,
-    "oldest_open_days": 177.2,
+    "median_open_age_days": 33.0,
+    "oldest_open_days": 178.1,
     "repo_count": 18,
     "by_repo": {
-      "Dealer3": {
-        "open": 19,
-        "closed": 29,
-        "total": 48
+      "pbn-to-pdf": {
+        "open": 1,
+        "closed": 4,
+        "total": 5
       },
       "pbs-bbo-extension": {
         "open": 3,
-        "closed": 0,
-        "total": 3
+        "closed": 1,
+        "total": 4
+      },
+      "Practice-Bidding-Scenarios": {
+        "open": 7,
+        "closed": 270,
+        "total": 277
+      },
+      "Dealer3": {
+        "open": 16,
+        "closed": 33,
+        "total": 49
       },
       "bridge-craftwork-site": {
         "open": 4,
@@ -55,14 +65,9 @@
         "total": 10
       },
       "bridge-wrangler": {
-        "open": 3,
-        "closed": 1,
+        "open": 2,
+        "closed": 2,
         "total": 4
-      },
-      "Practice-Bidding-Scenarios": {
-        "open": 6,
-        "closed": 270,
-        "total": 276
       },
       "BBA-Tools": {
         "open": 3,
@@ -73,11 +78,6 @@
         "open": 14,
         "closed": 8,
         "total": 22
-      },
-      "pbn-to-pdf": {
-        "open": 2,
-        "closed": 1,
-        "total": 3
       },
       "Bridge-Classroom": {
         "open": 37,
@@ -112,7 +112,7 @@
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
-      "open": 6,
+      "open": 7,
       "closed": 270
     },
     {
@@ -128,8 +128,8 @@
       "full_name": "bridge-craftwork/Dealer3",
       "url": "https://github.com/bridge-craftwork/Dealer3",
       "external": false,
-      "open": 19,
-      "closed": 29
+      "open": 16,
+      "closed": 33
     },
     {
       "repo": "Baker-Bridge",
@@ -164,6 +164,14 @@
       "closed": 2
     },
     {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "open": 1,
+      "closed": 4
+    },
+    {
       "repo": "rpdd-library",
       "full_name": "bridge-craftwork/rpdd-library",
       "url": "https://github.com/bridge-craftwork/rpdd-library",
@@ -184,16 +192,8 @@
       "full_name": "bridge-craftwork/bridge-wrangler",
       "url": "https://github.com/bridge-craftwork/bridge-wrangler",
       "external": false,
-      "open": 3,
-      "closed": 1
-    },
-    {
-      "repo": "pbn-to-pdf",
-      "full_name": "bridge-craftwork/pbn-to-pdf",
-      "url": "https://github.com/bridge-craftwork/pbn-to-pdf",
-      "external": false,
       "open": 2,
-      "closed": 1
+      "closed": 2
     },
     {
       "repo": "pbs-bbo-extension",
@@ -201,7 +201,7 @@
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
       "external": false,
       "open": 3,
-      "closed": 0
+      "closed": 1
     },
     {
       "repo": "bbo-pbs",
@@ -254,6 +254,80 @@
   ],
   "issues": [
     {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 20,
+      "title": "Shrink the wasm payload: the 12 court cards are 7.4 MB of a 20 MB bundle",
+      "state": "open",
+      "created_at": "2026-09-10T00:34:02Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/20",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 19,
+      "title": "Unify the remaining render model on bridge-types (Deal, Hand, Auction, Play)",
+      "state": "closed",
+      "created_at": "2026-09-10T00:29:30Z",
+      "closed_at": "2026-09-10T03:41:01Z",
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/19",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "external": false,
+      "number": 4,
+      "title": "Update store listing support URL to bridge-craftwork at next release",
+      "state": "open",
+      "created_at": "2026-09-09T20:15:35Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension/issues/4",
+      "labels": [
+        "documentation"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 302,
+      "title": "Update BBAcompare.js URL in -PBS.txt after bbo-pbs moved to bridge-craftwork org",
+      "state": "open",
+      "created_at": "2026-09-09T19:59:14Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/302",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Dealer3",
+      "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
+      "number": 113,
+      "title": "Meet the cross-tool AI-readability contract: window surface, diagnostic shape, real 404s",
+      "state": "open",
+      "created_at": "2026-09-09T18:18:45Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Dealer3/issues/113",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
       "external": false,
@@ -299,7 +373,7 @@
       "labels": [
         "bug"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -363,7 +437,7 @@
       "labels": [
         "enhancement"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -500,9 +574,9 @@
       "external": false,
       "number": 99,
       "title": "Load a script from the URL fragment without running it",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-09T14:51:40Z",
-      "closed_at": null,
+      "closed_at": "2026-09-10T05:52:38Z",
       "url": "https://github.com/bridge-craftwork/Dealer3/issues/99",
       "labels": [
         "enhancement"
@@ -516,9 +590,9 @@
       "external": false,
       "number": 98,
       "title": "Share a script by link: encode the payload in the URL fragment",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-09T14:51:38Z",
-      "closed_at": null,
+      "closed_at": "2026-09-10T05:52:37Z",
       "url": "https://github.com/bridge-craftwork/Dealer3/issues/98",
       "labels": [
         "enhancement"
@@ -548,9 +622,9 @@
       "external": false,
       "number": 96,
       "title": "Put the settings behind a button, leaving Run, Produce and Auto-level on the row",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-09T14:51:07Z",
-      "closed_at": null,
+      "closed_at": "2026-09-09T18:28:23Z",
       "url": "https://github.com/bridge-craftwork/Dealer3/issues/96",
       "labels": [
         "enhancement"
@@ -564,9 +638,9 @@
       "external": false,
       "number": 95,
       "title": "Fit the layout to the device: too wide on iPhone, and no side-by-side on iPad landscape",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-09T14:50:43Z",
-      "closed_at": null,
+      "closed_at": "2026-09-09T23:12:48Z",
       "url": "https://github.com/bridge-craftwork/Dealer3/issues/95",
       "labels": [
         "bug"
@@ -1394,12 +1468,12 @@
       "external": false,
       "number": 6,
       "title": "Add a web page: render PBN to PDF in the browser",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-08-30T20:52:37Z",
-      "closed_at": null,
+      "closed_at": "2026-09-10T00:31:29Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/6",
       "labels": [],
-      "comments": 1,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -3230,10 +3304,10 @@
       "full_name": "bridge-craftwork/pbn-to-pdf",
       "external": false,
       "number": 1,
-      "title": "Unify PBN parsing on bridge-encodings (retire the parallel model)",
-      "state": "open",
+      "title": "Parse via bridge-encodings; retire the local PBN parser",
+      "state": "closed",
       "created_at": "2026-07-15T19:16:32Z",
-      "closed_at": null,
+      "closed_at": "2026-09-10T02:26:30Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/1",
       "labels": [],
       "comments": 0,
@@ -3259,12 +3333,12 @@
       "external": false,
       "number": 1,
       "title": "Manage PDF output sizes \u2014 declarer's plan renders cards as raster images (~3.8 MB/page)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-15T14:53:15Z",
-      "closed_at": null,
+      "closed_at": "2026-09-10T00:19:56Z",
       "url": "https://github.com/bridge-craftwork/bridge-wrangler/issues/1",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -4405,12 +4479,12 @@
       "external": false,
       "number": 1,
       "title": "Update PBS import URL after repo moved to bridge-craftwork org",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-04T16:43:54Z",
-      "closed_at": null,
+      "closed_at": "2026-09-09T22:21:29Z",
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension/issues/1",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "ADavidBailey"
     },
     {
