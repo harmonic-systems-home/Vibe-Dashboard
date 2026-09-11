@@ -1,38 +1,48 @@
 {
-  "generated_at": "2026-09-10T15:36:24.770258+00:00",
+  "generated_at": "2026-09-11T15:40:17.511466+00:00",
   "stats": {
-    "total": 471,
-    "open": 97,
-    "closed": 374,
+    "total": 485,
+    "open": 101,
+    "closed": 384,
     "close_rate": 79,
-    "opened_last_30": 110,
-    "closed_last_30": 66,
-    "opened_last_90": 394,
-    "closed_last_90": 308,
+    "opened_last_30": 124,
+    "closed_last_30": 76,
+    "opened_last_90": 406,
+    "closed_last_90": 318,
     "median_days_to_close": 0.1,
-    "median_open_age_days": 33.0,
-    "oldest_open_days": 178.1,
+    "median_open_age_days": 28.0,
+    "oldest_open_days": 179.1,
     "repo_count": 18,
     "by_repo": {
+      "pbs-bbo-extension": {
+        "open": 2,
+        "closed": 6,
+        "total": 8
+      },
+      "Practice-Bidding-Scenarios": {
+        "open": 10,
+        "closed": 270,
+        "total": 280
+      },
+      "Dealer3": {
+        "open": 13,
+        "closed": 38,
+        "total": 51
+      },
+      "BBA-Tools": {
+        "open": 7,
+        "closed": 2,
+        "total": 9
+      },
+      "Bridge-Classroom": {
+        "open": 38,
+        "closed": 32,
+        "total": 70
+      },
       "pbn-to-pdf": {
         "open": 1,
         "closed": 4,
         "total": 5
-      },
-      "pbs-bbo-extension": {
-        "open": 3,
-        "closed": 1,
-        "total": 4
-      },
-      "Practice-Bidding-Scenarios": {
-        "open": 7,
-        "closed": 270,
-        "total": 277
-      },
-      "Dealer3": {
-        "open": 16,
-        "closed": 33,
-        "total": 49
       },
       "bridge-craftwork-site": {
         "open": 4,
@@ -69,20 +79,10 @@
         "closed": 2,
         "total": 4
       },
-      "BBA-Tools": {
-        "open": 3,
-        "closed": 2,
-        "total": 5
-      },
       "Baker-Bridge": {
         "open": 14,
         "closed": 8,
         "total": 22
-      },
-      "Bridge-Classroom": {
-        "open": 37,
-        "closed": 32,
-        "total": 69
       },
       "bridge-lesson-packaging": {
         "open": 1,
@@ -112,7 +112,7 @@
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
-      "open": 7,
+      "open": 10,
       "closed": 270
     },
     {
@@ -120,7 +120,7 @@
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
       "external": false,
-      "open": 37,
+      "open": 38,
       "closed": 32
     },
     {
@@ -128,8 +128,8 @@
       "full_name": "bridge-craftwork/Dealer3",
       "url": "https://github.com/bridge-craftwork/Dealer3",
       "external": false,
-      "open": 16,
-      "closed": 33
+      "open": 13,
+      "closed": 38
     },
     {
       "repo": "Baker-Bridge",
@@ -160,8 +160,16 @@
       "full_name": "bridge-craftwork/BBA-Tools",
       "url": "https://github.com/bridge-craftwork/BBA-Tools",
       "external": true,
-      "open": 3,
+      "open": 7,
       "closed": 2
+    },
+    {
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
+      "external": false,
+      "open": 2,
+      "closed": 6
     },
     {
       "repo": "pbn-to-pdf",
@@ -194,14 +202,6 @@
       "external": false,
       "open": 2,
       "closed": 2
-    },
-    {
-      "repo": "pbs-bbo-extension",
-      "full_name": "bridge-craftwork/pbs-bbo-extension",
-      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
-      "external": false,
-      "open": 3,
-      "closed": 1
     },
     {
       "repo": "bbo-pbs",
@@ -253,6 +253,216 @@
     }
   ],
   "issues": [
+    {
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "external": false,
+      "number": 31,
+      "title": "BBA Compare: larger text and suit glyphs in the comparison panel",
+      "state": "closed",
+      "created_at": "2026-09-11T13:12:49Z",
+      "closed_at": "2026-09-11T13:28:10Z",
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension/issues/31",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "external": false,
+      "number": 29,
+      "title": "Load scenarios from the manifest and .dlr files, not .pbs",
+      "state": "closed",
+      "created_at": "2026-09-10T23:52:17Z",
+      "closed_at": "2026-09-11T13:01:03Z",
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension/issues/29",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 323,
+      "title": "Add auto-GIB to build pipeline",
+      "state": "open",
+      "created_at": "2026-09-10T23:47:07Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/323",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 322,
+      "title": "Enhance build pipeline for auto-leveling",
+      "state": "open",
+      "created_at": "2026-09-10T23:47:06Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/322",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 321,
+      "title": "Load .dlr files directly in the extension, and retire the pbs folders",
+      "state": "open",
+      "created_at": "2026-09-10T23:47:05Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/321",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 5,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Dealer3",
+      "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
+      "number": 121,
+      "title": "run_script still takes twelve positional arguments, which is what #106 removed from the boundary",
+      "state": "closed",
+      "created_at": "2026-09-10T23:10:08Z",
+      "closed_at": "2026-09-11T00:22:07Z",
+      "url": "https://github.com/bridge-craftwork/Dealer3/issues/121",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "external": false,
+      "number": 26,
+      "title": "Find out what the Phoenix modal's opponents'-bidding option does",
+      "state": "closed",
+      "created_at": "2026-09-10T22:00:39Z",
+      "closed_at": "2026-09-10T23:20:10Z",
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension/issues/26",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "BBA-Tools",
+      "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
+      "number": 22,
+      "title": "api_key_middleware comment claims /api/scenarios is exempt; the code doesn't exempt it",
+      "state": "open",
+      "created_at": "2026-09-10T21:18:06Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/BBA-Tools/issues/22",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "BBA-Tools",
+      "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
+      "number": 21,
+      "title": "Unrecognized scenario silently falls back to the default convention cards",
+      "state": "open",
+      "created_at": "2026-09-10T21:17:51Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/BBA-Tools/issues/21",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "BBA-Tools",
+      "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
+      "number": 20,
+      "title": "/health reports process liveness but never touches EPBot",
+      "state": "open",
+      "created_at": "2026-09-10T21:17:36Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/BBA-Tools/issues/20",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "BBA-Tools",
+      "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
+      "number": 19,
+      "title": "Reject invalid dealer/vulnerability instead of silently coercing to North/None",
+      "state": "open",
+      "created_at": "2026-09-10T21:17:19Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/BBA-Tools/issues/19",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 414,
+      "title": "bbaClient: send X-Client-Info so classroom traffic is identifiable in the BBA dashboard",
+      "state": "open",
+      "created_at": "2026-09-10T20:34:03Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/414",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "external": false,
+      "number": 20,
+      "title": "Release deployment: runtime/ split, Phoenix fixes, and the channel model",
+      "state": "closed",
+      "created_at": "2026-09-10T20:12:20Z",
+      "closed_at": "2026-09-10T21:59:38Z",
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension/issues/20",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Dealer3",
+      "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
+      "number": 119,
+      "title": "On a phone, opening a panel in the editor column collapses the editor to nothing",
+      "state": "closed",
+      "created_at": "2026-09-10T18:50:41Z",
+      "closed_at": "2026-09-11T01:54:53Z",
+      "url": "https://github.com/bridge-craftwork/Dealer3/issues/119",
+      "labels": [
+        "bug"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "pbn-to-pdf",
       "full_name": "bridge-craftwork/pbn-to-pdf",
@@ -357,7 +567,7 @@
         "enhancement",
         "question"
       ],
-      "comments": 0,
+      "comments": 3,
       "author": "Rick-Wilson"
     },
     {
@@ -366,14 +576,14 @@
       "external": false,
       "number": 2,
       "title": "Starting a bidding table now requires a manual \"Start\" click in the BBO UI",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-09T17:26:42Z",
-      "closed_at": null,
+      "closed_at": "2026-09-10T22:00:59Z",
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension/issues/2",
       "labels": [
         "bug"
       ],
-      "comments": 1,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -462,9 +672,9 @@
       "external": false,
       "number": 103,
       "title": "A short link for SMS: Worker plus KV",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-09T14:57:03Z",
-      "closed_at": null,
+      "closed_at": "2026-09-11T14:01:10Z",
       "url": "https://github.com/bridge-craftwork/Dealer3/issues/103",
       "labels": [
         "enhancement"
@@ -877,13 +1087,13 @@
       "full_name": "bridge-craftwork/Dealer3",
       "external": false,
       "number": 64,
-      "title": "Choose which double-dummy encoding a PBN export writes",
-      "state": "open",
+      "title": "Write double-dummy tables back on a PBN export, and choose which encoding",
+      "state": "closed",
       "created_at": "2026-09-07T12:35:45Z",
-      "closed_at": null,
+      "closed_at": "2026-09-10T23:44:50Z",
       "url": "https://github.com/bridge-craftwork/Dealer3/issues/64",
       "labels": [],
-      "comments": 1,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -934,12 +1144,12 @@
       "external": false,
       "number": 61,
       "title": "Input deals may arrive already solved: carry double-dummy tables with the deal",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-05T14:25:29Z",
-      "closed_at": null,
+      "closed_at": "2026-09-10T22:21:02Z",
       "url": "https://github.com/bridge-craftwork/Dealer3/issues/61",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -1637,7 +1847,7 @@
       "labels": [
         "enhancement"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
