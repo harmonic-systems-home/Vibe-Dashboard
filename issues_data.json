@@ -1,28 +1,38 @@
 {
-  "generated_at": "2026-09-11T15:40:17.511466+00:00",
+  "generated_at": "2026-09-12T13:51:12.919304+00:00",
   "stats": {
-    "total": 485,
-    "open": 101,
-    "closed": 384,
-    "close_rate": 79,
-    "opened_last_30": 124,
-    "closed_last_30": 76,
-    "opened_last_90": 406,
-    "closed_last_90": 318,
+    "total": 502,
+    "open": 111,
+    "closed": 391,
+    "close_rate": 78,
+    "opened_last_30": 141,
+    "closed_last_30": 83,
+    "opened_last_90": 423,
+    "closed_last_90": 325,
     "median_days_to_close": 0.1,
-    "median_open_age_days": 28.0,
-    "oldest_open_days": 179.1,
+    "median_open_age_days": 17.0,
+    "oldest_open_days": 180.0,
     "repo_count": 18,
     "by_repo": {
+      "pbn-to-pdf": {
+        "open": 9,
+        "closed": 9,
+        "total": 18
+      },
+      "Baker-Bridge": {
+        "open": 15,
+        "closed": 10,
+        "total": 25
+      },
+      "Practice-Bidding-Scenarios": {
+        "open": 11,
+        "closed": 270,
+        "total": 281
+      },
       "pbs-bbo-extension": {
         "open": 2,
         "closed": 6,
         "total": 8
-      },
-      "Practice-Bidding-Scenarios": {
-        "open": 10,
-        "closed": 270,
-        "total": 280
       },
       "Dealer3": {
         "open": 13,
@@ -38,11 +48,6 @@
         "open": 38,
         "closed": 32,
         "total": 70
-      },
-      "pbn-to-pdf": {
-        "open": 1,
-        "closed": 4,
-        "total": 5
       },
       "bridge-craftwork-site": {
         "open": 4,
@@ -79,11 +84,6 @@
         "closed": 2,
         "total": 4
       },
-      "Baker-Bridge": {
-        "open": 14,
-        "closed": 8,
-        "total": 22
-      },
       "bridge-lesson-packaging": {
         "open": 1,
         "closed": 0,
@@ -112,7 +112,7 @@
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
-      "open": 10,
+      "open": 11,
       "closed": 270
     },
     {
@@ -136,8 +136,16 @@
       "full_name": "bridge-craftwork/Baker-Bridge",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge",
       "external": false,
-      "open": 14,
-      "closed": 8
+      "open": 15,
+      "closed": 10
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "open": 9,
+      "closed": 9
     },
     {
       "repo": "bridge-encodings",
@@ -170,14 +178,6 @@
       "external": false,
       "open": 2,
       "closed": 6
-    },
-    {
-      "repo": "pbn-to-pdf",
-      "full_name": "bridge-craftwork/pbn-to-pdf",
-      "url": "https://github.com/bridge-craftwork/pbn-to-pdf",
-      "external": false,
-      "open": 1,
-      "closed": 4
     },
     {
       "repo": "rpdd-library",
@@ -254,6 +254,246 @@
   ],
   "issues": [
     {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 50,
+      "title": "Page header prints only on the first page; BridgeComposer repeats it on every page",
+      "state": "open",
+      "created_at": "2026-09-12T13:50:42Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/50",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Baker-Bridge",
+      "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
+      "number": 48,
+      "title": "Curated merge replaces whole boards, so hand-maintained tags silently drop generator-owned ones",
+      "state": "open",
+      "created_at": "2026-09-12T04:01:52Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/48",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Baker-Bridge",
+      "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
+      "number": 47,
+      "title": "Curated 2over1 and Weak2 write commentary inside the [Auction] section, so it will stop printing",
+      "state": "closed",
+      "created_at": "2026-09-12T03:52:12Z",
+      "closed_at": "2026-09-12T04:07:13Z",
+      "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/47",
+      "labels": [],
+      "comments": 2,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Baker-Bridge",
+      "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
+      "number": 46,
+      "title": "BB_BUILD_DATE is passed through verbatim, so pinning it breaks the manifest's ISO 8601 contract",
+      "state": "open",
+      "created_at": "2026-09-12T03:36:20Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/46",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 48,
+      "title": "Contract and lead lines need an auction section; BridgeComposer draws them without one",
+      "state": "open",
+      "created_at": "2026-09-12T02:16:29Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/48",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 46,
+      "title": "Commentary between [Board] and [Deal] is dropped; BridgeComposer draws it",
+      "state": "open",
+      "created_at": "2026-09-12T02:01:21Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/46",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 331,
+      "title": "Rework the 20 scenarios still on the spot-card leveling ladder",
+      "state": "open",
+      "created_at": "2026-09-12T01:46:55Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/331",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 44,
+      "title": "Board label sits below the diagram; BridgeComposer puts it top left in bold italic",
+      "state": "open",
+      "created_at": "2026-09-11T22:55:53Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/44",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 43,
+      "title": "BridgeComposer draws a blue \"next to play\" box on trick boards",
+      "state": "open",
+      "created_at": "2026-09-11T22:55:48Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/43",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 42,
+      "title": "BridgeComposer draws a play-record table on boards with a trick",
+      "state": "open",
+      "created_at": "2026-09-11T22:55:44Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/42",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 31,
+      "title": "Hand-record layout, selected automatically by %BoardsPerPage 18",
+      "state": "closed",
+      "created_at": "2026-09-11T19:11:41Z",
+      "closed_at": "2026-09-12T05:28:08Z",
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/31",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 30,
+      "title": "Close the remaining rendering gaps with BridgeComposer",
+      "state": "open",
+      "created_at": "2026-09-11T19:09:14Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/30",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 29,
+      "title": "Full-width commentary overprints the Lead: line",
+      "state": "closed",
+      "created_at": "2026-09-11T19:08:59Z",
+      "closed_at": "2026-09-12T05:16:03Z",
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/29",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 28,
+      "title": "Honour page furniture as the PBN specifies it, with a flag to omit it",
+      "state": "closed",
+      "created_at": "2026-09-11T19:08:49Z",
+      "closed_at": "2026-09-12T05:28:08Z",
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/28",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 25,
+      "title": "Center mode is ignored for one-board-per-page files (27,753 Kantar boards)",
+      "state": "open",
+      "created_at": "2026-09-11T16:57:55Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/25",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 24,
+      "title": "Center mode: draw the board first and its commentary below, as BridgeComposer does",
+      "state": "open",
+      "created_at": "2026-09-11T16:57:44Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/24",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbn-to-pdf",
+      "full_name": "bridge-craftwork/pbn-to-pdf",
+      "external": false,
+      "number": 23,
+      "title": "Stamp the renderer version into every PDF",
+      "state": "closed",
+      "created_at": "2026-09-11T16:57:21Z",
+      "closed_at": "2026-09-12T04:53:02Z",
+      "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/23",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
       "repo": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "external": false,
@@ -314,7 +554,7 @@
       "labels": [
         "enhancement"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -469,12 +709,12 @@
       "external": false,
       "number": 20,
       "title": "Shrink the wasm payload: the 12 court cards are 7.4 MB of a 20 MB bundle",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-10T00:34:02Z",
-      "closed_at": null,
+      "closed_at": "2026-09-11T18:42:14Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/20",
       "labels": [],
-      "comments": 0,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -1622,12 +1862,12 @@
       "external": false,
       "number": 42,
       "title": "Play sections are written on the tag line, so every opening lead is invisible to PBN readers",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-08-31T03:00:57Z",
-      "closed_at": null,
+      "closed_at": "2026-09-12T04:06:57Z",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/42",
       "labels": [],
-      "comments": 0,
+      "comments": 3,
       "author": "Rick-Wilson"
     },
     {
