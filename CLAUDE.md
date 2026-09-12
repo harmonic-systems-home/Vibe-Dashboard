@@ -9,7 +9,9 @@ The dashboard is deployed via **GitHub Pages** with automated daily updates via 
 ### GitHub Actions Workflow
 
 The workflow (`.github/workflows/update-dashboard.yml`) runs:
-- **Daily at 4 AM Pacific** (12 PM UTC)
+- **Daily at midnight Pacific** (7 AM UTC). GitHub defers scheduled runs, so
+  they have in practice started 2.5-5 hours late; expect the refreshed data
+  mid-morning Pacific rather than at the scheduled hour.
 - **On push to main branch**
 - **Manually via workflow_dispatch**
 

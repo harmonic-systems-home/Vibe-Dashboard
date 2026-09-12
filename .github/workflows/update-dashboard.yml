@@ -2,7 +2,11 @@ name: Update Dashboard Data
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # Daily at 4 AM Pacific (12 PM UTC)
+    # Midnight Pacific (07:00 UTC during PDT, 23:00 PST in winter). GitHub
+    # defers scheduled runs on shared runners — ours have started 2.5-5 hours
+    # late every day — so this is set early enough that the data still lands
+    # in the morning.
+    - cron: '0 7 * * *'
   push:
     branches: [main]
   workflow_dispatch:  # Manual trigger from GitHub UI
