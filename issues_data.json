@@ -1,33 +1,38 @@
 {
-  "generated_at": "2026-09-12T13:51:12.919304+00:00",
+  "generated_at": "2026-09-13T12:37:12.967391+00:00",
   "stats": {
-    "total": 502,
-    "open": 111,
-    "closed": 391,
-    "close_rate": 78,
-    "opened_last_30": 141,
-    "closed_last_30": 83,
-    "opened_last_90": 423,
-    "closed_last_90": 325,
+    "total": 505,
+    "open": 100,
+    "closed": 405,
+    "close_rate": 80,
+    "opened_last_30": 144,
+    "closed_last_30": 97,
+    "opened_last_90": 426,
+    "closed_last_90": 339,
     "median_days_to_close": 0.1,
-    "median_open_age_days": 17.0,
-    "oldest_open_days": 180.0,
+    "median_open_age_days": 29.8,
+    "oldest_open_days": 180.9,
     "repo_count": 18,
     "by_repo": {
-      "pbn-to-pdf": {
+      "Practice-Bidding-Scenarios": {
         "open": 9,
+        "closed": 274,
+        "total": 283
+      },
+      "bridge-encodings": {
+        "open": 2,
         "closed": 9,
+        "total": 11
+      },
+      "pbn-to-pdf": {
+        "open": 0,
+        "closed": 18,
         "total": 18
       },
       "Baker-Bridge": {
         "open": 15,
         "closed": 10,
         "total": 25
-      },
-      "Practice-Bidding-Scenarios": {
-        "open": 11,
-        "closed": 270,
-        "total": 281
       },
       "pbs-bbo-extension": {
         "open": 2,
@@ -63,11 +68,6 @@
         "open": 1,
         "closed": 4,
         "total": 5
-      },
-      "bridge-encodings": {
-        "open": 2,
-        "closed": 8,
-        "total": 10
       },
       "bridge-types": {
         "open": 0,
@@ -112,8 +112,8 @@
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
-      "open": 11,
-      "closed": 270
+      "open": 9,
+      "closed": 274
     },
     {
       "repo": "Bridge-Classroom",
@@ -144,8 +144,8 @@
       "full_name": "bridge-craftwork/pbn-to-pdf",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf",
       "external": false,
-      "open": 9,
-      "closed": 9
+      "open": 0,
+      "closed": 18
     },
     {
       "repo": "bridge-encodings",
@@ -153,7 +153,7 @@
       "url": "https://github.com/bridge-craftwork/bridge-encodings",
       "external": false,
       "open": 2,
-      "closed": 8
+      "closed": 9
     },
     {
       "repo": "bridge-solver",
@@ -254,14 +254,58 @@
   ],
   "issues": [
     {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 336,
+      "title": "NT_Ladder: level on each HCP, not on the five bands",
+      "state": "closed",
+      "created_at": "2026-09-13T05:41:33Z",
+      "closed_at": "2026-09-13T06:02:43Z",
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/336",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 334,
+      "title": "Re-testing with Safari, this morning (Sat 9/12)",
+      "state": "open",
+      "created_at": "2026-09-12T17:50:13Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/334",
+      "labels": [],
+      "comments": 1,
+      "author": "ADavidBailey"
+    },
+    {
+      "repo": "bridge-encodings",
+      "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
+      "number": 29,
+      "title": "Play slots are filled by seat but read as leader-first, so every trick after the first is wrong",
+      "state": "closed",
+      "created_at": "2026-09-12T16:36:36Z",
+      "closed_at": "2026-09-12T16:41:31Z",
+      "url": "https://github.com/bridge-craftwork/bridge-encodings/issues/29",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
       "repo": "pbn-to-pdf",
       "full_name": "bridge-craftwork/pbn-to-pdf",
       "external": false,
       "number": 50,
       "title": "Page header prints only on the first page; BridgeComposer repeats it on every page",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-12T13:50:42Z",
-      "closed_at": null,
+      "closed_at": "2026-09-12T16:28:41Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/50",
       "labels": [],
       "comments": 0,
@@ -315,9 +359,9 @@
       "external": false,
       "number": 48,
       "title": "Contract and lead lines need an auction section; BridgeComposer draws them without one",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-12T02:16:29Z",
-      "closed_at": null,
+      "closed_at": "2026-09-12T16:09:35Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/48",
       "labels": [],
       "comments": 0,
@@ -329,12 +373,12 @@
       "external": false,
       "number": 46,
       "title": "Commentary between [Board] and [Deal] is dropped; BridgeComposer draws it",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-12T02:01:21Z",
-      "closed_at": null,
+      "closed_at": "2026-09-13T05:43:05Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/46",
       "labels": [],
-      "comments": 1,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -359,9 +403,9 @@
       "external": false,
       "number": 44,
       "title": "Board label sits below the diagram; BridgeComposer puts it top left in bold italic",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-11T22:55:53Z",
-      "closed_at": null,
+      "closed_at": "2026-09-12T16:34:32Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/44",
       "labels": [],
       "comments": 0,
@@ -373,12 +417,12 @@
       "external": false,
       "number": 43,
       "title": "BridgeComposer draws a blue \"next to play\" box on trick boards",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-11T22:55:48Z",
-      "closed_at": null,
+      "closed_at": "2026-09-13T04:36:30Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/43",
       "labels": [],
-      "comments": 0,
+      "comments": 6,
       "author": "Rick-Wilson"
     },
     {
@@ -387,9 +431,9 @@
       "external": false,
       "number": 42,
       "title": "BridgeComposer draws a play-record table on boards with a trick",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-11T22:55:44Z",
-      "closed_at": null,
+      "closed_at": "2026-09-12T17:08:26Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/42",
       "labels": [],
       "comments": 0,
@@ -415,12 +459,12 @@
       "external": false,
       "number": 30,
       "title": "Close the remaining rendering gaps with BridgeComposer",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-11T19:09:14Z",
-      "closed_at": null,
+      "closed_at": "2026-09-13T05:56:20Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/30",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -457,9 +501,9 @@
       "external": false,
       "number": 25,
       "title": "Center mode is ignored for one-board-per-page files (27,753 Kantar boards)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-11T16:57:55Z",
-      "closed_at": null,
+      "closed_at": "2026-09-12T13:58:01Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/25",
       "labels": [],
       "comments": 0,
@@ -471,9 +515,9 @@
       "external": false,
       "number": 24,
       "title": "Center mode: draw the board first and its commentary below, as BridgeComposer does",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-11T16:57:44Z",
-      "closed_at": null,
+      "closed_at": "2026-09-12T13:53:00Z",
       "url": "https://github.com/bridge-craftwork/pbn-to-pdf/issues/24",
       "labels": [],
       "comments": 0,
@@ -547,14 +591,14 @@
       "external": true,
       "number": 322,
       "title": "Enhance build pipeline for auto-leveling",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-10T23:47:06Z",
-      "closed_at": null,
+      "closed_at": "2026-09-13T04:20:29Z",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/322",
       "labels": [
         "enhancement"
       ],
-      "comments": 1,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -563,14 +607,14 @@
       "external": true,
       "number": 321,
       "title": "Load .dlr files directly in the extension, and retire the pbs folders",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-10T23:47:05Z",
-      "closed_at": null,
+      "closed_at": "2026-09-13T04:20:27Z",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/321",
       "labels": [
         "enhancement"
       ],
-      "comments": 5,
+      "comments": 6,
       "author": "Rick-Wilson"
     },
     {
@@ -2080,14 +2124,14 @@
       "external": true,
       "number": 294,
       "title": "Convert levelling from the spot-card ladder to rnd(), and generate it",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-08-28T01:46:22Z",
-      "closed_at": null,
+      "closed_at": "2026-09-13T05:32:30Z",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/294",
       "labels": [
         "enhancement"
       ],
-      "comments": 1,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
