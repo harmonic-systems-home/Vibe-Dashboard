@@ -1,28 +1,33 @@
 {
-  "generated_at": "2026-09-14T13:42:29.370130+00:00",
+  "generated_at": "2026-09-15T12:33:28.534017+00:00",
   "stats": {
-    "total": 505,
-    "open": 100,
-    "closed": 405,
+    "total": 507,
+    "open": 101,
+    "closed": 406,
     "close_rate": 80,
-    "opened_last_30": 137,
-    "closed_last_30": 94,
-    "opened_last_90": 426,
-    "closed_last_90": 339,
+    "opened_last_30": 139,
+    "closed_last_30": 95,
+    "opened_last_90": 428,
+    "closed_last_90": 340,
     "median_days_to_close": 0.1,
-    "median_open_age_days": 30.9,
-    "oldest_open_days": 182.0,
+    "median_open_age_days": 31.8,
+    "oldest_open_days": 182.9,
     "repo_count": 18,
     "by_repo": {
+      "bridge-encodings": {
+        "open": 2,
+        "closed": 10,
+        "total": 12
+      },
+      "bridge-wrangler": {
+        "open": 3,
+        "closed": 2,
+        "total": 5
+      },
       "Practice-Bidding-Scenarios": {
         "open": 9,
         "closed": 274,
         "total": 283
-      },
-      "bridge-encodings": {
-        "open": 2,
-        "closed": 9,
-        "total": 11
       },
       "pbn-to-pdf": {
         "open": 0,
@@ -78,11 +83,6 @@
         "open": 2,
         "closed": 8,
         "total": 10
-      },
-      "bridge-wrangler": {
-        "open": 2,
-        "closed": 2,
-        "total": 4
       },
       "bridge-lesson-packaging": {
         "open": 1,
@@ -153,7 +153,7 @@
       "url": "https://github.com/bridge-craftwork/bridge-encodings",
       "external": false,
       "open": 2,
-      "closed": 9
+      "closed": 10
     },
     {
       "repo": "bridge-solver",
@@ -180,6 +180,14 @@
       "closed": 6
     },
     {
+      "repo": "bridge-wrangler",
+      "full_name": "bridge-craftwork/bridge-wrangler",
+      "url": "https://github.com/bridge-craftwork/bridge-wrangler",
+      "external": false,
+      "open": 3,
+      "closed": 2
+    },
+    {
       "repo": "rpdd-library",
       "full_name": "bridge-craftwork/rpdd-library",
       "url": "https://github.com/bridge-craftwork/rpdd-library",
@@ -194,14 +202,6 @@
       "external": false,
       "open": 4,
       "closed": 0
-    },
-    {
-      "repo": "bridge-wrangler",
-      "full_name": "bridge-craftwork/bridge-wrangler",
-      "url": "https://github.com/bridge-craftwork/bridge-wrangler",
-      "external": false,
-      "open": 2,
-      "closed": 2
     },
     {
       "repo": "bbo-pbs",
@@ -253,6 +253,34 @@
     }
   ],
   "issues": [
+    {
+      "repo": "bridge-encodings",
+      "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
+      "number": 31,
+      "title": "Add a LIN writer, so LIN is read and written in one place",
+      "state": "closed",
+      "created_at": "2026-09-14T21:04:32Z",
+      "closed_at": "2026-09-14T22:55:10Z",
+      "url": "https://github.com/bridge-craftwork/bridge-encodings/issues/31",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-wrangler",
+      "full_name": "bridge-craftwork/bridge-wrangler",
+      "external": false,
+      "number": 10,
+      "title": "Catch up with pbn-to-pdf 1.0: repair the build, then pass its new switches through",
+      "state": "open",
+      "created_at": "2026-09-14T20:30:02Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-wrangler/issues/10",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
