@@ -1,19 +1,29 @@
 {
-  "generated_at": "2026-09-15T12:33:28.534017+00:00",
+  "generated_at": "2026-09-16T12:30:33.081721+00:00",
   "stats": {
-    "total": 507,
-    "open": 101,
+    "total": 509,
+    "open": 103,
     "closed": 406,
     "close_rate": 80,
-    "opened_last_30": 139,
+    "opened_last_30": 141,
     "closed_last_30": 95,
-    "opened_last_90": 428,
+    "opened_last_90": 430,
     "closed_last_90": 340,
     "median_days_to_close": 0.1,
-    "median_open_age_days": 31.8,
-    "oldest_open_days": 182.9,
+    "median_open_age_days": 32.7,
+    "oldest_open_days": 183.9,
     "repo_count": 18,
     "by_repo": {
+      "Practice-Bidding-Scenarios": {
+        "open": 10,
+        "closed": 274,
+        "total": 284
+      },
+      "Dealer3": {
+        "open": 14,
+        "closed": 38,
+        "total": 52
+      },
       "bridge-encodings": {
         "open": 2,
         "closed": 10,
@@ -23,11 +33,6 @@
         "open": 3,
         "closed": 2,
         "total": 5
-      },
-      "Practice-Bidding-Scenarios": {
-        "open": 9,
-        "closed": 274,
-        "total": 283
       },
       "pbn-to-pdf": {
         "open": 0,
@@ -43,11 +48,6 @@
         "open": 2,
         "closed": 6,
         "total": 8
-      },
-      "Dealer3": {
-        "open": 13,
-        "closed": 38,
-        "total": 51
       },
       "BBA-Tools": {
         "open": 7,
@@ -112,7 +112,7 @@
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
-      "open": 9,
+      "open": 10,
       "closed": 274
     },
     {
@@ -128,7 +128,7 @@
       "full_name": "bridge-craftwork/Dealer3",
       "url": "https://github.com/bridge-craftwork/Dealer3",
       "external": false,
-      "open": 13,
+      "open": 14,
       "closed": 38
     },
     {
@@ -253,6 +253,38 @@
     }
   ],
   "issues": [
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 338,
+      "title": "Three auction-filter regexes are silently wrong",
+      "state": "open",
+      "created_at": "2026-09-15T23:28:57Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/338",
+      "labels": [
+        "bug"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Dealer3",
+      "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
+      "number": 128,
+      "title": "Contract and auction filters in the script language",
+      "state": "open",
+      "created_at": "2026-09-15T23:28:49Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Dealer3/issues/128",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
