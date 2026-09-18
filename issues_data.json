@@ -1,28 +1,33 @@
 {
-  "generated_at": "2026-09-17T12:29:10.139140+00:00",
+  "generated_at": "2026-09-18T12:08:33.476485+00:00",
   "stats": {
-    "total": 510,
-    "open": 104,
-    "closed": 406,
+    "total": 513,
+    "open": 105,
+    "closed": 408,
     "close_rate": 80,
-    "opened_last_30": 142,
-    "closed_last_30": 95,
-    "opened_last_90": 431,
-    "closed_last_90": 340,
+    "opened_last_30": 145,
+    "closed_last_30": 97,
+    "opened_last_90": 434,
+    "closed_last_90": 342,
     "median_days_to_close": 0.1,
-    "median_open_age_days": 33.7,
-    "oldest_open_days": 184.9,
+    "median_open_age_days": 34.7,
+    "oldest_open_days": 185.9,
     "repo_count": 18,
     "by_repo": {
       "Dealer3": {
-        "open": 15,
-        "closed": 38,
-        "total": 53
+        "open": 14,
+        "closed": 40,
+        "total": 54
+      },
+      "pbs-bbo-extension": {
+        "open": 3,
+        "closed": 6,
+        "total": 9
       },
       "Practice-Bidding-Scenarios": {
-        "open": 10,
+        "open": 11,
         "closed": 274,
-        "total": 284
+        "total": 285
       },
       "bridge-encodings": {
         "open": 2,
@@ -43,11 +48,6 @@
         "open": 15,
         "closed": 10,
         "total": 25
-      },
-      "pbs-bbo-extension": {
-        "open": 2,
-        "closed": 6,
-        "total": 8
       },
       "BBA-Tools": {
         "open": 7,
@@ -112,7 +112,7 @@
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
-      "open": 10,
+      "open": 11,
       "closed": 274
     },
     {
@@ -128,8 +128,8 @@
       "full_name": "bridge-craftwork/Dealer3",
       "url": "https://github.com/bridge-craftwork/Dealer3",
       "external": false,
-      "open": 15,
-      "closed": 38
+      "open": 14,
+      "closed": 40
     },
     {
       "repo": "Baker-Bridge",
@@ -176,7 +176,7 @@
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
       "external": false,
-      "open": 2,
+      "open": 3,
       "closed": 6
     },
     {
@@ -253,6 +253,48 @@
     }
   ],
   "issues": [
+    {
+      "repo": "Dealer3",
+      "full_name": "bridge-craftwork/Dealer3",
+      "external": false,
+      "number": 132,
+      "title": "Web version PBS examples, some leveled scripts are not using leveling",
+      "state": "open",
+      "created_at": "2026-09-18T05:50:26Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Dealer3/issues/132",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "external": false,
+      "number": 36,
+      "title": "After the fix to auto-click the new Start table button, tables come up with kibitzers disallowed",
+      "state": "open",
+      "created_at": "2026-09-18T05:48:01Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension/issues/36",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 339,
+      "title": "NT Ladder scenario now gives errors in BBO - can't deal",
+      "state": "open",
+      "created_at": "2026-09-18T05:46:23Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/339",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
@@ -1014,14 +1056,14 @@
       "external": false,
       "number": 104,
       "title": "Ship a set of demo scripts, tabbed beside PBS",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-09T15:01:46Z",
-      "closed_at": null,
+      "closed_at": "2026-09-17T17:43:19Z",
       "url": "https://github.com/bridge-craftwork/Dealer3/issues/104",
       "labels": [
         "enhancement"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -1173,15 +1215,15 @@
       "full_name": "bridge-craftwork/Dealer3",
       "external": false,
       "number": 97,
-      "title": "Keep a history of scripts, with named saves and PBS favourites",
-      "state": "open",
+      "title": "Keep a history of scripts, tabbed beside PBS and Demos",
+      "state": "closed",
       "created_at": "2026-09-09T14:51:09Z",
-      "closed_at": null,
+      "closed_at": "2026-09-17T17:43:20Z",
       "url": "https://github.com/bridge-craftwork/Dealer3/issues/97",
       "labels": [
         "enhancement"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
