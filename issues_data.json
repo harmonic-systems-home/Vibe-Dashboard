@@ -1,19 +1,24 @@
 {
-  "generated_at": "2026-09-19T11:51:55.374298+00:00",
+  "generated_at": "2026-09-20T12:05:17.855171+00:00",
   "stats": {
-    "total": 513,
+    "total": 514,
     "open": 102,
-    "closed": 411,
+    "closed": 412,
     "close_rate": 80,
-    "opened_last_30": 145,
-    "closed_last_30": 100,
-    "opened_last_90": 434,
-    "closed_last_90": 345,
+    "opened_last_30": 146,
+    "closed_last_30": 101,
+    "opened_last_90": 435,
+    "closed_last_90": 346,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 35.7,
-    "oldest_open_days": 186.9,
+    "median_open_age_days": 36.7,
+    "oldest_open_days": 187.9,
     "repo_count": 18,
     "by_repo": {
+      "Practice-Bidding-Scenarios": {
+        "open": 10,
+        "closed": 276,
+        "total": 286
+      },
       "Dealer3": {
         "open": 13,
         "closed": 41,
@@ -23,11 +28,6 @@
         "open": 2,
         "closed": 7,
         "total": 9
-      },
-      "Practice-Bidding-Scenarios": {
-        "open": 10,
-        "closed": 275,
-        "total": 285
       },
       "bridge-encodings": {
         "open": 2,
@@ -113,7 +113,7 @@
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
       "open": 10,
-      "closed": 275
+      "closed": 276
     },
     {
       "repo": "Bridge-Classroom",
@@ -254,6 +254,22 @@
   ],
   "issues": [
     {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 340,
+      "title": "Classroom report: Basic_Responses \u00b7 Deal 4",
+      "state": "open",
+      "created_at": "2026-09-20T03:06:37Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/340",
+      "labels": [
+        "classroom-feedback"
+      ],
+      "comments": 0,
+      "author": "ADavidBailey"
+    },
+    {
       "repo": "Dealer3",
       "full_name": "bridge-craftwork/Dealer3",
       "external": false,
@@ -315,14 +331,14 @@
       "external": true,
       "number": 338,
       "title": "Three auction-filter regexes are silently wrong",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-15T23:28:57Z",
-      "closed_at": null,
+      "closed_at": "2026-09-19T22:49:45Z",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/338",
       "labels": [
         "bug"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
