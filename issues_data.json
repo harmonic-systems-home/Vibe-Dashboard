@@ -1,23 +1,38 @@
 {
-  "generated_at": "2026-09-22T12:24:20.871706+00:00",
+  "generated_at": "2026-09-23T12:37:25.852863+00:00",
   "stats": {
-    "total": 514,
-    "open": 99,
-    "closed": 415,
+    "total": 519,
+    "open": 100,
+    "closed": 419,
     "close_rate": 81,
-    "opened_last_30": 146,
-    "closed_last_30": 104,
-    "opened_last_90": 411,
-    "closed_last_90": 340,
+    "opened_last_30": 151,
+    "closed_last_30": 108,
+    "opened_last_90": 390,
+    "closed_last_90": 317,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 38.8,
-    "oldest_open_days": 189.9,
+    "median_open_age_days": 39.8,
+    "oldest_open_days": 190.9,
     "repo_count": 18,
     "by_repo": {
+      "bridge-wrangler": {
+        "open": 3,
+        "closed": 3,
+        "total": 6
+      },
+      "bridge-encodings": {
+        "open": 2,
+        "closed": 12,
+        "total": 14
+      },
+      "BBA-Tools": {
+        "open": 7,
+        "closed": 3,
+        "total": 10
+      },
       "Practice-Bidding-Scenarios": {
-        "open": 9,
+        "open": 10,
         "closed": 277,
-        "total": 286
+        "total": 287
       },
       "Dealer3": {
         "open": 12,
@@ -29,16 +44,6 @@
         "closed": 7,
         "total": 9
       },
-      "bridge-encodings": {
-        "open": 2,
-        "closed": 10,
-        "total": 12
-      },
-      "bridge-wrangler": {
-        "open": 3,
-        "closed": 2,
-        "total": 5
-      },
       "pbn-to-pdf": {
         "open": 0,
         "closed": 18,
@@ -48,11 +53,6 @@
         "open": 15,
         "closed": 10,
         "total": 25
-      },
-      "BBA-Tools": {
-        "open": 7,
-        "closed": 2,
-        "total": 9
       },
       "Bridge-Classroom": {
         "open": 38,
@@ -112,7 +112,7 @@
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
-      "open": 9,
+      "open": 10,
       "closed": 277
     },
     {
@@ -153,7 +153,15 @@
       "url": "https://github.com/bridge-craftwork/bridge-encodings",
       "external": false,
       "open": 2,
-      "closed": 10
+      "closed": 12
+    },
+    {
+      "repo": "BBA-Tools",
+      "full_name": "bridge-craftwork/BBA-Tools",
+      "url": "https://github.com/bridge-craftwork/BBA-Tools",
+      "external": true,
+      "open": 7,
+      "closed": 3
     },
     {
       "repo": "bridge-solver",
@@ -162,14 +170,6 @@
       "external": false,
       "open": 2,
       "closed": 8
-    },
-    {
-      "repo": "BBA-Tools",
-      "full_name": "bridge-craftwork/BBA-Tools",
-      "url": "https://github.com/bridge-craftwork/BBA-Tools",
-      "external": true,
-      "open": 7,
-      "closed": 2
     },
     {
       "repo": "pbs-bbo-extension",
@@ -185,7 +185,7 @@
       "url": "https://github.com/bridge-craftwork/bridge-wrangler",
       "external": false,
       "open": 3,
-      "closed": 2
+      "closed": 3
     },
     {
       "repo": "rpdd-library",
@@ -253,6 +253,78 @@
     }
   ],
   "issues": [
+    {
+      "repo": "bridge-wrangler",
+      "full_name": "bridge-craftwork/bridge-wrangler",
+      "external": false,
+      "number": 14,
+      "title": "rotate-deals leaves OptimumResultTable unrotated, so the table describes the wrong seats",
+      "state": "closed",
+      "created_at": "2026-09-22T22:00:22Z",
+      "closed_at": "2026-09-22T23:36:05Z",
+      "url": "https://github.com/bridge-craftwork/bridge-wrangler/issues/14",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-encodings",
+      "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
+      "number": 35,
+      "title": "PbnDocument: set and replace a board's % directive lines",
+      "state": "closed",
+      "created_at": "2026-09-22T15:39:06Z",
+      "closed_at": "2026-09-22T18:35:25Z",
+      "url": "https://github.com/bridge-craftwork/bridge-encodings/issues/35",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-encodings",
+      "full_name": "bridge-craftwork/bridge-encodings",
+      "external": false,
+      "number": 33,
+      "title": "PbnDocument: replace repeated tags (Note) and keyed {\u2026} commentary",
+      "state": "closed",
+      "created_at": "2026-09-22T15:28:47Z",
+      "closed_at": "2026-09-22T15:35:23Z",
+      "url": "https://github.com/bridge-craftwork/bridge-encodings/issues/33",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "BBA-Tools",
+      "full_name": "bridge-craftwork/BBA-Tools",
+      "external": true,
+      "number": 26,
+      "title": "bba-cli: preserve input tags \u2014 edit the PBN in place with bridge-encodings' PbnDocument",
+      "state": "closed",
+      "created_at": "2026-09-22T15:09:23Z",
+      "closed_at": "2026-09-22T18:47:10Z",
+      "url": "https://github.com/bridge-craftwork/BBA-Tools/issues/26",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 341,
+      "title": "Add a solve operation: double-dummy tables for every deal",
+      "state": "open",
+      "created_at": "2026-09-22T14:54:47Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/341",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
