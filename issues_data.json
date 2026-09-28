@@ -1,23 +1,28 @@
 {
-  "generated_at": "2026-09-27T12:46:24.914961+00:00",
+  "generated_at": "2026-09-28T15:01:03.010563+00:00",
   "stats": {
-    "total": 526,
-    "open": 102,
-    "closed": 424,
+    "total": 533,
+    "open": 103,
+    "closed": 430,
     "close_rate": 81,
-    "opened_last_30": 147,
-    "closed_last_30": 108,
-    "opened_last_90": 374,
+    "opened_last_30": 153,
+    "closed_last_30": 114,
+    "opened_last_90": 375,
     "closed_last_90": 299,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 43.8,
-    "oldest_open_days": 194.9,
-    "repo_count": 18,
+    "median_open_age_days": 44.8,
+    "oldest_open_days": 196.0,
+    "repo_count": 19,
     "by_repo": {
+      "rusty-bidding-bot": {
+        "open": 4,
+        "closed": 0,
+        "total": 4
+      },
       "Baker-Bridge": {
-        "open": 19,
-        "closed": 13,
-        "total": 32
+        "open": 16,
+        "closed": 19,
+        "total": 35
       },
       "bridge-wrangler": {
         "open": 3,
@@ -136,8 +141,8 @@
       "full_name": "bridge-craftwork/Baker-Bridge",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge",
       "external": false,
-      "open": 19,
-      "closed": 13
+      "open": 16,
+      "closed": 19
     },
     {
       "repo": "pbn-to-pdf",
@@ -204,6 +209,14 @@
       "closed": 0
     },
     {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "open": 4,
+      "closed": 0
+    },
+    {
       "repo": "bbo-pbs",
       "full_name": "bridge-craftwork/bbo-pbs",
       "url": "https://github.com/bridge-craftwork/bbo-pbs",
@@ -254,14 +267,118 @@
   ],
   "issues": [
     {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 4,
+      "title": "Survey conventions needed for PBS Corpus and BBA coverage",
+      "state": "open",
+      "created_at": "2026-09-28T14:55:27Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/4",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 3,
+      "title": "Plan for integration with bridge-classroom's bidding tables",
+      "state": "open",
+      "created_at": "2026-09-28T14:46:40Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/3",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 2,
+      "title": "Make a web site to showcase the bidding engine",
+      "state": "open",
+      "created_at": "2026-09-28T14:43:22Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/2",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 1,
+      "title": "Generate Build Products",
+      "state": "open",
+      "created_at": "2026-09-28T14:40:36Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/1",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Baker-Bridge",
+      "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
+      "number": 72,
+      "title": "Classroom report: Baker Bridge - Trump Management \u00b7 Deal 10 (from David)",
+      "state": "closed",
+      "created_at": "2026-09-27T14:49:08Z",
+      "closed_at": "2026-09-27T19:09:25Z",
+      "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/72",
+      "labels": [
+        "classroom-feedback"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Baker-Bridge",
+      "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
+      "number": 71,
+      "title": "Classroom report: Baker Bridge - Trump Management \u00b7 Deal 9 (from David)",
+      "state": "closed",
+      "created_at": "2026-09-27T14:44:19Z",
+      "closed_at": "2026-09-27T19:09:27Z",
+      "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/71",
+      "labels": [
+        "classroom-feedback"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Baker-Bridge",
+      "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
+      "number": 70,
+      "title": "Classroom report: Baker Bridge - Squeeze Plays \u00b7 Deal 3 (from David)",
+      "state": "closed",
+      "created_at": "2026-09-27T13:26:05Z",
+      "closed_at": "2026-09-27T19:09:26Z",
+      "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/70",
+      "labels": [
+        "classroom-feedback"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
       "external": false,
       "number": 69,
       "title": "Classroom report: Baker Bridge - Elimination Plays \u00b7 Deal 7 (from David)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-26T14:56:49Z",
-      "closed_at": null,
+      "closed_at": "2026-09-27T19:09:26Z",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/69",
       "labels": [
         "classroom-feedback"
@@ -275,9 +392,9 @@
       "external": false,
       "number": 68,
       "title": "Classroom report: Baker Bridge - Elimination Plays \u00b7 Deal 7 (from David)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-26T14:56:04Z",
-      "closed_at": null,
+      "closed_at": "2026-09-27T19:09:25Z",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/68",
       "labels": [
         "classroom-feedback"
@@ -291,9 +408,9 @@
       "external": false,
       "number": 67,
       "title": "Classroom report: Baker Bridge - Elimination Plays \u00b7 Deal 2 (from David)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-26T14:32:56Z",
-      "closed_at": null,
+      "closed_at": "2026-09-27T19:09:24Z",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/67",
       "labels": [
         "classroom-feedback"
