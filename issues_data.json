@@ -1,23 +1,33 @@
 {
-  "generated_at": "2026-09-28T15:01:03.010563+00:00",
+  "generated_at": "2026-09-29T13:48:15.823873+00:00",
   "stats": {
-    "total": 533,
-    "open": 103,
-    "closed": 430,
-    "close_rate": 81,
-    "opened_last_30": 153,
-    "closed_last_30": 114,
-    "opened_last_90": 375,
-    "closed_last_90": 299,
+    "total": 546,
+    "open": 111,
+    "closed": 435,
+    "close_rate": 80,
+    "opened_last_30": 161,
+    "closed_last_30": 116,
+    "opened_last_90": 378,
+    "closed_last_90": 298,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 44.8,
-    "oldest_open_days": 196.0,
-    "repo_count": 19,
+    "median_open_age_days": 34.0,
+    "oldest_open_days": 197.0,
+    "repo_count": 20,
     "by_repo": {
-      "rusty-bidding-bot": {
-        "open": 4,
+      "Bridge-Classroom": {
+        "open": 45,
+        "closed": 32,
+        "total": 77
+      },
+      "bridge-table-service": {
+        "open": 2,
         "closed": 0,
-        "total": 4
+        "total": 2
+      },
+      "rusty-bidding-bot": {
+        "open": 3,
+        "closed": 5,
+        "total": 8
       },
       "Baker-Bridge": {
         "open": 16,
@@ -58,11 +68,6 @@
         "open": 0,
         "closed": 18,
         "total": 18
-      },
-      "Bridge-Classroom": {
-        "open": 38,
-        "closed": 32,
-        "total": 70
       },
       "bridge-craftwork-site": {
         "open": 4,
@@ -125,7 +130,7 @@
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
       "external": false,
-      "open": 38,
+      "open": 45,
       "closed": 32
     },
     {
@@ -185,6 +190,14 @@
       "closed": 7
     },
     {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "open": 3,
+      "closed": 5
+    },
+    {
       "repo": "bridge-wrangler",
       "full_name": "bridge-craftwork/bridge-wrangler",
       "url": "https://github.com/bridge-craftwork/bridge-wrangler",
@@ -209,18 +222,18 @@
       "closed": 0
     },
     {
-      "repo": "rusty-bidding-bot",
-      "full_name": "bridge-craftwork/rusty-bidding-bot",
-      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot",
-      "external": false,
-      "open": 4,
-      "closed": 0
-    },
-    {
       "repo": "bbo-pbs",
       "full_name": "bridge-craftwork/bbo-pbs",
       "url": "https://github.com/bridge-craftwork/bbo-pbs",
       "external": true,
+      "open": 2,
+      "closed": 0
+    },
+    {
+      "repo": "bridge-table-service",
+      "full_name": "bridge-craftwork/bridge-table-service",
+      "url": "https://github.com/bridge-craftwork/bridge-table-service",
+      "external": false,
       "open": 2,
       "closed": 0
     },
@@ -267,6 +280,188 @@
   ],
   "issues": [
     {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 428,
+      "title": "Served (\"distributed\") table: bidder choice, labels and meanings",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:14Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/428",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-table-service",
+      "full_name": "bridge-craftwork/bridge-table-service",
+      "external": false,
+      "number": 17,
+      "title": "Convention cards per session",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:13Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-table-service/issues/17",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-table-service",
+      "full_name": "bridge-craftwork/bridge-table-service",
+      "external": false,
+      "number": 16,
+      "title": "Native Rusty bidder with the BBA fallback",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:12Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-table-service/issues/16",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 427,
+      "title": "Play my convention card, both ways, with coverage warnings and bidding reports",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:11Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/427",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 426,
+      "title": "The \"why\" panel: BBA's reference call and Rusty's reading of the student's call",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:10Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/426",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 425,
+      "title": "Mouseover meanings from Rusty for every call in the auction",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:09Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/425",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 424,
+      "title": "Bidding engine setting (BBA or Rusty), remembered; labels name the bidder and the reference",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:08Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/424",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 423,
+      "title": "Rusty bidder in a Web Worker, pulled from rusty-bidding-bot's release, with the BBA fallback",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:07Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/423",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 8,
+      "title": "Native embedding for bridge-table-service: one constructor from card specs, JSON output, version, pin policy",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:06Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/8",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 7,
+      "title": "Release package for Bridge-Classroom: size and speed budgets, checksums, coverage manifest",
+      "state": "open",
+      "created_at": "2026-09-29T01:17:05Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/7",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 6,
+      "title": "Bid a practice table's bot seats: `auction` entry point, meanings for any call, determinism test",
+      "state": "closed",
+      "created_at": "2026-09-29T01:17:04Z",
+      "closed_at": "2026-09-29T02:51:53Z",
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/6",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 422,
+      "title": "Skill taxonomy: card paths the mapping reads but no card writes, duplicate skill names, lesson tags missing from skillPaths.json",
+      "state": "open",
+      "created_at": "2026-09-29T00:38:43Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/422",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 5,
+      "title": "macOS signing and notarization of the release binaries",
+      "state": "closed",
+      "created_at": "2026-09-28T15:59:52Z",
+      "closed_at": "2026-09-28T19:26:35Z",
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/5",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
       "repo": "rusty-bidding-bot",
       "full_name": "bridge-craftwork/rusty-bidding-bot",
       "external": false,
@@ -286,12 +481,12 @@
       "external": false,
       "number": 3,
       "title": "Plan for integration with bridge-classroom's bidding tables",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-28T14:46:40Z",
-      "closed_at": null,
+      "closed_at": "2026-09-29T01:17:56Z",
       "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/3",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -300,12 +495,12 @@
       "external": false,
       "number": 2,
       "title": "Make a web site to showcase the bidding engine",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-28T14:43:22Z",
-      "closed_at": null,
+      "closed_at": "2026-09-28T19:49:44Z",
       "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/2",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -314,12 +509,12 @@
       "external": false,
       "number": 1,
       "title": "Generate Build Products",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-28T14:40:36Z",
-      "closed_at": null,
+      "closed_at": "2026-09-28T19:26:37Z",
       "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/1",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
