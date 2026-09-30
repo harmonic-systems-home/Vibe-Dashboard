@@ -1,23 +1,28 @@
 {
-  "generated_at": "2026-09-29T13:48:15.823873+00:00",
+  "generated_at": "2026-09-30T13:27:59.532511+00:00",
   "stats": {
-    "total": 546,
-    "open": 111,
+    "total": 548,
+    "open": 113,
     "closed": 435,
-    "close_rate": 80,
-    "opened_last_30": 161,
-    "closed_last_30": 116,
-    "opened_last_90": 378,
+    "close_rate": 79,
+    "opened_last_30": 155,
+    "closed_last_30": 110,
+    "opened_last_90": 365,
     "closed_last_90": 298,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 34.0,
-    "oldest_open_days": 197.0,
+    "median_open_age_days": 34.9,
+    "oldest_open_days": 198.0,
     "repo_count": 20,
     "by_repo": {
+      "Baker-Bridge": {
+        "open": 17,
+        "closed": 19,
+        "total": 36
+      },
       "Bridge-Classroom": {
-        "open": 45,
+        "open": 46,
         "closed": 32,
-        "total": 77
+        "total": 78
       },
       "bridge-table-service": {
         "open": 2,
@@ -28,11 +33,6 @@
         "open": 3,
         "closed": 5,
         "total": 8
-      },
-      "Baker-Bridge": {
-        "open": 16,
-        "closed": 19,
-        "total": 35
       },
       "bridge-wrangler": {
         "open": 3,
@@ -130,7 +130,7 @@
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
       "external": false,
-      "open": 45,
+      "open": 46,
       "closed": 32
     },
     {
@@ -146,7 +146,7 @@
       "full_name": "bridge-craftwork/Baker-Bridge",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge",
       "external": false,
-      "open": 16,
+      "open": 17,
       "closed": 19
     },
     {
@@ -279,6 +279,38 @@
     }
   ],
   "issues": [
+    {
+      "repo": "Baker-Bridge",
+      "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
+      "number": 74,
+      "title": "Classroom report: OLead \u00b7 Deal 20",
+      "state": "open",
+      "created_at": "2026-09-29T22:14:38Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/74",
+      "labels": [
+        "classroom-feedback"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 430,
+      "title": "A1: single-row layout for declarer play hands (classroom projection)",
+      "state": "open",
+      "created_at": "2026-09-29T18:44:56Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/430",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
