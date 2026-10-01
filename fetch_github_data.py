@@ -405,7 +405,7 @@ class LocalRepoScanner:
         return ""
 
 
-def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_loc: bool = False, exclude_dirs: list = None, commit_days: int = 365) -> dict:
+def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_loc: bool = False, exclude_dirs: list = None, commit_days: int = 365, exclude_globs: list = None) -> dict:
     """Fetch all data for a single local project."""
     fork_indicator = " (fork)" if skip_loc else ""
     print(f"\n📊 Processing {repo_path.name}{fork_indicator}...")
@@ -418,7 +418,8 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_lo
         loc = {}
         print(f"   ⏭️  Skipping LOC count (fork)")
     else:
-        loc = count_lines_of_code(str(repo_path), CONFIG["loc_tool"], exclude_dirs=exclude_dirs)
+        loc = count_lines_of_code(str(repo_path), CONFIG["loc_tool"], exclude_dirs=exclude_dirs,
+                                  exclude_globs=exclude_globs)
 
     # Commits (configurable window; default 1 year)
     since = datetime.now() - timedelta(days=commit_days)
@@ -479,10 +480,25 @@ def fetch_local_project_data(scanner: LocalRepoScanner, repo_path: Path, skip_lo
     return project
 
 
-def count_lines_of_code(repo_path: str, tool: str = "scc", exclude_dirs: list = None) -> dict:
+def normalize_exclude_glob(pattern: str) -> str:
+    """Make a user-supplied exclude pattern match at any depth.
+
+    "probes/**/*.toml" becomes "**/probes/**/*.toml" so it matches whether
+    tokei is pointed at the repo root or a parent directory.
+    """
+    pattern = pattern.strip().lstrip("/")
+    return pattern if pattern.startswith("**/") else f"**/{pattern}"
+
+
+def count_lines_of_code(repo_path: str, tool: str = "scc", exclude_dirs: list = None,
+                        exclude_globs: list = None) -> dict:
     """
     Count lines of code using scc, tokei, or cloc.
     Returns a dict of {language: lines}.
+
+    exclude_dirs drops whole directories; exclude_globs drops matching files
+    (e.g. generated .toml inside a directory whose .py files still count).
+    Globs are a tokei feature — scc and cloc ignore them.
     """
     if not tool:
         return {}
@@ -508,6 +524,8 @@ def count_lines_of_code(repo_path: str, tool: str = "scc", exclude_dirs: list = 
                     # tokei --exclude expects glob patterns
                     d = d.strip("/")
                     cmd.extend(["--exclude", f"**/{d}/**"])
+            for g in exclude_globs or []:
+                cmd.extend(["--exclude", normalize_exclude_glob(g)])
             cmd.append(repo_path)
             result = subprocess.run(
                 cmd, capture_output=True, text=True, timeout=120
@@ -947,6 +965,7 @@ def main():
     parser.add_argument("--fork-repos", help="Comma-separated list of repo names that are forks (LOC excluded but included in other metrics)")
     parser.add_argument("--exclude-lang", nargs="+", help="Exclude languages from specific repos (format: repo:language, e.g. my-repo:C#)")
     parser.add_argument("--exclude-dir", nargs="+", help="Exclude directories from LOC counting for specific repos (format: repo:path, e.g. my-repo:vendor/)")
+    parser.add_argument("--exclude-glob", nargs="+", help="Exclude files matching a glob from LOC counting (format: repo:pattern, e.g. my-repo:probes/**/*.toml). Use when only some file types in a directory should be skipped")
     parser.add_argument("--clone", action="store_true", help="Clone repos for accurate LOC counting")
     parser.add_argument("--commit-days", type=int, default=365, help="Days of commit history to include in commit_history (default 365)")
     parser.add_argument("--output", default=CONFIG["output_file"], help="Output JSON file")
@@ -985,6 +1004,14 @@ def main():
                 exclude_dirs.setdefault(repo.strip().lower(), []).append(path.strip())
             for repo, dirs in exclude_dirs.items():
                 print(f"📁 Excluding dirs from {repo}: {', '.join(dirs)}")
+
+        exclude_globs = {}
+        if args.exclude_glob:
+            for entry in args.exclude_glob:
+                repo, pattern = entry.split(":", 1)
+                exclude_globs.setdefault(repo.strip().lower(), []).append(pattern.strip())
+            for repo, globs in exclude_globs.items():
+                print(f"🫧 Excluding files from {repo}: {', '.join(globs)}")
 
         fork_repos = set()
         if args.fork_repos:
@@ -1041,7 +1068,8 @@ def main():
             try:
                 is_fork = repo_path.name.lower() in fork_repos
                 repo_exclude_dirs = exclude_dirs.get(repo_path.name.lower(), None)
-                project = fetch_local_project_data(scanner, repo_path, skip_loc=is_fork, exclude_dirs=repo_exclude_dirs, commit_days=args.commit_days)
+                repo_exclude_globs = exclude_globs.get(repo_path.name.lower(), None)
+                project = fetch_local_project_data(scanner, repo_path, skip_loc=is_fork, exclude_dirs=repo_exclude_dirs, commit_days=args.commit_days, exclude_globs=repo_exclude_globs)
                 project["is_fork"] = is_fork
 
                 # Exclude specific languages from LOC

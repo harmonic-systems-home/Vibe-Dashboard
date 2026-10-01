@@ -67,6 +67,13 @@ python fetch_github_data.py --repos owner/repo1 owner/repo2   # Specific repos
 --author "Name"     # Filter commits by author
 --owner username    # Only repos owned by this user
 --output file.json  # Output file (default: dashboard_data.json)
+
+# Keeping generated files out of the LOC count (both flags are per-repo and
+# are also understood by accumulate_loc_history.py, which must get the same
+# flags or the growth chart and the totals will disagree)
+--exclude-dir  "repo:path"              # drop a whole directory
+--exclude-glob "repo:probes/**/*.toml"  # drop only matching files, so other
+                                        # source in that directory still counts
 ```
 
 ### Issues Data
