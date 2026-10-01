@@ -87,7 +87,7 @@ jobs:
           python accumulate_loc_history.py \
             --path ./repos \
             --days 1 \
-            --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" \
+            --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" "rusty-bidding-bot:probes" \
             --output loc_history.json
 
       - name: Generate dashboard data
@@ -108,7 +108,7 @@ jobs:
             --include "" \
             --fork-repos "$FORK_REPOS" \
             --exclude-lang "bba-mac-private:C#" \
-            --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" \
+            --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" "rusty-bidding-bot:probes" \
             --output dashboard_data.json
 
       - name: Generate app status
