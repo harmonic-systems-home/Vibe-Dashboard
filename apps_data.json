@@ -1,13 +1,42 @@
 {
-  "generated_at": "2026-10-04T13:07:09.885704+00:00",
+  "generated_at": "2026-10-05T00:40:56.182607+00:00",
   "count": 6,
   "apps": [
+    {
+      "name": "LessonStage",
+      "repo": "lesson-stage",
+      "full_name": "bridge-craftwork/lesson-stage",
+      "url": "https://github.com/bridge-craftwork/lesson-stage",
+      "last_commit": "2026-09-04T20:16:34-07:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.LessonStage",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS"
+      ],
+      "icon": "app_icons/lesson-stage.png",
+      "xcodeproj": "app/LessonStage.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
     {
       "name": "IceQueue",
       "repo": "ice-queue",
       "full_name": "harmonic-systems-home/ice-queue",
       "url": "https://github.com/harmonic-systems-home/ice-queue",
-      "last_commit": "2026-03-28T10:55:36-07:00",
+      "last_commit": "2026-10-04T16:49:25-07:00",
       "manifest": {},
       "bundle_id": "com.github.rick-wilson.IceQueue",
       "version": "1.0",
@@ -38,7 +67,7 @@
       "repo": "bridge-classroom-fetch",
       "full_name": "bridge-craftwork/bridge-classroom-fetch",
       "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-08-13T16:06:53-07:00",
+      "last_commit": "2026-10-04T16:56:47-07:00",
       "manifest": {},
       "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
       "version": "1.0.1",
@@ -63,35 +92,6 @@
       "testflight": null,
       "status": {
         "label": "Preparing",
-        "category": "development"
-      }
-    },
-    {
-      "name": "LessonStage",
-      "repo": "lesson-stage",
-      "full_name": "bridge-craftwork/lesson-stage",
-      "url": "https://github.com/bridge-craftwork/lesson-stage",
-      "last_commit": "2026-09-04T20:16:34-07:00",
-      "manifest": {},
-      "bundle_id": "com.popperbiz.LessonStage",
-      "version": "0.1.0",
-      "build": "1",
-      "platforms": [
-        "iOS"
-      ],
-      "icon": "app_icons/lesson-stage.png",
-      "xcodeproj": "app/LessonStage.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": false,
-        "testflight": false,
-        "screenshots": false,
-        "metadata": false
-      },
-      "store": null,
-      "testflight": null,
-      "status": {
-        "label": "Development",
         "category": "development"
       }
     },
@@ -142,7 +142,7 @@
       "repo": "BT-Label-Printing-App",
       "full_name": "harmonic-systems-home/BT-Label-Printing-App",
       "url": "https://github.com/harmonic-systems-home/BT-Label-Printing-App",
-      "last_commit": "2026-09-15T17:22:49-07:00",
+      "last_commit": "2026-10-04T16:49:19-07:00",
       "manifest": {},
       "bundle_id": "com.popperbiz.BTLabel",
       "version": "1.0.1",
@@ -180,7 +180,7 @@
       "repo": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
-      "last_commit": "2026-10-01T11:20:37-07:00",
+      "last_commit": "2026-10-04T16:49:25-07:00",
       "manifest": {},
       "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
       "version": "1.0.0",
