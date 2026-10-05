@@ -116,3 +116,20 @@ remembered in `localStorage`, defaulting to included.
 - `apps_data.json` - Generated Apps tab data
 - `APP_MANIFEST.md` - `.dashboard-app.json` schema for per-app-repo planning breadcrumbs
 - `.github/workflows/update-dashboard.yml` - Automation workflow
+
+## Nightly Claude stats (launchd, `jobs/`)
+
+`com.rick.update-claude-stats` runs `update_claude_stats.sh` at 02:00, which
+regenerates `claude_stats.json` from `~/.claude` and commits and pushes it.
+
+This repo lives on the Express (`/Volumes/Express2T`), and macOS won't let a
+launchd job read an external volume without Full Disk Access. So the job runs
+in **its own clone** on the internal SSD,
+`~/Library/Application Support/launchd-jobs/Vibe-Dashboard/`, which pulls
+`origin/main` every run. Consequences:
+
+- Changes to `update_claude_stats.sh` / `parse_claude_stats.py` reach the job
+  only once **pushed**.
+- After changing `jobs/launchd/`, run [`jobs/deploy.sh`](jobs/deploy.sh). It
+  also recreates the clone if it's missing.
+- Pull here to see the job's commits; it pushes `claude_stats.json` nightly.
