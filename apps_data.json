@@ -1,36 +1,7 @@
 {
-  "generated_at": "2026-10-05T00:40:56.182607+00:00",
+  "generated_at": "2026-10-05T15:36:34.015793+00:00",
   "count": 6,
   "apps": [
-    {
-      "name": "LessonStage",
-      "repo": "lesson-stage",
-      "full_name": "bridge-craftwork/lesson-stage",
-      "url": "https://github.com/bridge-craftwork/lesson-stage",
-      "last_commit": "2026-09-04T20:16:34-07:00",
-      "manifest": {},
-      "bundle_id": "com.popperbiz.LessonStage",
-      "version": "0.1.0",
-      "build": "1",
-      "platforms": [
-        "iOS"
-      ],
-      "icon": "app_icons/lesson-stage.png",
-      "xcodeproj": "app/LessonStage.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": false,
-        "testflight": false,
-        "screenshots": false,
-        "metadata": false
-      },
-      "store": null,
-      "testflight": null,
-      "status": {
-        "label": "Development",
-        "category": "development"
-      }
-    },
     {
       "name": "IceQueue",
       "repo": "ice-queue",
@@ -92,6 +63,35 @@
       "testflight": null,
       "status": {
         "label": "Preparing",
+        "category": "development"
+      }
+    },
+    {
+      "name": "LessonStage",
+      "repo": "lesson-stage",
+      "full_name": "bridge-craftwork/lesson-stage",
+      "url": "https://github.com/bridge-craftwork/lesson-stage",
+      "last_commit": "2026-10-04T17:55:07-07:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.LessonStage",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS"
+      ],
+      "icon": "app_icons/lesson-stage.png",
+      "xcodeproj": "app/LessonStage.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
         "category": "development"
       }
     },
