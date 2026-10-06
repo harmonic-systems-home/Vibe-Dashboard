@@ -1,38 +1,7 @@
 {
-  "generated_at": "2026-10-05T15:36:34.015793+00:00",
+  "generated_at": "2026-10-06T13:58:54.721362+00:00",
   "count": 6,
   "apps": [
-    {
-      "name": "IceQueue",
-      "repo": "ice-queue",
-      "full_name": "harmonic-systems-home/ice-queue",
-      "url": "https://github.com/harmonic-systems-home/ice-queue",
-      "last_commit": "2026-10-04T16:49:25-07:00",
-      "manifest": {},
-      "bundle_id": "com.github.rick-wilson.IceQueue",
-      "version": "1.0",
-      "build": "1",
-      "platforms": [
-        "iOS",
-        "macOS",
-        "visionOS"
-      ],
-      "icon": null,
-      "xcodeproj": "IceQueue/IceQueue.xcodeproj",
-      "readiness": {
-        "icon": false,
-        "asc_registered": false,
-        "testflight": false,
-        "screenshots": false,
-        "metadata": false
-      },
-      "store": null,
-      "testflight": null,
-      "status": {
-        "label": "Development",
-        "category": "development"
-      }
-    },
     {
       "name": "Bridge Classroom Fetch",
       "repo": "bridge-classroom-fetch",
@@ -83,6 +52,37 @@
       "xcodeproj": "app/LessonStage.xcodeproj",
       "readiness": {
         "icon": true,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "IceQueue",
+      "repo": "ice-queue",
+      "full_name": "harmonic-systems-home/ice-queue",
+      "url": "https://github.com/harmonic-systems-home/ice-queue",
+      "last_commit": "2026-10-05T11:30:23-07:00",
+      "manifest": {},
+      "bundle_id": "com.github.rick-wilson.IceQueue",
+      "version": "1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS",
+        "visionOS"
+      ],
+      "icon": null,
+      "xcodeproj": "IceQueue/IceQueue.xcodeproj",
+      "readiness": {
+        "icon": false,
         "asc_registered": false,
         "testflight": false,
         "screenshots": false,
