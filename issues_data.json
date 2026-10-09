@@ -1,19 +1,24 @@
 {
-  "generated_at": "2026-10-08T14:26:35.195311+00:00",
+  "generated_at": "2026-10-09T14:12:24.861194+00:00",
   "stats": {
-    "total": 553,
-    "open": 116,
+    "total": 554,
+    "open": 117,
     "closed": 437,
     "close_rate": 79,
-    "opened_last_30": 110,
-    "closed_last_30": 79,
-    "opened_last_90": 297,
+    "opened_last_30": 108,
+    "closed_last_30": 76,
+    "opened_last_90": 298,
     "closed_last_90": 223,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 39.3,
-    "oldest_open_days": 206.0,
+    "median_open_age_days": 39.8,
+    "oldest_open_days": 207.0,
     "repo_count": 20,
     "by_repo": {
+      "Bridge-Classroom": {
+        "open": 48,
+        "closed": 32,
+        "total": 80
+      },
       "Practice-Bidding-Scenarios": {
         "open": 11,
         "closed": 279,
@@ -23,11 +28,6 @@
         "open": 2,
         "closed": 8,
         "total": 10
-      },
-      "Bridge-Classroom": {
-        "open": 47,
-        "closed": 32,
-        "total": 79
       },
       "Baker-Bridge": {
         "open": 17,
@@ -130,7 +130,7 @@
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
       "external": false,
-      "open": 47,
+      "open": 48,
       "closed": 32
     },
     {
@@ -279,6 +279,20 @@
     }
   ],
   "issues": [
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 454,
+      "title": "When sorting by student name, use \"last, first\" and case insensitive",
+      "state": "open",
+      "created_at": "2026-10-08T16:30:50Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/454",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
