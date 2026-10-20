@@ -1,19 +1,24 @@
 {
-  "generated_at": "2026-10-19T14:26:47.506405+00:00",
+  "generated_at": "2026-10-20T12:39:11.216798+00:00",
   "stats": {
-    "total": 556,
-    "open": 119,
+    "total": 557,
+    "open": 120,
     "closed": 437,
-    "close_rate": 79,
+    "close_rate": 78,
     "opened_last_30": 43,
-    "closed_last_30": 26,
+    "closed_last_30": 24,
     "opened_last_90": 252,
-    "closed_last_90": 187,
+    "closed_last_90": 185,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 49.8,
-    "oldest_open_days": 217.0,
+    "median_open_age_days": 50.6,
+    "oldest_open_days": 217.9,
     "repo_count": 20,
     "by_repo": {
+      "bridge-solver": {
+        "open": 3,
+        "closed": 8,
+        "total": 11
+      },
       "Baker-Bridge": {
         "open": 19,
         "closed": 19,
@@ -89,11 +94,6 @@
         "closed": 1,
         "total": 1
       },
-      "bridge-solver": {
-        "open": 2,
-        "closed": 8,
-        "total": 10
-      },
       "bridge-lesson-packaging": {
         "open": 1,
         "closed": 0,
@@ -166,20 +166,20 @@
       "closed": 12
     },
     {
+      "repo": "bridge-solver",
+      "full_name": "bridge-craftwork/bridge-solver",
+      "url": "https://github.com/bridge-craftwork/bridge-solver",
+      "external": false,
+      "open": 3,
+      "closed": 8
+    },
+    {
       "repo": "BBA-Tools",
       "full_name": "bridge-craftwork/BBA-Tools",
       "url": "https://github.com/bridge-craftwork/BBA-Tools",
       "external": true,
       "open": 7,
       "closed": 3
-    },
-    {
-      "repo": "bridge-solver",
-      "full_name": "bridge-craftwork/bridge-solver",
-      "url": "https://github.com/bridge-craftwork/bridge-solver",
-      "external": false,
-      "open": 2,
-      "closed": 8
     },
     {
       "repo": "pbs-bbo-extension",
@@ -279,6 +279,20 @@
     }
   ],
   "issues": [
+    {
+      "repo": "bridge-solver",
+      "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
+      "number": 37,
+      "title": "drain_pool frees slab-interior pointers: release_memory() / clear_cache() panic in wasm after any solve",
+      "state": "open",
+      "created_at": "2026-10-19T20:17:16Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-solver/issues/37",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Baker-Bridge",
       "full_name": "bridge-craftwork/Baker-Bridge",
