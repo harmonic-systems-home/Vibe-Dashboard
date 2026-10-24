@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23T12:29:41.341990+00:00",
-  "count": 6,
+  "generated_at": "2026-10-24T11:55:56.577217+00:00",
+  "count": 7,
   "apps": [
     {
       "name": "Bridge Classroom Fetch",
@@ -83,6 +83,36 @@
       "xcodeproj": "IceQueue/IceQueue.xcodeproj",
       "readiness": {
         "icon": false,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "BridgeViewer",
+      "repo": "bridge-viewer",
+      "full_name": "bridge-craftwork/bridge-viewer",
+      "url": "https://github.com/bridge-craftwork/bridge-viewer",
+      "last_commit": "2026-10-23T12:08:29-07:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.BridgeViewer",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "icon": "app_icons/bridge-viewer.png",
+      "xcodeproj": "app/BridgeViewer.xcodeproj",
+      "readiness": {
+        "icon": true,
         "asc_registered": false,
         "testflight": false,
         "screenshots": false,
