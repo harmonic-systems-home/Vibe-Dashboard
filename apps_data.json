@@ -1,7 +1,40 @@
 {
-  "generated_at": "2026-10-27T12:57:41.373849+00:00",
-  "count": 3,
+  "generated_at": "2026-10-28T13:51:10.003713+00:00",
+  "count": 7,
   "apps": [
+    {
+      "name": "Bridge Classroom Fetch",
+      "repo": "bridge-classroom-fetch",
+      "full_name": "bridge-craftwork/bridge-classroom-fetch",
+      "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
+      "last_commit": "2026-10-04T16:56:47-07:00",
+      "manifest": {},
+      "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
+      "version": "1.0.1",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "icon": "app_icons/bridge-classroom-fetch.png",
+      "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": false,
+        "screenshots": true,
+        "metadata": false
+      },
+      "store": {
+        "state": "PREPARE_FOR_SUBMISSION",
+        "version": "1.0"
+      },
+      "testflight": null,
+      "status": {
+        "label": "Preparing",
+        "category": "development"
+      }
+    },
     {
       "name": "IceQueue",
       "repo": "ice-queue",
@@ -21,6 +54,65 @@
       "xcodeproj": "IceQueue/IceQueue.xcodeproj",
       "readiness": {
         "icon": false,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "LessonStage",
+      "repo": "lesson-stage",
+      "full_name": "bridge-craftwork/lesson-stage",
+      "url": "https://github.com/bridge-craftwork/lesson-stage",
+      "last_commit": "2026-10-27T06:12:49-07:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.LessonStage",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS"
+      ],
+      "icon": "app_icons/lesson-stage.png",
+      "xcodeproj": "app/LessonStage.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "BridgeViewer",
+      "repo": "bridge-viewer",
+      "full_name": "bridge-craftwork/bridge-viewer",
+      "url": "https://github.com/bridge-craftwork/bridge-viewer",
+      "last_commit": "2026-10-27T06:34:32-07:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.BridgeViewer",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "icon": "app_icons/bridge-viewer.png",
+      "xcodeproj": "app/BridgeViewer.xcodeproj",
+      "readiness": {
+        "icon": true,
         "asc_registered": false,
         "testflight": false,
         "screenshots": false,
@@ -107,6 +199,42 @@
       "testflight": {
         "external": "READY_FOR_BETA_SUBMISSION",
         "internal": "IN_BETA_TESTING"
+      },
+      "status": {
+        "label": "Released",
+        "category": "released"
+      }
+    },
+    {
+      "name": "PBS with BBA Compare",
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
+      "last_commit": "2026-10-13T17:30:11-07:00",
+      "manifest": {},
+      "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
+      "version": "1.0.0",
+      "build": "3",
+      "platforms": [
+        "macOS"
+      ],
+      "icon": "app_icons/pbs-bbo-extension.png",
+      "xcodeproj": "safari/PBS with BBA Compare/PBS with BBA Compare.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": true,
+        "metadata": true
+      },
+      "store": {
+        "state": "READY_FOR_SALE",
+        "version": "1.0",
+        "url": "https://apps.apple.com/app/id6760272056"
+      },
+      "testflight": {
+        "external": "EXPIRED",
+        "internal": "EXPIRED"
       },
       "status": {
         "label": "Released",
