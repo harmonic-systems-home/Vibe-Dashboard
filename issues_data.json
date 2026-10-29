@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-28T13:51:38.452882+00:00",
+  "generated_at": "2026-10-29T14:02:02.911143+00:00",
   "stats": {
-    "total": 557,
-    "open": 120,
-    "closed": 437,
+    "total": 563,
+    "open": 123,
+    "closed": 440,
     "close_rate": 78,
-    "opened_last_30": 28,
-    "closed_last_30": 7,
-    "opened_last_90": 199,
-    "closed_last_90": 131,
+    "opened_last_30": 17,
+    "closed_last_30": 5,
+    "opened_last_90": 203,
+    "closed_last_90": 132,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 58.6,
-    "oldest_open_days": 226.0,
+    "median_open_age_days": 58.8,
+    "oldest_open_days": 227.0,
     "repo_count": 20,
     "by_repo": {
-      "bridge-solver": {
-        "open": 3,
-        "closed": 8,
-        "total": 11
-      },
-      "Baker-Bridge": {
-        "open": 19,
-        "closed": 19,
-        "total": 38
-      },
       "Bridge-Classroom": {
         "open": 48,
-        "closed": 32,
-        "total": 80
+        "closed": 34,
+        "total": 82
+      },
+      "Baker-Bridge": {
+        "open": 20,
+        "closed": 19,
+        "total": 39
+      },
+      "bridge-solver": {
+        "open": 5,
+        "closed": 9,
+        "total": 14
       },
       "Practice-Bidding-Scenarios": {
         "open": 11,
@@ -131,7 +131,7 @@
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
       "external": false,
       "open": 48,
-      "closed": 32
+      "closed": 34
     },
     {
       "repo": "Dealer3",
@@ -146,7 +146,7 @@
       "full_name": "bridge-craftwork/Baker-Bridge",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge",
       "external": false,
-      "open": 19,
+      "open": 20,
       "closed": 19
     },
     {
@@ -170,8 +170,8 @@
       "full_name": "bridge-craftwork/bridge-solver",
       "url": "https://github.com/bridge-craftwork/bridge-solver",
       "external": false,
-      "open": 3,
-      "closed": 8
+      "open": 5,
+      "closed": 9
     },
     {
       "repo": "BBA-Tools",
@@ -280,17 +280,101 @@
   ],
   "issues": [
     {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 475,
+      "title": "Show PBN auction alerts ([Note] / =N=) \u2014 Baker now alerts Blackwood",
+      "state": "closed",
+      "created_at": "2026-10-29T03:15:34Z",
+      "closed_at": "2026-10-29T03:45:35Z",
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/475",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 474,
+      "title": "Baker: 40 boards get new VersionTokens (stray ALL call removed from auctions)",
+      "state": "closed",
+      "created_at": "2026-10-29T03:15:33Z",
+      "closed_at": "2026-10-29T03:49:36Z",
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/474",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Baker-Bridge",
+      "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
+      "number": 77,
+      "title": "Declarer-play boards don't put the opening lead on the table (49 boards)",
+      "state": "open",
+      "created_at": "2026-10-29T03:15:32Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/77",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-solver",
+      "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
+      "number": 49,
+      "title": "Windows: default thread count uses only one 64-thread processor group",
+      "state": "open",
+      "created_at": "2026-10-28T14:26:57Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-solver/issues/49",
+      "labels": [],
+      "comments": 1,
+      "author": "BSalita"
+    },
+    {
+      "repo": "bridge-solver",
+      "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
+      "number": 48,
+      "title": "Thread-local pattern pool leaks when a solving thread exits",
+      "state": "open",
+      "created_at": "2026-10-28T14:26:56Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-solver/issues/48",
+      "labels": [],
+      "comments": 1,
+      "author": "BSalita"
+    },
+    {
+      "repo": "bridge-solver",
+      "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
+      "number": 47,
+      "title": "Parallel batch solving waits on hard deals that start last: schedule hardest-first (DDS fanout)",
+      "state": "open",
+      "created_at": "2026-10-28T14:25:04Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-solver/issues/47",
+      "labels": [],
+      "comments": 1,
+      "author": "BSalita"
+    },
+    {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
       "external": false,
       "number": 37,
       "title": "drain_pool frees slab-interior pointers: release_memory() / clear_cache() panic in wasm after any solve",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-10-19T20:17:16Z",
-      "closed_at": null,
+      "closed_at": "2026-10-28T15:33:06Z",
       "url": "https://github.com/bridge-craftwork/bridge-solver/issues/37",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
