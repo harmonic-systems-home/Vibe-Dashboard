@@ -1,23 +1,28 @@
 {
-  "generated_at": "2026-10-29T14:02:02.911143+00:00",
+  "generated_at": "2026-10-30T13:54:44.663515+00:00",
   "stats": {
-    "total": 563,
-    "open": 123,
-    "closed": 440,
+    "total": 565,
+    "open": 124,
+    "closed": 441,
     "close_rate": 78,
     "opened_last_30": 17,
-    "closed_last_30": 5,
-    "opened_last_90": 203,
-    "closed_last_90": 132,
+    "closed_last_30": 6,
+    "opened_last_90": 205,
+    "closed_last_90": 133,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 58.8,
-    "oldest_open_days": 227.0,
-    "repo_count": 20,
+    "median_open_age_days": 59.7,
+    "oldest_open_days": 228.0,
+    "repo_count": 21,
     "by_repo": {
       "Bridge-Classroom": {
         "open": 48,
-        "closed": 34,
-        "total": 82
+        "closed": 35,
+        "total": 83
+      },
+      "convention-card": {
+        "open": 1,
+        "closed": 0,
+        "total": 1
       },
       "Baker-Bridge": {
         "open": 20,
@@ -131,7 +136,7 @@
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
       "external": false,
       "open": 48,
-      "closed": 34
+      "closed": 35
     },
     {
       "repo": "Dealer3",
@@ -270,6 +275,14 @@
       "closed": 1
     },
     {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "url": "https://github.com/bridge-craftwork/convention-card",
+      "external": false,
+      "open": 1,
+      "closed": 0
+    },
+    {
       "repo": "rpdd-reader",
       "full_name": "bridge-craftwork/rpdd-reader",
       "url": "https://github.com/bridge-craftwork/rpdd-reader",
@@ -279,6 +292,34 @@
     }
   ],
   "issues": [
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 478,
+      "title": "Rusty: move the WASM pin to v0.11.2 and show step.announcement in the tooltip",
+      "state": "closed",
+      "created_at": "2026-10-29T19:59:15Z",
+      "closed_at": "2026-10-29T21:00:23Z",
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/478",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 72,
+      "title": "King ask: default 5NT, an explicit choice, and an editor option",
+      "state": "open",
+      "created_at": "2026-10-29T17:40:36Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/72",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",
