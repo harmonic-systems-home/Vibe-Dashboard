@@ -1,28 +1,33 @@
 {
-  "generated_at": "2026-10-31T13:22:57.749481+00:00",
+  "generated_at": "2026-11-01T14:06:36.122190+00:00",
   "stats": {
-    "total": 569,
-    "open": 123,
-    "closed": 446,
-    "close_rate": 78,
-    "opened_last_30": 19,
-    "closed_last_30": 11,
-    "opened_last_90": 209,
-    "closed_last_90": 138,
+    "total": 573,
+    "open": 113,
+    "closed": 460,
+    "close_rate": 80,
+    "opened_last_30": 23,
+    "closed_last_30": 23,
+    "opened_last_90": 213,
+    "closed_last_90": 152,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 60.8,
-    "oldest_open_days": 229.0,
+    "median_open_age_days": 61.5,
+    "oldest_open_days": 230.0,
     "repo_count": 21,
     "by_repo": {
-      "convention-card": {
-        "open": 0,
-        "closed": 3,
-        "total": 3
-      },
       "Bridge-Classroom": {
-        "open": 48,
-        "closed": 37,
-        "total": 85
+        "open": 36,
+        "closed": 50,
+        "total": 86
+      },
+      "Practice-Bidding-Scenarios": {
+        "open": 12,
+        "closed": 279,
+        "total": 291
+      },
+      "convention-card": {
+        "open": 1,
+        "closed": 4,
+        "total": 5
       },
       "Baker-Bridge": {
         "open": 20,
@@ -33,11 +38,6 @@
         "open": 5,
         "closed": 9,
         "total": 14
-      },
-      "Practice-Bidding-Scenarios": {
-        "open": 11,
-        "closed": 279,
-        "total": 290
       },
       "pbs-bbo-extension": {
         "open": 2,
@@ -127,7 +127,7 @@
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
-      "open": 11,
+      "open": 12,
       "closed": 279
     },
     {
@@ -135,8 +135,8 @@
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
       "external": false,
-      "open": 48,
-      "closed": 37
+      "open": 36,
+      "closed": 50
     },
     {
       "repo": "Dealer3",
@@ -211,6 +211,14 @@
       "closed": 3
     },
     {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "url": "https://github.com/bridge-craftwork/convention-card",
+      "external": false,
+      "open": 1,
+      "closed": 4
+    },
+    {
       "repo": "rpdd-library",
       "full_name": "bridge-craftwork/rpdd-library",
       "url": "https://github.com/bridge-craftwork/rpdd-library",
@@ -225,14 +233,6 @@
       "external": false,
       "open": 3,
       "closed": 1
-    },
-    {
-      "repo": "convention-card",
-      "full_name": "bridge-craftwork/convention-card",
-      "url": "https://github.com/bridge-craftwork/convention-card",
-      "external": false,
-      "open": 0,
-      "closed": 3
     },
     {
       "repo": "bbo-pbs",
@@ -292,6 +292,62 @@
     }
   ],
   "issues": [
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 503,
+      "title": "A1: the auction pinned during declarer play (NE) stays small",
+      "state": "closed",
+      "created_at": "2026-11-01T03:22:01Z",
+      "closed_at": "2026-11-01T04:55:08Z",
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/503",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 346,
+      "title": "Finesse_Simple b2 and Major_Opener b15: malformed commentary braces (b2 also has a duplicate auction)",
+      "state": "open",
+      "created_at": "2026-11-01T02:18:04Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/346",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 96,
+      "title": "ACBL PDFs: the boxes still unfilled (second lines and new fields)",
+      "state": "closed",
+      "created_at": "2026-10-31T23:07:12Z",
+      "closed_at": "2026-11-01T00:09:13Z",
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/96",
+      "labels": [],
+      "comments": 2,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 90,
+      "title": "Fields: optional text alongside structured values, and \"+\" for more ranges",
+      "state": "open",
+      "created_at": "2026-10-31T20:38:27Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/90",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "convention-card",
       "full_name": "bridge-craftwork/convention-card",
@@ -512,9 +568,9 @@
       "external": false,
       "number": 454,
       "title": "When sorting by student name, use \"last, first\" and case insensitive",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-10-08T16:30:50Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:44:52Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/454",
       "labels": [],
       "comments": 0,
@@ -595,7 +651,7 @@
       "labels": [
         "enhancement"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -720,12 +776,12 @@
       "external": false,
       "number": 424,
       "title": "Bidding engine setting (BBA or Rusty), remembered; labels name the bidder and the reference",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-29T01:17:08Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:23:11Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/424",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -734,12 +790,12 @@
       "external": false,
       "number": 423,
       "title": "Rusty bidder in a Web Worker, pulled from rusty-bidding-bot's release, with the BBA fallback",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-29T01:17:07Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:23:09Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/423",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -1682,9 +1738,9 @@
       "external": false,
       "number": 414,
       "title": "bbaClient: send X-Client-Info so classroom traffic is identifiable in the BBA dashboard",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-10T20:34:03Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:44:54Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/414",
       "labels": [],
       "comments": 0,
@@ -4139,12 +4195,12 @@
       "external": false,
       "number": 302,
       "title": "Play lessons: the opening-lead tip is shown to the student, who is always declarer",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-23T22:16:34Z",
-      "closed_at": null,
+      "closed_at": "2026-11-01T02:19:04Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/302",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "ADavidBailey"
     },
     {
@@ -4648,12 +4704,12 @@
       "external": false,
       "number": 280,
       "title": "Bidding lessons: auction display may not distinguish the student's own calls from partner's",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-19T12:41:53Z",
-      "closed_at": null,
+      "closed_at": "2026-11-01T03:21:59Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/280",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "ADavidBailey"
     },
     {
@@ -5706,12 +5762,12 @@
       "external": false,
       "number": 74,
       "title": "Fix assignment success rates calculation",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-07T13:07:41Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:23:07Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/74",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -5960,9 +6016,9 @@
       "external": false,
       "number": 50,
       "title": "Update PBS URLs after repo moved to bridge-craftwork org",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-04T16:43:53Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:44:55Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/50",
       "labels": [],
       "comments": 1,
@@ -6196,14 +6252,14 @@
       "external": false,
       "number": 39,
       "title": "Derive classroom invite URL from window.location.origin (hardcoded .com defeats .org fallback)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-01T21:47:31Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:23:05Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/39",
       "labels": [
         "bug"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -6212,14 +6268,14 @@
       "external": false,
       "number": 38,
       "title": "SQLite: enable WAL, wrap board recompute in a transaction, index observations(assignment_id)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-01T21:47:03Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:23:03Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/38",
       "labels": [
         "performance"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -6228,14 +6284,14 @@
       "external": false,
       "number": 37,
       "title": "loadDeal must reset altStepIndices (accept-alternative state leaks across boards)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-01T21:47:01Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:22:59Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/37",
       "labels": [
         "bug"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -7753,12 +7809,12 @@
       "external": false,
       "number": 17,
       "title": "useDataSync.initialize() called twice \u2192 duplicate listeners + extra 5-min interval",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-06-12T23:23:03Z",
-      "closed_at": null,
+      "closed_at": "2026-10-31T18:23:01Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/17",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
