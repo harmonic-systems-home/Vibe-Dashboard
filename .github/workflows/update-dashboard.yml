@@ -97,7 +97,7 @@ jobs:
           python accumulate_loc_history.py \
             --path ./repos \
             --days 1 \
-            --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" \
+            --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" "home-assistant:pylitterbot_patch" "baker-bridge:Tools/Archive" "bridge-viewer:vendor" "bidbase:aeyec-2026" "bidbase:sourceforge-2018" \
             --exclude-glob "rusty-bidding-bot:probes/**/*.toml" \
             --output loc_history.json
 
@@ -119,7 +119,7 @@ jobs:
             --include "" \
             --fork-repos "$FORK_REPOS" \
             --exclude-lang "bba-mac-private:C#" \
-            --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" \
+            --exclude-dir "home-assistant:config/blueprints" "home-assistant:config/www" "home-assistant:config/image" "home-assistant:config/custom_components" "home-assistant:pylitterbot_patch" "baker-bridge:Tools/Archive" "bridge-viewer:vendor" "bidbase:aeyec-2026" "bidbase:sourceforge-2018" \
             --exclude-glob "rusty-bidding-bot:probes/**/*.toml" \
             --output dashboard_data.json
 
