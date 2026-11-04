@@ -40,6 +40,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
           OWNERS: Rick-Wilson bridge-craftwork harmonic-systems-home
+          # Not development work: every later step reads ./repos, so skipping the
+          # clone keeps these out of LOC, history, commits and project counts.
+          # wow-config: game config snapshots (2.7M lines of generated Lua).
+          SKIP_REPOS: wow-config
         run: |
           mkdir -p repos
           cd repos
@@ -52,6 +56,12 @@ jobs:
               --jq '.[] | "\(.name)|\(.isFork)"' | while read line; do
                 repo_name="${line%|*}"
                 is_fork="${line#*|}"
+                case " $SKIP_REPOS " in
+                  *" $repo_name "*)
+                    echo "  Skipping $owner/$repo_name (SKIP_REPOS)"
+                    continue
+                    ;;
+                esac
                 # Flat repos/ dir: skip a name already cloned from an earlier owner
                 if [ -d "$repo_name" ]; then
                   echo "  Skipping $owner/$repo_name (name already cloned)"
