@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-07T13:49:09.373166+00:00",
+  "generated_at": "2026-11-08T14:09:29.444053+00:00",
   "stats": {
-    "total": 575,
-    "open": 110,
-    "closed": 465,
-    "close_rate": 81,
+    "total": 576,
+    "open": 105,
+    "closed": 471,
+    "close_rate": 82,
     "opened_last_30": 22,
-    "closed_last_30": 28,
-    "opened_last_90": 214,
-    "closed_last_90": 157,
+    "closed_last_30": 34,
+    "opened_last_90": 215,
+    "closed_last_90": 163,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 67.0,
-    "oldest_open_days": 236.0,
+    "median_open_age_days": 68.0,
+    "oldest_open_days": 237.0,
     "repo_count": 21,
     "by_repo": {
+      "Bridge-Classroom": {
+        "open": 31,
+        "closed": 56,
+        "total": 87
+      },
       "Practice-Bidding-Scenarios": {
         "open": 14,
         "closed": 279,
         "total": 293
-      },
-      "Bridge-Classroom": {
-        "open": 34,
-        "closed": 52,
-        "total": 86
       },
       "convention-card": {
         "open": 1,
@@ -65,8 +65,8 @@
         "total": 14
       },
       "BBA-Tools": {
-        "open": 7,
-        "closed": 3,
+        "open": 5,
+        "closed": 5,
         "total": 10
       },
       "Dealer3": {
@@ -135,8 +135,8 @@
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
       "external": false,
-      "open": 34,
-      "closed": 52
+      "open": 31,
+      "closed": 56
     },
     {
       "repo": "Dealer3",
@@ -183,8 +183,8 @@
       "full_name": "bridge-craftwork/BBA-Tools",
       "url": "https://github.com/bridge-craftwork/BBA-Tools",
       "external": true,
-      "open": 7,
-      "closed": 3
+      "open": 5,
+      "closed": 5
     },
     {
       "repo": "pbs-bbo-extension",
@@ -292,6 +292,22 @@
     }
   ],
   "issues": [
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 531,
+      "title": "Bug reports: capture the deal, the auction with meanings, and the card",
+      "state": "closed",
+      "created_at": "2026-11-07T18:20:13Z",
+      "closed_at": "2026-11-07T20:42:16Z",
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/531",
+      "labels": [
+        "enhancement"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
@@ -1728,9 +1744,9 @@
       "external": true,
       "number": 21,
       "title": "Unrecognized scenario silently falls back to the default convention cards",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-10T21:17:51Z",
-      "closed_at": null,
+      "closed_at": "2026-11-07T16:53:13Z",
       "url": "https://github.com/bridge-craftwork/BBA-Tools/issues/21",
       "labels": [],
       "comments": 0,
@@ -1756,9 +1772,9 @@
       "external": true,
       "number": 19,
       "title": "Reject invalid dealer/vulnerability instead of silently coercing to North/None",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-09-10T21:17:19Z",
-      "closed_at": null,
+      "closed_at": "2026-11-07T16:53:02Z",
       "url": "https://github.com/bridge-craftwork/BBA-Tools/issues/19",
       "labels": [],
       "comments": 0,
@@ -4844,9 +4860,9 @@
       "external": false,
       "number": 257,
       "title": "Cardplay: slow restart \u2014 BEN opening-lead recompute / caching (solo)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-16T00:30:33Z",
-      "closed_at": null,
+      "closed_at": "2026-11-08T03:07:17Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/257",
       "labels": [
         "enhancement"
@@ -5599,9 +5615,9 @@
       "external": false,
       "number": 94,
       "title": "Frontend manifest-join: source board_version_token from the manifest roster, not the PBN tag",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-08T14:48:21Z",
-      "closed_at": null,
+      "closed_at": "2026-11-08T03:07:21Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/94",
       "labels": [
         "enhancement"
@@ -5748,9 +5764,9 @@
       "external": false,
       "number": 80,
       "title": "Coaching suit symbols render monochrome \u2014 color them red/black by suit",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-07-07T17:01:22Z",
-      "closed_at": null,
+      "closed_at": "2026-11-08T03:06:51Z",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/80",
       "labels": [],
       "comments": 0,
