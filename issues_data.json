@@ -1,19 +1,24 @@
 {
-  "generated_at": "2026-11-08T14:09:29.444053+00:00",
+  "generated_at": "2026-11-09T17:15:43.089000+00:00",
   "stats": {
-    "total": 576,
-    "open": 105,
+    "total": 577,
+    "open": 106,
     "closed": 471,
     "close_rate": 82,
-    "opened_last_30": 22,
+    "opened_last_30": 23,
     "closed_last_30": 34,
-    "opened_last_90": 215,
+    "opened_last_90": 216,
     "closed_last_90": 163,
     "median_days_to_close": 0.2,
-    "median_open_age_days": 68.0,
-    "oldest_open_days": 237.0,
+    "median_open_age_days": 67.5,
+    "oldest_open_days": 238.1,
     "repo_count": 21,
     "by_repo": {
+      "bridge-solver": {
+        "open": 6,
+        "closed": 9,
+        "total": 15
+      },
       "Bridge-Classroom": {
         "open": 31,
         "closed": 56,
@@ -33,11 +38,6 @@
         "open": 18,
         "closed": 21,
         "total": 39
-      },
-      "bridge-solver": {
-        "open": 5,
-        "closed": 9,
-        "total": 14
       },
       "pbs-bbo-extension": {
         "open": 2,
@@ -163,20 +163,20 @@
       "closed": 18
     },
     {
+      "repo": "bridge-solver",
+      "full_name": "bridge-craftwork/bridge-solver",
+      "url": "https://github.com/bridge-craftwork/bridge-solver",
+      "external": false,
+      "open": 6,
+      "closed": 9
+    },
+    {
       "repo": "bridge-encodings",
       "full_name": "bridge-craftwork/bridge-encodings",
       "url": "https://github.com/bridge-craftwork/bridge-encodings",
       "external": false,
       "open": 2,
       "closed": 12
-    },
-    {
-      "repo": "bridge-solver",
-      "full_name": "bridge-craftwork/bridge-solver",
-      "url": "https://github.com/bridge-craftwork/bridge-solver",
-      "external": false,
-      "open": 5,
-      "closed": 9
     },
     {
       "repo": "BBA-Tools",
@@ -292,6 +292,20 @@
     }
   ],
   "issues": [
+    {
+      "repo": "bridge-solver",
+      "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
+      "number": 51,
+      "title": "Play analysis: charge a robot partner's declaring to the human who played it",
+      "state": "open",
+      "created_at": "2026-11-08T18:45:21Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-solver/issues/51",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Bridge-Classroom",
       "full_name": "bridge-craftwork/Bridge-Classroom",

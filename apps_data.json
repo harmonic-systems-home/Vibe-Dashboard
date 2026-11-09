@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:09:06.283151+00:00",
+  "generated_at": "2026-11-09T17:15:12.019957+00:00",
   "count": 8,
   "apps": [
     {
@@ -93,41 +93,11 @@
       }
     },
     {
-      "name": "ImuLogger",
-      "repo": "celestron-workbench",
-      "full_name": "harmonic-systems-home/celestron-workbench",
-      "url": "https://github.com/harmonic-systems-home/celestron-workbench",
-      "last_commit": "2026-11-01T20:40:51-08:00",
-      "manifest": {},
-      "bundle_id": null,
-      "version": "0.1.0",
-      "build": "1",
-      "platforms": [
-        "iOS"
-      ],
-      "icon": null,
-      "xcodeproj": "ios/ImuLogger/ImuLogger.xcodeproj",
-      "readiness": {
-        "icon": false,
-        "asc_registered": false,
-        "testflight": false,
-        "screenshots": false,
-        "metadata": false
-      },
-      "store": null,
-      "testflight": null,
-      "status": {
-        "label": "Development",
-        "category": "development",
-        "note": "no bundle id parsed"
-      }
-    },
-    {
       "name": "Bridge Classroom Fetch",
       "repo": "bridge-classroom-fetch",
       "full_name": "bridge-craftwork/bridge-classroom-fetch",
       "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-11-01T22:39:02-08:00",
+      "last_commit": "2026-11-08T15:05:53-08:00",
       "manifest": {},
       "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
       "version": "1.1.0",
@@ -153,6 +123,36 @@
       "status": {
         "label": "Preparing",
         "category": "development"
+      }
+    },
+    {
+      "name": "ImuLogger",
+      "repo": "celestron-workbench",
+      "full_name": "harmonic-systems-home/celestron-workbench",
+      "url": "https://github.com/harmonic-systems-home/celestron-workbench",
+      "last_commit": "2026-11-08T15:09:08-08:00",
+      "manifest": {},
+      "bundle_id": null,
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS"
+      ],
+      "icon": null,
+      "xcodeproj": "ios/ImuLogger/ImuLogger.xcodeproj",
+      "readiness": {
+        "icon": false,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development",
+        "note": "no bundle id parsed"
       }
     },
     {
