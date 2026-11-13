@@ -1,7 +1,75 @@
 {
-  "generated_at": "2026-11-12T15:51:24.168433+00:00",
+  "generated_at": "2026-11-13T15:09:15.480853+00:00",
   "count": 8,
   "apps": [
+    {
+      "name": "Kennit",
+      "repo": "Kennit-App",
+      "full_name": "harmonic-systems-home/Kennit-App",
+      "url": "https://github.com/harmonic-systems-home/Kennit-App",
+      "last_commit": "2026-08-20T12:52:06-07:00",
+      "manifest": {
+        "tagline": "Learn names, remember faces",
+        "priority": "high",
+        "target": "2026-08",
+        "next_step": "Waiting on iOS review (submitted 2026-08-07; macOS took 8 days). Once it ships, 1.1: repair existing duplicate subjects (needs createdAt on Person/Pet, so it rides a schema promotion) and give custom relationship links an inverse label"
+      },
+      "bundle_id": "com.popperbiz.kennit",
+      "version": "1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "icon": "app_icons/Kennit-App.png",
+      "xcodeproj": "Kennit.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development",
+        "note": "ASC app lookup failed: 403 Client Error: Forbidden for url: https://api.appstoreconnect.apple.com/v1/apps?filter%5BbundleId%5D=com.popperbiz.kennit&limit=1"
+      }
+    },
+    {
+      "name": "BTLabel",
+      "repo": "BT-Label-Printing-App",
+      "full_name": "harmonic-systems-home/BT-Label-Printing-App",
+      "url": "https://github.com/harmonic-systems-home/BT-Label-Printing-App",
+      "last_commit": "2026-10-04T16:49:19-07:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.BTLabel",
+      "version": "1.0.1",
+      "build": "6",
+      "platforms": [
+        "iOS",
+        "macOS",
+        "visionOS"
+      ],
+      "icon": "app_icons/BT-Label-Printing-App.png",
+      "xcodeproj": "BTLabel/BTLabel.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development",
+        "note": "ASC app lookup failed: 403 Client Error: Forbidden for url: https://api.appstoreconnect.apple.com/v1/apps?filter%5BbundleId%5D=com.popperbiz.BTLabel&limit=1"
+      }
+    },
     {
       "name": "IceQueue",
       "repo": "ice-queue",
@@ -30,7 +98,8 @@
       "testflight": null,
       "status": {
         "label": "Development",
-        "category": "development"
+        "category": "development",
+        "note": "ASC app lookup failed: 403 Client Error: Forbidden for url: https://api.appstoreconnect.apple.com/v1/apps?filter%5BbundleId%5D=com.github.rick-wilson.IceQueue&limit=1"
       }
     },
     {
@@ -59,7 +128,8 @@
       "testflight": null,
       "status": {
         "label": "Development",
-        "category": "development"
+        "category": "development",
+        "note": "ASC app lookup failed: 403 Client Error: Forbidden for url: https://api.appstoreconnect.apple.com/v1/apps?filter%5BbundleId%5D=com.popperbiz.LessonStage&limit=1"
       }
     },
     {
@@ -89,7 +159,38 @@
       "testflight": null,
       "status": {
         "label": "Development",
-        "category": "development"
+        "category": "development",
+        "note": "ASC app lookup failed: 403 Client Error: Forbidden for url: https://api.appstoreconnect.apple.com/v1/apps?filter%5BbundleId%5D=com.popperbiz.BridgeViewer&limit=1"
+      }
+    },
+    {
+      "name": "PBS with BBA Compare",
+      "repo": "pbs-bbo-extension",
+      "full_name": "bridge-craftwork/pbs-bbo-extension",
+      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
+      "last_commit": "2026-11-01T23:10:26-08:00",
+      "manifest": {},
+      "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
+      "version": "1.0.0",
+      "build": "3",
+      "platforms": [
+        "macOS"
+      ],
+      "icon": "app_icons/pbs-bbo-extension.png",
+      "xcodeproj": "safari/PBS with BBA Compare/PBS with BBA Compare.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development",
+        "note": "ASC app lookup failed: 403 Client Error: Forbidden for url: https://api.appstoreconnect.apple.com/v1/apps?filter%5BbundleId%5D=com.rickwilson.PBS-with-BBA-Compare&limit=1"
       }
     },
     {
@@ -110,19 +211,17 @@
       "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
       "readiness": {
         "icon": true,
-        "asc_registered": true,
+        "asc_registered": false,
         "testflight": false,
         "screenshots": true,
         "metadata": false
       },
-      "store": {
-        "state": "PREPARE_FOR_SUBMISSION",
-        "version": "1.0"
-      },
+      "store": null,
       "testflight": null,
       "status": {
-        "label": "Preparing",
-        "category": "development"
+        "label": "Development",
+        "category": "development",
+        "note": "ASC app lookup failed: 403 Client Error: Forbidden for url: https://api.appstoreconnect.apple.com/v1/apps?filter%5BbundleId%5D=org.bridge-classroom.bridge-classroom-fetch&limit=1"
       }
     },
     {
@@ -153,122 +252,6 @@
         "label": "Development",
         "category": "development",
         "note": "no bundle id parsed"
-      }
-    },
-    {
-      "name": "Kennit",
-      "repo": "Kennit-App",
-      "full_name": "harmonic-systems-home/Kennit-App",
-      "url": "https://github.com/harmonic-systems-home/Kennit-App",
-      "last_commit": "2026-08-20T12:52:06-07:00",
-      "manifest": {
-        "tagline": "Learn names, remember faces",
-        "priority": "high",
-        "target": "2026-08",
-        "next_step": "Waiting on iOS review (submitted 2026-08-07; macOS took 8 days). Once it ships, 1.1: repair existing duplicate subjects (needs createdAt on Person/Pet, so it rides a schema promotion) and give custom relationship links an inverse label"
-      },
-      "bundle_id": "com.popperbiz.kennit",
-      "version": "1.0",
-      "build": "1",
-      "platforms": [
-        "iOS",
-        "macOS"
-      ],
-      "icon": "app_icons/Kennit-App.png",
-      "xcodeproj": "Kennit.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": true,
-        "testflight": true,
-        "screenshots": true,
-        "metadata": true
-      },
-      "store": {
-        "state": "READY_FOR_SALE",
-        "version": "1.0",
-        "url": "https://apps.apple.com/app/id6775224401"
-      },
-      "testflight": {
-        "external": "EXPIRED",
-        "internal": "EXPIRED"
-      },
-      "status": {
-        "label": "Released",
-        "category": "released"
-      }
-    },
-    {
-      "name": "BTLabel",
-      "repo": "BT-Label-Printing-App",
-      "full_name": "harmonic-systems-home/BT-Label-Printing-App",
-      "url": "https://github.com/harmonic-systems-home/BT-Label-Printing-App",
-      "last_commit": "2026-10-04T16:49:19-07:00",
-      "manifest": {},
-      "bundle_id": "com.popperbiz.BTLabel",
-      "version": "1.0.1",
-      "build": "6",
-      "platforms": [
-        "iOS",
-        "macOS",
-        "visionOS"
-      ],
-      "icon": "app_icons/BT-Label-Printing-App.png",
-      "xcodeproj": "BTLabel/BTLabel.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": true,
-        "testflight": true,
-        "screenshots": true,
-        "metadata": true
-      },
-      "store": {
-        "state": "READY_FOR_SALE",
-        "version": "1.0.1",
-        "url": "https://apps.apple.com/app/id6780239795"
-      },
-      "testflight": {
-        "external": "READY_FOR_BETA_SUBMISSION",
-        "internal": "IN_BETA_TESTING"
-      },
-      "status": {
-        "label": "Released",
-        "category": "released"
-      }
-    },
-    {
-      "name": "PBS with BBA Compare",
-      "repo": "pbs-bbo-extension",
-      "full_name": "bridge-craftwork/pbs-bbo-extension",
-      "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
-      "last_commit": "2026-11-01T23:10:26-08:00",
-      "manifest": {},
-      "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
-      "version": "1.0.0",
-      "build": "3",
-      "platforms": [
-        "macOS"
-      ],
-      "icon": "app_icons/pbs-bbo-extension.png",
-      "xcodeproj": "safari/PBS with BBA Compare/PBS with BBA Compare.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": true,
-        "testflight": true,
-        "screenshots": true,
-        "metadata": true
-      },
-      "store": {
-        "state": "READY_FOR_SALE",
-        "version": "1.0",
-        "url": "https://apps.apple.com/app/id6760272056"
-      },
-      "testflight": {
-        "external": "EXPIRED",
-        "internal": "EXPIRED"
-      },
-      "status": {
-        "label": "Released",
-        "category": "released"
       }
     }
   ]
