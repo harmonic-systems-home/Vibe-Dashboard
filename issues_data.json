@@ -1,23 +1,33 @@
 {
-  "generated_at": "2026-11-14T14:01:39.969093+00:00",
+  "generated_at": "2026-11-15T14:36:04.286992+00:00",
   "stats": {
-    "total": 633,
-    "open": 156,
-    "closed": 477,
-    "close_rate": 75,
-    "opened_last_30": 78,
-    "closed_last_30": 40,
-    "opened_last_90": 265,
-    "closed_last_90": 166,
-    "median_days_to_close": 0.2,
-    "median_open_age_days": 57.5,
-    "oldest_open_days": 243.0,
+    "total": 648,
+    "open": 141,
+    "closed": 507,
+    "close_rate": 78,
+    "opened_last_30": 93,
+    "closed_last_30": 70,
+    "opened_last_90": 280,
+    "closed_last_90": 196,
+    "median_days_to_close": 0.3,
+    "median_open_age_days": 65.7,
+    "oldest_open_days": 244.0,
     "repo_count": 22,
     "by_repo": {
       "bridge-common-conventions": {
-        "open": 50,
-        "closed": 6,
-        "total": 56
+        "open": 33,
+        "closed": 36,
+        "total": 69
+      },
+      "convention-card": {
+        "open": 2,
+        "closed": 4,
+        "total": 6
+      },
+      "Baker-Bridge": {
+        "open": 19,
+        "closed": 21,
+        "total": 40
       },
       "bridge-solver": {
         "open": 6,
@@ -33,16 +43,6 @@
         "open": 14,
         "closed": 279,
         "total": 293
-      },
-      "convention-card": {
-        "open": 1,
-        "closed": 4,
-        "total": 5
-      },
-      "Baker-Bridge": {
-        "open": 18,
-        "closed": 21,
-        "total": 39
       },
       "pbs-bbo-extension": {
         "open": 2,
@@ -148,8 +148,8 @@
       "full_name": "bridge-craftwork/bridge-common-conventions",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions",
       "external": false,
-      "open": 50,
-      "closed": 6
+      "open": 33,
+      "closed": 36
     },
     {
       "repo": "Dealer3",
@@ -164,7 +164,7 @@
       "full_name": "bridge-craftwork/Baker-Bridge",
       "url": "https://github.com/bridge-craftwork/Baker-Bridge",
       "external": false,
-      "open": 18,
+      "open": 19,
       "closed": 21
     },
     {
@@ -228,7 +228,7 @@
       "full_name": "bridge-craftwork/convention-card",
       "url": "https://github.com/bridge-craftwork/convention-card",
       "external": false,
-      "open": 1,
+      "open": 2,
       "closed": 4
     },
     {
@@ -305,6 +305,218 @@
     }
   ],
   "issues": [
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 102,
+      "title": "Measure a convention's match with another bidder apart from the judgement around it",
+      "state": "open",
+      "created_at": "2026-11-15T14:12:53Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/102",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 122,
+      "title": "A coverage page per card model: what does not map to this card",
+      "state": "open",
+      "created_at": "2026-11-15T05:21:38Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/122",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Baker-Bridge",
+      "full_name": "bridge-craftwork/Baker-Bridge",
+      "external": false,
+      "number": 83,
+      "title": "Classroom report: Baker Bridge - Third Hand Play \u00b7 Deal 18 (from Linnea)",
+      "state": "open",
+      "created_at": "2026-11-15T02:08:25Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Baker-Bridge/issues/83",
+      "labels": [
+        "classroom-feedback"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 92,
+      "title": "Syntax colouring for .bid files: in VS Code, and on the overview page",
+      "state": "open",
+      "created_at": "2026-11-15T00:53:37Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/92",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 91,
+      "title": "New Minor Forcing and four others: places, not treatments that stand alone",
+      "state": "closed",
+      "created_at": "2026-11-15T00:51:38Z",
+      "closed_at": "2026-11-15T04:17:06Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/91",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 86,
+      "title": "Check the weak jump shift ranges",
+      "state": "open",
+      "created_at": "2026-11-14T21:54:46Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/86",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 78,
+      "title": "Make the pack and its page LLM-friendly, for someone writing a new convention with an AI",
+      "state": "open",
+      "created_at": "2026-11-14T19:57:42Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/78",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 74,
+      "title": "A card that ticks 'weak jump shifts, not in competition' does not bid them",
+      "state": "closed",
+      "created_at": "2026-11-14T19:18:56Z",
+      "closed_at": "2026-11-14T21:55:23Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/74",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 73,
+      "title": "With Stayman unset, v0.15.3 plays it over 2NT but not over 1NT",
+      "state": "closed",
+      "created_at": "2026-11-14T18:54:47Z",
+      "closed_at": "2026-11-15T06:29:14Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/73",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 72,
+      "title": "Bridgodex import: the 4NT 'more' line is filed under Blackwood whatever it says",
+      "state": "closed",
+      "created_at": "2026-11-14T18:54:45Z",
+      "closed_at": "2026-11-15T00:46:20Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/72",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 71,
+      "title": "Tools read some fields by an older spelling, and miss the current one",
+      "state": "closed",
+      "created_at": "2026-11-14T18:54:43Z",
+      "closed_at": "2026-11-15T06:29:16Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/71",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 70,
+      "title": "Multi takes 2\u2665 and 2\u2660 from the weak twos: say it in the function",
+      "state": "closed",
+      "created_at": "2026-11-14T18:54:42Z",
+      "closed_at": "2026-11-15T00:46:45Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/70",
+      "labels": [],
+      "comments": 2,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 69,
+      "title": "Reverse Flannery: the 2\u2666 treatment, its alert rules and where its card fields sit",
+      "state": "closed",
+      "created_at": "2026-11-14T18:54:40Z",
+      "closed_at": "2026-11-15T01:30:02Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/69",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 68,
+      "title": "Jump-shift style boxes become entries of the jump-shift conventions",
+      "state": "closed",
+      "created_at": "2026-11-14T18:54:39Z",
+      "closed_at": "2026-11-14T19:34:54Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/68",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 67,
+      "title": "Jump shifts after an overcall: the default should be weak",
+      "state": "closed",
+      "created_at": "2026-11-14T18:54:37Z",
+      "closed_at": "2026-11-14T21:55:55Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/67",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "bridge-common-conventions",
       "full_name": "bridge-craftwork/bridge-common-conventions",
@@ -476,7 +688,7 @@
       "closed_at": null,
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/47",
       "labels": [],
-      "comments": 0,
+      "comments": 3,
       "author": "Rick-Wilson"
     },
     {
@@ -643,12 +855,12 @@
       "external": false,
       "number": 36,
       "title": "Place each of the 72 lone yes/no fields",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:52:03Z",
-      "closed_at": null,
+      "closed_at": "2026-11-15T06:29:10Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/36",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -678,7 +890,7 @@
       "labels": [
         "repo:convention-card"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -687,9 +899,9 @@
       "external": false,
       "number": 33,
       "title": "Enforce \"treatments mean nothing while their convention is off\"",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:54Z",
-      "closed_at": null,
+      "closed_at": "2026-11-15T00:46:10Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/33",
       "labels": [
         "repo:convention-card"
@@ -717,9 +929,9 @@
       "external": false,
       "number": 31,
       "title": "Resolve the nine treatments that name a different convention",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:48Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T20:29:15Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/31",
       "labels": [],
       "comments": 0,
@@ -745,12 +957,12 @@
       "external": false,
       "number": 29,
       "title": "Staleness check for the published snapshot",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:43Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T17:34:21Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/29",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -776,12 +988,12 @@
       "external": false,
       "number": 27,
       "title": "CI workflow: validate, test, bundle, manifest, publish",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:37Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T17:34:19Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/27",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -790,12 +1002,12 @@
       "external": false,
       "number": 26,
       "title": "Zero-difference check against phase 2",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:34Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:39Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/26",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -804,14 +1016,14 @@
       "external": false,
       "number": 25,
       "title": "rusty-bidding-bot: convert the 52 switched modules",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:31Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:36Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/25",
       "labels": [
         "repo:rusty-bidding-bot"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -827,7 +1039,7 @@
       "labels": [
         "repo:rusty-bidding-bot"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -843,7 +1055,7 @@
       "labels": [
         "repo:convention-card"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -859,7 +1071,7 @@
       "labels": [
         "repo:convention-card"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -868,12 +1080,12 @@
       "external": false,
       "number": 21,
       "title": "Move settings, level bands, alert rules and the 1-to-2 migration",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:19Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:34Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/21",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -882,12 +1094,12 @@
       "external": false,
       "number": 20,
       "title": "Restructure into the new layout from the inventory",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:16Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:32Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/20",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -896,12 +1108,12 @@
       "external": false,
       "number": 19,
       "title": "Move the rule files here with their history",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:13Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:30Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/19",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -910,12 +1122,12 @@
       "external": false,
       "number": 18,
       "title": "Move the convention files here with their history",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:10Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:27Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/18",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -924,12 +1136,12 @@
       "external": false,
       "number": 17,
       "title": "A script that regenerates the captures and compares them",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:07Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:25Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/17",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -938,14 +1150,14 @@
       "external": false,
       "number": 16,
       "title": "Capture the rows and values the editor shows for each card",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:04Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:23Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/16",
       "labels": [
         "repo:convention-card"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -954,14 +1166,14 @@
       "external": false,
       "number": 15,
       "title": "Capture Rusty's bidding for each card over a fixed deal set",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:01Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:21Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/15",
       "labels": [
         "repo:rusty-bidding-bot"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -970,14 +1182,14 @@
       "external": false,
       "number": 14,
       "title": "Capture every card export from convention-card v0.44.0",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:50:58Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:18Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/14",
       "labels": [
         "repo:convention-card"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -986,12 +1198,12 @@
       "external": false,
       "number": 13,
       "title": "Assemble the card corpus",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:50:56Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:16Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/13",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -1000,12 +1212,12 @@
       "external": false,
       "number": 12,
       "title": "List the 72 lone yes/no fields as parked settings",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:50:53Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:14Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/12",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -1014,14 +1226,14 @@
       "external": false,
       "number": 11,
       "title": "Classify the 27 convention modules that have no card switch",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:50:50Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:12Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/11",
       "labels": [
         "repo:rusty-bidding-bot"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -1030,12 +1242,12 @@
       "external": false,
       "number": 10,
       "title": "Assign a context to every convention",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:50:47Z",
-      "closed_at": null,
+      "closed_at": "2026-11-15T06:29:12Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/10",
       "labels": [],
-      "comments": 0,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -1044,12 +1256,12 @@
       "external": false,
       "number": 9,
       "title": "Script that generates the inventory from spec/fields.toml",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:50:45Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:10Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/9",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -1058,14 +1270,14 @@
       "external": false,
       "number": 8,
       "title": "ADR-0003 in convention-card: content splits from code",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:50:41Z",
-      "closed_at": null,
+      "closed_at": "2026-11-14T18:05:07Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/8",
       "labels": [
         "repo:convention-card"
       ],
-      "comments": 2,
+      "comments": 3,
       "author": "Rick-Wilson"
     },
     {
