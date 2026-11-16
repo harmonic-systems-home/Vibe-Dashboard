@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-15T14:36:04.286992+00:00",
+  "generated_at": "2026-11-16T16:49:27.842541+00:00",
   "stats": {
-    "total": 648,
-    "open": 141,
-    "closed": 507,
-    "close_rate": 78,
-    "opened_last_30": 93,
-    "closed_last_30": 70,
-    "opened_last_90": 280,
-    "closed_last_90": 196,
+    "total": 650,
+    "open": 135,
+    "closed": 515,
+    "close_rate": 79,
+    "opened_last_30": 94,
+    "closed_last_30": 78,
+    "opened_last_90": 282,
+    "closed_last_90": 204,
     "median_days_to_close": 0.3,
-    "median_open_age_days": 65.7,
-    "oldest_open_days": 244.0,
+    "median_open_age_days": 67.9,
+    "oldest_open_days": 245.1,
     "repo_count": 22,
     "by_repo": {
-      "bridge-common-conventions": {
-        "open": 33,
-        "closed": 36,
-        "total": 69
-      },
       "convention-card": {
-        "open": 2,
+        "open": 4,
         "closed": 4,
-        "total": 6
+        "total": 8
+      },
+      "bridge-common-conventions": {
+        "open": 25,
+        "closed": 44,
+        "total": 69
       },
       "Baker-Bridge": {
         "open": 19,
@@ -148,8 +148,8 @@
       "full_name": "bridge-craftwork/bridge-common-conventions",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions",
       "external": false,
-      "open": 33,
-      "closed": 36
+      "open": 25,
+      "closed": 44
     },
     {
       "repo": "Dealer3",
@@ -208,6 +208,14 @@
       "closed": 8
     },
     {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "url": "https://github.com/bridge-craftwork/convention-card",
+      "external": false,
+      "open": 4,
+      "closed": 4
+    },
+    {
       "repo": "rusty-bidding-bot",
       "full_name": "bridge-craftwork/rusty-bidding-bot",
       "url": "https://github.com/bridge-craftwork/rusty-bidding-bot",
@@ -222,14 +230,6 @@
       "external": false,
       "open": 3,
       "closed": 3
-    },
-    {
-      "repo": "convention-card",
-      "full_name": "bridge-craftwork/convention-card",
-      "url": "https://github.com/bridge-craftwork/convention-card",
-      "external": false,
-      "open": 2,
-      "closed": 4
     },
     {
       "repo": "rpdd-library",
@@ -305,6 +305,34 @@
     }
   ],
   "issues": [
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 125,
+      "title": "Card list: show whether a card is shared, and with how many people",
+      "state": "open",
+      "created_at": "2026-11-16T16:16:37Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/125",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 124,
+      "title": "Card list: show when the card's content last changed, not when this copy was saved",
+      "state": "open",
+      "created_at": "2026-11-16T16:16:36Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/124",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "bridge-common-conventions",
       "full_name": "bridge-craftwork/bridge-common-conventions",
@@ -755,15 +783,15 @@
       "external": false,
       "number": 42,
       "title": "Correct the stale docs",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:52:22Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T16:37:31Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/42",
       "labels": [
         "repo:convention-card",
         "repo:rusty-bidding-bot"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -772,15 +800,15 @@
       "external": false,
       "number": 41,
       "title": "Remove the moved content from convention-card and rusty-bidding-bot",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:52:19Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T16:37:29Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/41",
       "labels": [
         "repo:convention-card",
         "repo:rusty-bidding-bot"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -796,7 +824,7 @@
       "labels": [
         "repo:other"
       ],
-      "comments": 0,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -805,14 +833,14 @@
       "external": false,
       "number": 39,
       "title": "Bridge Classroom fetches the published snapshot",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:52:13Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T16:37:26Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/39",
       "labels": [
         "repo:Bridge-Classroom"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -829,7 +857,7 @@
         "repo:Bridge-Classroom",
         "repo:other"
       ],
-      "comments": 0,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -838,15 +866,15 @@
       "external": false,
       "number": 37,
       "title": "Tag convention-card and rusty-bidding-bot",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:52:07Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T16:37:24Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/37",
       "labels": [
         "repo:convention-card",
         "repo:rusty-bidding-bot"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -971,15 +999,15 @@
       "external": false,
       "number": 28,
       "title": "Show and log the rules number beside the engine version",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:40Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T16:37:21Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/28",
       "labels": [
         "repo:rusty-bidding-bot",
         "repo:Bridge-Classroom"
       ],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
@@ -1032,14 +1060,14 @@
       "external": false,
       "number": 24,
       "title": "rusty-bidding-bot: the `convention` header and treatments by name",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:28Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T16:37:19Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/24",
       "labels": [
         "repo:rusty-bidding-bot"
       ],
-      "comments": 1,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -1048,14 +1076,14 @@
       "external": false,
       "number": 23,
       "title": "convention-card: the new card shape, and migrating schema 2 cards",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:26Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T16:37:16Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/23",
       "labels": [
         "repo:convention-card"
       ],
-      "comments": 1,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
@@ -1064,14 +1092,14 @@
       "external": false,
       "number": 22,
       "title": "convention-card: read content through one loader",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:51:23Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T16:37:14Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/22",
       "labels": [
         "repo:convention-card"
       ],
-      "comments": 1,
+      "comments": 2,
       "author": "Rick-Wilson"
     },
     {
