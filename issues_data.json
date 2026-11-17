@@ -1,28 +1,43 @@
 {
-  "generated_at": "2026-11-16T16:49:27.842541+00:00",
+  "generated_at": "2026-11-17T16:47:17.443688+00:00",
   "stats": {
-    "total": 650,
-    "open": 135,
-    "closed": 515,
-    "close_rate": 79,
-    "opened_last_30": 94,
-    "closed_last_30": 78,
-    "opened_last_90": 282,
-    "closed_last_90": 204,
+    "total": 656,
+    "open": 134,
+    "closed": 522,
+    "close_rate": 80,
+    "opened_last_30": 100,
+    "closed_last_30": 85,
+    "opened_last_90": 288,
+    "closed_last_90": 211,
     "median_days_to_close": 0.3,
-    "median_open_age_days": 67.9,
-    "oldest_open_days": 245.1,
+    "median_open_age_days": 68.9,
+    "oldest_open_days": 246.1,
     "repo_count": 22,
     "by_repo": {
+      "Practice-Bidding-Scenarios": {
+        "open": 15,
+        "closed": 279,
+        "total": 294
+      },
+      "bridge-common-conventions": {
+        "open": 25,
+        "closed": 47,
+        "total": 72
+      },
+      "Bridge-Classroom": {
+        "open": 32,
+        "closed": 56,
+        "total": 88
+      },
+      "rusty-bidding-bot": {
+        "open": 2,
+        "closed": 7,
+        "total": 9
+      },
       "convention-card": {
         "open": 4,
         "closed": 4,
         "total": 8
-      },
-      "bridge-common-conventions": {
-        "open": 25,
-        "closed": 44,
-        "total": 69
       },
       "Baker-Bridge": {
         "open": 19,
@@ -30,19 +45,9 @@
         "total": 40
       },
       "bridge-solver": {
-        "open": 6,
-        "closed": 9,
+        "open": 3,
+        "closed": 12,
         "total": 15
-      },
-      "Bridge-Classroom": {
-        "open": 31,
-        "closed": 56,
-        "total": 87
-      },
-      "Practice-Bidding-Scenarios": {
-        "open": 14,
-        "closed": 279,
-        "total": 293
       },
       "pbs-bbo-extension": {
         "open": 2,
@@ -53,11 +58,6 @@
         "open": 2,
         "closed": 0,
         "total": 2
-      },
-      "rusty-bidding-bot": {
-        "open": 2,
-        "closed": 6,
-        "total": 8
       },
       "bridge-wrangler": {
         "open": 3,
@@ -132,7 +132,7 @@
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
       "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios",
       "external": true,
-      "open": 14,
+      "open": 15,
       "closed": 279
     },
     {
@@ -140,7 +140,7 @@
       "full_name": "bridge-craftwork/Bridge-Classroom",
       "url": "https://github.com/bridge-craftwork/Bridge-Classroom",
       "external": false,
-      "open": 31,
+      "open": 32,
       "closed": 56
     },
     {
@@ -149,7 +149,7 @@
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions",
       "external": false,
       "open": 25,
-      "closed": 44
+      "closed": 47
     },
     {
       "repo": "Dealer3",
@@ -180,8 +180,8 @@
       "full_name": "bridge-craftwork/bridge-solver",
       "url": "https://github.com/bridge-craftwork/bridge-solver",
       "external": false,
-      "open": 6,
-      "closed": 9
+      "open": 3,
+      "closed": 12
     },
     {
       "repo": "bridge-encodings",
@@ -208,20 +208,20 @@
       "closed": 8
     },
     {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "open": 2,
+      "closed": 7
+    },
+    {
       "repo": "convention-card",
       "full_name": "bridge-craftwork/convention-card",
       "url": "https://github.com/bridge-craftwork/convention-card",
       "external": false,
       "open": 4,
       "closed": 4
-    },
-    {
-      "repo": "rusty-bidding-bot",
-      "full_name": "bridge-craftwork/rusty-bidding-bot",
-      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot",
-      "external": false,
-      "open": 2,
-      "closed": 6
     },
     {
       "repo": "bridge-wrangler",
@@ -305,6 +305,90 @@
     }
   ],
   "issues": [
+    {
+      "repo": "Practice-Bidding-Scenarios",
+      "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
+      "external": true,
+      "number": 354,
+      "title": "26 scenarios name a card on which Rusty does not play the scenario's convention",
+      "state": "open",
+      "created_at": "2026-11-17T00:34:09Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Practice-Bidding-Scenarios/issues/354",
+      "labels": [],
+      "comments": 1,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 128,
+      "title": "Scenarios whose dealer script rarely or never reaches its convention's rules",
+      "state": "open",
+      "created_at": "2026-11-17T00:33:54Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/128",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 118,
+      "title": "Designed test cards: 295 rules fire with a captured card and with no designed one",
+      "state": "open",
+      "created_at": "2026-11-16T19:09:07Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/118",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 117,
+      "title": "Record what cannot share a card: Reverse Flannery with invitational jump shifts, Lebensohl with Rubensohl",
+      "state": "closed",
+      "created_at": "2026-11-16T19:08:52Z",
+      "closed_at": "2026-11-16T22:36:46Z",
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/117",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "Bridge-Classroom",
+      "full_name": "bridge-craftwork/Bridge-Classroom",
+      "external": false,
+      "number": 539,
+      "title": "Solo practice bid meanings display when playing own card",
+      "state": "open",
+      "created_at": "2026-11-16T17:30:46Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/Bridge-Classroom/issues/539",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 93,
+      "title": "bid check tests skill lines against the built-in definitions, not the pack it is checking",
+      "state": "closed",
+      "created_at": "2026-11-16T17:23:41Z",
+      "closed_at": "2026-11-16T18:14:29Z",
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/93",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "convention-card",
       "full_name": "bridge-craftwork/convention-card",
@@ -817,14 +901,14 @@
       "external": false,
       "number": 40,
       "title": "Practice-Bidding-Scenarios and lesson-studio validate against the snapshot",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:52:16Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T20:40:38Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/40",
       "labels": [
         "repo:other"
       ],
-      "comments": 2,
+      "comments": 3,
       "author": "Rick-Wilson"
     },
     {
@@ -849,15 +933,15 @@
       "external": false,
       "number": 38,
       "title": "Pin bumps in Bridge Classroom and Better BBO Convention Card",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-14T02:52:10Z",
-      "closed_at": null,
+      "closed_at": "2026-11-16T21:36:14Z",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/38",
       "labels": [
         "repo:Bridge-Classroom",
         "repo:other"
       ],
-      "comments": 2,
+      "comments": 3,
       "author": "Rick-Wilson"
     },
     {
@@ -1654,9 +1738,9 @@
       "external": false,
       "number": 49,
       "title": "Windows: default thread count uses only one 64-thread processor group",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-10-28T14:26:57Z",
-      "closed_at": null,
+      "closed_at": "2026-11-17T06:56:57Z",
       "url": "https://github.com/bridge-craftwork/bridge-solver/issues/49",
       "labels": [],
       "comments": 1,
@@ -1668,9 +1752,9 @@
       "external": false,
       "number": 48,
       "title": "Thread-local pattern pool leaks when a solving thread exits",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-10-28T14:26:56Z",
-      "closed_at": null,
+      "closed_at": "2026-11-17T06:56:57Z",
       "url": "https://github.com/bridge-craftwork/bridge-solver/issues/48",
       "labels": [],
       "comments": 1,
@@ -1682,9 +1766,9 @@
       "external": false,
       "number": 47,
       "title": "Parallel batch solving waits on hard deals that start last: schedule hardest-first (DDS fanout)",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-10-28T14:25:04Z",
-      "closed_at": null,
+      "closed_at": "2026-11-17T06:56:56Z",
       "url": "https://github.com/bridge-craftwork/bridge-solver/issues/47",
       "labels": [],
       "comments": 1,
