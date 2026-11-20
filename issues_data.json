@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-11-19T16:27:44.865766+00:00",
+  "generated_at": "2026-11-20T16:01:05.435285+00:00",
   "stats": {
-    "total": 656,
-    "open": 134,
+    "total": 659,
+    "open": 137,
     "closed": 522,
-    "close_rate": 80,
-    "opened_last_30": 99,
+    "close_rate": 79,
+    "opened_last_30": 102,
     "closed_last_30": 85,
-    "opened_last_90": 288,
+    "opened_last_90": 291,
     "closed_last_90": 211,
     "median_days_to_close": 0.3,
-    "median_open_age_days": 70.9,
-    "oldest_open_days": 248.1,
+    "median_open_age_days": 71.8,
+    "oldest_open_days": 249.1,
     "repo_count": 22,
     "by_repo": {
+      "rusty-bidding-bot": {
+        "open": 3,
+        "closed": 7,
+        "total": 10
+      },
+      "bridge-common-conventions": {
+        "open": 27,
+        "closed": 47,
+        "total": 74
+      },
       "Practice-Bidding-Scenarios": {
         "open": 15,
         "closed": 279,
         "total": 294
       },
-      "bridge-common-conventions": {
-        "open": 25,
-        "closed": 47,
-        "total": 72
-      },
       "Bridge-Classroom": {
         "open": 32,
         "closed": 56,
         "total": 88
-      },
-      "rusty-bidding-bot": {
-        "open": 2,
-        "closed": 7,
-        "total": 9
       },
       "convention-card": {
         "open": 4,
@@ -148,7 +148,7 @@
       "full_name": "bridge-craftwork/bridge-common-conventions",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions",
       "external": false,
-      "open": 25,
+      "open": 27,
       "closed": 47
     },
     {
@@ -212,7 +212,7 @@
       "full_name": "bridge-craftwork/rusty-bidding-bot",
       "url": "https://github.com/bridge-craftwork/rusty-bidding-bot",
       "external": false,
-      "open": 2,
+      "open": 3,
       "closed": 7
     },
     {
@@ -305,6 +305,54 @@
     }
   ],
   "issues": [
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 98,
+      "title": "Announcement audiences: human and brill",
+      "state": "open",
+      "created_at": "2026-11-19T20:08:55Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/98",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 133,
+      "title": "Announced convention names: a table from what opponents say to our card fields",
+      "state": "open",
+      "created_at": "2026-11-19T20:08:52Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/133",
+      "labels": [
+        "enhancement",
+        "repo:rusty-bidding-bot"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 132,
+      "title": "Check each rule's alert flag against alerts.toml",
+      "state": "open",
+      "created_at": "2026-11-19T20:08:50Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/132",
+      "labels": [
+        "enhancement",
+        "repo:rusty-bidding-bot"
+      ],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "Practice-Bidding-Scenarios",
       "full_name": "bridge-craftwork/Practice-Bidding-Scenarios",
