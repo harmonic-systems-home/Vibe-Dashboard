@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T16:00:32.732520+00:00",
+  "generated_at": "2026-11-21T15:10:05.758883+00:00",
   "count": 8,
   "apps": [
     {
@@ -62,31 +62,35 @@
       }
     },
     {
-      "name": "Bridge Craftwork DD",
+      "name": "Bridge Classroom Fetch",
       "repo": "bridge-classroom-fetch",
       "full_name": "bridge-craftwork/bridge-classroom-fetch",
       "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
       "last_commit": "2026-11-08T15:05:53-08:00",
       "manifest": {},
-      "bundle_id": "org.bridge-classroom.bridge-craftwork-dd",
+      "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
       "version": "1.1.0",
       "build": "1",
       "platforms": [
+        "iOS",
         "macOS"
       ],
       "icon": "app_icons/bridge-classroom-fetch.png",
-      "xcodeproj": "safari-dd/Bridge Craftwork DD/Bridge Craftwork DD.xcodeproj",
+      "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
       "readiness": {
         "icon": true,
-        "asc_registered": false,
+        "asc_registered": true,
         "testflight": false,
         "screenshots": true,
         "metadata": false
       },
-      "store": null,
+      "store": {
+        "state": "PREPARE_FOR_SUBMISSION",
+        "version": "1.0"
+      },
       "testflight": null,
       "status": {
-        "label": "Development",
+        "label": "Preparing",
         "category": "development"
       }
     },
