@@ -1,23 +1,28 @@
 {
-  "generated_at": "2026-11-21T15:10:31.429290+00:00",
+  "generated_at": "2026-11-22T15:07:56.395695+00:00",
   "stats": {
-    "total": 660,
-    "open": 136,
+    "total": 663,
+    "open": 139,
     "closed": 524,
     "close_rate": 79,
-    "opened_last_30": 103,
+    "opened_last_30": 106,
     "closed_last_30": 87,
-    "opened_last_90": 292,
+    "opened_last_90": 295,
     "closed_last_90": 213,
     "median_days_to_close": 0.3,
-    "median_open_age_days": 72.8,
-    "oldest_open_days": 250.0,
+    "median_open_age_days": 73.8,
+    "oldest_open_days": 251.0,
     "repo_count": 22,
     "by_repo": {
+      "bridge-solver": {
+        "open": 4,
+        "closed": 12,
+        "total": 16
+      },
       "convention-card": {
-        "open": 5,
+        "open": 7,
         "closed": 4,
-        "total": 9
+        "total": 11
       },
       "rusty-bidding-bot": {
         "open": 2,
@@ -43,11 +48,6 @@
         "open": 19,
         "closed": 21,
         "total": 40
-      },
-      "bridge-solver": {
-        "open": 3,
-        "closed": 12,
-        "total": 15
       },
       "pbs-bbo-extension": {
         "open": 2,
@@ -180,7 +180,7 @@
       "full_name": "bridge-craftwork/bridge-solver",
       "url": "https://github.com/bridge-craftwork/bridge-solver",
       "external": false,
-      "open": 3,
+      "open": 4,
       "closed": 12
     },
     {
@@ -190,6 +190,14 @@
       "external": false,
       "open": 2,
       "closed": 12
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "url": "https://github.com/bridge-craftwork/convention-card",
+      "external": false,
+      "open": 7,
+      "closed": 4
     },
     {
       "repo": "BBA-Tools",
@@ -214,14 +222,6 @@
       "external": false,
       "open": 2,
       "closed": 8
-    },
-    {
-      "repo": "convention-card",
-      "full_name": "bridge-craftwork/convention-card",
-      "url": "https://github.com/bridge-craftwork/convention-card",
-      "external": false,
-      "open": 5,
-      "closed": 4
     },
     {
       "repo": "bridge-wrangler",
@@ -306,6 +306,48 @@
   ],
   "issues": [
     {
+      "repo": "bridge-solver",
+      "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
+      "number": 63,
+      "title": "Is there a memory problem?",
+      "state": "open",
+      "created_at": "2026-11-21T20:48:17Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-solver/issues/63",
+      "labels": [],
+      "comments": 0,
+      "author": "ThorvaldAagaard"
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 132,
+      "title": "Notes repeat what the card's boxes already say",
+      "state": "open",
+      "created_at": "2026-11-21T18:55:01Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/132",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 131,
+      "title": "Test our PDF exports against Chrome's PDF engine (PDFium)",
+      "state": "open",
+      "created_at": "2026-11-21T18:16:16Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/131",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
       "repo": "convention-card",
       "full_name": "bridge-craftwork/convention-card",
       "external": false,
@@ -316,7 +358,7 @@
       "closed_at": null,
       "url": "https://github.com/bridge-craftwork/convention-card/issues/129",
       "labels": [],
-      "comments": 0,
+      "comments": 1,
       "author": "Rick-Wilson"
     },
     {
