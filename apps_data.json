@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T19:00:04.203004+00:00",
+  "generated_at": "2026-11-23T19:30:10.274833+00:00",
   "count": 10,
   "apps": [
     {
@@ -141,18 +141,18 @@
         "icon": true,
         "asc_registered": true,
         "testflight": true,
-        "screenshots": false,
-        "metadata": false
+        "screenshots": true,
+        "metadata": true
       },
       "store": {
-        "state": "REJECTED",
+        "state": "WAITING_FOR_REVIEW",
         "version": "1.0",
         "live": null,
         "pending": {
           "version": "1.0",
-          "state": "REJECTED",
-          "label": "Rejected",
-          "category": "rejected",
+          "state": "WAITING_FOR_REVIEW",
+          "label": "Waiting for Review",
+          "category": "review",
           "platforms": [
             "iOS",
             "macOS"
@@ -164,100 +164,8 @@
         "internal": "READY_FOR_BETA_TESTING"
       },
       "status": {
-        "label": "Rejected",
-        "category": "rejected"
-      }
-    },
-    {
-      "name": "Bridge Classroom Fetch",
-      "repo": "bridge-classroom-fetch",
-      "full_name": "bridge-craftwork/bridge-classroom-fetch",
-      "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-11-23T07:20:50-08:00",
-      "manifest": {},
-      "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
-      "version": "1.1.0",
-      "build": "1",
-      "platforms": [
-        "iOS",
-        "macOS"
-      ],
-      "icon": "app_icons/bridge-classroom-fetch-Bridge-Classroom-Fetch.png",
-      "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": true,
-        "testflight": true,
-        "screenshots": true,
-        "metadata": false
-      },
-      "store": {
-        "state": "PREPARE_FOR_SUBMISSION",
-        "version": "1.1.0",
-        "live": null,
-        "pending": {
-          "version": "1.1.0",
-          "state": "PREPARE_FOR_SUBMISSION",
-          "label": "Preparing",
-          "category": "development",
-          "platforms": [
-            "iOS",
-            "macOS"
-          ]
-        }
-      },
-      "testflight": {
-        "external": "READY_FOR_BETA_SUBMISSION",
-        "internal": "READY_FOR_BETA_TESTING"
-      },
-      "status": {
-        "label": "TestFlight",
-        "category": "testflight"
-      }
-    },
-    {
-      "name": "Bridge Craftwork DD",
-      "repo": "bridge-classroom-fetch",
-      "full_name": "bridge-craftwork/bridge-classroom-fetch",
-      "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-11-23T07:20:50-08:00",
-      "manifest": {},
-      "bundle_id": "org.bridge-classroom.bridge-craftwork-dd",
-      "version": "1.1.0",
-      "build": "1",
-      "platforms": [
-        "macOS"
-      ],
-      "icon": "app_icons/bridge-classroom-fetch-Bridge-Craftwork-DD.png",
-      "xcodeproj": "safari-dd/Bridge Craftwork DD/Bridge Craftwork DD.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": true,
-        "testflight": true,
-        "screenshots": true,
-        "metadata": false
-      },
-      "store": {
-        "state": "PREPARE_FOR_SUBMISSION",
-        "version": "1.1.0",
-        "live": null,
-        "pending": {
-          "version": "1.1.0",
-          "state": "PREPARE_FOR_SUBMISSION",
-          "label": "Preparing",
-          "category": "development",
-          "platforms": [
-            "macOS"
-          ]
-        }
-      },
-      "testflight": {
-        "external": "READY_FOR_BETA_SUBMISSION",
-        "internal": "READY_FOR_BETA_TESTING"
-      },
-      "status": {
-        "label": "TestFlight",
-        "category": "testflight"
+        "label": "Waiting for Review",
+        "category": "review"
       }
     },
     {
@@ -395,6 +303,175 @@
       "status": {
         "label": "Released",
         "category": "released"
+      }
+    },
+    {
+      "name": "Bridge Classroom Fetch",
+      "repo": "bridge-classroom-fetch",
+      "full_name": "bridge-craftwork/bridge-classroom-fetch",
+      "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
+      "last_commit": "2026-11-23T11:18:59-08:00",
+      "manifest": {},
+      "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
+      "version": "1.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "icon": "app_icons/bridge-classroom-fetch-Bridge-Classroom-Fetch.png",
+      "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": true,
+        "metadata": true
+      },
+      "source_version": "1.1.0",
+      "store": {
+        "state": "WAITING_FOR_REVIEW",
+        "version": "1.1.0",
+        "live": null,
+        "pending": {
+          "version": "1.1.0",
+          "state": "WAITING_FOR_REVIEW",
+          "label": "Waiting for Review",
+          "category": "review",
+          "platforms": [
+            "iOS",
+            "macOS"
+          ]
+        }
+      },
+      "testflight": {
+        "external": "READY_FOR_BETA_SUBMISSION",
+        "internal": "READY_FOR_BETA_TESTING"
+      },
+      "status": {
+        "label": "Released \u00b7 update pending",
+        "category": "released",
+        "safari": {
+          "label": "Waiting for Review",
+          "category": "review"
+        }
+      },
+      "browsers": {
+        "chrome": {
+          "state": "live",
+          "live": "1.1.0",
+          "pending": null,
+          "url": "https://chromewebstore.google.com/detail/cpokagdkdagcojoogocjheefiicacnca"
+        },
+        "safari": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.1.0",
+            "label": "Waiting for Review"
+          },
+          "url": null
+        },
+        "firefox": {
+          "state": "live",
+          "live": "1.1.0",
+          "pending": null,
+          "url": "https://addons.mozilla.org/en-US/firefox/addon/bridge-classroom-fetch/"
+        },
+        "edge": {
+          "state": "live",
+          "live": "1.1.0",
+          "pending": null,
+          "url": "https://microsoftedge.microsoft.com/addons/detail/pjomfmbcmaiikkfcnnpnlblmpokbcdei"
+        }
+      }
+    },
+    {
+      "name": "Bridge Craftwork DD",
+      "repo": "bridge-classroom-fetch",
+      "full_name": "bridge-craftwork/bridge-classroom-fetch",
+      "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
+      "last_commit": "2026-11-23T11:18:59-08:00",
+      "manifest": {},
+      "bundle_id": "org.bridge-classroom.bridge-craftwork-dd",
+      "version": "1.1.0",
+      "build": "1",
+      "platforms": [
+        "macOS"
+      ],
+      "icon": "app_icons/bridge-classroom-fetch-Bridge-Craftwork-DD.png",
+      "xcodeproj": "safari-dd/Bridge Craftwork DD/Bridge Craftwork DD.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": true,
+        "metadata": true
+      },
+      "source_version": "1.1.0",
+      "store": {
+        "state": "WAITING_FOR_REVIEW",
+        "version": "1.1.0",
+        "live": null,
+        "pending": {
+          "version": "1.1.0",
+          "state": "WAITING_FOR_REVIEW",
+          "label": "Waiting for Review",
+          "category": "review",
+          "platforms": [
+            "macOS"
+          ]
+        }
+      },
+      "testflight": {
+        "external": "READY_FOR_BETA_SUBMISSION",
+        "internal": "READY_FOR_BETA_TESTING"
+      },
+      "status": {
+        "label": "Released \u00b7 update pending",
+        "category": "released",
+        "safari": {
+          "label": "Waiting for Review",
+          "category": "review"
+        }
+      },
+      "browsers": {
+        "chrome": {
+          "state": "update",
+          "live": "1.0.0",
+          "pending": {
+            "version": "1.1.0",
+            "label": "Pending"
+          },
+          "url": "https://chromewebstore.google.com/detail/afaopnjobibdnpfaplcfemliaoejpjgl"
+        },
+        "safari": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.1.0",
+            "label": "Waiting for Review"
+          },
+          "url": null
+        },
+        "firefox": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.1.0",
+            "label": "Pending"
+          },
+          "url": "https://addons.mozilla.org/firefox/addon/bridge-craftwork-dd/"
+        },
+        "edge": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.1.0",
+            "label": "Pending"
+          },
+          "url": null
+        }
       }
     }
   ]
