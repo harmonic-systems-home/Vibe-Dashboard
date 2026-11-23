@@ -1376,6 +1376,10 @@
                 { key: 'review',     label: 'In Review' },
                 { key: 'development',label: 'In Development' },
             ];
+            // Rejected apps get a tile only when there are some, so the tiles
+            // always add up to the cards below
+            if (counts.rejected) tiles.splice(3, 0, { key: 'rejected', label: 'Rejected' });
+            summary.className = `grid grid-cols-2 ${tiles.length > 4 ? 'md:grid-cols-5' : 'md:grid-cols-4'} gap-4`;
             summary.innerHTML = tiles.map(t => {
                 const style = APP_STATUS_STYLES[t.key];
                 return `<div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5">

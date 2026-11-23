@@ -24,8 +24,9 @@ The workflow:
 
 ### Live URL
 
-Once GitHub Pages is enabled, the dashboard will be available at:
-`https://rick-wilson.github.io/Vibe-Dashboard/`
+The dashboard is served from the harmonic-systems-home org (the repo moved
+there from Rick-Wilson):
+`https://harmonic-systems-home.github.io/Vibe-Dashboard/`
 
 ## Running Locally
 
