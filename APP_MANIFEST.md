@@ -28,6 +28,71 @@ All fields are optional; include only what's useful.
 }
 ```
 
+### Repos with more than one app
+
+The Apps tab shows one card per `.xcodeproj` (Pods, Carthage, `.build` and
+`node_modules` are skipped; projects with no application target, such as
+frameworks, are dropped). Folder names don't matter, so projects can be moved
+or renamed freely. Each app gets its own icon (from the `AppIcon.appiconset`
+inside that project's folder) and its own screenshot/metadata check (the
+project's folder plus the repo root).
+
+To give each app its own planning fields, make `.dashboard-app.json` a **list**
+of objects. Each entry is matched to its app by `bundle_id`, which must equal
+the bundle id the `.xcodeproj` builds (settings in the project's `.xcconfig`
+files are understood). An entry whose `bundle_id` matches no app is reported
+and ignored; an app with no entry simply shows no planning fields.
+
+```json
+[
+  {
+    "bundle_id": "org.example.reader",
+    "tagline": "Safari extension for readers",
+    "priority": "high",
+    "next_step": "Submit 1.2 for review"
+  },
+  {
+    "bundle_id": "org.example.reader-pro",
+    "tagline": "The paid edition",
+    "blocked_on": "pricing decision"
+  }
+]
+```
+
+In a single-app repo a one-object file (or a one-entry list) always applies to
+that app, and there its `bundle_id` overrides the project's for the App Store
+Connect lookup. In a multi-app repo `bundle_id` only matches, so the
+`.xcodeproj` id must be the one registered in App Store Connect.
+
+### Apps without an `.xcodeproj`
+
+An app built some other way (say a Swift package bundled into a `.app` by a
+script) can't be found by scanning. Declare it with an entry that has a
+`path`; it then gets a card of its own:
+
+| Field | Type | Meaning |
+|-------|------|---------|
+| `path` | string | Repo-relative folder holding the app (required; marks the entry as declaring an app) |
+| `name` | string | Card title until App Store Connect supplies one (default: the folder name) |
+| `bundle_id` | string | Used for the App Store Connect lookup |
+| `platforms` | list of strings | e.g. `["macOS"]` |
+| `version` | string | Marketing version |
+| `icon` | string | Repo-relative PNG, used if no `AppIcon.appiconset` is under `path` |
+
+```json
+{
+  "name": "Moon Mosaic",
+  "path": "macos/MoonMosaic",
+  "bundle_id": "com.example.MoonMosaic",
+  "platforms": ["macOS"],
+  "version": "0.1.0",
+  "icon": "macos/MoonMosaic/Icon/moon.png"
+}
+```
+
+Unlike Xcode apps, this one depends on its folder name: update `path` if the
+folder moves.
+
 Do **not** track objective status here (review state, whether screenshots exist,
 etc.) — that comes from App Store Connect. Keep this to planning fields only.
 
@@ -48,6 +113,11 @@ Optional fields: `tagline` (one-line description), `priority`
 `next_step` (the single next action to ship), `blocked_on` (what's blocking),
 `bundle_id` (only if the .xcodeproj bundle id differs from the App Store
 Connect registration).
+
+If this repo holds more than one app, the file is a JSON list with one object
+per app, each carrying the app's `bundle_id` so the dashboard can match it.
+An app with no `.xcodeproj` needs `path`, `name`, `bundle_id` and `platforms`
+in its entry. See the Vibe Dashboard's `APP_MANIFEST.md` for details.
 
 Objective status — review state, TestFlight, screenshots/metadata — comes from
 App Store Connect automatically; do not track those here.
