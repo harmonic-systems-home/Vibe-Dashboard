@@ -77,7 +77,7 @@ script) can't be found by scanning. Declare it with an entry that has a
 | `bundle_id` | string | Used for the App Store Connect lookup |
 | `platforms` | list of strings | e.g. `["macOS"]` |
 | `version` | string | Marketing version |
-| `icon` | string | Repo-relative PNG, used if no `AppIcon.appiconset` is under `path` |
+| `icon` | string | Repo-relative `.png` or `.icns`, used if no `AppIcon.appiconset` is under `path` |
 
 ```json
 {
@@ -86,7 +86,7 @@ script) can't be found by scanning. Declare it with an entry that has a
   "bundle_id": "com.example.MoonMosaic",
   "platforms": ["macOS"],
   "version": "0.1.0",
-  "icon": "macos/MoonMosaic/Icon/moon.png"
+  "icon": "macos/MoonMosaic/Icon/AppIcon.icns"
 }
 ```
 

@@ -1351,7 +1351,8 @@
                     ? `<span class="text-[10px] px-1.5 py-0.5 rounded bg-red-500/15 text-red-400 border border-red-500/30 uppercase tracking-wide shrink-0">High</span>`
                     : m.priority === 'low'
                     ? `<span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-600/20 text-slate-500 uppercase tracking-wide shrink-0">Low</span>` : '';
-                const t = fmtTarget(m.target);
+                // The target is a ship date: once released it's met, not overdue
+                const t = isReleased ? null : fmtTarget(m.target);
                 const targetHtml = t ? `<span class="text-xs ${t.overdue ? 'text-red-400' : 'text-slate-400'}">🎯 ${esc(t.label)}${t.delta ? ` · ${t.delta}` : ''}</span>` : '';
                 const nextHtml = m.next_step ? `<div class="mt-2 text-xs text-emerald-300/90"><span class="text-emerald-500">→</span> ${esc(m.next_step)}</div>` : '';
                 const blockedHtml = m.blocked_on ? `<div class="mt-1 text-xs text-amber-400">⚠ ${esc(m.blocked_on)}</div>` : '';

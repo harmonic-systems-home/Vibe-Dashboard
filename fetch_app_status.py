@@ -320,15 +320,49 @@ def extract_app_icon(search_dir, icon_out_dir, icon_name, foreign_dirs=()):
     return copy_icon(max(pngs, key=lambda p: p.stat().st_size), icon_out_dir, icon_name)
 
 
+PNG_MAGIC = b"\x89PNG\r\n\x1a\n"
+
+
+def _png_from_icns(path):
+    """Return the largest PNG embedded in an .icns file, or None.
+
+    Modern .icns elements (ic07-ic14 and friends) hold plain PNG data, so no
+    macOS tooling is needed to read them (the workflow runs on Linux)."""
+    try:
+        data = path.read_bytes()
+    except Exception:
+        return None
+    if data[:4] != b"icns":
+        return None
+    best, pos = None, 8
+    while pos + 8 <= len(data):
+        length = int.from_bytes(data[pos + 4:pos + 8], "big")
+        if length < 8:
+            break
+        chunk = data[pos + 8:pos + length]
+        if chunk.startswith(PNG_MAGIC) and (best is None or len(chunk) > len(best)):
+            best = chunk
+        pos += length
+    return best
+
+
 def copy_icon(src, icon_out_dir, icon_name):
-    """Copy a PNG to icon_out_dir/<icon_name>.png; returns its path or None."""
+    """Copy a PNG (or the largest PNG inside an .icns) to
+    icon_out_dir/<icon_name>.png; returns its path or None."""
     best = Path(src)
-    if best.suffix.lower() != ".png" or not best.is_file() or best.stat().st_size == 0:
+    suffix = best.suffix.lower()
+    if suffix not in (".png", ".icns") or not best.is_file() or best.stat().st_size == 0:
         return None
     icon_out_dir.mkdir(parents=True, exist_ok=True)
     dest = icon_out_dir / f"{_slug(icon_name)}.png"
     try:
-        shutil.copyfile(best, dest)
+        if suffix == ".icns":
+            png = _png_from_icns(best)
+            if not png:
+                return None
+            dest.write_bytes(png)
+        else:
+            shutil.copyfile(best, dest)
     except Exception:
         return None
     return str(dest)  # e.g. "app_icons/MyApp.png" — served from the repo root
