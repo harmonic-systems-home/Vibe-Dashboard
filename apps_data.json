@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23T18:24:38.302976+00:00",
-  "count": 9,
+  "generated_at": "2026-11-23T18:51:42.369857+00:00",
+  "count": 10,
   "apps": [
     {
       "name": "LessonStage",
@@ -19,35 +19,6 @@
       "xcodeproj": "app/LessonStage.xcodeproj",
       "readiness": {
         "icon": true,
-        "asc_registered": false,
-        "testflight": false,
-        "screenshots": false,
-        "metadata": false
-      },
-      "store": null,
-      "testflight": null,
-      "status": {
-        "label": "Development",
-        "category": "development"
-      }
-    },
-    {
-      "name": "ImuLogger",
-      "repo": "celestron-workbench",
-      "full_name": "harmonic-systems-home/celestron-workbench",
-      "url": "https://github.com/harmonic-systems-home/celestron-workbench",
-      "last_commit": "2026-11-16T11:57:50-08:00",
-      "manifest": {},
-      "bundle_id": "com.popperbiz.ImuLogger",
-      "version": "0.1.0",
-      "build": "1",
-      "platforms": [
-        "iOS"
-      ],
-      "icon": null,
-      "xcodeproj": "ios/ImuLogger/ImuLogger.xcodeproj",
-      "readiness": {
-        "icon": false,
         "asc_registered": false,
         "testflight": false,
         "screenshots": false,
@@ -91,11 +62,70 @@
       }
     },
     {
+      "name": "ImuLogger",
+      "repo": "celestron-workbench",
+      "full_name": "harmonic-systems-home/celestron-workbench",
+      "url": "https://github.com/harmonic-systems-home/celestron-workbench",
+      "last_commit": "2026-11-23T10:16:19-08:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.ImuLogger",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS"
+      ],
+      "icon": null,
+      "xcodeproj": "ios/ImuLogger/ImuLogger.xcodeproj",
+      "readiness": {
+        "icon": false,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
+      "name": "Moon Mosaic",
+      "repo": "celestron-workbench",
+      "full_name": "harmonic-systems-home/celestron-workbench",
+      "url": "https://github.com/harmonic-systems-home/celestron-workbench",
+      "last_commit": "2026-11-23T10:16:19-08:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.MoonMosaic",
+      "version": "0.1.0",
+      "build": null,
+      "platforms": [
+        "macOS"
+      ],
+      "icon": "app_icons/celestron-workbench-Moon-Mosaic.png",
+      "xcodeproj": null,
+      "readiness": {
+        "icon": true,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "path": "macos/MoonMosaic",
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
       "name": "IceQueue",
       "repo": "ice-queue",
       "full_name": "harmonic-systems-home/ice-queue",
       "url": "https://github.com/harmonic-systems-home/ice-queue",
-      "last_commit": "2026-11-22T22:21:47-08:00",
+      "last_commit": "2026-11-23T10:36:04-08:00",
       "manifest": {},
       "bundle_id": "com.github.rick-wilson.IceQueue",
       "version": "1.0",
@@ -116,7 +146,18 @@
       },
       "store": {
         "state": "REJECTED",
-        "version": "1.0"
+        "version": "1.0",
+        "live": null,
+        "pending": {
+          "version": "1.0",
+          "state": "REJECTED",
+          "label": "Rejected",
+          "category": "rejected",
+          "platforms": [
+            "iOS",
+            "macOS"
+          ]
+        }
       },
       "testflight": {
         "external": "READY_FOR_BETA_SUBMISSION",
@@ -152,7 +193,18 @@
       },
       "store": {
         "state": "PREPARE_FOR_SUBMISSION",
-        "version": "1.1.0"
+        "version": "1.1.0",
+        "live": null,
+        "pending": {
+          "version": "1.1.0",
+          "state": "PREPARE_FOR_SUBMISSION",
+          "label": "Preparing",
+          "category": "development",
+          "platforms": [
+            "iOS",
+            "macOS"
+          ]
+        }
       },
       "testflight": {
         "external": "READY_FOR_BETA_SUBMISSION",
@@ -187,7 +239,17 @@
       },
       "store": {
         "state": "PREPARE_FOR_SUBMISSION",
-        "version": "1.1.0"
+        "version": "1.1.0",
+        "live": null,
+        "pending": {
+          "version": "1.1.0",
+          "state": "PREPARE_FOR_SUBMISSION",
+          "label": "Preparing",
+          "category": "development",
+          "platforms": [
+            "macOS"
+          ]
+        }
       },
       "testflight": {
         "external": "READY_FOR_BETA_SUBMISSION",
@@ -226,8 +288,16 @@
         "metadata": true
       },
       "store": {
-        "state": "READY_FOR_SALE",
+        "state": "READY_FOR_DISTRIBUTION",
         "version": "1.0",
+        "live": {
+          "version": "1.0",
+          "platforms": [
+            "iOS",
+            "macOS"
+          ]
+        },
+        "pending": null,
         "url": "https://apps.apple.com/app/id6775224401"
       },
       "testflight": {
@@ -264,8 +334,15 @@
         "metadata": true
       },
       "store": {
-        "state": "READY_FOR_SALE",
+        "state": "READY_FOR_DISTRIBUTION",
         "version": "1.0.1",
+        "live": {
+          "version": "1.0.1",
+          "platforms": [
+            "macOS"
+          ]
+        },
+        "pending": null,
         "url": "https://apps.apple.com/app/id6780239795"
       },
       "testflight": {
@@ -300,8 +377,15 @@
         "metadata": true
       },
       "store": {
-        "state": "READY_FOR_SALE",
+        "state": "READY_FOR_DISTRIBUTION",
         "version": "1.0",
+        "live": {
+          "version": "1.0",
+          "platforms": [
+            "macOS"
+          ]
+        },
+        "pending": null,
         "url": "https://apps.apple.com/app/id6760272056"
       },
       "testflight": {
