@@ -255,6 +255,9 @@ def main():
         'firstSessionDate': first_session,
         'modelUsage': model_usage,
         'dailyModelTokens': daily_model_tokens,
+        # A one-off estimate for the stretch whose session logs were pruned
+        # before tokens were counted from them; set by hand, carried forward.
+        'estimatedMissingTokens': prev.get('estimatedMissingTokens'),
         'dailyActivity': daily_activity,
         'hourCounts': hour_counts,
         'longestSession': prev.get('longestSession') or stats.get('longestSession')

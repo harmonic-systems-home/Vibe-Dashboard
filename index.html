@@ -1990,6 +1990,17 @@
             // Format first session date
             const firstDate = stats.firstSessionDate ? new Date(stats.firstSessionDate).toLocaleDateString() : 'N/A';
 
+            // Session logs for part of the history were pruned before tokens
+            // were counted from them; that stretch is a stored estimate,
+            // explained in the tooltip rather than on the tile.
+            const gap = stats.estimatedMissingTokens;
+            const est = (gap && gap.tokens) || 0;
+            const fmtDay = d => new Date(d + 'T12:00:00').toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+            const tokensTip = est
+                ? `${formatTokens(totalTokens)} counted + ~${formatTokens(est)} estimated for ${fmtDay(gap.from)} – ${fmtDay(gap.to)}, ` +
+                  `when session logs were pruned before tokens were counted (based on that period's tool calls).`
+                : '';
+
             // Most-used model over the last 30 days of per-day token counts,
             // falling back to the all-time totals.
             const tokSum = f => (f.inputTokens || 0) + (f.outputTokens || 0) +
@@ -2023,9 +2034,9 @@
                     <p class="text-3xl font-bold mt-1 text-fuchsia-400">${(stats.totalUserPrompts || 0).toLocaleString()}</p>
                     <p class="text-xs text-slate-600 mt-1">+${thisWeekPrompts.toLocaleString()} this week</p>
                 </div>
-                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-pink-500/30 transition-all">
+                <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-pink-500/30 transition-all"${tokensTip ? ` title="${tokensTip}"` : ''}>
                     <p class="text-xs text-slate-500 uppercase tracking-wider">Total Tokens</p>
-                    <p class="text-3xl font-bold mt-1 text-pink-400">${formatTokens(totalTokens)}</p>
+                    <p class="text-3xl font-bold mt-1 text-pink-400">${est ? '~' : ''}${formatTokens(totalTokens + est)}</p>
                     <p class="text-xs text-slate-600 mt-1">${primaryModel}</p>
                 </div>
                 <div class="bg-slate-900/50 border border-slate-800/50 rounded-xl p-5 hover:border-indigo-500/30 transition-all">

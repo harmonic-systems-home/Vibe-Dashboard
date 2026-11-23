@@ -1,9 +1,9 @@
 {
   "version": 1,
   "lastComputedDate": "2026-11-23",
-  "totalUserPrompts": 20985,
+  "totalUserPrompts": 20993,
   "totalSessions": 519,
-  "totalToolCalls": 135473,
+  "totalToolCalls": 135534,
   "totalMessages": 147332,
   "firstSessionDate": "2025-12-29",
   "modelUsage": {
@@ -32,10 +32,10 @@
       "cacheCreationInputTokens": 4304353
     },
     "claude-opus-5-5": {
-      "inputTokens": 70024,
-      "outputTokens": 21343685,
-      "cacheReadInputTokens": 7104590080,
-      "cacheCreationInputTokens": 171297771
+      "inputTokens": 70170,
+      "outputTokens": 21382338,
+      "cacheReadInputTokens": 7114696020,
+      "cacheCreationInputTokens": 171539694
     },
     "claude-haiku-4-5-20251001": {
       "inputTokens": 26,
@@ -837,14 +837,20 @@
       "date": "2026-11-23",
       "tokensByModel": {
         "claude-opus-5-5": {
-          "inputTokens": 2172,
-          "outputTokens": 609038,
-          "cacheReadInputTokens": 175417509,
-          "cacheCreationInputTokens": 1973504
+          "inputTokens": 2318,
+          "outputTokens": 647691,
+          "cacheReadInputTokens": 185523449,
+          "cacheCreationInputTokens": 2215427
         }
       }
     }
   ],
+  "estimatedMissingTokens": {
+    "from": "2026-02-17",
+    "to": "2026-10-25",
+    "tokens": 16400000000,
+    "method": "81071 tool calls x ~237k tokens per call (average of the fully counted periods), minus 2.9B already counted"
+  },
   "dailyActivity": [
     {
       "date": "2025-12-29",
@@ -2642,9 +2648,9 @@
     },
     {
       "date": "2026-11-23",
-      "userPrompts": 122,
+      "userPrompts": 130,
       "sessionCount": 2,
-      "toolCallCount": 851
+      "toolCallCount": 912
     }
   ],
   "hourCounts": {
