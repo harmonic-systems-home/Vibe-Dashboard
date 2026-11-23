@@ -14,6 +14,13 @@ on:
 permissions:
   contents: write
 
+# One run at a time: overlapping runs (a push landing during a scheduled run)
+# used to race to push and the loser failed. A queued run waits, then starts
+# from the newer main.
+concurrency:
+  group: update-dashboard
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -163,5 +170,13 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Update dashboard data [skip ci]"
-            git push
+            # main may have moved during the run (a code push, the nightly
+            # Claude stats job). Replay this commit on top; if the same
+            # generated files changed there too, this run's output is newer.
+            pushed=
+            for i in 1 2 3; do
+              if git pull --rebase -X theirs && git push; then pushed=1; break; fi
+              sleep 5
+            done
+            [ -n "$pushed" ] || { echo "push failed after 3 tries"; exit 1; }
           fi

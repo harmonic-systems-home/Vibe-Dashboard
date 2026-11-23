@@ -638,7 +638,44 @@ class ASCClient:
         head = live_rows[0] if live_rows else (pend_rows[0] if pend_rows else versions[0] if versions else None)
         if not head:
             return None
-        return {"state": head["state"], "version": head["version"], "live": live, "pending": pending}
+        # The same split per platform: iOS and macOS ship separately and are
+        # often at different versions or stages.
+        by_platform = {}
+        for plat in sorted({v["platform"] for v in versions if v["platform"]}):
+            rows = [v for v in versions if v["platform"] == plat]
+            lr = next((v for v in rows if v["state"] in STORE_LIVE_STATES), None)
+            pr = next((v for v in rows if v["state"] not in STORE_LIVE_STATES | STORE_DEAD_STATES
+                       and (not lr or (v["created"] > lr["created"] and v["version"] != lr["version"]))), None)
+            pend = None
+            if pr:
+                label, category = store_label(pr["state"])
+                pend = {"version": pr["version"], "state": pr["state"], "label": label, "category": category}
+            by_platform[plat] = {"live": lr["version"] if lr else None, "pending": pend}
+        return {"state": head["state"], "version": head["version"], "live": live, "pending": pending,
+                "by_platform": by_platform}
+
+    def testflight_by_platform(self, app_id, platforms):
+        """Latest TestFlight build per platform: {platform: {"version",
+        "external", "internal"}}. platforms are display names (iOS, macOS)."""
+        codes = {v: k for k, v in ASC_PLATFORMS.items()}
+        out = {}
+        for plat in platforms:
+            code = codes.get(plat)
+            if not code:
+                continue
+            res = self._get("/builds", {"filter[app]": app_id, "filter[preReleaseVersion.platform]": code,
+                                        "sort": "-uploadedDate", "limit": 1, "include": "preReleaseVersion",
+                                        "fields[preReleaseVersions]": "version,platform"})
+            builds = res.get("data", [])
+            if not builds:
+                continue
+            pre = next((i for i in res.get("included", []) if i.get("type") == "preReleaseVersions"), {})
+            det = self._get(f"/builds/{builds[0]['id']}/buildBetaDetail",
+                            {"fields[buildBetaDetails]": "externalBuildState,internalBuildState"})
+            a = (det.get("data") or {}).get("attributes") or {}
+            out[plat] = {"version": (pre.get("attributes") or {}).get("version"),
+                         "external": a.get("externalBuildState"), "internal": a.get("internalBuildState")}
+        return out
 
     def testflight_state(self, app_id):
         # Two-step to keep each request simple/well-formed: fetch the latest
@@ -678,6 +715,35 @@ def derive_status(store, testflight, found):
     if found:
         return {"label": "Registered", "category": "development"}
     return {"label": "Development", "category": "development"}
+
+
+APPLE_PLATFORM_ORDER = ["iOS", "macOS", "visionOS", "tvOS"]
+
+
+def apple_platform_cells(platforms, store, tf_by_platform, store_url):
+    """One cell per Apple platform: its live App Store version and the next
+    one on its way (a store version in progress, else a newer TestFlight
+    build). Same cell shape as the browser grid."""
+    by_plat = (store or {}).get("by_platform") or {}
+    cells = {}
+    for plat in sorted(platforms, key=lambda p: (APPLE_PLATFORM_ORDER.index(p)
+                                                 if p in APPLE_PLATFORM_ORDER else 9, p)):
+        sp = by_plat.get(plat) or {}
+        live = sp.get("live")
+        pending = None
+        if sp.get("pending"):
+            pending = {"version": sp["pending"]["version"], "label": sp["pending"]["label"]}
+        tf = tf_by_platform.get(plat)
+        if tf and tf.get("version") and (not live or _vkey(tf["version"]) > _vkey(live)):
+            beta = "Beta Review" if tf.get("external") in TESTFLIGHT_REVIEW else "TestFlight"
+            if not pending:
+                pending = {"version": tf["version"], "label": beta}
+            elif pending.get("label") == "Preparing":
+                # A store version being prepared while the build is in beta:
+                # TestFlight is the more informative stage.
+                pending = {"version": tf["version"], "label": beta}
+        cells[plat] = _cell(live, pending, store_url if live else None)
+    return cells
 
 
 def enrich_with_asc(apps, client):
@@ -722,8 +788,17 @@ def enrich_with_asc(apps, client):
         except Exception as e:
             notes.append(f"testflight lookup failed: {e}")
 
+        tf_by_platform = {}
+        plats = sorted(set(app.get("platforms") or []) | set((store or {}).get("by_platform", {})))
+        try:
+            tf_by_platform = client.testflight_by_platform(app_id, plats)
+        except Exception as e:
+            notes.append(f"per-platform testflight lookup failed: {e}")
+
         app["store"] = store
         app["testflight"] = testflight
+        app["apple_platforms"] = apple_platform_cells(plats, store, tf_by_platform,
+                                                      f"https://apps.apple.com/app/id{app_id}")
         r = app.setdefault("readiness", {})
         r["testflight"] = bool(testflight)
         # Submission to the store implies screenshots + metadata exist in ASC
@@ -866,6 +941,15 @@ def browser_cell(browser, store_id, source_version):
 def safari_cell(app):
     """The Safari cell comes from the app's own App Store Connect status."""
     store = app.get("store") or {}
+    plats = app.get("apple_platforms") or {}
+    if plats:
+        # Summarize the per-platform cells: the newest live version, and the
+        # most advanced pending stage (a beta beats a version being prepared).
+        lives = [c["live"] for c in plats.values() if c.get("live")]
+        pends = [c["pending"] for c in plats.values() if c.get("pending")]
+        pends.sort(key=lambda p: p.get("label") == "Preparing")
+        return _cell(max(lives, key=_vkey) if lives else None, pends[0] if pends else None,
+                     store.get("url"))
     live = (store.get("live") or {}).get("version")
     p = store.get("pending")
     pending = {"version": p.get("version"), "label": p.get("label")} if p else None

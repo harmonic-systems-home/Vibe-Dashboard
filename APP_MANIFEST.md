@@ -116,7 +116,8 @@ each store's live version and any update on its way:
 }
 ```
 
-Safari's cell comes from App Store Connect like any other app. The other
+Safari's cell comes from App Store Connect like any other app (and when the
+Safari build ships on several platforms, a Safari iOS / macOS row follows). The other
 three use the stores' public listings, so no store credentials are needed. Each
 cell shows the live version, and the repo's version marked *pending* when the
 store serves an older one (or nothing yet). The public listings can't tell
