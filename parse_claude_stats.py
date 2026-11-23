@@ -62,6 +62,51 @@ def parse_session_file(filepath):
 
     return user_prompts, tool_calls, session_start
 
+TOKEN_FIELDS = (('input_tokens', 'inputTokens'), ('output_tokens', 'outputTokens'),
+                ('cache_read_input_tokens', 'cacheReadInputTokens'),
+                ('cache_creation_input_tokens', 'cacheCreationInputTokens'))
+
+
+def collect_model_tokens(projects_dir, to_date):
+    """Per-day, per-model token usage from every session file, subagents included.
+
+    Claude Code stopped updating stats-cache.json (its modelUsage froze in
+    Feb 2026), so tokens are counted from the assistant entries' usage blocks.
+    One API response can be written as several lines, so each is counted once,
+    keyed by message id and request id.
+    """
+    seen = set()
+    daily = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    for path in projects_dir.rglob("*.jsonl"):
+        try:
+            with open(path) as f:
+                for line in f:
+                    if '"usage"' not in line:
+                        continue
+                    try:
+                        entry = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    if entry.get('type') != 'assistant':
+                        continue
+                    msg = entry.get('message') or {}
+                    model, usage, ts = msg.get('model'), msg.get('usage'), entry.get('timestamp')
+                    if not model or model.startswith('<') or not usage or not ts:
+                        continue
+                    key = (msg.get('id'), entry.get('requestId'))
+                    if key[0] and key in seen:
+                        continue
+                    seen.add(key)
+                    date = to_date(ts)
+                    if not date:
+                        continue
+                    for src, dst in TOKEN_FIELDS:
+                        daily[date][model][dst] += usage.get(src) or 0
+        except OSError as e:
+            print(f"Error reading {path}: {e}")
+    return daily
+
+
 def main():
     # Load existing stats-cache for base data
     if STATS_CACHE.exists():
@@ -171,9 +216,34 @@ def main():
     for h, c in (prev.get('hourCounts') or {}).items():
         hour_counts[str(h)] = max(hour_counts.get(str(h), 0), c or 0)
 
-    prev_models = prev.get('modelUsage') or {}
-    cache_models = stats.get('modelUsage') or {}
-    model_usage = prev_models if len(prev_models) > len(cache_models) else cache_models
+    # Tokens per day and model: what the session files hold now, floored by
+    # the last published output so pruned sessions don't erase history.
+    live_tokens = collect_model_tokens(PROJECTS_DIR, ts_to_local_date) if PROJECTS_DIR.exists() else {}
+    merged_tokens = defaultdict(dict)
+    for entry in prev.get('dailyModelTokens') or []:
+        for model, fields in (entry.get('tokensByModel') or {}).items():
+            if isinstance(fields, dict):
+                merged_tokens[entry['date']][model] = dict(fields)
+    for date, models in live_tokens.items():
+        for model, fields in models.items():
+            cur = merged_tokens[date].setdefault(model, {})
+            for _, k in TOKEN_FIELDS:
+                cur[k] = max(cur.get(k, 0) or 0, fields.get(k, 0))
+    daily_model_tokens = [{'date': d, 'tokensByModel': merged_tokens[d]}
+                          for d in sorted(merged_tokens) if merged_tokens[d]]
+
+    # Totals: the legacy stats-cache covers everything up to its last day
+    # (2026-02-16); the per-day series covers what came after.
+    cache_cutoff = stats.get('lastComputedDate') or ''
+    model_usage = {m: {k: (v.get(k, 0) or 0) for _, k in TOKEN_FIELDS}
+                   for m, v in (stats.get('modelUsage') or {}).items()}
+    for entry in daily_model_tokens:
+        if entry['date'] <= cache_cutoff:
+            continue
+        for model, fields in entry['tokensByModel'].items():
+            tot = model_usage.setdefault(model, {k: 0 for _, k in TOKEN_FIELDS})
+            for _, k in TOKEN_FIELDS:
+                tot[k] += fields.get(k, 0) or 0
 
     output = {
         'version': 1,
@@ -184,6 +254,7 @@ def main():
         'totalMessages': max(stats.get('totalMessages', 0) or 0, prev.get('totalMessages', 0) or 0),
         'firstSessionDate': first_session,
         'modelUsage': model_usage,
+        'dailyModelTokens': daily_model_tokens,
         'dailyActivity': daily_activity,
         'hourCounts': hour_counts,
         'longestSession': prev.get('longestSession') or stats.get('longestSession')
