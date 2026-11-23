@@ -842,7 +842,11 @@ def read_extension_version(repo_dir, rel):
 
 
 def _vkey(v):
-    return tuple(int(x) if x.isdigit() else 0 for x in re.split(r"[.\-]", str(v or "0")))
+    """Comparable version key; trailing zeros don't count, so 1.0 == 1.0.0."""
+    parts = [int(x) if x.isdigit() else 0 for x in re.split(r"[.\-]", str(v or "0"))]
+    while len(parts) > 1 and parts[-1] == 0:
+        parts.pop()
+    return tuple(parts)
 
 
 def _http(url, accept_json=True):
