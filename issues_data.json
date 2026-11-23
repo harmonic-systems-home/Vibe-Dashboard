@@ -1,33 +1,38 @@
 {
-  "generated_at": "2026-11-22T15:07:56.395695+00:00",
+  "generated_at": "2026-11-23T18:25:07.838373+00:00",
   "stats": {
-    "total": 663,
-    "open": 139,
-    "closed": 524,
+    "total": 665,
+    "open": 140,
+    "closed": 525,
     "close_rate": 79,
-    "opened_last_30": 106,
-    "closed_last_30": 87,
+    "opened_last_30": 108,
+    "closed_last_30": 88,
     "opened_last_90": 295,
-    "closed_last_90": 213,
+    "closed_last_90": 214,
     "median_days_to_close": 0.3,
-    "median_open_age_days": 73.8,
-    "oldest_open_days": 251.0,
-    "repo_count": 22,
+    "median_open_age_days": 74.4,
+    "oldest_open_days": 252.2,
+    "repo_count": 23,
     "by_repo": {
+      "bridge-rulebot": {
+        "open": 1,
+        "closed": 0,
+        "total": 1
+      },
+      "rusty-bidding-bot": {
+        "open": 3,
+        "closed": 8,
+        "total": 11
+      },
       "bridge-solver": {
         "open": 4,
         "closed": 12,
         "total": 16
       },
       "convention-card": {
-        "open": 7,
-        "closed": 4,
+        "open": 6,
+        "closed": 5,
         "total": 11
-      },
-      "rusty-bidding-bot": {
-        "open": 2,
-        "closed": 8,
-        "total": 10
       },
       "bridge-common-conventions": {
         "open": 26,
@@ -196,8 +201,16 @@
       "full_name": "bridge-craftwork/convention-card",
       "url": "https://github.com/bridge-craftwork/convention-card",
       "external": false,
-      "open": 7,
-      "closed": 4
+      "open": 6,
+      "closed": 5
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "open": 3,
+      "closed": 8
     },
     {
       "repo": "BBA-Tools",
@@ -211,14 +224,6 @@
       "repo": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
-      "external": false,
-      "open": 2,
-      "closed": 8
-    },
-    {
-      "repo": "rusty-bidding-bot",
-      "full_name": "bridge-craftwork/rusty-bidding-bot",
-      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot",
       "external": false,
       "open": 2,
       "closed": 8
@@ -288,6 +293,14 @@
       "closed": 0
     },
     {
+      "repo": "bridge-rulebot",
+      "full_name": "bridge-craftwork/bridge-rulebot",
+      "url": "https://github.com/bridge-craftwork/bridge-rulebot",
+      "external": false,
+      "open": 1,
+      "closed": 0
+    },
+    {
       "repo": "bridge-types",
       "full_name": "bridge-craftwork/bridge-types",
       "url": "https://github.com/bridge-craftwork/bridge-types",
@@ -305,6 +318,34 @@
     }
   ],
   "issues": [
+    {
+      "repo": "bridge-rulebot",
+      "full_name": "bridge-craftwork/bridge-rulebot",
+      "external": false,
+      "number": 4,
+      "title": "Card play from Rusty's reading of the auction (cheaper than BEN on the droplet)",
+      "state": "open",
+      "created_at": "2026-11-23T07:14:10Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-rulebot/issues/4",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "rusty-bidding-bot",
+      "full_name": "bridge-craftwork/rusty-bidding-bot",
+      "external": false,
+      "number": 101,
+      "title": "A best card for robot-vs-robot: Rusty partnering Rusty (Brill card stays for the dailies)",
+      "state": "open",
+      "created_at": "2026-11-23T07:06:31Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/rusty-bidding-bot/issues/101",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "bridge-solver",
       "full_name": "bridge-craftwork/bridge-solver",
@@ -325,9 +366,9 @@
       "external": false,
       "number": 132,
       "title": "Notes repeat what the card's boxes already say",
-      "state": "open",
+      "state": "closed",
       "created_at": "2026-11-21T18:55:01Z",
-      "closed_at": null,
+      "closed_at": "2026-11-22T19:29:26Z",
       "url": "https://github.com/bridge-craftwork/convention-card/issues/132",
       "labels": [],
       "comments": 0,

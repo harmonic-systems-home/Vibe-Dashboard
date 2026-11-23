@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T15:07:30.202879+00:00",
-  "count": 8,
+  "generated_at": "2026-11-23T18:24:38.302976+00:00",
+  "count": 9,
   "apps": [
     {
       "name": "LessonStage",
@@ -32,11 +32,40 @@
       }
     },
     {
+      "name": "ImuLogger",
+      "repo": "celestron-workbench",
+      "full_name": "harmonic-systems-home/celestron-workbench",
+      "url": "https://github.com/harmonic-systems-home/celestron-workbench",
+      "last_commit": "2026-11-16T11:57:50-08:00",
+      "manifest": {},
+      "bundle_id": "com.popperbiz.ImuLogger",
+      "version": "0.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS"
+      ],
+      "icon": null,
+      "xcodeproj": "ios/ImuLogger/ImuLogger.xcodeproj",
+      "readiness": {
+        "icon": false,
+        "asc_registered": false,
+        "testflight": false,
+        "screenshots": false,
+        "metadata": false
+      },
+      "store": null,
+      "testflight": null,
+      "status": {
+        "label": "Development",
+        "category": "development"
+      }
+    },
+    {
       "name": "BridgeViewer",
       "repo": "bridge-viewer",
       "full_name": "bridge-craftwork/bridge-viewer",
       "url": "https://github.com/bridge-craftwork/bridge-viewer",
-      "last_commit": "2026-10-30T14:44:15-07:00",
+      "last_commit": "2026-11-23T10:01:36-08:00",
       "manifest": {},
       "bundle_id": "com.popperbiz.BridgeViewer",
       "version": "0.1.0",
@@ -62,74 +91,11 @@
       }
     },
     {
-      "name": "Bridge Classroom Fetch",
-      "repo": "bridge-classroom-fetch",
-      "full_name": "bridge-craftwork/bridge-classroom-fetch",
-      "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-11-08T15:05:53-08:00",
-      "manifest": {},
-      "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
-      "version": "1.1.0",
-      "build": "1",
-      "platforms": [
-        "iOS",
-        "macOS"
-      ],
-      "icon": "app_icons/bridge-classroom-fetch.png",
-      "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": true,
-        "testflight": false,
-        "screenshots": true,
-        "metadata": false
-      },
-      "store": {
-        "state": "PREPARE_FOR_SUBMISSION",
-        "version": "1.0"
-      },
-      "testflight": null,
-      "status": {
-        "label": "Preparing",
-        "category": "development"
-      }
-    },
-    {
-      "name": "ImuLogger",
-      "repo": "celestron-workbench",
-      "full_name": "harmonic-systems-home/celestron-workbench",
-      "url": "https://github.com/harmonic-systems-home/celestron-workbench",
-      "last_commit": "2026-11-16T11:57:50-08:00",
-      "manifest": {},
-      "bundle_id": null,
-      "version": "0.1.0",
-      "build": "1",
-      "platforms": [
-        "iOS"
-      ],
-      "icon": null,
-      "xcodeproj": "ios/ImuLogger/ImuLogger.xcodeproj",
-      "readiness": {
-        "icon": false,
-        "asc_registered": false,
-        "testflight": false,
-        "screenshots": false,
-        "metadata": false
-      },
-      "store": null,
-      "testflight": null,
-      "status": {
-        "label": "Development",
-        "category": "development",
-        "note": "no bundle id parsed"
-      }
-    },
-    {
       "name": "IceQueue",
       "repo": "ice-queue",
       "full_name": "harmonic-systems-home/ice-queue",
       "url": "https://github.com/harmonic-systems-home/ice-queue",
-      "last_commit": "2026-10-05T11:30:23-07:00",
+      "last_commit": "2026-11-22T22:21:47-08:00",
       "manifest": {},
       "bundle_id": "com.github.rick-wilson.IceQueue",
       "version": "1.0",
@@ -139,18 +105,89 @@
         "macOS",
         "visionOS"
       ],
-      "icon": null,
+      "icon": "app_icons/ice-queue.png",
       "xcodeproj": "IceQueue/IceQueue.xcodeproj",
       "readiness": {
-        "icon": false,
+        "icon": true,
         "asc_registered": true,
         "testflight": true,
         "screenshots": false,
         "metadata": false
       },
       "store": {
-        "state": "PREPARE_FOR_SUBMISSION",
+        "state": "REJECTED",
         "version": "1.0"
+      },
+      "testflight": {
+        "external": "READY_FOR_BETA_SUBMISSION",
+        "internal": "READY_FOR_BETA_TESTING"
+      },
+      "status": {
+        "label": "Rejected",
+        "category": "rejected"
+      }
+    },
+    {
+      "name": "Bridge Classroom Fetch",
+      "repo": "bridge-classroom-fetch",
+      "full_name": "bridge-craftwork/bridge-classroom-fetch",
+      "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
+      "last_commit": "2026-11-23T07:20:50-08:00",
+      "manifest": {},
+      "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
+      "version": "1.1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS"
+      ],
+      "icon": "app_icons/bridge-classroom-fetch-Bridge-Classroom-Fetch.png",
+      "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": true,
+        "metadata": false
+      },
+      "store": {
+        "state": "PREPARE_FOR_SUBMISSION",
+        "version": "1.1.0"
+      },
+      "testflight": {
+        "external": "READY_FOR_BETA_SUBMISSION",
+        "internal": "READY_FOR_BETA_TESTING"
+      },
+      "status": {
+        "label": "TestFlight",
+        "category": "testflight"
+      }
+    },
+    {
+      "name": "Bridge Craftwork DD",
+      "repo": "bridge-classroom-fetch",
+      "full_name": "bridge-craftwork/bridge-classroom-fetch",
+      "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
+      "last_commit": "2026-11-23T07:20:50-08:00",
+      "manifest": {},
+      "bundle_id": "org.bridge-classroom.bridge-craftwork-dd",
+      "version": "1.1.0",
+      "build": "1",
+      "platforms": [
+        "macOS"
+      ],
+      "icon": "app_icons/bridge-classroom-fetch-Bridge-Craftwork-DD.png",
+      "xcodeproj": "safari-dd/Bridge Craftwork DD/Bridge Craftwork DD.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": true,
+        "metadata": false
+      },
+      "store": {
+        "state": "PREPARE_FOR_SUBMISSION",
+        "version": "1.1.0"
       },
       "testflight": {
         "external": "READY_FOR_BETA_SUBMISSION",
@@ -166,12 +203,11 @@
       "repo": "Kennit-App",
       "full_name": "harmonic-systems-home/Kennit-App",
       "url": "https://github.com/harmonic-systems-home/Kennit-App",
-      "last_commit": "2026-08-20T12:52:06-07:00",
+      "last_commit": "2026-11-23T10:16:17-08:00",
       "manifest": {
         "tagline": "Learn names, remember faces",
         "priority": "high",
-        "target": "2026-08",
-        "next_step": "Waiting on iOS review (submitted 2026-08-07; macOS took 8 days). Once it ships, 1.1: repair existing duplicate subjects (needs createdAt on Person/Pet, so it rides a schema promotion) and give custom relationship links an inverse label"
+        "next_step": "1.1: repair existing duplicate subjects (needs createdAt on Person/Pet, so it rides a schema promotion) and give custom relationship links an inverse label"
       },
       "bundle_id": "com.popperbiz.kennit",
       "version": "1.0",
@@ -246,7 +282,7 @@
       "repo": "pbs-bbo-extension",
       "full_name": "bridge-craftwork/pbs-bbo-extension",
       "url": "https://github.com/bridge-craftwork/pbs-bbo-extension",
-      "last_commit": "2026-11-01T23:10:26-08:00",
+      "last_commit": "2026-11-23T08:41:16-08:00",
       "manifest": {},
       "bundle_id": "com.rickwilson.PBS-with-BBA-Compare",
       "version": "1.0.0",
