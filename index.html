@@ -1029,7 +1029,7 @@
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: ${color}15">
-                                <svg class="w-6 h-6" style="color: ${color}" fill="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-7 h-7" style="color: ${color}" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                 </svg>
                             </div>
@@ -1271,7 +1271,11 @@
         ];
         function readinessHtml(a) {
             const r = a.readiness;
-            if (!r || (a.status && a.status.category === 'released')) return '';
+            // An extension's checklist is for its Safari build, which matters
+            // until Safari itself is live, whatever the other stores say.
+            const safari = a.browsers && a.browsers.safari;
+            if (!r) return '';
+            if (safari ? (safari.live != null) : (a.status && a.status.category === 'released')) return '';
             const done = READINESS_ITEMS.filter(([k]) => r[k]).length;
             const rows = READINESS_ITEMS.map(([k, label]) => `
                 <div class="flex items-center gap-2 text-xs ${r[k] ? 'text-slate-400' : 'text-slate-500'}">
@@ -1279,10 +1283,72 @@
                 </div>`).join('');
             return `<div class="mt-3 pt-3 border-t border-slate-800/50">
                 <div class="flex items-center justify-between mb-1.5">
-                    <span class="text-[11px] uppercase tracking-wide text-slate-600">To ship</span>
+                    <span class="text-[11px] uppercase tracking-wide text-slate-600">${safari ? 'Safari: to ship' : 'To ship'}</span>
                     <span class="text-[11px] text-slate-500">${done}/${READINESS_ITEMS.length}</span>
                 </div>
                 <div class="space-y-1">${rows}</div>
+            </div>`;
+        }
+
+        // Small browser marks for the extension store grid (simplified, not logos)
+        const BROWSER_ICONS = {
+            chrome: `<svg viewBox="0 0 24 24" class="w-7 h-7">
+                <path d="M12 12 L2.91 6.75 A10.5 10.5 0 0 1 21.09 6.75 Z" fill="#db4437"/>
+                <path d="M12 12 L21.09 6.75 A10.5 10.5 0 0 1 12 22.5 Z" fill="#f4b400"/>
+                <path d="M12 12 L12 22.5 A10.5 10.5 0 0 1 2.91 6.75 Z" fill="#0f9d58"/>
+                <circle cx="12" cy="12" r="5" fill="#fff"/><circle cx="12" cy="12" r="3.9" fill="#4285f4"/></svg>`,
+            safari: `<svg viewBox="0 0 24 24" class="w-7 h-7"><defs><linearGradient id="bg-saf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ac8fa"/><stop offset="1" stop-color="#0a64d8"/></linearGradient></defs>
+                <circle cx="12" cy="12" r="11" fill="url(#bg-saf)"/><circle cx="12" cy="12" r="8.6" fill="none" stroke="#fff" stroke-width=".8" stroke-dasharray="1 1.25" opacity=".8"/>
+                <path d="M12 12 L17.6 6.4 L13.4 13.4 Z" fill="#ff3b30"/><path d="M12 12 L6.4 17.6 L10.6 10.6 Z" fill="#fff"/></svg>`,
+            firefox: `<svg viewBox="0 0 24 24" class="w-7 h-7"><defs><linearGradient id="bg-ff" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffbd4f"/><stop offset=".5" stop-color="#ff5634"/><stop offset="1" stop-color="#c3008a"/></linearGradient></defs>
+                <circle cx="12" cy="12" r="11" fill="url(#bg-ff)"/><circle cx="12.6" cy="12.6" r="6.6" fill="#5b2fd1"/>
+                <path d="M4 9.5 C5 15 9 19.5 15 19 C11 21.5 4.5 19 3.4 12.5 Z" fill="#ff8a16"/></svg>`,
+            edge: `<svg viewBox="0 0 24 24" class="w-7 h-7"><defs><linearGradient id="bg-edge" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#0c59a4"/><stop offset=".6" stop-color="#1fa0e8"/><stop offset="1" stop-color="#35c1f1"/></linearGradient><linearGradient id="bg-edge2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#50e6a0"/><stop offset="1" stop-color="#2fb46a"/></linearGradient></defs>
+                <circle cx="12" cy="12" r="11" fill="url(#bg-edge)"/>
+                <path d="M3.5 10.5 C5 4 14.5 2.5 19 8 C20.5 10 20 13 17 13 L9 13 C9 16.5 13 18 17.5 16.5 C14 21.5 5.5 20 3.5 13.5 Z" fill="url(#bg-edge2)"/>
+                <path d="M9 13 C9 10.5 11 9.2 13 9.2 C15 9.2 16.6 10.6 17 13 Z" fill="#0c59a4"/></svg>`,
+        };
+        const BROWSER_NAMES = { chrome: 'Chrome', safari: 'Safari', firefox: 'Firefox', edge: 'Edge' };
+
+        // Chrome / Safari / Firefox / Edge status grid for browser extensions
+        function browserGridHtml(a) {
+            const b = a.browsers;
+            if (!b) return '';
+            const cells = ['chrome', 'safari', 'firefox', 'edge'].map(k => {
+                const c = b[k] || { state: 'absent' };
+                const p = c.pending;
+                const pendTxt = p ? `${p.version ? esc(p.version) + ' ' : ''}${esc((p.label || 'Pending').toLowerCase())}` : '';
+                let lines;
+                if (c.state === 'unknown') {
+                    lines = `<div class="text-slate-500" title="${esc(c.note || '')}">unknown</div>`;
+                } else if (c.state === 'absent') {
+                    lines = `<div class="text-slate-600">not listed</div>`;
+                } else {
+                    lines = (c.live ? `<div class="text-emerald-400">${esc(c.live)} live</div>` : '')
+                          + (p ? `<div class="text-amber-400">${pendTxt}</div>` : '');
+                }
+                const dim = c.state === 'absent' ? 'opacity-35 grayscale' : '';
+                const body = `<div class="flex flex-col items-center gap-1 text-center">
+                        <div class="${dim}" title="${BROWSER_NAMES[k]}">${BROWSER_ICONS[k]}</div>
+                        <div class="text-[11px] leading-tight">${lines}</div>
+                    </div>`;
+                return c.url
+                    ? `<a href="${esc(c.url)}" target="_blank" class="rounded-lg p-1.5 hover:bg-slate-800/50" title="${BROWSER_NAMES[k]} listing">${body}</a>`
+                    : `<div class="rounded-lg p-1.5">${body}</div>`;
+            }).join('');
+            return `<div class="mt-3 pt-3 border-t border-slate-800/50 grid grid-cols-4 gap-1">${cells}</div>`;
+        }
+
+        // App Store: the live version and the next one on its way, side by side
+        function storeVersionsHtml(a) {
+            if (a.browsers) return '';  // shown in the browser grid's Safari cell
+            const st = a.store || {};
+            const live = st.live, pend = st.pending;
+            if (!live || !pend) return '';
+            return `<div class="mt-2 text-xs flex items-center gap-2 flex-wrap">
+                <span class="text-emerald-400">${esc(live.version)} live</span>
+                <span class="text-slate-700">·</span>
+                <span class="text-amber-400">${esc(pend.version)} ${esc((pend.label || '').toLowerCase())}</span>
             </div>`;
         }
 
@@ -1372,6 +1438,8 @@
                         </div>
                     </div>
                     ${metaRow}
+                    ${storeVersionsHtml(a)}
+                    ${browserGridHtml(a)}
                     ${nextHtml}
                     ${blockedHtml}
                     ${readinessHtml(a)}

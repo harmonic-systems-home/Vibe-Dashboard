@@ -210,11 +210,17 @@ def _manifest_fields(data):
         "platforms": data.get("platforms") if isinstance(data.get("platforms"), list) else None,
         "version": data.get("version"),
         "icon": data.get("icon"),
+        # Browser-extension listings: {"chrome": id, "edge": id, "firefox": slug}
+        "stores": data.get("stores") if isinstance(data.get("stores"), dict) else None,
+        # Repo-relative WebExtension manifest whose "version" is the release
+        # being shipped; a store serving an older one has an update pending.
+        "extension_manifest": data.get("extension_manifest"),
     }
 
 # Manifest keys that describe the app itself rather than planning, so they
 # are not copied into the row's "manifest" block.
-MANIFEST_APP_KEYS = ("bundle_id", "path", "name", "platforms", "version", "icon")
+MANIFEST_APP_KEYS = ("bundle_id", "path", "name", "platforms", "version", "icon",
+                     "stores", "extension_manifest")
 
 
 def read_app_manifests(repo_dir):
@@ -493,6 +499,9 @@ def discover_xcode_apps(base_path, repo_meta=None, allowed_repos=None, icon_dir=
             }
             if u["proj"] is None:
                 row["path"] = str(proj_dir.relative_to(repo_dir))
+            if manifest.get("stores"):
+                row["stores_decl"] = manifest["stores"]
+                row["source_version"] = read_extension_version(repo_dir, manifest.get("extension_manifest"))
             apps.append(row)
     return apps
 
@@ -504,6 +513,9 @@ def discover_xcode_apps(base_path, repo_meta=None, allowed_repos=None, icon_dir=
 # Map raw App Store version states to friendly labels + a coarse category.
 STORE_STATE_LABELS = {
     "READY_FOR_SALE": ("Released", "released"),
+    "READY_FOR_DISTRIBUTION": ("Released", "released"),
+    "ACCEPTED": ("Pending Release", "review"),
+    "PROCESSING_FOR_DISTRIBUTION": ("Processing", "review"),
     "IN_REVIEW": ("In Review", "review"),
     "WAITING_FOR_REVIEW": ("Waiting for Review", "review"),
     "PENDING_DEVELOPER_RELEASE": ("Pending Release", "review"),
@@ -530,8 +542,20 @@ STORE_SUBMITTED_STATES = {
     "WAITING_FOR_REVIEW", "IN_REVIEW", "PENDING_DEVELOPER_RELEASE",
     "PENDING_APPLE_RELEASE", "PROCESSING_FOR_APP_STORE", "READY_FOR_SALE",
     "REPLACED_WITH_NEW_VERSION", "WAITING_FOR_EXPORT_COMPLIANCE",
-    "PENDING_CONTRACT",
+    "PENDING_CONTRACT", "READY_FOR_DISTRIBUTION", "ACCEPTED",
+    "PROCESSING_FOR_DISTRIBUTION",
 }
+
+# A version in one of these states is the one customers can download.
+STORE_LIVE_STATES = {"READY_FOR_SALE", "READY_FOR_DISTRIBUTION"}
+# Old versions that are neither live nor on their way.
+STORE_DEAD_STATES = {"REPLACED_WITH_NEW_VERSION", "REMOVED_FROM_SALE",
+                     "DEVELOPER_REMOVED_FROM_SALE"}
+ASC_PLATFORMS = {"IOS": "iOS", "MAC_OS": "macOS", "TV_OS": "tvOS", "VISION_OS": "visionOS"}
+
+
+def store_label(state):
+    return STORE_STATE_LABELS.get(state, (state.replace("_", " ").title(), "other"))
 
 
 class ASCClient:
@@ -572,14 +596,49 @@ class ASCClient:
         return data[0] if data else None
 
     def store_state(self, app_id):
-        params = {"limit": 1,
-                  "fields[appStoreVersions]": "appStoreState,appVersionState,versionString"}
+        """Live and pending App Store versions.
+
+        An app can be live at one version while the next is in review (and
+        each platform has its own versions), so this returns both:
+          state/version: the headline (the live version if any, else the
+              newest one in progress)
+          live:    {"version", "platforms"} or None
+          pending: {"version", "state", "label", "category", "platforms"} for
+              the newest version newer than the live one, or None
+        """
+        params = {"limit": 20,
+                  "fields[appStoreVersions]": "appStoreState,appVersionState,versionString,platform,createdDate"}
         data = self._get(f"/apps/{app_id}/appStoreVersions", params).get("data", [])
         if not data:
             return None
-        a = data[0]["attributes"]
-        return {"state": a.get("appStoreState") or a.get("appVersionState"),
-                "version": a.get("versionString")}
+        versions = []
+        for d in data:
+            a = d.get("attributes") or {}
+            state = a.get("appVersionState") or a.get("appStoreState")
+            if state:
+                versions.append({"version": a.get("versionString"), "state": state,
+                                 "platform": ASC_PLATFORMS.get(a.get("platform"), a.get("platform")),
+                                 "created": a.get("createdDate") or ""})
+        versions.sort(key=lambda v: v["created"], reverse=True)
+        live_rows = [v for v in versions if v["state"] in STORE_LIVE_STATES]
+        live = None
+        if live_rows:
+            lv = live_rows[0]["version"]
+            live = {"version": lv,
+                    "platforms": sorted({v["platform"] for v in live_rows if v["version"] == lv and v["platform"]})}
+        newest_live = live_rows[0]["created"] if live_rows else ""
+        pend_rows = [v for v in versions if v["state"] not in STORE_LIVE_STATES | STORE_DEAD_STATES
+                     and v["created"] > newest_live and (not live or v["version"] != live["version"])]
+        pending = None
+        if pend_rows:
+            pv = pend_rows[0]
+            label, category = store_label(pv["state"])
+            pending = {"version": pv["version"], "state": pv["state"], "label": label, "category": category,
+                       "platforms": sorted({v["platform"] for v in pend_rows if v["version"] == pv["version"] and v["platform"]})}
+        head = live_rows[0] if live_rows else (pend_rows[0] if pend_rows else versions[0] if versions else None)
+        if not head:
+            return None
+        return {"state": head["state"], "version": head["version"], "live": live, "pending": pending}
 
     def testflight_state(self, app_id):
         # Two-step to keep each request simple/well-formed: fetch the latest
@@ -600,7 +659,7 @@ class ASCClient:
 def derive_status(store, testflight, found):
     """Collapse store + testflight signals into a single headline status."""
     if store and store.get("state"):
-        label, category = STORE_STATE_LABELS.get(store["state"], (store["state"].replace("_", " ").title(), "other"))
+        label, category = store_label(store["state"])
         # If not yet submitted for sale but a build is in beta, TestFlight wins.
         if category == "development" and testflight:
             ext = testflight.get("external"); intr = testflight.get("internal")
@@ -674,10 +733,176 @@ def enrich_with_asc(apps, client):
             r["screenshots"] = True
             r["metadata"] = True
         app["status"] = derive_status(store, testflight, True)
-        if store and store.get("state") in ("READY_FOR_SALE", "REPLACED_WITH_NEW_VERSION"):
+        if store and (store.get("live") or store.get("state") in STORE_LIVE_STATES):
             app["store"]["url"] = f"https://apps.apple.com/app/id{app_id}"
         if notes:
             app["status"]["note"] = "; ".join(notes)
+    return apps
+
+
+# ---------------------------------------------------------------------------
+# Browser extension stores (Chrome Web Store, Edge Add-ons, addons.mozilla.org)
+# ---------------------------------------------------------------------------
+# Public endpoints only, so no store credentials are needed. They give the
+# live version; an update counts as pending when the repo's WebExtension
+# manifest is at a newer version than the store serves (submitted or about
+# to be: the public listings can't tell those apart).
+
+import urllib.error
+import urllib.request
+
+BROWSERS = ("chrome", "safari", "firefox", "edge")
+CRX_ID = re.compile(r"^[a-p]{32}$")
+
+
+def read_extension_version(repo_dir, rel):
+    if not rel:
+        return None
+    try:
+        with open(repo_dir / rel) as f:
+            v = json.load(f).get("version")
+        return str(v) if v else None
+    except (OSError, json.JSONDecodeError, AttributeError):
+        return None
+
+
+def _vkey(v):
+    return tuple(int(x) if x.isdigit() else 0 for x in re.split(r"[.\-]", str(v or "0")))
+
+
+def _http(url, accept_json=True):
+    """GET url; returns (status, body text). Network errors give (None, msg)."""
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (vibe-dashboard store status)",
+        "Accept": "application/json" if accept_json else "text/html"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return r.status, r.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        return e.code, ""
+    except Exception as e:
+        return None, str(e)
+
+
+def chrome_listing(item_id):
+    url = f"https://chromewebstore.google.com/detail/{item_id}"
+    status, body = _http(url, accept_json=False)
+    if status == 404:
+        return {"url": url, "found": False}
+    m = re.search(r'Version</div><div[^>]*>\s*([0-9][^<\s]*)', body or "")
+    if status != 200 or not m:
+        return {"url": url, "error": f"listing unreadable (HTTP {status})"}
+    return {"url": url, "found": True, "version": m.group(1)}
+
+
+def edge_listing(edge_id):
+    # A 32-letter id is the extension (crx) id; anything else is the store
+    # product id Partner Center shows (e.g. 0RDCKDRFVZHS).
+    if CRX_ID.match(edge_id):
+        api = f"https://microsoftedge.microsoft.com/addons/getproductdetailsbycrxid/{edge_id}"
+    else:
+        api = f"https://microsoftedge.microsoft.com/addons/getproductdetails/{edge_id}"
+    status, body = _http(api)
+    if status == 404:
+        url = f"https://microsoftedge.microsoft.com/addons/detail/{edge_id}" if CRX_ID.match(edge_id) else None
+        return {"url": url, "found": False}
+    try:
+        d = json.loads(body)
+    except (json.JSONDecodeError, TypeError):
+        return {"url": None, "error": f"lookup failed (HTTP {status})"}
+    crx = d.get("crxId") or (edge_id if CRX_ID.match(edge_id) else None)
+    return {"url": f"https://microsoftedge.microsoft.com/addons/detail/{crx}" if crx else None,
+            "found": bool(d.get("version")), "version": d.get("version")}
+
+
+def firefox_listing(slug):
+    url = f"https://addons.mozilla.org/firefox/addon/{slug}/"
+    status, body = _http(f"https://addons.mozilla.org/api/v5/addons/addon/{slug}/")
+    if status in (401, 403):
+        # The add-on exists but isn't public: a first listing awaiting review.
+        return {"url": url, "found": False, "exists": True}
+    if status == 404:
+        return {"url": url, "found": False}
+    try:
+        d = json.loads(body)
+    except (json.JSONDecodeError, TypeError):
+        return {"url": url, "error": f"lookup failed (HTTP {status})"}
+    cv = (d.get("current_version") or {}).get("version")
+    return {"url": d.get("url") or url, "found": d.get("status") == "public" and bool(cv), "version": cv}
+
+
+LOOKUPS = {"chrome": chrome_listing, "edge": edge_listing, "firefox": firefox_listing}
+
+
+def _cell(live, pending, url=None, **extra):
+    """One grid cell. state: live (current), update (live + newer pending),
+    pending (not live yet), absent (not listed), unknown (lookup failed)."""
+    if live and pending:
+        state = "update"
+    elif live:
+        state = "live"
+    elif pending:
+        state = "pending"
+    else:
+        state = "absent"
+    return {"state": state, "live": live, "pending": pending, "url": url, **extra}
+
+
+def browser_cell(browser, store_id, source_version):
+    try:
+        info = LOOKUPS[browser](store_id)
+    except Exception as e:  # never let one store break the run
+        info = {"error": str(e)}
+    if info.get("error"):
+        return {"state": "unknown", "live": None, "pending": None, "url": info.get("url"), "note": info["error"]}
+    live = info.get("version") if info.get("found") else None
+    newer = source_version and (not live or _vkey(source_version) > _vkey(live))
+    pending = {"version": source_version, "label": "Pending"} if newer else None
+    if not live and not pending and info.get("exists"):
+        pending = {"version": None, "label": "Pending"}
+    return _cell(live, pending, info.get("url"))
+
+
+def safari_cell(app):
+    """The Safari cell comes from the app's own App Store Connect status."""
+    store = app.get("store") or {}
+    live = (store.get("live") or {}).get("version")
+    p = store.get("pending")
+    pending = {"version": p.get("version"), "label": p.get("label")} if p else None
+    if not pending and app.get("testflight") and not live:
+        pending = {"version": app.get("version"), "label": "TestFlight"}
+    return _cell(live, pending, store.get("url"))
+
+
+def enrich_with_browser_stores(apps):
+    """Give each extension (an app whose manifest lists browser stores) a
+    browsers row: chrome, safari, firefox, edge."""
+    for app in apps:
+        decl = app.pop("stores_decl", None)
+        if not decl:
+            continue
+        src = app.get("source_version")
+        row = {}
+        for b in BROWSERS:
+            if b == "safari":
+                row[b] = safari_cell(app)
+            elif decl.get(b):
+                row[b] = browser_cell(b, str(decl[b]), src)
+            else:
+                row[b] = _cell(None, None)
+        app["browsers"] = row
+        # The headline for an extension is its best store, not Safari alone
+        # (App Store Connect only knows the Safari build).
+        cells = row.values()
+        if any(c["live"] for c in cells):
+            pend = any(c["pending"] for c in cells)
+            app["status"] = {"label": "Released" + (" · update pending" if pend else ""),
+                             "category": "released", "safari": app.get("status")}
+        elif any(c["pending"] for c in cells):
+            app["status"] = {"label": "Pending", "category": "review", "safari": app.get("status")}
+        print(f"   • {app['name']} stores: " + ", ".join(
+            f"{b} {c['state']}" + (f" {c['live']}" if c.get("live") else "")
+            + (f"→{c['pending'].get('version')}" if c.get("pending") else "") for b, c in row.items()))
     return apps
 
 
@@ -743,6 +968,10 @@ def main():
               "status defaults to Development")
         for a in apps:
             a["status"] = derive_status(None, None, False)
+
+    if any(a.get("stores_decl") for a in apps):
+        print("🧩 Checking browser extension stores...")
+    enrich_with_browser_stores(apps)
 
     # Sort to surface the work: in-development first (most stale first, so the
     # most-languishing app is at the very top), then review/testflight, with

@@ -93,6 +93,36 @@ script) can't be found by scanning. Declare it with an entry that has a
 Unlike Xcode apps, this one depends on its folder name: update `path` if the
 folder moves.
 
+### Browser extensions
+
+For a Safari web extension that also ships to other browsers, list its store
+listings and the card gets a Chrome / Safari / Firefox / Edge grid showing
+each store's live version and any update on its way:
+
+| Field | Type | Meaning |
+|-------|------|---------|
+| `stores` | object | `chrome`: Chrome Web Store item id; `edge`: the 32-letter extension id or the Partner Center store id (e.g. `0RDCKDRFVZHS`); `firefox`: the addons.mozilla.org slug or add-on id. Leave a browser out if it isn't submitted there. |
+| `extension_manifest` | string | Repo-relative WebExtension `manifest.json` whose `version` is the release being shipped |
+
+```json
+{
+  "bundle_id": "org.example.reader",
+  "extension_manifest": "manifest.json",
+  "stores": {
+    "chrome": "abcdefghijklmnopabcdefghijklmnop",
+    "edge": "0RDCKDRFVZHS",
+    "firefox": "example-reader"
+  }
+}
+```
+
+Safari's cell comes from App Store Connect like any other app. The other
+three use the stores' public listings, so no store credentials are needed. Each
+cell shows the live version, and the repo's version marked *pending* when the
+store serves an older one (or nothing yet). The public listings can't tell
+"in review" from "not yet submitted", so only list a store once you've
+submitted to it. The card's status pill is *Released* once any store is live.
+
 Do **not** track objective status here (review state, whether screenshots exist,
 etc.) — that comes from App Store Connect. Keep this to planning fields only.
 
