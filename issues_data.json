@@ -1,19 +1,24 @@
 {
-  "generated_at": "2026-11-23T19:43:13.723825+00:00",
+  "generated_at": "2026-11-23T19:50:27.033828+00:00",
   "stats": {
-    "total": 665,
-    "open": 140,
+    "total": 666,
+    "open": 141,
     "closed": 525,
     "close_rate": 79,
-    "opened_last_30": 108,
+    "opened_last_30": 109,
     "closed_last_30": 88,
-    "opened_last_90": 295,
+    "opened_last_90": 296,
     "closed_last_90": 214,
     "median_days_to_close": 0.3,
-    "median_open_age_days": 74.5,
+    "median_open_age_days": 73.9,
     "oldest_open_days": 252.2,
     "repo_count": 23,
     "by_repo": {
+      "bridge-common-conventions": {
+        "open": 27,
+        "closed": 48,
+        "total": 75
+      },
       "bridge-rulebot": {
         "open": 1,
         "closed": 0,
@@ -33,11 +38,6 @@
         "open": 6,
         "closed": 5,
         "total": 11
-      },
-      "bridge-common-conventions": {
-        "open": 26,
-        "closed": 48,
-        "total": 74
       },
       "Practice-Bidding-Scenarios": {
         "open": 15,
@@ -153,7 +153,7 @@
       "full_name": "bridge-craftwork/bridge-common-conventions",
       "url": "https://github.com/bridge-craftwork/bridge-common-conventions",
       "external": false,
-      "open": 26,
+      "open": 27,
       "closed": 48
     },
     {
@@ -318,6 +318,20 @@
     }
   ],
   "issues": [
+    {
+      "repo": "bridge-common-conventions",
+      "full_name": "bridge-craftwork/bridge-common-conventions",
+      "external": false,
+      "number": 137,
+      "title": "Card settings for three ACBL Classic boxes: minor J/S forcing raise, forcing jump raise after overcall, Forcing Stayman",
+      "state": "open",
+      "created_at": "2026-11-23T19:44:53Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-common-conventions/issues/137",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "bridge-rulebot",
       "full_name": "bridge-craftwork/bridge-rulebot",
