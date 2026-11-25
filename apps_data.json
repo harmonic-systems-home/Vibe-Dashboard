@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T18:42:19.484978+00:00",
+  "generated_at": "2026-11-25T17:53:20.586806+00:00",
   "count": 10,
   "apps": [
     {
@@ -118,100 +118,6 @@
       "status": {
         "label": "Development",
         "category": "development"
-      }
-    },
-    {
-      "name": "IceQueue",
-      "repo": "ice-queue",
-      "full_name": "harmonic-systems-home/ice-queue",
-      "url": "https://github.com/harmonic-systems-home/ice-queue",
-      "last_commit": "2026-11-23T10:36:04-08:00",
-      "manifest": {},
-      "bundle_id": "com.github.rick-wilson.IceQueue",
-      "version": "1.0",
-      "build": "1",
-      "platforms": [
-        "iOS",
-        "macOS",
-        "visionOS"
-      ],
-      "icon": "app_icons/ice-queue.png",
-      "xcodeproj": "IceQueue/IceQueue.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": true,
-        "testflight": true,
-        "screenshots": true,
-        "metadata": true
-      },
-      "store": {
-        "state": "WAITING_FOR_REVIEW",
-        "version": "1.0",
-        "live": null,
-        "pending": {
-          "version": "1.0",
-          "state": "WAITING_FOR_REVIEW",
-          "label": "Waiting for Review",
-          "category": "review",
-          "platforms": [
-            "iOS",
-            "macOS"
-          ]
-        },
-        "by_platform": {
-          "iOS": {
-            "live": null,
-            "pending": {
-              "version": "1.0",
-              "state": "WAITING_FOR_REVIEW",
-              "label": "Waiting for Review",
-              "category": "review"
-            }
-          },
-          "macOS": {
-            "live": null,
-            "pending": {
-              "version": "1.0",
-              "state": "WAITING_FOR_REVIEW",
-              "label": "Waiting for Review",
-              "category": "review"
-            }
-          }
-        }
-      },
-      "testflight": {
-        "external": "READY_FOR_BETA_SUBMISSION",
-        "internal": "READY_FOR_BETA_TESTING"
-      },
-      "apple_platforms": {
-        "iOS": {
-          "state": "pending",
-          "live": null,
-          "pending": {
-            "version": "1.0",
-            "label": "Waiting for Review"
-          },
-          "url": null
-        },
-        "macOS": {
-          "state": "pending",
-          "live": null,
-          "pending": {
-            "version": "1.0",
-            "label": "Waiting for Review"
-          },
-          "url": null
-        },
-        "visionOS": {
-          "state": "absent",
-          "live": null,
-          "pending": null,
-          "url": null
-        }
-      },
-      "status": {
-        "label": "Waiting for Review",
-        "category": "review"
       }
     },
     {
@@ -416,11 +322,94 @@
       }
     },
     {
+      "name": "IceQueue",
+      "repo": "ice-queue",
+      "full_name": "harmonic-systems-home/ice-queue",
+      "url": "https://github.com/harmonic-systems-home/ice-queue",
+      "last_commit": "2026-11-23T10:36:04-08:00",
+      "manifest": {},
+      "bundle_id": "com.github.rick-wilson.IceQueue",
+      "version": "1.0",
+      "build": "1",
+      "platforms": [
+        "iOS",
+        "macOS",
+        "visionOS"
+      ],
+      "icon": "app_icons/ice-queue.png",
+      "xcodeproj": "IceQueue/IceQueue.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": true,
+        "metadata": true
+      },
+      "store": {
+        "state": "READY_FOR_DISTRIBUTION",
+        "version": "1.0",
+        "live": {
+          "version": "1.0",
+          "platforms": [
+            "iOS"
+          ]
+        },
+        "pending": null,
+        "by_platform": {
+          "iOS": {
+            "live": "1.0",
+            "pending": null
+          },
+          "macOS": {
+            "live": null,
+            "pending": {
+              "version": "1.0",
+              "state": "IN_REVIEW",
+              "label": "In Review",
+              "category": "review"
+            }
+          }
+        },
+        "url": "https://apps.apple.com/app/id6835692918"
+      },
+      "testflight": {
+        "external": "READY_FOR_BETA_SUBMISSION",
+        "internal": "READY_FOR_BETA_TESTING"
+      },
+      "apple_platforms": {
+        "iOS": {
+          "state": "live",
+          "live": "1.0",
+          "pending": null,
+          "url": "https://apps.apple.com/app/id6835692918"
+        },
+        "macOS": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.0",
+            "label": "In Review"
+          },
+          "url": null
+        },
+        "visionOS": {
+          "state": "absent",
+          "live": null,
+          "pending": null,
+          "url": null
+        }
+      },
+      "status": {
+        "label": "Released",
+        "category": "released"
+      }
+    },
+    {
       "name": "Bridge Classroom Fetch",
       "repo": "bridge-classroom-fetch",
       "full_name": "bridge-craftwork/bridge-classroom-fetch",
       "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-11-23T12:13:14-08:00",
+      "last_commit": "2026-11-24T17:58:38-08:00",
       "manifest": {},
       "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
       "version": "1.1.0",
@@ -430,7 +419,7 @@
         "macOS"
       ],
       "icon": "app_icons/bridge-classroom-fetch-Bridge-Classroom-Fetch.png",
-      "xcodeproj": "safari/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
+      "xcodeproj": "safari/fetch/Bridge Classroom Fetch/Bridge Classroom Fetch.xcodeproj",
       "readiness": {
         "icon": true,
         "asc_registered": true,
@@ -440,39 +429,31 @@
       },
       "source_version": "1.1.0",
       "store": {
-        "state": "WAITING_FOR_REVIEW",
+        "state": "READY_FOR_DISTRIBUTION",
         "version": "1.1.0",
-        "live": null,
-        "pending": {
+        "live": {
           "version": "1.1.0",
-          "state": "WAITING_FOR_REVIEW",
-          "label": "Waiting for Review",
-          "category": "review",
           "platforms": [
-            "iOS",
-            "macOS"
+            "iOS"
           ]
         },
+        "pending": null,
         "by_platform": {
           "iOS": {
-            "live": null,
-            "pending": {
-              "version": "1.1.0",
-              "state": "WAITING_FOR_REVIEW",
-              "label": "Waiting for Review",
-              "category": "review"
-            }
+            "live": "1.1.0",
+            "pending": null
           },
           "macOS": {
             "live": null,
             "pending": {
               "version": "1.1.0",
-              "state": "WAITING_FOR_REVIEW",
-              "label": "Waiting for Review",
+              "state": "IN_REVIEW",
+              "label": "In Review",
               "category": "review"
             }
           }
-        }
+        },
+        "url": "https://apps.apple.com/app/id6800538262"
       },
       "testflight": {
         "external": "READY_FOR_BETA_SUBMISSION",
@@ -480,20 +461,17 @@
       },
       "apple_platforms": {
         "iOS": {
-          "state": "pending",
-          "live": null,
-          "pending": {
-            "version": "1.1.0",
-            "label": "Waiting for Review"
-          },
-          "url": null
+          "state": "live",
+          "live": "1.1.0",
+          "pending": null,
+          "url": "https://apps.apple.com/app/id6800538262"
         },
         "macOS": {
           "state": "pending",
           "live": null,
           "pending": {
             "version": "1.1.0",
-            "label": "Waiting for Review"
+            "label": "In Review"
           },
           "url": null
         }
@@ -502,8 +480,8 @@
         "label": "Released \u00b7 update pending",
         "category": "released",
         "safari": {
-          "label": "Waiting for Review",
-          "category": "review"
+          "label": "Released",
+          "category": "released"
         }
       },
       "browsers": {
@@ -514,13 +492,13 @@
           "url": "https://chromewebstore.google.com/detail/cpokagdkdagcojoogocjheefiicacnca"
         },
         "safari": {
-          "state": "pending",
-          "live": null,
+          "state": "update",
+          "live": "1.1.0",
           "pending": {
             "version": "1.1.0",
-            "label": "Waiting for Review"
+            "label": "In Review"
           },
-          "url": null
+          "url": "https://apps.apple.com/app/id6800538262"
         },
         "firefox": {
           "state": "live",
@@ -541,7 +519,7 @@
       "repo": "bridge-classroom-fetch",
       "full_name": "bridge-craftwork/bridge-classroom-fetch",
       "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-11-23T12:13:14-08:00",
+      "last_commit": "2026-11-24T17:58:38-08:00",
       "manifest": {},
       "bundle_id": "org.bridge-classroom.bridge-craftwork-dd",
       "version": "1.1.0",
@@ -550,7 +528,7 @@
         "macOS"
       ],
       "icon": "app_icons/bridge-classroom-fetch-Bridge-Craftwork-DD.png",
-      "xcodeproj": "safari-dd/Bridge Craftwork DD/Bridge Craftwork DD.xcodeproj",
+      "xcodeproj": "safari/dd/Bridge Craftwork DD/Bridge Craftwork DD.xcodeproj",
       "readiness": {
         "icon": true,
         "asc_registered": true,
