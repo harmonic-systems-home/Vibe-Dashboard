@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T17:53:20.586806+00:00",
+  "generated_at": "2026-11-26T17:40:13.890499+00:00",
   "count": 10,
   "apps": [
     {
@@ -95,7 +95,7 @@
       "repo": "bridge-viewer",
       "full_name": "bridge-craftwork/bridge-viewer",
       "url": "https://github.com/bridge-craftwork/bridge-viewer",
-      "last_commit": "2026-11-23T23:01:43-08:00",
+      "last_commit": "2026-11-25T19:36:12-08:00",
       "manifest": {},
       "bundle_id": "com.popperbiz.BridgeViewer",
       "version": "0.1.0",
@@ -351,7 +351,8 @@
         "live": {
           "version": "1.0",
           "platforms": [
-            "iOS"
+            "iOS",
+            "macOS"
           ]
         },
         "pending": null,
@@ -361,13 +362,8 @@
             "pending": null
           },
           "macOS": {
-            "live": null,
-            "pending": {
-              "version": "1.0",
-              "state": "IN_REVIEW",
-              "label": "In Review",
-              "category": "review"
-            }
+            "live": "1.0",
+            "pending": null
           }
         },
         "url": "https://apps.apple.com/app/id6835692918"
@@ -384,13 +380,10 @@
           "url": "https://apps.apple.com/app/id6835692918"
         },
         "macOS": {
-          "state": "pending",
-          "live": null,
-          "pending": {
-            "version": "1.0",
-            "label": "In Review"
-          },
-          "url": null
+          "state": "live",
+          "live": "1.0",
+          "pending": null,
+          "url": "https://apps.apple.com/app/id6835692918"
         },
         "visionOS": {
           "state": "absent",
@@ -602,13 +595,10 @@
           "url": null
         },
         "firefox": {
-          "state": "pending",
-          "live": null,
-          "pending": {
-            "version": "1.1.0",
-            "label": "Pending"
-          },
-          "url": "https://addons.mozilla.org/firefox/addon/bridge-craftwork-dd/"
+          "state": "live",
+          "live": "1.1.0",
+          "pending": null,
+          "url": "https://addons.mozilla.org/en-US/firefox/addon/bridge-craftwork-dd/"
         },
         "edge": {
           "state": "pending",

@@ -1,19 +1,24 @@
 {
-  "generated_at": "2026-11-25T17:53:56.596635+00:00",
+  "generated_at": "2026-11-26T17:40:47.707337+00:00",
   "stats": {
-    "total": 666,
-    "open": 140,
+    "total": 667,
+    "open": 141,
     "closed": 526,
     "close_rate": 79,
-    "opened_last_30": 109,
+    "opened_last_30": 110,
     "closed_last_30": 89,
-    "opened_last_90": 290,
+    "opened_last_90": 287,
     "closed_last_90": 210,
     "median_days_to_close": 0.3,
-    "median_open_age_days": 76.4,
-    "oldest_open_days": 254.1,
+    "median_open_age_days": 76.8,
+    "oldest_open_days": 255.1,
     "repo_count": 23,
     "by_repo": {
+      "convention-card": {
+        "open": 7,
+        "closed": 5,
+        "total": 12
+      },
       "bridge-common-conventions": {
         "open": 27,
         "closed": 48,
@@ -33,11 +38,6 @@
         "open": 3,
         "closed": 13,
         "total": 16
-      },
-      "convention-card": {
-        "open": 6,
-        "closed": 5,
-        "total": 11
       },
       "Practice-Bidding-Scenarios": {
         "open": 15,
@@ -201,7 +201,7 @@
       "full_name": "bridge-craftwork/convention-card",
       "url": "https://github.com/bridge-craftwork/convention-card",
       "external": false,
-      "open": 6,
+      "open": 7,
       "closed": 5
     },
     {
@@ -318,6 +318,20 @@
     }
   ],
   "issues": [
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 139,
+      "title": "Form view: edit the card laid out as the printed ACBL card",
+      "state": "open",
+      "created_at": "2026-11-26T03:35:17Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/139",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
     {
       "repo": "bridge-common-conventions",
       "full_name": "bridge-craftwork/bridge-common-conventions",
