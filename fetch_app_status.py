@@ -869,6 +869,10 @@ def chrome_listing(item_id):
     if status == 404:
         return {"url": url, "found": False}
     m = re.search(r'Version</div><div[^>]*>\s*([0-9][^<\s]*)', body or "")
+    title = re.search(r"<title>([^<]*)", body or "")
+    if status == 200 and not m and title and title.group(1).strip() == "Chrome Web Store":
+        # An item that isn't published yet gets the store's generic page.
+        return {"url": url, "found": False}
     if status != 200 or not m:
         return {"url": url, "error": f"listing unreadable (HTTP {status})"}
     return {"url": url, "found": True, "version": m.group(1)}
