@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "lastComputedDate": "2026-11-23",
-  "totalUserPrompts": 20993,
-  "totalSessions": 519,
-  "totalToolCalls": 135534,
+  "lastComputedDate": "2026-11-28",
+  "totalUserPrompts": 21497,
+  "totalSessions": 523,
+  "totalToolCalls": 138854,
   "totalMessages": 147332,
   "firstSessionDate": "2025-12-29",
   "modelUsage": {
@@ -32,10 +32,10 @@
       "cacheCreationInputTokens": 4304353
     },
     "claude-opus-5-5": {
-      "inputTokens": 70170,
-      "outputTokens": 21382338,
-      "cacheReadInputTokens": 7114696020,
-      "cacheCreationInputTokens": 171539694
+      "inputTokens": 82154,
+      "outputTokens": 25499559,
+      "cacheReadInputTokens": 8037316753,
+      "cacheCreationInputTokens": 193298458
     },
     "claude-haiku-4-5-20251001": {
       "inputTokens": 26,
@@ -50,10 +50,10 @@
       "cacheCreationInputTokens": 4757478
     },
     "claude-haiku-5-5": {
-      "inputTokens": 128,
-      "outputTokens": 69369,
-      "cacheReadInputTokens": 1692372,
-      "cacheCreationInputTokens": 629758
+      "inputTokens": 144,
+      "outputTokens": 77009,
+      "cacheReadInputTokens": 1731338,
+      "cacheCreationInputTokens": 676990
     },
     "claude-fable-5-2": {
       "inputTokens": 4450,
@@ -837,10 +837,83 @@
       "date": "2026-11-23",
       "tokensByModel": {
         "claude-opus-5-5": {
-          "inputTokens": 2318,
-          "outputTokens": 647691,
-          "cacheReadInputTokens": 185523449,
-          "cacheCreationInputTokens": 2215427
+          "inputTokens": 3506,
+          "outputTokens": 1022525,
+          "cacheReadInputTokens": 268017620,
+          "cacheCreationInputTokens": 3678187
+        },
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 2761,
+          "cacheReadInputTokens": 4605,
+          "cacheCreationInputTokens": 11489
+        }
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "tokensByModel": {
+        "claude-opus-5-5": {
+          "inputTokens": 1134,
+          "outputTokens": 357586,
+          "cacheReadInputTokens": 77840356,
+          "cacheCreationInputTokens": 2733225
+        },
+        "claude-haiku-5-5": {
+          "inputTokens": 8,
+          "outputTokens": 3081,
+          "cacheReadInputTokens": 29843,
+          "cacheCreationInputTokens": 24883
+        }
+      }
+    },
+    {
+      "date": "2026-11-25",
+      "tokensByModel": {
+        "claude-opus-5-5": {
+          "inputTokens": 2502,
+          "outputTokens": 863905,
+          "cacheReadInputTokens": 205591160,
+          "cacheCreationInputTokens": 3334366
+        }
+      }
+    },
+    {
+      "date": "2026-11-26",
+      "tokensByModel": {
+        "claude-opus-5-5": {
+          "inputTokens": 2014,
+          "outputTokens": 693106,
+          "cacheReadInputTokens": 152550195,
+          "cacheCreationInputTokens": 5116799
+        }
+      }
+    },
+    {
+      "date": "2026-11-27",
+      "tokensByModel": {
+        "claude-opus-5-5": {
+          "inputTokens": 4126,
+          "outputTokens": 1463783,
+          "cacheReadInputTokens": 326373814,
+          "cacheCreationInputTokens": 6055447
+        },
+        "claude-haiku-5-5": {
+          "inputTokens": 4,
+          "outputTokens": 1798,
+          "cacheReadInputTokens": 4518,
+          "cacheCreationInputTokens": 10860
+        }
+      }
+    },
+    {
+      "date": "2026-11-28",
+      "tokensByModel": {
+        "claude-opus-5-5": {
+          "inputTokens": 1020,
+          "outputTokens": 364007,
+          "cacheReadInputTokens": 77771037,
+          "cacheCreationInputTokens": 3056167
         }
       }
     }
@@ -2648,36 +2721,66 @@
     },
     {
       "date": "2026-11-23",
-      "userPrompts": 130,
-      "sessionCount": 2,
-      "toolCallCount": 912
+      "userPrompts": 183,
+      "sessionCount": 3,
+      "toolCallCount": 1443
+    },
+    {
+      "date": "2026-11-24",
+      "userPrompts": 63,
+      "sessionCount": 1,
+      "toolCallCount": 496
+    },
+    {
+      "date": "2026-11-25",
+      "userPrompts": 79,
+      "sessionCount": 1,
+      "toolCallCount": 870
+    },
+    {
+      "date": "2026-11-26",
+      "userPrompts": 58,
+      "sessionCount": 0,
+      "toolCallCount": 279
+    },
+    {
+      "date": "2026-11-27",
+      "userPrompts": 214,
+      "sessionCount": 0,
+      "toolCallCount": 1017
+    },
+    {
+      "date": "2026-11-28",
+      "userPrompts": 37,
+      "sessionCount": 1,
+      "toolCallCount": 127
     }
   ],
   "hourCounts": {
     "17": 301,
     "13": 267,
-    "22": 151,
-    "23": 107,
+    "22": 181,
+    "23": 119,
     "7": 444,
     "8": 393,
-    "12": 331,
+    "12": 356,
     "11": 403,
     "9": 325,
-    "10": 370,
+    "10": 398,
     "18": 294,
     "14": 276,
-    "15": 302,
-    "16": 289,
-    "0": 17,
-    "20": 201,
+    "15": 325,
+    "16": 309,
+    "0": 20,
+    "20": 232,
     "19": 244,
-    "21": 102,
+    "21": 117,
     "4": 89,
     "5": 224,
     "6": 332,
     "1": 8,
     "2": 10,
-    "3": 10
+    "3": 11
   },
   "longestSession": {
     "sessionId": "0d69771c-a005-40c6-8b90-c8d8408025c7",
