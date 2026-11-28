@@ -1,23 +1,28 @@
 {
-  "generated_at": "2026-11-27T17:16:38.446174+00:00",
+  "generated_at": "2026-11-28T15:50:26.272099+00:00",
   "stats": {
-    "total": 667,
-    "open": 141,
-    "closed": 526,
+    "total": 670,
+    "open": 143,
+    "closed": 527,
     "close_rate": 79,
     "opened_last_30": 107,
-    "closed_last_30": 88,
-    "opened_last_90": 287,
-    "closed_last_90": 210,
+    "closed_last_30": 87,
+    "opened_last_90": 285,
+    "closed_last_90": 207,
     "median_days_to_close": 0.3,
-    "median_open_age_days": 77.8,
-    "oldest_open_days": 256.1,
+    "median_open_age_days": 78.8,
+    "oldest_open_days": 257.1,
     "repo_count": 23,
     "by_repo": {
       "convention-card": {
-        "open": 7,
-        "closed": 5,
-        "total": 12
+        "open": 8,
+        "closed": 6,
+        "total": 14
+      },
+      "bridge-solver": {
+        "open": 4,
+        "closed": 13,
+        "total": 17
       },
       "bridge-common-conventions": {
         "open": 27,
@@ -33,11 +38,6 @@
         "open": 3,
         "closed": 8,
         "total": 11
-      },
-      "bridge-solver": {
-        "open": 3,
-        "closed": 13,
-        "total": 16
       },
       "Practice-Bidding-Scenarios": {
         "open": 15,
@@ -185,7 +185,7 @@
       "full_name": "bridge-craftwork/bridge-solver",
       "url": "https://github.com/bridge-craftwork/bridge-solver",
       "external": false,
-      "open": 3,
+      "open": 4,
       "closed": 13
     },
     {
@@ -201,8 +201,8 @@
       "full_name": "bridge-craftwork/convention-card",
       "url": "https://github.com/bridge-craftwork/convention-card",
       "external": false,
-      "open": 7,
-      "closed": 5
+      "open": 8,
+      "closed": 6
     },
     {
       "repo": "rusty-bidding-bot",
@@ -322,8 +322,50 @@
       "repo": "convention-card",
       "full_name": "bridge-craftwork/convention-card",
       "external": false,
+      "number": 145,
+      "title": "ACBL New: the second 1NT range's seat/vulnerability words are dropped",
+      "state": "open",
+      "created_at": "2026-11-28T15:47:27Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/145",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "bridge-solver",
+      "full_name": "bridge-craftwork/bridge-solver",
+      "external": false,
+      "number": 68,
+      "title": "par() never names 1\u2663: a 1\u2663-only deal gets par 0",
+      "state": "open",
+      "created_at": "2026-11-28T15:44:03Z",
+      "closed_at": null,
+      "url": "https://github.com/bridge-craftwork/bridge-solver/issues/68",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
+      "number": 140,
+      "title": "PDF export: option to print the player's entries in green, like BBO's card (default on)",
+      "state": "closed",
+      "created_at": "2026-11-27T19:24:51Z",
+      "closed_at": "2026-11-27T20:14:37Z",
+      "url": "https://github.com/bridge-craftwork/convention-card/issues/140",
+      "labels": [],
+      "comments": 0,
+      "author": "Rick-Wilson"
+    },
+    {
+      "repo": "convention-card",
+      "full_name": "bridge-craftwork/convention-card",
+      "external": false,
       "number": 139,
-      "title": "Form view: edit the card laid out as the printed ACBL card",
+      "title": "Form views: edit the card as the printed ACBL Classic and New cards",
       "state": "open",
       "created_at": "2026-11-26T03:35:17Z",
       "closed_at": null,

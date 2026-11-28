@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T17:16:03.674074+00:00",
-  "count": 10,
+  "generated_at": "2026-11-28T15:49:59.222841+00:00",
+  "count": 11,
   "apps": [
     {
       "name": "LessonStage",
@@ -118,6 +118,113 @@
       "status": {
         "label": "Development",
         "category": "development"
+      }
+    },
+    {
+      "name": "Better BBO Convention Card",
+      "repo": "Better-BBO-Convention-Card",
+      "full_name": "bridge-craftwork/Better-BBO-Convention-Card",
+      "url": "https://github.com/bridge-craftwork/Better-BBO-Convention-Card",
+      "last_commit": "2026-11-27T20:46:04-08:00",
+      "manifest": {
+        "tagline": "Print, back up and share BBO convention cards",
+        "priority": "high",
+        "next_step": "All four stores submitted 27 Nov; waiting on reviews"
+      },
+      "bundle_id": "org.bridge-classroom.better-bbo-convention-card",
+      "version": null,
+      "build": null,
+      "platforms": [],
+      "icon": "app_icons/Better-BBO-Convention-Card.png",
+      "xcodeproj": "safari/Better BBO Convention Card/Better BBO Convention Card.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": true,
+        "metadata": true
+      },
+      "source_version": "1.0.0",
+      "store": {
+        "state": "WAITING_FOR_REVIEW",
+        "version": "1.0.0",
+        "live": null,
+        "pending": {
+          "version": "1.0.0",
+          "state": "WAITING_FOR_REVIEW",
+          "label": "Waiting for Review",
+          "category": "review",
+          "platforms": [
+            "macOS"
+          ]
+        },
+        "by_platform": {
+          "macOS": {
+            "live": null,
+            "pending": {
+              "version": "1.0.0",
+              "state": "WAITING_FOR_REVIEW",
+              "label": "Waiting for Review",
+              "category": "review"
+            }
+          }
+        }
+      },
+      "testflight": {
+        "external": "READY_FOR_BETA_SUBMISSION",
+        "internal": "READY_FOR_BETA_TESTING"
+      },
+      "apple_platforms": {
+        "macOS": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.0.0",
+            "label": "Waiting for Review"
+          },
+          "url": null
+        }
+      },
+      "status": {
+        "label": "Pending",
+        "category": "review",
+        "safari": {
+          "label": "Waiting for Review",
+          "category": "review"
+        }
+      },
+      "browsers": {
+        "chrome": {
+          "state": "unknown",
+          "live": null,
+          "pending": null,
+          "url": "https://chromewebstore.google.com/detail/ebngdpiafphdhbhcbljafpdanemhofgf",
+          "note": "listing unreadable (HTTP 200)"
+        },
+        "safari": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.0.0",
+            "label": "Waiting for Review"
+          },
+          "url": null
+        },
+        "firefox": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.0.0",
+            "label": "Pending"
+          },
+          "url": "https://addons.mozilla.org/firefox/addon/better-bbo-convention-card/"
+        },
+        "edge": {
+          "state": "absent",
+          "live": null,
+          "pending": null,
+          "url": null
+        }
       }
     },
     {
@@ -402,7 +509,7 @@
       "repo": "bridge-classroom-fetch",
       "full_name": "bridge-craftwork/bridge-classroom-fetch",
       "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-11-27T07:14:20-08:00",
+      "last_commit": "2026-11-27T16:18:22-08:00",
       "manifest": {},
       "bundle_id": "org.bridge-classroom.bridge-classroom-fetch",
       "version": "1.1.0",
@@ -427,7 +534,8 @@
         "live": {
           "version": "1.1.0",
           "platforms": [
-            "iOS"
+            "iOS",
+            "macOS"
           ]
         },
         "pending": null,
@@ -437,13 +545,8 @@
             "pending": null
           },
           "macOS": {
-            "live": null,
-            "pending": {
-              "version": "1.1.0",
-              "state": "IN_REVIEW",
-              "label": "In Review",
-              "category": "review"
-            }
+            "live": "1.1.0",
+            "pending": null
           }
         },
         "url": "https://apps.apple.com/app/id6800538262"
@@ -460,17 +563,14 @@
           "url": "https://apps.apple.com/app/id6800538262"
         },
         "macOS": {
-          "state": "pending",
-          "live": null,
-          "pending": {
-            "version": "1.1.0",
-            "label": "In Review"
-          },
-          "url": null
+          "state": "live",
+          "live": "1.1.0",
+          "pending": null,
+          "url": "https://apps.apple.com/app/id6800538262"
         }
       },
       "status": {
-        "label": "Released \u00b7 update pending",
+        "label": "Released",
         "category": "released",
         "safari": {
           "label": "Released",
@@ -485,12 +585,9 @@
           "url": "https://chromewebstore.google.com/detail/cpokagdkdagcojoogocjheefiicacnca"
         },
         "safari": {
-          "state": "update",
+          "state": "live",
           "live": "1.1.0",
-          "pending": {
-            "version": "1.1.0",
-            "label": "In Review"
-          },
+          "pending": null,
           "url": "https://apps.apple.com/app/id6800538262"
         },
         "firefox": {
@@ -512,7 +609,7 @@
       "repo": "bridge-classroom-fetch",
       "full_name": "bridge-craftwork/bridge-classroom-fetch",
       "url": "https://github.com/bridge-craftwork/bridge-classroom-fetch",
-      "last_commit": "2026-11-27T07:14:20-08:00",
+      "last_commit": "2026-11-27T16:18:22-08:00",
       "manifest": {},
       "bundle_id": "org.bridge-classroom.bridge-craftwork-dd",
       "version": "1.1.0",
