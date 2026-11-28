@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T15:49:59.222841+00:00",
+  "generated_at": "2026-11-28T16:03:54.349220+00:00",
   "count": 11,
   "apps": [
     {
@@ -121,113 +121,6 @@
       }
     },
     {
-      "name": "Better BBO Convention Card",
-      "repo": "Better-BBO-Convention-Card",
-      "full_name": "bridge-craftwork/Better-BBO-Convention-Card",
-      "url": "https://github.com/bridge-craftwork/Better-BBO-Convention-Card",
-      "last_commit": "2026-11-27T20:46:04-08:00",
-      "manifest": {
-        "tagline": "Print, back up and share BBO convention cards",
-        "priority": "high",
-        "next_step": "All four stores submitted 27 Nov; waiting on reviews"
-      },
-      "bundle_id": "org.bridge-classroom.better-bbo-convention-card",
-      "version": null,
-      "build": null,
-      "platforms": [],
-      "icon": "app_icons/Better-BBO-Convention-Card.png",
-      "xcodeproj": "safari/Better BBO Convention Card/Better BBO Convention Card.xcodeproj",
-      "readiness": {
-        "icon": true,
-        "asc_registered": true,
-        "testflight": true,
-        "screenshots": true,
-        "metadata": true
-      },
-      "source_version": "1.0.0",
-      "store": {
-        "state": "WAITING_FOR_REVIEW",
-        "version": "1.0.0",
-        "live": null,
-        "pending": {
-          "version": "1.0.0",
-          "state": "WAITING_FOR_REVIEW",
-          "label": "Waiting for Review",
-          "category": "review",
-          "platforms": [
-            "macOS"
-          ]
-        },
-        "by_platform": {
-          "macOS": {
-            "live": null,
-            "pending": {
-              "version": "1.0.0",
-              "state": "WAITING_FOR_REVIEW",
-              "label": "Waiting for Review",
-              "category": "review"
-            }
-          }
-        }
-      },
-      "testflight": {
-        "external": "READY_FOR_BETA_SUBMISSION",
-        "internal": "READY_FOR_BETA_TESTING"
-      },
-      "apple_platforms": {
-        "macOS": {
-          "state": "pending",
-          "live": null,
-          "pending": {
-            "version": "1.0.0",
-            "label": "Waiting for Review"
-          },
-          "url": null
-        }
-      },
-      "status": {
-        "label": "Pending",
-        "category": "review",
-        "safari": {
-          "label": "Waiting for Review",
-          "category": "review"
-        }
-      },
-      "browsers": {
-        "chrome": {
-          "state": "unknown",
-          "live": null,
-          "pending": null,
-          "url": "https://chromewebstore.google.com/detail/ebngdpiafphdhbhcbljafpdanemhofgf",
-          "note": "listing unreadable (HTTP 200)"
-        },
-        "safari": {
-          "state": "pending",
-          "live": null,
-          "pending": {
-            "version": "1.0.0",
-            "label": "Waiting for Review"
-          },
-          "url": null
-        },
-        "firefox": {
-          "state": "pending",
-          "live": null,
-          "pending": {
-            "version": "1.0.0",
-            "label": "Pending"
-          },
-          "url": "https://addons.mozilla.org/firefox/addon/better-bbo-convention-card/"
-        },
-        "edge": {
-          "state": "absent",
-          "live": null,
-          "pending": null,
-          "url": null
-        }
-      }
-    },
-    {
       "name": "Kennit",
       "repo": "Kennit-App",
       "full_name": "harmonic-systems-home/Kennit-App",
@@ -298,6 +191,112 @@
       "status": {
         "label": "Released",
         "category": "released"
+      }
+    },
+    {
+      "name": "Better BBO Convention Card",
+      "repo": "Better-BBO-Convention-Card",
+      "full_name": "bridge-craftwork/Better-BBO-Convention-Card",
+      "url": "https://github.com/bridge-craftwork/Better-BBO-Convention-Card",
+      "last_commit": "2026-11-27T20:46:04-08:00",
+      "manifest": {
+        "tagline": "Print, back up and share BBO convention cards",
+        "priority": "high",
+        "next_step": "All four stores submitted 27 Nov; waiting on reviews"
+      },
+      "bundle_id": "org.bridge-classroom.better-bbo-convention-card",
+      "version": null,
+      "build": null,
+      "platforms": [],
+      "icon": "app_icons/Better-BBO-Convention-Card.png",
+      "xcodeproj": "safari/Better BBO Convention Card/Better BBO Convention Card.xcodeproj",
+      "readiness": {
+        "icon": true,
+        "asc_registered": true,
+        "testflight": true,
+        "screenshots": true,
+        "metadata": true
+      },
+      "source_version": "1.0.0",
+      "store": {
+        "state": "WAITING_FOR_REVIEW",
+        "version": "1.0.0",
+        "live": null,
+        "pending": {
+          "version": "1.0.0",
+          "state": "WAITING_FOR_REVIEW",
+          "label": "Waiting for Review",
+          "category": "review",
+          "platforms": [
+            "macOS"
+          ]
+        },
+        "by_platform": {
+          "macOS": {
+            "live": null,
+            "pending": {
+              "version": "1.0.0",
+              "state": "WAITING_FOR_REVIEW",
+              "label": "Waiting for Review",
+              "category": "review"
+            }
+          }
+        }
+      },
+      "testflight": {
+        "external": "READY_FOR_BETA_SUBMISSION",
+        "internal": "READY_FOR_BETA_TESTING"
+      },
+      "apple_platforms": {
+        "macOS": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.0.0",
+            "label": "Waiting for Review"
+          },
+          "url": null
+        }
+      },
+      "status": {
+        "label": "Released \u00b7 update pending",
+        "category": "released",
+        "safari": {
+          "label": "Waiting for Review",
+          "category": "review"
+        }
+      },
+      "browsers": {
+        "chrome": {
+          "state": "live",
+          "live": "1.0.0",
+          "pending": null,
+          "url": "https://chromewebstore.google.com/detail/ebngdpiafphdhbhcbljafpdanemhofgf"
+        },
+        "safari": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.0.0",
+            "label": "Waiting for Review"
+          },
+          "url": null
+        },
+        "firefox": {
+          "state": "pending",
+          "live": null,
+          "pending": {
+            "version": "1.0.0",
+            "label": "Pending"
+          },
+          "url": "https://addons.mozilla.org/firefox/addon/better-bbo-convention-card/"
+        },
+        "edge": {
+          "state": "absent",
+          "live": null,
+          "pending": null,
+          "url": null
+        }
       }
     },
     {
