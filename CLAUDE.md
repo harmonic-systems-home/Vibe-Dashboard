@@ -9,10 +9,12 @@ The dashboard is deployed via **GitHub Pages** with automated daily updates via 
 ### GitHub Actions Workflow
 
 The workflow (`.github/workflows/update-dashboard.yml`) runs:
-- **Daily at midnight Pacific** (7 AM UTC). GitHub defers scheduled runs, so
-  they have in practice started 2.5-5 hours late; expect the refreshed data
-  mid-morning Pacific rather than at the scheduled hour.
-- **On push to main branch**
+- **On push to main branch**, which includes the nightly Claude stats push
+  at ~02:00 Pacific (its commit has no `[skip ci]` on purpose). That push is
+  what refreshes the dashboard overnight.
+- **Daily cron at 7 AM UTC**, as a fallback for nights the Mac is off. GitHub
+  defers scheduled runs heavily (10+ hours by late Nov 2026), so it only
+  lands mid-morning Pacific.
 - **Manually via workflow_dispatch**
 
 The workflow:
@@ -134,3 +136,9 @@ in **its own clone** on the internal SSD,
 - After changing `jobs/launchd/`, run [`jobs/deploy.sh`](jobs/deploy.sh). It
   also recreates the clone if it's missing.
 - Pull here to see the job's commits; it pushes `claude_stats.json` nightly.
+- Each run resets the clone to `origin/main` before regenerating, so a failed
+  run can't wedge later ones. Avoid hand-editing `claude_stats.json` here
+  unless the change should be carried forward (the parser treats the
+  published copy as its history floor).
+- Its push triggers the dashboard workflow, so a failed job also means a
+  late dashboard. Log: `/tmp/update-claude-stats.log`.

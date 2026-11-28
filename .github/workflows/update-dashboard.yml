@@ -2,10 +2,11 @@ name: Update Dashboard Data
 
 on:
   schedule:
-    # Midnight Pacific (07:00 UTC during PDT, 23:00 PST in winter). GitHub
-    # defers scheduled runs on shared runners — ours have started 2.5-5 hours
-    # late every day — so this is set early enough that the data still lands
-    # in the morning.
+    # Fallback only. GitHub defers scheduled runs on shared runners, and by
+    # late Nov 2026 this one was starting 10+ hours late (mid-morning
+    # Pacific). The overnight refresh comes from the Mac's 02:00 Claude stats
+    # job instead: its commit has no [skip ci], so its push runs this
+    # workflow right away. This cron covers nights the Mac is off.
     - cron: '0 7 * * *'
   push:
     branches: [main]
